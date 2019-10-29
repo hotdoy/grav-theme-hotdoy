@@ -1,0 +1,21 @@
+title: Content
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        buttons:
+          type: tab
+          title: Module
+          fields:
+
+            header.rythm:
+              type: toggle
+              label: Rythm
+              highlight: rythm
+              default: rythm
+              options: 
+                rythm-null: 'Null'
+                rythm: 'Default'
+                rythm-header: 'Header'

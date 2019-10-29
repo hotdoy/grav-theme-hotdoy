@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <style type="text/css">
+  table{
+    background-color: #fff;
+    color: #313131;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  a{
+    color: #9B51E0;
+    text-decoration: none;
+  }
+
+  .content{
+    padding: 30px;
+  }
+  </style>    
+</head>
+<body style="margin:0; padding:0;">
+  <center>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr align="center" valign="top">
+        <td>
+          <a href="{{ base_url_absolute }}">
+            <img src="{{ url('theme://templates/emails/email-header.png', true, true) }}">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="content">
+          <h2>Thank you for contacting us!</h2>
+          <p>We will be in touch with you shortly.</p>
+          <p>This is a confirmation message and no action should be taken. You are receiving this because a message was sent to us using this email.</p>
+          <small><a href="https://hotdoy.ca">hotdoy.ca</a></small>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>

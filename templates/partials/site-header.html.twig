@@ -1,0 +1,21 @@
+<header id="site-header" class="site-header">
+	
+	{# Logo #}
+    <a class="site-logo desktop" href="{{ base_url == '' ? '/' : base_url }}">Hotdoy</a>
+    <a class="site-logo mobile" href="{{ base_url == '' ? '/' : base_url }}">Hotdoy</a>
+
+    {# nav desktop #}
+    <nav class="site-nav desktop">
+		{% include '/partials/navigation.html.twig' %}
+    </nav>
+
+    {# nav mobile #}
+    <div class="site-nav-toggle mobile">Menu</div>
+    <div class="site-nav-panel-veil"></div>
+   	<nav class="site-nav-panel mobile">
+   		<div>
+			{% include '/partials/navigation.html.twig' %}
+		</div>
+    </nav>
+
+</header>

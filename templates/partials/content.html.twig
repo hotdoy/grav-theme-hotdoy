@@ -1,0 +1,8 @@
+{% set rythm = rythm|default('rythm') %}
+{% set class = class|default('') %}
+{% set reveal = reveal|default('') %}
+{% set content = content|default(content|raw) %}
+
+{% if content %}
+<section class="content {{ rythm }} {{ class }}"{% if reveal %} data-reveal="{{ reveal }}"{% endif %}>{{ content }}</section>
+{% endif %}

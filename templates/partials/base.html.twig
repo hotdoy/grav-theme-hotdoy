@@ -1,0 +1,31 @@
+{{ dump(page.header) }}
+
+<!DOCTYPE html>
+<html lang="{{ config.site.default_lang }}">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include 'partials/metadata.html.twig' %}
+        <link rel="icon" type="image/png" href="favicon.png" />
+        {% include 'partials/canonical.html.twig' %}
+        {% include 'partials/analytics.html.twig' %}
+        {% include 'partials/preload.html.twig' %}
+        {% include 'partials/css.html.twig' %}
+        {% include 'partials/js.html.twig' %}
+        {% block assets deferred %}
+            {{ assets.css()|raw }}
+            {{ assets.js('before')|raw }}
+        {% endblock %}
+    </head>
+
+    <body style="{% include 'partials/theme.html.twig' %}">
+        {% block site_loader %}{% include 'partials/site-loader.html.twig' %}{% endblock %}
+        {% block site_header %}{% include 'partials/site-header.html.twig' %}{% endblock %} 
+        {% block slow3g %}{% include 'partials/slow3g.html.twig' %}{% endblock %} 
+
+        {% block page_content %}{% endblock %}
+
+        {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
+        {{ assets.js('after')|raw }}
+    </body>
+</html>

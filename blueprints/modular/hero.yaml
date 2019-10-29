@@ -1,0 +1,59 @@
+title: Hero
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        buttons:
+          type: tab
+          title: Module
+          fields:
+
+            header.image:
+              type: filepicker
+              label: Image
+              preview_images: true
+              accept:
+                - .jpg
+                - .png
+                - .svg
+                - .gif
+                - .webp
+
+            header.image_alt:
+              type: text
+              label: Image Alt
+
+            header.image_width:
+              type: range
+              label: Image Width
+              default: 100
+
+            header.video:
+              type: filepicker
+              label: Video
+              preview_images: false
+              accept:
+                - .mp4
+
+            header.reverse:
+              type: toggle
+              label: Reverse
+              help: Default will position the image on the right side of the module.
+              highlight: 0
+              default: 0
+              options: 
+                0: 'Default'
+                1: 'Reverse'
+
+            header.rythm:
+              type: toggle
+              label: Rythm
+              highlight: rythm
+              default: rythm
+              options: 
+                rythm-null: 'Null'
+                rythm: 'Default'
+                rythm-header: 'Header'
+                

@@ -1,0 +1,2 @@
+{% set url = page.header.routes.canonical ? page.header.routes.canonical : page.url(true, true) %}
+<link rel="canonical" href="{{ url }}" />

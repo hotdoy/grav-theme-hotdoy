@@ -1,0 +1,65 @@
+title: Video
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        buttons:
+          type: tab
+          title: Module
+          fields:
+
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.video:
+              type: filepicker
+              label: Video
+              accept:
+                - .mp4
+
+            header.image:
+              type: filepicker
+              label: Background Image
+              preview_images: true
+              accept:
+                - .jpg
+                - .png
+                - .svg
+                - .gif
+                - .webp
+
+            header.loop:
+              type: toggle
+              label: Video Loop 
+              highlight: 1
+              default: 1
+              options: 
+                0: 'False'
+                1: 'True'
+
+            header.width:
+              type: toggle
+              label: Width
+              highlight: site
+              default: site
+              options: 
+                tight: 'Tight'
+                site: 'Site'
+                full: 'full'
+
+            header.rythm:
+              type: toggle
+              label: Rythm
+              highlight: rythm
+              default: rythm
+              options: 
+                rythm-null: 'Null'
+                rythm: 'Default'
+              

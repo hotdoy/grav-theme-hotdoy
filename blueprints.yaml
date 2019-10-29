@@ -1,0 +1,114 @@
+name: Hotdoy
+version: 0.1.0
+description: Hotdoy Theme
+icon: angellist
+author:
+  name: Hotdoy
+  email: admin@hotdoy.ca
+# homepage: https://github.com/hotdoy/grav-theme-hotdoy
+# demo: http://demo.yoursite.com
+# bugs: https://github.com/hotdoy/grav-theme-hotdoy/issues
+# readme: https://github.com/hotdoy/grav-theme-hotdoy/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+
+
+    theme:
+      type: section
+      title: Theme
+
+    browser_color:
+      type: colorpicker
+      label: Browser Color
+      help: The color that browsers should use to customize the display of the page or of the surrounding user interface.
+
+    fg_color:
+      type: colorpicker
+      label: Foreground Color
+      help: The default foreground color.
+      default: '#313131'
+
+    bg_color:
+      type: colorpicker
+      label: Background Color
+      help: The default background color.
+      default: '#ffffff'
+
+    fg_color_alt:
+      type: colorpicker
+      label: Alternate Foreground Color
+      help: The alternate foreground color.
+      default: '#ffffff'
+
+    bg_color_alt:
+      type: colorpicker
+      label: Alternate Background Color
+      help: The alternate background color.
+      default: '#673ab7'
+
+    media_radius:
+      type: text
+      label: Media Border Radius
+      default: 0px
+
+    rythm:
+      type: text
+      label: Rythm
+      default: 6rem
+
+    organization:
+      type: section
+      title: Organization
+
+    org_name:
+      type: text
+      label: Name
+      help: The name by which the organization should be recognized.
+
+    org_logo_url:
+      type: text
+      label: Logo URL
+      help: The absolute path to the organization logo.
+      
+    org_phone_formatted:
+      type: text
+      label: Phone Formatted
+      help: Phone number formatted as an international number.
+
+    org_phone_display:
+      type: text
+      label: Phone Display
+      help: Phone number as it should visually appear on the website.
+
+    org_email:
+      type: text
+      label: Email
+
+    misc:
+      type: section
+      title: Misc
+
+    google_tracking_id:
+      type: text
+      label: Google Analytics Tracking ID
+
+    # google_maps_api_key:
+    #   type: text
+    #   label: Google Maps API Key
+
+    facebook_app_id:
+      type: text
+      label: Facebook App Id
+
+    ficelle:
+      type: toggle
+      label: Ficelle image CDN
+      help: Leave it off unless you know what this is. You need to be invited.
+      highlight: false
+      default: false
+      options: 
+        false: 'False'
+        true: 'True'

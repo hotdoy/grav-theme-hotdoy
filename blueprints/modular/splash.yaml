@@ -1,0 +1,71 @@
+title: Splash
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        buttons:
+          type: tab
+          title: Module
+          fields:
+
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.bg_image:
+              type: filepicker
+              label: Backgroud Image
+              preview_images: true
+              accept:
+                - .jpg
+                - .png
+                - .svg
+                - .gif
+                - .webp
+
+            header.bg_video:
+              type: filepicker
+              label: Background Video
+              preview_images: false
+              accept:
+                - .mp4
+
+            header.bg_veil:
+              type: range
+              label: Background Veil
+              default: 0
+
+            options:
+              type: section
+              title: Options
+
+            header.bg_loop:
+              type: toggle
+              label: Background Video Loop 
+              highlight: 1
+              default: 1
+              options: 
+                0: 'False'
+                1: 'True'
+                
+            header.min_height:
+              type: range
+              label: Minimum Height
+              description: Percentage of device viewport height.
+              default: 100
+
+            header.rythm:
+              type: toggle
+              label: Rythm
+              highlight: rythm
+              default: rythm
+              options: 
+                rythm-header: 'Header'
+                rythm-null: 'Null'
+                rythm: 'Default'

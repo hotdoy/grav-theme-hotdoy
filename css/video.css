@@ -1,0 +1,35 @@
+/*VIDEO -------------------------------------------------------*/
+
+.video{
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	z-index: 1000;
+}
+
+.video .content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.video video{
+	width: 100%;
+	border-radius: var(--media-radius);
+}
+
+.video.full video{
+	border-radius: 0;
+}
+
+.video .content{
+	color: var(--fg-color);
+}

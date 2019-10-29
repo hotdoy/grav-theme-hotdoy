@@ -1,0 +1,173 @@
+/*
+###########################################################
+BODY
+###########################################################
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	overflow-y: scroll;
+	color: var(--fg-color);
+	background-color: var(--bg-color);
+}
+
+::selection {
+	background: var(--bg-color-alt);
+	color: white;
+}
+
+
+
+
+
+/*
+###########################################################
+SECTION WIDTH, GUTTERS, AND RYTHM
+###########################################################
+*/
+
+.tight{
+	margin-left: var(--gutter);
+	margin-right: var(--gutter);
+	max-width: var(--width-tight);
+}
+
+@media (min-width: 735px) {
+	.tight{
+		width: var(--width-tight);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.site{
+	margin-left: var(--gutter);
+	margin-right: var(--gutter);
+	max-width: var(--width-site);
+}
+
+@media (min-width: 1300px) {
+	.site{
+		width: var(--width-site);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.full{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--width-full);
+}
+
+.rythm-null{
+	margin-top: 0;
+}
+
+.rythm{
+	margin-top: var(--rythm)
+}
+
+.rythm-header{
+	margin-top: calc(var(--nav-height)*-1);
+}
+
+.gutter {
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+}
+
+@media (min-width: 735px) {
+	.gutter{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+
+
+
+/*
+###########################################################
+UTILS
+###########################################################
+*/
+
+.desktop{
+	display: block;
+}
+
+@media (max-width: 735px) {
+	.desktop{
+		display: none;
+	}
+}
+
+.mobile{
+	display: block;
+}
+
+@media (min-width: 735px) {
+	.mobile{display: none;}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+	   -moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none; /* Non-prefixed version, currently
+								  supported by Chrome and Opera */
+}
+
+.display-none {
+  display: none;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+
+
+
+
+/*
+###########################################################
+MISC ELEMENTS
+###########################################################
+*/
+
+hr{
+	margin-top: var(--rythm);
+	margin-bottom: var(--rythm);
+	border: transparent;
+    border-top: 1px solid var(--fg-color);
+    opacity: 0.2;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+code{
+	display: inline;
+	background-color: #f5f6ff;
+	color: #3F51B5;
+	border-radius: 4px;
+	padding: 2px 5px;
+	font-family: Courier New, Courier, monospace; 
+}

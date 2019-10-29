@@ -1,0 +1,12 @@
+{% set items = page.header.drawers %}
+{% set rythm = rythm|default(page.header.rythm) %}
+
+<section class="drawers site {{ rythm }}">
+	{% for item in items %}
+	<details class="item" data-reveal="fadeinfrombottom delay-200 duration-1000">
+		<summary class="noselect"><h3>{{ item.summary }}</h3><i class="material-icons">keyboard_arrow_down</i></summary>
+		<div class="content fadeinfromtop delay-0 duration-1000">{{ item.detail|markdown }}</div>
+	</details>
+	{% endfor %}
+
+</section>

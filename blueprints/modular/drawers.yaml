@@ -1,0 +1,36 @@
+title: Drawers
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        module:
+          type: tab
+          title: Module
+          fields:
+
+            header.drawers:
+              name: drawers
+              type: list
+              style: vertical
+              label: Drawers
+              fields:
+                .summary:
+                  type: text
+                  label: Summary
+                .detail:
+                  type: markdown
+                  label: Detail
+                  validate:
+                    type: textarea
+
+            header.rythm:
+              type: toggle
+              label: Rythm
+              highlight: rythm
+              default: rythm
+              options: 
+                rythm-null: 'Null'
+                rythm: 'Default'
+                rythm-header: 'Header'

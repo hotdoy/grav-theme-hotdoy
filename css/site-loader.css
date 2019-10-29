@@ -1,0 +1,59 @@
+/*
+dependencies
+	- site-loader.js
+	- site-loader.css
+*/
+
+#site-loader-long{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	background-color: var(--bg-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#site-loader-long svg{
+	width: 12rem;
+	animation-name: site-loader-logo;
+	animation-duration: 1.5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes site-loader-logo {
+	0% {opacity: 1;}
+	50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+
+.loaded #site-loader-long{
+	animation-name: site-loader;
+	animation-delay: 0;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes site-loader {
+	from {transform: translateY(0);}
+	to {transform: translateY(100vh);}
+}
+
+
+#site-loader-short{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 4000;
+	background-color: var(--bg-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

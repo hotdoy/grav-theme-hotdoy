@@ -1,0 +1,74 @@
+.hero{
+	color: var(--fg-color);
+	position: relative;
+	z-index: 1000;
+}
+
+.hero .ctn{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero .content-ctn {
+	overflow: visible;
+	width: 50%;
+	padding-right: 3rem;
+}
+
+.hero .reverse .content-ctn {
+	padding-left: 3rem;
+	padding-right: 0;
+}
+
+
+.hero .content-ctn *:first-child {margin-top: 0;}
+.hero .content-ctn *:last-child {margin-bottom: 0;}
+
+.hero .content-ctn blockquote,
+
+.hero .content-ctn ul{
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+}
+
+.hero .media-ctn{
+    overflow: hidden;
+    width: 50%;
+}
+
+.hero .media-ctn video,
+.hero .media-ctn img{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--media-radius);
+	width: 100%;
+}
+
+@media (max-width: 735px){
+	.hero .ctn{
+		flex-direction: column-reverse;
+	}
+
+	.hero .content-ctn,
+	.hero .reverse .content-ctn{
+		width: 100%;
+		padding-top: 2rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.hero .media-ctn{
+		width: 100%;
+	}
+}
+
+.reverse {}
+
+@media (min-width: 735px){
+	.reverse{
+		flex-direction: row-reverse;
+	}
+}

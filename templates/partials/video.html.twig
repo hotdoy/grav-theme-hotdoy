@@ -1,0 +1,28 @@
+{% set video = video|default(page.header.video ? page.media[page.header.video]) %}
+{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
+{% set loop = loop|default(page.header.loop) %}
+{% set fg_color = page.header.fg_color ?? theme.fg_color %}
+{% set bg_color = page.header.bg_color ?? theme.bg_color %}
+{% set width = width|default('site') %}
+{% set rythm = rythm|default('rythm') %}
+{% set reveal_video = reveal_video|default('fadeinfrombottom delay-200 duration-2000') %}
+{% set reveal_content = reveal_content|default('fadeinfrombottom delay-500 duration-2000') %}
+
+<section class="video {{ width }} {{ rythm }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}" data-reveal="{{ reveal_video }}">
+
+	{% block content %}
+		{% if content %}
+		<div class="content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
+		{% endif %}
+	{% endblock %}
+
+	{% block video %}
+		<video class="" autoplay="autoplay" muted="muted"
+		{% if loop %}loop="loop"{% endif %} 
+		{% if image %}poster="{{ image.url }}"{% endif %}>
+		{% if video %}<source src="{{ video.url }}" type="video/mp4">{% endif %}
+		</video>
+	{% endblock %}
+
+</section>
+

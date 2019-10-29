@@ -1,0 +1,70 @@
+.drawers{
+	position: relative;
+	z-index: 1000;
+}
+
+.drawers .item{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: solid 1px;
+	box-sizing: content-box;
+}
+
+.drawers summary{
+	display: flex;
+	padding-right: 3rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.drawers summary>h3{
+	margin-bottom: 0;
+}
+
+.drawers summary:focus{
+	outline: 0;
+}
+
+.drawers summary *{
+	display: inline;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary i { 
+	position: absolute;
+	right: var(--gutter);
+	font-weight: normal;
+	transition: all 0.2s;
+}
+
+@media (min-width: 1300px) {
+	summary:after{
+		right: 0;
+	}
+}
+
+details[open] summary i {
+	transform: rotate(180deg);
+}
+
+.drawers .content{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/*Overwrite regular content width*/
+.drawers .content *{
+	margin-left: 0;
+	max-width: 90%;
+	padding-left: 0;
+    padding-right: 0;
+}
+
+.drawers summary h3{
+	margin-top: 0;
+}

@@ -1,0 +1,69 @@
+/*DEFAULT*/
+.fadein {
+	animation-name: fadein;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: var(--transition-timing-1);
+}
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.fadeinfromtop {
+	opacity: 0;
+	animation-name: fadeinfromtop;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: var(--transition-timing-1);
+}
+@keyframes fadeinfromtop {
+	from {opacity: 0; transform: translateY(-15px);}
+	to {opacity: 1;}
+}
+
+.fadeinfrombottom {
+	opacity: 0;
+	animation-name: fadeinfrombottom;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: var(--transition-timing-1);
+}
+@keyframes fadeinfrombottom {
+	from {opacity: 0; transform: translateY(30px);}
+	to {opacity: 1;}
+}
+
+.fadeouttobottom {
+	animation-name: fadeouttobottom;
+	animation-duration: 0.2s;
+	animation-timing-function: var(--transition-timing-1);
+}
+@keyframes fadeouttobottom {
+	from {opacity: 1; transform: translateY(0px);}
+	to {opacity: 0; transform: translateY(10px);}
+}
+
+.scalein {
+	animation-name: scalein;
+	animation-iteration-count: 1;
+	animation-duration: 0.2s;
+	animation-timing-function: var(--transition-timing-1);
+}
+@keyframes scalein {
+	from {opacity: 0; transform: scale3d(1.1,1.1,1)}
+	to {opacity: 1; transform: scale3d(1,1,1)}
+}
+
+.opacitate {
+	opacity: 0;
+	animation-name: opacitate;
+	animation-delay: 0s;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: var(--transition-timing-1);
+}
+@keyframes opacitate {
+	from {opacity: 0.5;}
+	to {opacity: 1;}
+}

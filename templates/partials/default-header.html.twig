@@ -1,0 +1,16 @@
+{% set title = url|default(page.title) %}
+{% set breadcrumb = breadcrumb|default(page.parent) %}
+{% set rythm = rythm|default('rythm-null') %}
+
+<section {% if reveal %}data-reveal="{{ reveal }}"{% endif %} class="{{ class }} default-header {{ rythm }}">
+	
+	{% if breadcrumb.title != 'Pages' %}
+	<div class="breadcrumb">
+		<a href="{{ breadcrumb.url }}">
+			<i class="material-icons">arrow_left</i>
+			{{ breadcrumb.title }}
+		</a></div>
+	{% endif %}
+	
+	<h1>{{ title }}</h1>
+</section>

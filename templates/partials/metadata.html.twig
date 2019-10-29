@@ -1,0 +1,69 @@
+{% set title = page.header.metadata.title ?? page.menu %}
+{% set description = page.header.metadata.description ? page.header.metadata.description : config.site.metadata.description %}
+{% set image = page.media.images|first().cropResize(540, 281).url %}
+{% set image_computed = uri.base() ~ image %}
+{% set url = page.header.routes.canonical ? page.header.routes.canonical : page.url(true, true) %}
+
+<meta charset="utf-8" />
+<title>{% if title != 'Home' %}{{ title }} - {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ description }}" />
+
+{# Site Metadata #}
+{% for key, value in config.site.metadata %}
+    {% if key == 'http_equiv' %}<meta http-equiv="{{ value }}"/>
+    {% elseif key == 'charset' %}<meta charset="{{ value }}"/>
+    {% elseif key == 'property' %}<meta property="{{ value }}"/>
+    {% elseif key != 'description' %}<meta  name="{{ key }}" content="{{ value }}"/> 
+    {% endif %}
+{% endfor %}
+
+{# Page Metadata #}
+{% for key, value in page.header.metadata %}
+    <meta 
+    {% if key == 'http_equiv' %}http-equiv="{{ value }}"
+    {% elseif key == 'charset' %}charset="{{ value }}"
+    {% elseif key == 'property' %}property="{{ value }}"
+    {% else %}name="{{ key }}" content="{{ value }}" 
+    {% endif %}
+    />
+{% endfor %}
+
+{# Android Meta Theme Color #}
+{% if theme.browser_color %}<meta name="theme-color" content="{{ theme.browser_color }}">{% endif %}
+
+{# Facebook App ID #}
+{% if theme.facebook_app_id %}<meta property="fb:app_id" content="{{ theme.facebook_app_id }}">{% endif %}
+
+{# Open Graph #}
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ url }}" />
+{% if image %}
+<meta property="og:image" content="{{ image_computed }}" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="540" />
+<meta property="og:image:height" content="281" />
+{% endif %}
+
+
+{# Twitter #}
+<meta name="twitter:card" property="twitter:card" content="summary" />
+<meta name="twitter:site" property="twitter:site" content="{{ url }}" />
+<meta name="twitter:title" property="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" property="twitter:description" content="{{ description }}" />
+{% if image %}
+<meta name="twitter:image" property="twitter:image" content="{{ image }}" />
+{% endif %}
+
+
+{# Organization #}
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Organization",
+	  "name": "{{ theme.org_name }}",
+	  "url": "{{ base_url_absolute }}",
+	  "logo": "{{ theme.org_logo_url }}"
+	}
+</script>

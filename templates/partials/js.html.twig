@@ -1,0 +1,14 @@
+{% block js %}
+	{% do assets.addJs('theme://js/jquery.js', { group:'after' }) %}
+	{% do assets.addJs('theme://js/site-header.js', { group:'after' }) %}
+	{% do assets.addJs('theme://js/reveal.js', { group:'after' }) %}
+	{# {% do assets.addJs('theme://js/scroller.js', { group:'after' }) %} #}
+	{% do assets.addJs('theme://js/video.js', { group:'after' }) %}
+	{% do assets.addJs('theme://js/notify.js', { group:'after' }) %}
+	{% do assets.addJs('theme://js/form.js', { group:'after' }) %}
+	{% do assets.addJs('theme://js/links.js', { group:'after'}) %}
+	{% do assets.addJs('theme://js/slow3g.js', { group:'after'}) %}
+	{% do assets.addJs('theme://js/site-loader.js', { group:'after', priority: 0 }) %}
+{% endblock %}
+
+

@@ -1,0 +1,27 @@
+title: Modular
+'@extends': modular
+
+form:
+  fields:
+    tabs:
+
+      fields:
+        modular:
+          type: tab
+          title: Modular
+          fields:
+            header.nav_color:
+              type: colorpicker
+              label: Nav Color
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+            header.fg_color_alt:
+              type: colorpicker
+              label: Foreground Alt Color
+            header.bg_color_alt:
+              type: colorpicker
+              label: Background Alt Color

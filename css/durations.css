@@ -1,0 +1,20 @@
+/*DEFAULT*/
+.duration-0{animation-duration: 0;}
+.duration-100{animation-duration: 0.1s;}
+.duration-150{animation-duration: 0.15s;}
+.duration-200{animation-duration: 0.2s;}
+.duration-250{animation-duration: 0.25s;}
+.duration-300{animation-duration: 0.3s;}
+.duration-350{animation-duration: 0.35s;}
+.duration-400{animation-duration: 0.4s;}
+.duration-450{animation-duration: 0.45s;}
+.duration-500{animation-duration: 0.5s;}
+.duration-1000{animation-duration: 1s;}
+.duration-1500{animation-duration: 1.5s;}
+.duration-2000{animation-duration: 2s;}
+.duration-2500{animation-duration: 2.5s;}
+.duration-3000{animation-duration: 3s;}
+.duration-4000{animation-duration: 4s;}
+.duration-5000{animation-duration: 5s;}
+
+/*CUSTOM*/

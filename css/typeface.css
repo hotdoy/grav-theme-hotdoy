@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    src:	local('Roboto Regular'),
+    		url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src:    local('Roboto Bold'),
+            url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Roboto Italic';
+    src:    local('Roboto Italic'),
+            url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'LexendDeca Regular';
+    src:	local('LexendDeca Regular'),
+    		url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+    unicode-range: U+000-5FF;
+
+}
+
+html{
+    --font-base: 'Roboto Regular', sans-serif;
+    --font-base-bold: 'Roboto Bold', sans-serif;
+    --font-base-italic: 'Roboto Italic', sans-serif;
+    --font-alt: 'LexendDeca Regular', sans-serif;
+    --font-alt-bold: 'LexendDeca Regular', sans-serif;
+    --font-alt-italic: 'LexendDeca Regular', sans-serif;
+}

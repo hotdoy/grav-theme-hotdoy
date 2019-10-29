@@ -1,0 +1,59 @@
+a {
+	color: var(--bg-color-alt);
+	text-decoration: none;
+}
+
+.button{
+	display: block;
+	margin-right: 0.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.button>a{
+	text-align: center;
+	display: flex;
+	align-items: center;
+    color: var(--bg-color-alt);
+}
+
+.button i.material-icons{
+	padding-left: 5px;
+	transition: all 0.2s;
+}
+
+.button:hover .material-icons {
+	padding-left: 10px;
+}
+
+.button.solid{
+	display: inline-block;
+}
+
+.button.solid:hover .material-icons {
+	padding-left: 5px;
+}
+
+.button.solid>a{
+	text-align: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-color-alt);
+    color: var(--fg-color-alt);
+    text-decoration: none;
+    padding: 7px 35px;
+    border-radius: 4px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.button.solid>a:hover {
+	box-shadow: var(--shadow-2);
+	transform: translateY(-2px);
+}
+
+.button.solid>a:active {
+	box-shadow: var(--shadow-1);
+	transform: translateY(0px);
+	transition: transform 0.1s, box-shadow 0.2s, opacity 0.2s;
+}

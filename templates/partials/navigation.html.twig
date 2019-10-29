@@ -1,0 +1,9 @@
+{% for page in pages.children.visible %}
+
+    {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
+
+    <a class="nav-link {{ current_page }}" href="{{ page.url }}">
+        {{ page.menu }}
+    </a>
+
+{% endfor %}

@@ -1,0 +1,73 @@
+/*
+dependencies
+	- slow3g.js
+	- slow3g.html.twig
+*/
+
+/*SLOW NETWORK MESSAGE*/
+
+.slow3g{
+	position: relative;
+	z-index: 99998;
+}
+
+.slow3g>div{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	color: var(--fg-color);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.80);
+}
+
+.slow3g .text{
+	font-weight: bold;
+}
+
+.slow3g .action{
+	color: #2196f3;
+	cursor: pointer;
+	font-size: small;
+}
+
+
+
+
+
+/*MEDIA LOADING EFFECTS*/
+
+img:not(.no3g){
+	background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+	background-size: 200%;
+	-webkit-animation: imagePlaceholder 1.5s ease infinite;
+	-moz-animation: imagePlaceholder 1.5s ease infinite;
+	animation: imagePlaceholder 1.5s ease infinite;
+}
+
+video:not(.no3g){
+	background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+	background-size: 200%;
+	-webkit-animation: imagePlaceholder 1.5s ease infinite;
+	-moz-animation: imagePlaceholder 1.5s ease infinite;
+	animation: imagePlaceholder 1.5s ease infinite;
+}
+
+img[src$='.png'],
+img[src$='.svg'],
+img[src$='.webp']{
+	background-color: transparent;
+	background: none;
+	background-size: 100%;
+	animation: none;
+}
+
+@keyframes imagePlaceholder {
+    0%{background-position:-100% 0}
+    100%{background-position:100% 0}
+}
