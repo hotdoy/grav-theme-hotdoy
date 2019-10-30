@@ -26,7 +26,7 @@ For the moment, here is a list of what I run..
 
 ## Concept
 The theme is made to be my starter kit for grav projects. But anybody is welcome to try and use it.
-Everything will be made readily extendable (in time). It uses css variables heavily so forget old browser (sorry no sorry).
+Everything will be made readily extendable (in time). It uses css variables heavily so forget old browsers (sorry ie).
 The entire color theme is controllable inside the admin panel.
 
 ## Shortcodes
@@ -48,7 +48,7 @@ Use [note] to add unrendered content.
 ### Material Icons
 Add [Material Icons](https://material.io/resources/icons/) with [i]
 
-## Width
+### Width
 Use one of the 3 site witdh. [full], [site], [tight].
 
 ##Modular
