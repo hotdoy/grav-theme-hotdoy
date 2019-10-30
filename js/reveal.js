@@ -7,7 +7,7 @@
 	}
 
 	var reveal = function(){
-		const elements = document.querySelectorAll('*[data-reveal]');
+		const elements = document.querySelectorAll('[data-reveal]');
 		const observerConfig = {rootMargin: '0px', threshold: 0.1};
 		let initialDelay = document.querySelector('[data-reveal-initialdelay]');
 		let observer = new IntersectionObserver(onIntersection, observerConfig);
