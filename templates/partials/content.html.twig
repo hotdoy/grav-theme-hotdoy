@@ -1,7 +1,7 @@
-{% set rythm = rythm|default('rythm') %}
-{% set class = class|default('') %}
-{% set reveal = reveal|default('') %}
 {% set content = content|default(content|raw) %}
+{% set class = class|default('') %}
+{% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set reveal = reveal|default('fadeinfrombottom delay-250 duration-1000') %}
 
 {% if content %}
 <section class="content {{ rythm }} {{ class }}"{% if reveal %} data-reveal="{{ reveal }}"{% endif %}>{{ content }}</section>

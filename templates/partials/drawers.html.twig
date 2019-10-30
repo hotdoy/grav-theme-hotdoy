@@ -1,0 +1,18 @@
+{% set items = items|default(page.header.drawers) %}
+{% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set reveal_drawer = reveal_drawer|default('fadeinfrombottom delay-200 duration-1000') %}
+{% set reveal_detail = reveal_detail|default('fadeinfromtop delay-0 duration-1000') %}
+
+<section class="drawers site {{ rythm }}">
+	{% for item in items %}
+	<details class="item" data-reveal="{{ reveal_drawer }}">
+		<summary class="noselect">
+			<h3>{{ item.summary }}</h3>
+			{% block icon %}
+				<i class="material-icons">keyboard_arrow_down</i>
+			{% endblock %}
+		</summary>
+		<div class="content {{ reveal_detail }}">{{ item.detail|markdown }}</div>
+	</details>
+	{% endfor %}
+</section>

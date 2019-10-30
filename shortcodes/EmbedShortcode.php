@@ -6,6 +6,7 @@ class EmbedShortcode extends Shortcode
 {
     public function init()
     {
+        
         $this->shortcode->getHandlers()->add('youtube', function(ShortcodeInterface $sc) {
             return '
             <div class="site">

@@ -1,1 +1,6 @@
-{% include 'partials/content.html.twig' with {'rythm': page.header.rythm, 'reveal': 'fadeinfrombottom delay-250 duration-1000'} %}
+{% extends '/partials/content.html.twig' %}
+
+{# {% set content = content|default(content|raw) %} #}
+{# {% set class = class|default('') %} #}
+{# {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %} #}
+{# {% set reveal = reveal|default('fadeinfrombottom delay-250 duration-1000') %} #}
