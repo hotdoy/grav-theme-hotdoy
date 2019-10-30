@@ -4,7 +4,11 @@ dependencies
 	- slow3g.html.twig
 */
 
-/*SLOW NETWORK MESSAGE*/
+/*
+###########################################################
+MESSAGE
+###########################################################
+*/
 
 .slow3g{
 	position: relative;
@@ -38,9 +42,11 @@ dependencies
 
 
 
-
-
-/*MEDIA LOADING EFFECTS*/
+/*
+###########################################################
+MEDIA LOADING BG
+###########################################################
+*/
 
 img:not(.no3g){
 	background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);

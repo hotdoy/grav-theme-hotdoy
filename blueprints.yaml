@@ -1,20 +1,19 @@
 name: Hotdoy
-version: 0.1.0
+version: 0.1.1
 description: Hotdoy Theme
 icon: angellist
 author:
   name: Hotdoy
   email: admin@hotdoy.ca
-# homepage: https://github.com/hotdoy/grav-theme-hotdoy
-# demo: http://demo.yoursite.com
-# bugs: https://github.com/hotdoy/grav-theme-hotdoy/issues
-# readme: https://github.com/hotdoy/grav-theme-hotdoy/blob/develop/README.md
+homepage: https://github.com/hotdoy/grav-theme-hotdoy
+demo: http://hotdoy.hotdoy.ca
+bugs: https://github.com/hotdoy/grav-theme-hotdoy/issues
+readme: https://github.com/hotdoy/grav-theme-hotdoy/blob/develop/README.md
 license: MIT
 
 form:
   validation: loose
   fields:
-
 
     theme:
       type: section
@@ -112,3 +111,4 @@ form:
       options: 
         false: 'False'
         true: 'True'
+        
