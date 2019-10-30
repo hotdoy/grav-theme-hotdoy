@@ -1,6 +1,5 @@
 <?php
 namespace Grav\Plugin\Shortcodes;
-
 use Thunder\Shortcode\Shortcode\ShortcodeInterface;
 
 class ButtonShortcode extends Shortcode

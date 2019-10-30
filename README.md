@@ -24,16 +24,56 @@ For the moment, here is a list of what I run..
 * Shortcode Core  v4.1.6
 * Sitemap  v1.9.4
 
-## Reveal
+## Concept
+The theme is made to be my starter kit for grav projects. But anybody is welcome to try and use it.
+Everything will be made readily extendable (in time). It uses css variables heavily so forget old browser (sorry no sorry).
+The entire color theme is controllable inside the admin panel.
+
+## Shortcodes
+
+### Breakpoint
+show content on specific breakpoint.
+[mobile], [desktop]
+
+### Button
+Add buttons with out without material icons
+[btn-solid], [btn-link].
+
+### Embed
+Add [youtube] and [vimeo] by id
+
+### Note
+Use [note] to add unrendered content.
+
+### Material Icons
+Add [Material Icons](https://material.io/resources/icons/) with [i]
+
+## Width
+Use one of the 3 site witdh. [full], [site], [tight].
+
+##Modular
+* Splash
+* Hero
+* Content
+* Video
+* Drawers
+
+Every modular is a extended partial. In order to extend an existing Modular, simply copy the modular template file from hotdoy to the child theme. 
+All available blocks and variables are already commented for you.
+(Is you follow this, the theme should be able to receive updates without breaking).
+
+## Included Js (mostly)
+
+### reveal.js
 Add "reveal" animation to any element by adding ```data-reveal``` to it.
 A default fadein will then be added when the element enters the screen.
 You can learn more about this on [Github](https://github.com/hotdoy/reveal.js/blob/master/README.md) 
 
-## links
+### links.js
 Small link manager. Mostly to add or remove attributes.
 Add ```target="_blank"``` to link starting with ```http``` by default.
 
-## slow3g
+### slow3g.js
 User facing utilities for slow networks.
 
 **slow3g.js**  
@@ -45,23 +85,23 @@ Slow network message template.
 **slow3g.css**  
 Styles for the message template. Also add some loading effects background on images (ommiting transparency enabled fomats) and videos. You can prevent this by adding the ```no3g``` class on said elements.
 
-## site-header
+### site-header.js
 Default site header / menu.
 * site-header.js
 * site-header.html.twig
 * site-header.css
 
-## site-loader
+### site-loader
 Default site-loader / transitions.
 * site-loader.js
 * site-loader.html.twig
 * site-loader.css
 
-## video
+### video.js
 Pause or play videos depending on their visibility.
 
-## notify
+### notify
 User facing notification system.
 
-## form
+### form.js
 Submits forms trough ajax. Then notify the user using notify.js
