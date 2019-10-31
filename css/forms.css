@@ -48,6 +48,7 @@ form textarea{
 	min-width: 100%;
 	border-radius: 5px;
 	border: solid #e6e6e6 2px;
+	background-color: var(--bg-color);
 	padding: 10px;
 	transition: border-color 0.2s;
 }
