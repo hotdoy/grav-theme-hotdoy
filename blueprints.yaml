@@ -1,12 +1,12 @@
 name: Hotdoy
-version: 0.1.1
+version: 1.0.0
 description: Hotdoy Theme
 icon: angellist
 author:
   name: Hotdoy
   email: admin@hotdoy.ca
 homepage: https://github.com/hotdoy/grav-theme-hotdoy
-demo: http://hotdoy.hotdoy.ca
+demo: https://hotdoy.ca
 bugs: https://github.com/hotdoy/grav-theme-hotdoy/issues
 readme: https://github.com/hotdoy/grav-theme-hotdoy/blob/develop/README.md
 license: MIT
