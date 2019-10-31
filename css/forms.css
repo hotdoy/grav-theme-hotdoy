@@ -24,6 +24,13 @@ form .required{
 	color: #F44336;
 }
 
+form .form-label{
+
+}
+
+
+
+
 
 /*
 ###########################################################
@@ -36,19 +43,21 @@ form select{
 	width: 100%;
 	height: 3rem;
 	border-radius: 5px;
+	font-family: 'courier', sans-serif;
 	border: solid #e6e6e6 2px;
+	background-color: var(--bg-color);
 	padding: 10px;
 	transition: all 0.2s;
 }
 
 form textarea{
+	font-family: 'courier', sans-serif;
 	width: 100%;
 	height: 150px;
 	max-width: 100%;
 	min-width: 100%;
 	border-radius: 5px;
 	border: solid #e6e6e6 2px;
-	background-color: var(--bg-color);
 	padding: 10px;
 	transition: border-color 0.2s;
 }
@@ -120,7 +129,8 @@ CHECKBOXES & RADIO
 }
 
 .form-field [data-grav-field="checkbox"]{
-	margin-bottom: 2rem;	
+	margin-top: -28px;
+	margin-bottom: 1rem;	
 }
 
 .form-field [data-grav-field="checkboxes"] label,
