@@ -9,6 +9,7 @@
 
 			    var loader = $('<div class="form-loader"></div>');
 			    form.append(loader);
+			    form.find('button').blur();
 			    loader.fadeTo(500, 0.7);
 
 		        $.ajax({
@@ -26,7 +27,7 @@
 		            },
 		            error: function() {
 		            	console.log('form submission failed!!!');
-		            	notify('Submission failed. Refresh page and retry.');
+		            	notify('Submission failed. Refresh page and retry.', '#f44336');
 		            	loader.fadeOut(500);
 		            }
 		        });
