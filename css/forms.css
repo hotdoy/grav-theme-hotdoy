@@ -25,14 +25,14 @@ form .required{
 }
 
 
-
 /*
 ###########################################################
 INPUTS & TEXTAREA
 ###########################################################
 */
 
-form input{
+form input,
+form select{
 	width: 100%;
 	height: 3rem;
 	border-radius: 5px;
@@ -75,7 +75,7 @@ form button{
 	background-color: var(--bg-color-alt);
 	color: var(--fg-color-alt);
 	font-size: 16px;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	border-radius: 4px;
 	border: 0;
 	transition: all 0.2s;
@@ -99,32 +99,46 @@ form button:active {
 
 /*
 ###########################################################
-CHECKBOXES
+CHECKBOXES & RADIO
 ###########################################################
 */
 
-.checkboxes{
+.form-field [data-grav-field="checkboxes"] .checkboxes,
+.form-field [data-grav-field="radio"] .radio{
 	display: flex;
 	padding-top: 0.5rem;
 }
 
-.checkboxes input[type="checkbox"] {
+.form-field [data-grav-field="checkboxes"] input[type="checkbox"],
+.form-field [data-grav-field="checkbox"] input[type="checkbox"],
+.form-field [data-grav-field="radio"] input[type="radio"] {
     display: none;
 }
 
-.checkboxes label {
+.form-field [data-grav-field="checkbox"]{
+	margin-bottom: 2rem;	
+}
+
+.form-field [data-grav-field="checkboxes"] label,
+.form-field [data-grav-field="checkbox"] label,
+.form-field [data-grav-field="radio"] label {
     position: relative;    
     padding-left: 30px;
 }
 
-.checkboxes label::before,
-.checkboxes label::after {
+.form-field [data-grav-field="checkboxes"] label::before,
+.form-field [data-grav-field="checkboxes"] label::after,
+.form-field [data-grav-field="checkbox"] label::before,
+.form-field [data-grav-field="checkbox"] label::after,
+.form-field [data-grav-field="radio"] label::before,
+.form-field [data-grav-field="radio"] label::after {
     position: absolute;
     content: "";
 }
 
-/*Outer box*/
-.checkboxes label::before{
+.form-field [data-grav-field="checkboxes"] label::before,
+.form-field [data-grav-field="checkbox"] label::before,
+.form-field [data-grav-field="radio"] label::before {
     height: 20px;
     width: 20px;
     border: solid #e6e6e6 2px;
@@ -133,7 +147,12 @@ CHECKBOXES
     background-color: #fff;
 }
 
-.checkboxes label::after {
+.form-field [data-grav-field="radio"] label::before {
+    border-radius: 50%;
+}
+
+.form-field [data-grav-field="checkboxes"] label::after,
+.form-field [data-grav-field="checkbox"] label::after {
     height: 5px;
     width: 9px;
     border-left: 2px solid;
@@ -144,18 +163,40 @@ CHECKBOXES
     color: var(--fg-color-alt);
 }
 
-.checkboxes input[type="checkbox"] + label::after {
+.form-field [data-grav-field="checkbox"] label::after {
+    top: 4px;
+}
+
+.form-field [data-grav-field="radio"] label::after {
+    height: 6px;
+    width: 6px;
+    background-color: var(--fg-color-alt);
+    left: 9px;
+    top: 9px;
+    border-radius: 50%;
+}
+
+.form-field [data-grav-field="checkboxes"] input[type="checkbox"] + label::after,
+.form-field [data-grav-field="checkbox"] input[type="checkbox"] + label::after,
+.form-field [data-grav-field="radio"] input[type="radio"] + label::after {
     opacity: 0;
     transition: opacity 0.2s;
 }
 
-.checkboxes input[type="checkbox"]:checked + label::after {
+.form-field [data-grav-field="checkboxes"] input[type="checkbox"]:checked + label::after,
+.form-field [data-grav-field="checkbox"] input[type="checkbox"]:checked + label::after,
+.form-field [data-grav-field="radio"] input[type="radio"]:checked + label::after {
     opacity: 1;
 }
 
-.checkboxes input[type="checkbox"]:checked + label::before {
+.form-field [data-grav-field="checkboxes"] input[type="checkbox"]:checked + label::before,
+.form-field [data-grav-field="checkbox"] input[type="checkbox"]:checked + label::before,
+.form-field [data-grav-field="radio"] input[type="radio"]:checked + label::before
+ {
     background-color: var(--bg-color-alt);
 }
+
+
 
 
 
