@@ -31,26 +31,37 @@
 		function onIntersection(elements) {
 	  		elements.forEach(el => {
 				if (el.intersectionRatio > 0) {
-
-					observer.unobserve(el.target);
-					
-			  		if (el.target.classList.contains('unrevealed')) {
-			  			let revealClass = el.target.getAttribute('data-reveal');
+					let target = el.target;
+					observer.unobserve(target);
+			  		if (target.classList.contains('unrevealed')) {
+			  			let revealClass = target.getAttribute('data-reveal');
 			  			if (revealClass.length) {
 			  				let revealClassArray = revealClass.split(" ");
-			  				el.target.addEventListener('animationend', function(){
-			  					el.target.classList.remove('unrevealed');
-			  				})
 			  				el.target.classList.add(...revealClassArray);
+
+			  				// Does not trigger on video element
+			  				// target.onanimationend = () =>{
+			  				// 	this.classList.remove('unrevealed');
+			  				// };
+
+			  				// Fix for video elements
+			  				let style = getComputedStyle(target);
+			  				let duration = parseFloat(style.animationDuration.slice(0,-1));
+			  				let delay = parseFloat(style.animationDelay.slice(0,-1));
+			  				let totalDelay = (duration + delay) * 1000;
+			  				setTimeout(function(){ 
+			  					target.classList.remove('unrevealed');
+			  				}, totalDelay);
+			  				
 			  			} else{
-			  				el.target.classList.add('revealed');
-			  				el.target.classList.remove('unrevealed');
+			  				target.classList.add('revealed');
+			  				target.classList.remove('unrevealed');
 			  			}
 			   		}
 				}
 				else{
 					if (initialDelay == null) {
-						el.target.classList.add('unrevealed');
+						target.classList.add('unrevealed');
 					}
 				}
 			});
