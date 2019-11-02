@@ -44,7 +44,7 @@ form select{
 	height: 3rem;
 	border-radius: 5px;
 	font-family: 'courier', sans-serif;
-	border: solid #e6e6e6 2px;
+	border: solid var(--fg-color) 1px;
 	background-color: var(--bg-color);
 	padding: 10px;
 	transition: all 0.2s;
@@ -57,7 +57,7 @@ form textarea{
 	max-width: 100%;
 	min-width: 100%;
 	border-radius: 5px;
-	border: solid #e6e6e6 2px;
+	border: solid var(--fg-color) 1px;
 	padding: 10px;
 	transition: border-color 0.2s;
 }
@@ -66,7 +66,8 @@ form input:focus,
 form select:focus,
 form textarea:focus{
 	outline: none;
-	border: solid var(--bg-color-alt) 2px;
+	border: solid var(--bg-color-alt) 1px;
+	box-shadow: 0px 0px 3px var(--bg-color-alt);
 }
 
 
@@ -155,10 +156,10 @@ CHECKBOXES & RADIO
 .form-field [data-grav-field="radio"] label::before {
     height: 20px;
     width: 20px;
-    border: solid #e6e6e6 2px;
+    border: solid var(--fg-color) 1px;
     left: 0px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: var(--bg-color);
 }
 
 .form-field [data-grav-field="radio"] label::before {
@@ -172,21 +173,21 @@ CHECKBOXES & RADIO
     border-left: 2px solid;
     border-bottom: 2px solid;
     transform: rotate(-45deg) translate(2px, 2px);
-    left: 4px;
-    top: 7px;
+    left: 3px;
+    top: 6px;
     color: var(--fg-color-alt);
 }
 
 .form-field [data-grav-field="checkbox"] label::after {
-    top: 4px;
+    top: 3px;
 }
 
 .form-field [data-grav-field="radio"] label::after {
     height: 6px;
     width: 6px;
     background-color: var(--fg-color-alt);
-    left: 9px;
-    top: 9px;
+    left: 8px;
+    top: 8px;
     border-radius: 50%;
 }
 
