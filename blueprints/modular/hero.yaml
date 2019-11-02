@@ -36,6 +36,7 @@ form:
               preview_images: false
               accept:
                 - .mp4
+                - .webm
 
             header.reverse:
               type: toggle
