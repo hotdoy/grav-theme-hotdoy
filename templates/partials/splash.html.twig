@@ -6,8 +6,8 @@
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
 {% set min_height = min_height|default(page.header.min_height) %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
-{% set reveal_image = reveal_image|default('scalein delay-500 duration-5000') %}
-{% set reveal_video = reveal_video|default('scalein delay-500 duration-5000') %}
+{% set reveal_image = reveal_image|default('scalein delay-100 duration-5000') %}
+{% set reveal_video = reveal_video|default('scalein delay-100 duration-5000') %}
 {% set reveal_content = reveal_content|default('fadeinfromtop delay-200 duration-2000') %}
 
 <section class="splash full {{ rythm }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %}">

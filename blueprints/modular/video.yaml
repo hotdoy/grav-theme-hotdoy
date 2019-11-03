@@ -1,14 +1,16 @@
 title: Video
-'@extends': default
+'@extends': module
 
 form:
   fields:
     tabs:
       fields:
-        buttons:
-          type: tab
-          title: Module
+        content:
           fields:
+
+            theme:
+              type: section
+              title: Theme
 
             header.fg_color:
               type: colorpicker
@@ -17,6 +19,10 @@ form:
             header.bg_color:
               type: colorpicker
               label: Background Color
+
+            module-options:
+              type: section
+              title: Module Options
 
             header.video:
               type: filepicker

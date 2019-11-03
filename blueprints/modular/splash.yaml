@@ -1,14 +1,16 @@
 title: Splash
-'@extends': default
+'@extends': module
 
 form:
   fields:
     tabs:
       fields:
-        buttons:
-          type: tab
-          title: Module
+        content:
           fields:
+
+            theme:
+              type: section
+              title: Theme
 
             header.fg_color:
               type: colorpicker
@@ -42,9 +44,9 @@ form:
               label: Background Veil
               default: 0
 
-            options:
+            module-options:
               type: section
-              title: Options
+              title: Module Options
 
             header.bg_loop:
               type: toggle

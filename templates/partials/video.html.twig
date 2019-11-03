@@ -5,8 +5,8 @@
 {% set bg_color = page.header.bg_color ?? theme.bg_color %}
 {% set width = width|default('site') %}
 {% set rythm = rythm|default('rythm') %}
-{% set reveal_video = reveal_video|default('fadeinfrombottom delay-200 duration-2000') %}
-{% set reveal_content = reveal_content|default('fadeinfrombottom delay-500 duration-2000') %}
+{% set reveal_video = reveal_video|default('fadeinfrombottom delay-100 duration-500') %}
+{% set reveal_content = reveal_content|default('fadeinfrombottom delay-200 duration-500') %}
 
 <section class="video {{ width }} {{ rythm }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}" data-reveal="{{ reveal_video }}">
 

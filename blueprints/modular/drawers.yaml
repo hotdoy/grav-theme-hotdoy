@@ -5,10 +5,11 @@ form:
   fields:
     tabs:
       fields:
-        module:
-          type: tab
-          title: Module
+        content:
           fields:
+
+            content:
+                unset@: true
 
             header.drawers:
               name: drawers
@@ -24,6 +25,10 @@ form:
                   label: Detail
                   validate:
                     type: textarea
+
+            module-options:
+              type: section
+              title: Module Options
 
             header.rythm:
               type: toggle

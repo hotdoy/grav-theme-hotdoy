@@ -5,8 +5,7 @@
 The **Hotdoy** Theme is meant to be a starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
 It is in active developpement and not suited for production at the moment.
 
-A live [demo](https://hotdoy.org/hotdoy/) is temporarily available. (I dump the thing periodically).
-But I'm having some issues with my domain so it might move.
+A live demo is temporarily available at [hotdoy.hotdoy.org](https://hotdoy.ca). (I dump the thing periodically).
 Skeleton is comming soon with the goodies.
 
 For the moment, here is a list of what I run..

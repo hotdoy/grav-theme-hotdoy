@@ -4,8 +4,8 @@
 {% set image_alt = image_alt|default(page.header.image_alt) %}
 {% set reverse = reverse|default(page.header.reverse) %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
-{% set reveal_content = reveal_content|default('fadeinfrombottom delay-250 duration-1000') %}
-{% set reveal_media = reveal_media|default('fadeinfrombottom duration-1000 delay-200') %}
+{% set reveal_content = reveal_content|default('fadeinfrombottom delay-100 duration-500') %}
+{% set reveal_media = reveal_media|default('fadeinfrombottom delay-100 duration-500') %}
 
 <section class="hero site {{ rythm }}">
 	<div class="ctn {% if reverse %}reverse{% endif %}">

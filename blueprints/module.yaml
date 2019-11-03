@@ -1,0 +1,59 @@
+title: Module
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        # content:
+        #   fields:
+        #     content:
+        #         unset@: true
+        options:
+          fields:
+            taxonomies:
+              unset@: true
+              fields:
+                header.taxonomy:
+                  unset@: true
+        advanced:
+          type: tab
+          title: PLUGIN_ADMIN.ADVANCED
+
+          fields:
+
+            overrides:
+              type: section
+              title: PLUGIN_ADMIN.OVERRIDES
+              underline: true
+              fields:
+                header.dateformat:
+                  unset@: true
+                header.menu:
+                  unset@: true
+                header.slug:
+                  unset@: true
+                header.redirect:
+                  unset@: true
+                header.child_type:
+                  unset@: true
+                header.routable:
+                  unset@: true
+                header.visible:
+                  unset@: true
+                header.template:
+                  unset@: true
+                header.debugger:
+                  unset@: true
+                header.append_url_extension:
+                  unset@: true
+
+            routes_only:
+              unset@: true
+              fields:
+                header.routes.default:
+                  unset@: true
+                header.routes.canonical:
+                  unset@: true
+                header.routes.aliases:
+                  unset@: true
