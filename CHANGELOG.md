@@ -1,10 +1,12 @@
 # v1.1.0
 ##  03/11/2019
-
-1. [](#improved)
-* All module blueprints now extend module.yaml.
-* Modular page blueprint cleaned up.
+1. [](#New)
 * Form inputs now use theme colors.
+* All module blueprints now extend module.yaml.
+* Added new rythm-half to all modules
+* Header-default no longer has a breadcrumb but behaves like other modules
+2. [](#improved)
+* Modular page blueprint cleaned up.
 * Form inputs now use courier (might change soon).
 * modules with videos now allow webm.
 * Reveal.js now works on video elements.
