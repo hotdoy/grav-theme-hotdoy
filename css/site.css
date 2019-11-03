@@ -66,17 +66,22 @@ SECTION WIDTH, GUTTERS, AND RYTHM
 	max-width: var(--width-full);
 }
 
+.rythm-negative{
+	margin-top: calc(var(--nav-height)*-1);
+}
+
 .rythm-null{
 	margin-top: 0;
+}
+
+.rythm-half{
+	margin-top: calc(var(--rythm)/2);
 }
 
 .rythm{
 	margin-top: var(--rythm)
 }
 
-.rythm-header{
-	margin-top: calc(var(--nav-height)*-1);
-}
 
 .gutter {
 	padding-left: var(--gutter);

@@ -1,7 +1,6 @@
 .default-header{
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: calc(var(--rythm)/2);
 	padding-left: var(--gutter);
 	padding-right: var(--gutter);
 	max-width: var(--width-site);
