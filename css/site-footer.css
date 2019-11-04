@@ -9,7 +9,8 @@ footer{
     font-size: 10px;
     text-align: right;
     min-height: 400px;
-    background-color: #f9f9f9;
+    background-color: #000;
+    color: #fff;
 }
 
 .footer-nav{
