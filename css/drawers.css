@@ -13,6 +13,7 @@
 }
 
 .drawers summary{
+	font-family: var(--font-alt);
 	display: flex;
 	padding-right: 3rem;
     align-items: center;
