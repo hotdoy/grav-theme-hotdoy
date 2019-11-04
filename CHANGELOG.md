@@ -1,3 +1,8 @@
+# v1.1.1
+##  03/11/2019
+1. [Improved](#improved)
+* Minor style upgrades and fixes
+
 # v1.1.0
 ##  03/11/2019
 1. [New](#New)
