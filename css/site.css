@@ -170,8 +170,8 @@ img{
 
 code{
 	display: inline;
-	background-color: #f5f6ff;
-	color: #3F51B5;
+	background-color: #f7f7f7;
+	color: var(--fg-color);
 	border-radius: 4px;
 	padding: 2px 5px;
 	font-family: Courier New, Courier, monospace; 
