@@ -31,11 +31,6 @@ html{
 .site-logo.mobile{}
 .site-nav.desktop{}
 
-.site-nav-toggle.mobile{
-    top: calc(var(--gutter)*2);
-    right: calc(var(--gutter)*2);
-}
-
 .nav-link{
     margin-left: var(--gutter);
     color: inherit;
@@ -46,7 +41,7 @@ html{
     display: inline-block;
 }
 
-.mobile .nav-link{
+.mobile-nav-panel .nav-link{
     padding-bottom: 5px;
 }
 
@@ -83,14 +78,22 @@ a.nav-link:hover {
     to {opacity: 0.7; transform: translateY(0px);}
 }
 
-.site-nav-toggle{
+.mobile-nav-open{
     position: absolute;
-    top: var(--gutter);
-    right: var(--gutter);
+    top: calc(var(--gutter)*2);
+    right: calc(var(--gutter)*2);
     cursor: pointer;
 }
 
-.site-nav-panel-veil{
+.mobile-nav-close{
+    position: absolute;
+    top: var(--gutter);
+    right: var(--gutter);
+    color: var(--bg-color-alt);
+    cursor: pointer;
+}
+
+.mobile-nav-panel-veil{
     display: none;
     position: fixed;
     top: 0;
@@ -101,8 +104,10 @@ a.nav-link:hover {
     opacity: 0.5;
 }
 
-.site-nav-panel{
+.mobile-nav-panel{
+    display: flex;
     display: none;
+    flex-direction: column;
     position: fixed;
     top: 20%;
     right: 0;
@@ -120,17 +125,7 @@ a.nav-link:hover {
     }
 }
 
-.site-nav-panel>div{
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    float: right;
-    width: 100%;
-    max-width: 100%;
-}
-
-.site-nav-panel.deployed{
+.mobile-nav-panel.deployed{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +137,7 @@ a.nav-link:hover {
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.site-nav-panel .nav-link{
+.mobile-nav-panel .nav-link{
     display: block;
     padding: 10px 20px;
     margin-left: 0;

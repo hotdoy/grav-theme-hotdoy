@@ -10,12 +10,11 @@
     </nav>
 
     {# nav mobile #}
-    <div class="site-nav-toggle mobile">Menu</div>
-    <div class="site-nav-panel-veil"></div>
-   	<nav class="site-nav-panel mobile">
-   		<div>
-			{% include '/partials/navigation.html.twig' %}
-		</div>
+    <div class="mobile-nav-open mobile">Menu</div>
+    <div class="mobile-nav-panel-veil"></div>
+   	<nav class="mobile-nav-panel mobile">
+        <div class="material-icons mobile-nav-close">close</div>
+		{% include '/partials/navigation.html.twig' %}
     </nav>
 
 </header>
