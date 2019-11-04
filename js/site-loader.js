@@ -6,24 +6,14 @@
 	'use strict';
 
 	var siteLoader = function(){
-		var loader = $('#site-loader-long');
+		var loader = $('#site-loader');
 		if (loader.length) {
-			setTimeout(function(){
-				$('body').addClass('loaded');
-			}, 700);
-		}
-	}
-
-	var siteTransition = function(){
-		var loader = $('#site-loader-short');
-		if (loader.length) {
-			$(loader).fadeOut(200);
+			$(loader).fadeOut(100);
 			$('body').addClass('loaded');
 		}
 	}
 
 	var init = function () {
-		siteTransition();
 		siteLoader();
 	};
 
