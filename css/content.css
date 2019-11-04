@@ -139,8 +139,6 @@
 pre code{
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	background-color: #f5f6ff;
     display: block;
-    color: #3F51B5;
     overflow-x: auto;
 }
