@@ -1,5 +1,5 @@
 title: Drawers
-'@extends': default
+'@extends': module
 
 form:
   fields:

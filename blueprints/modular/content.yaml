@@ -1,5 +1,5 @@
 title: Content
-'@extends': default
+'@extends': module
 
 form:
   fields:
