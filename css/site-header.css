@@ -28,9 +28,6 @@ html{
     text-decoration: none;
 }
 
-.site-logo.mobile{}
-.site-nav.desktop{}
-
 .nav-link{
     margin-left: var(--gutter);
     color: inherit;
@@ -44,8 +41,6 @@ html{
 .mobile-nav-panel .nav-link{
     padding-bottom: 5px;
 }
-
-
 
 .nav-link.highlight{
     background-color: var(--bg-color-alt);
@@ -76,6 +71,10 @@ a.nav-link:hover {
 @keyframes nav-link-selected {
     from {opacity: 0; transform: translateY(5px);}
     to {opacity: 0.7; transform: translateY(0px);}
+}
+
+.mobile-nav-open{
+    cursor: pointer;
 }
 
 .mobile-nav-close{
