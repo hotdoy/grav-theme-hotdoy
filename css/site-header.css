@@ -78,13 +78,6 @@ a.nav-link:hover {
     to {opacity: 0.7; transform: translateY(0px);}
 }
 
-.mobile-nav-open{
-    position: absolute;
-    top: calc(var(--gutter)*2);
-    right: calc(var(--gutter)*2);
-    cursor: pointer;
-}
-
 .mobile-nav-close{
     position: absolute;
     top: var(--gutter);
@@ -105,7 +98,6 @@ a.nav-link:hover {
 }
 
 .mobile-nav-panel{
-    display: flex;
     display: none;
     flex-direction: column;
     position: fixed;
