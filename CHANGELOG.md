@@ -1,3 +1,14 @@
+# v1.1.2
+##  04/11/2019
+1. [Improved](#improved)
+* Splash animation timings
+* Removed overly opinionated site-loader
+* Mobile nav naming scheme
+* Notify color options
+* Drawers and content modular now extends module
+2. [Bugfix](#bugfix)
+* Mobile nav toggle position
+
 # v1.1.1
 ##  03/11/2019
 1. [Improved](#improved)
