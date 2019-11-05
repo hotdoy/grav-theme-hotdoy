@@ -1,3 +1,12 @@
+# v1.1.3
+##  05/11/2019
+1. [New](#new)
+* Added marquee
+2. [Improved](#improved)
+* Removed overly opinionated footer
+3. [Bugfix](#bugfix)
+* Moved jquery to "before" assets group.
+
 # v1.1.2
 ##  04/11/2019
 1. [Improved](#improved)
@@ -16,7 +25,7 @@
 
 # v1.1.0
 ##  03/11/2019
-1. [New](#New)
+1. [New](#new)
 * Form inputs now use theme colors.
 * All module blueprints now extend module.yaml.
 * Added new rythm-half to all modules
