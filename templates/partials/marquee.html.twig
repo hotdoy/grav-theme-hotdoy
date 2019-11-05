@@ -1,0 +1,42 @@
+{% if theme.marquee_content %}
+	<div class="marquee">
+	{{ theme.marquee_content|markdown }}
+	<span class="material-icons close">close</span>
+	<style>
+		.marquee{
+			color:{{ theme.marquee_fg }};
+			background-color:{{ theme.marquee_bg }};
+			position: relative;
+			width: 100%;
+			text-align:center;
+			padding: 3px 0;
+			font-size: small;
+		}
+		.marquee p{
+			margin: 0;
+			line-height: 1.4;
+			padding: 3px 25px;
+		}
+
+		.marquee a{
+			text-decoration: underline;
+			text-decoration-style: dotted;
+			color: inherit;
+		}
+
+		.marquee .close{
+			position: absolute;
+			top: 3px;
+			right: 3px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+			$('.marquee .close').on('click touch', function () {
+				$('.marquee').slideUp();
+				console.log('marquee');
+			});
+	</script>
+	</div>
+{% endif %}

@@ -111,4 +111,22 @@ form:
       options: 
         false: 'False'
         true: 'True'
-        
+
+    marquee:
+      type: section
+      title: Marquee 
+
+    marquee_content:
+      type: text
+      help: Add a small banner on top of the site-header
+      label: Marquee Content
+
+    marquee_bg:
+      type: colorpicker
+      label: Marquee Background Color
+      default: '#000'
+
+    marquee_fg:
+      type: colorpicker
+      label: Marquee Foreground color
+      default: '#fff'
