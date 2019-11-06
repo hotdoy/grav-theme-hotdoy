@@ -38,7 +38,6 @@
 
 		var storedTs  = localStorage.getItem('marquee-ts');
 		if (storedTs == null || Date.now() - storedTs > 21600) {
-			console.log('show marquee');
 			$('.marquee').show();
 		}
 
