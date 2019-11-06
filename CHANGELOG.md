@@ -1,3 +1,13 @@
+# v1.1.4
+##  05/11/2019
+1. [New](#new)
+* Material Icons are now self hosted
+* Marquee is now bound to local storage (for 6 hours).
+2. [Improved](#improved)
+* typeface.css renamed simply font.css
+* Marquee has been moved to some z-index braquet as site-header
+* default site-loader fade-out now set to 200ms
+
 # v1.1.3
 ##  05/11/2019
 1. [New](#new)
