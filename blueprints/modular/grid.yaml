@@ -1,0 +1,35 @@
+title: Grid
+'@extends': module
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+
+            content:
+                unset@: true
+
+            module-options:
+              type: section
+              title: Module Options
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.rythm:
+              type: toggle
+              label: Rythm
+              highlight: rythm
+              default: rythm
+              options: 
+                rythm-negative: 'Negative'
+                rythm-null: 'Null'
+                rythm-half: 'Half'
+                rythm: 'Default'
