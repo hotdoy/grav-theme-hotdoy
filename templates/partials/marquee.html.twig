@@ -4,6 +4,7 @@
 	<span class="material-icons close">close</span>
 	<style>
 		.marquee{
+			display: none;
 			color:{{ theme.marquee_fg }};
 			background-color:{{ theme.marquee_bg }};
 			position: relative;
@@ -11,6 +12,7 @@
 			text-align:center;
 			padding: 3px 0;
 			font-size: small;
+			z-index: 5000;
 		}
 		.marquee p{
 			margin: 0;
@@ -33,10 +35,17 @@
 		}
 	</style>
 	<script type="text/javascript">
-			$('.marquee .close').on('click touch', function () {
-				$('.marquee').slideUp();
-				console.log('marquee');
-			});
+
+		var storedTs  = localStorage.getItem('marquee-ts');
+		if (storedTs == null || Date.now() - storedTs > 21600) {
+			console.log('show marquee');
+			$('.marquee').show();
+		}
+
+		$('.marquee .close').on('click touch', function () {
+			$('.marquee').slideUp();
+			localStorage.setItem('marquee-ts', Date.now());
+		});
 	</script>
 	</div>
 {% endif %}
