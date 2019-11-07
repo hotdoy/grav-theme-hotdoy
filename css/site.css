@@ -105,22 +105,22 @@ UTILS
 ###########################################################
 */
 
-.desktop{
+.landscape{
 	display: block;
 }
 
 @media (max-width: 735px) {
-	.desktop{
+	.landscape{
 		display: none;
 	}
 }
 
-.mobile{
+.portrait{
 	display: block;
 }
 
 @media (min-width: 735px) {
-	.mobile{display: none;}
+	.portrait{display: none;}
 }
 
 .noselect {
