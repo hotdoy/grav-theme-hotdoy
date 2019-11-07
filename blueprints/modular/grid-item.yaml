@@ -1,0 +1,43 @@
+title: grid-item
+'@extends': module
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+
+            content:
+              unset@: true
+
+            module-options:
+              type: section
+              title: Module Options
+
+            header.image:
+              type: filepicker
+              label: Image
+              preview_images: true
+              accept:
+                - .jpg
+                - .png
+                - .svg
+                - .gif
+                - .webp
+
+            header.columns:
+              type: range
+              label: Columns
+              default: 1
+              validate:
+                min: 1
+                max: 12
+
+            header.rows:
+              type: range
+              label: Rows
+              default: 1
+              validate:
+                min: 1
+                max: 99

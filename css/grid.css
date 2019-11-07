@@ -1,0 +1,65 @@
+.grid{
+	position: relative;
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	z-index: 1000;
+}
+
+.grid[columns="1"]{grid-template-columns: repeat(1, 1fr);}
+.grid[columns="2"]{grid-template-columns: repeat(2, 1fr);}
+.grid[columns="3"]{grid-template-columns: repeat(3, 1fr);}
+.grid[columns="4"]{grid-template-columns: repeat(4, 1fr);}
+.grid[columns="5"]{grid-template-columns: repeat(5, 1fr);}
+.grid[columns="6"]{grid-template-columns: repeat(6, 1fr);}
+.grid[columns="7"]{grid-template-columns: repeat(7, 1fr);}
+.grid[columns="8"]{grid-template-columns: repeat(8, 1fr);}
+
+.grid .item[columns="1"]{grid-column: span 1;}
+.grid .item[columns="2"]{grid-column: span 2;}
+.grid .item[columns="3"]{grid-column: span 3;}
+.grid .item[columns="4"]{grid-column: span 4;}
+.grid .item[columns="5"]{grid-column: span 5;}
+.grid .item[columns="6"]{grid-column: span 6;}
+.grid .item[columns="7"]{grid-column: span 7;}
+.grid .item[columns="8"]{grid-column: span 8;}
+.grid .item[columns="9"]{grid-column: span 9;}
+.grid .item[columns="10"]{grid-column: span 10;}
+.grid .item[columns="11"]{grid-column: span 11;}
+.grid .item[columns="12"]{grid-column: span 12;}
+
+.grid .item[rows="1"]{grid-row: span 1;}
+.grid .item[rows="2"]{grid-row: span 2;}
+.grid .item[rows="3"]{grid-row: span 3;}
+.grid .item[rows="4"]{grid-row: span 4;}
+.grid .item[rows="5"]{grid-row: span 5;}
+.grid .item[rows="6"]{grid-row: span 6;}
+.grid .item[rows="7"]{grid-row: span 7;}
+.grid .item[rows="8"]{grid-row: span 8;}
+.grid .item[rows="9"]{grid-row: span 9;}
+.grid .item[rows="10"]{grid-row: span 10;}
+.grid .item[rows="11"]{grid-row: span 11;}
+.grid .item[rows="12"]{grid-row: span 12;}
+
+
+/*TEMPORARY TEST STUFF*/
+.grid .item{
+	position: relative;
+	border: solid #000 1px;
+	min-height: 200px;
+}
+
+.grid .item .image{
+	position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.grid .item .title{
+    position: relative;
+    font-size: x-large;
+    margin: 10px;
+    z-index: 1001;
+}

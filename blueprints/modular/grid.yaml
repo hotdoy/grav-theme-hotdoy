@@ -23,6 +23,14 @@ form:
               type: colorpicker
               label: Foreground Color
 
+            header.columns:
+              type: range
+              label: Columns
+              default: 1
+              validate:
+                min: 1
+                max: 12
+
             header.rythm:
               type: toggle
               label: Rythm

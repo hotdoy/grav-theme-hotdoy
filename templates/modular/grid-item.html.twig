@@ -1,0 +1,10 @@
+{% set title = title|default(page.header.title) %}
+{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
+{% set image_alt = image_alt|default(page.header.image_alt) %}
+{% set columns = colums|default(page.header.columns) %}
+{% set rows = rows|default(page.header.rows) %}
+
+<div class="item" columns="{{ columns }}" rows="{{ rows }}">
+	<div class="title">{{ title }}</div>
+	<div class="fill">{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'class': 'image' } %}</div>
+</div>

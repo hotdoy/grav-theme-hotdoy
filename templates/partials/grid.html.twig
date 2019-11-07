@@ -1,66 +1,11 @@
 {% set fg_color = page.header.fg_color ?? theme.fg_color %}
 {% set bg_color = page.header.bg_color ?? theme.bg_color %}
 {% set rythm = rythm|default('rythm') %}
+{% set columns = columns|default(page.header.columns) %}
 
-
-
-<section class="grid site {{ rythm }}" columns="8" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}" data-reveal="">
-
-	<style>
-
-		.grid{
-			display: grid;
-			grid-column-gap: 1rem;
-    		grid-row-gap: 1rem;
-    		grid-template-columns: repeat(12, 1fr)
-		}
-
-		.grid .item{
-			background-color:#313131;
-			color: #FFF;
-			text-align: center;
-		} 
-
-	</style>
-
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-	<div class="item">item</div>
-
+<section class="grid site {{ rythm }}" columns="{{ columns }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}">
+	{% for item in page.collection %}
+		{{item.content}}
+	{% endfor %}
 </section>
 
