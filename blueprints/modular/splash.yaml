@@ -12,13 +12,17 @@ form:
               type: section
               title: Theme
 
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
             header.fg_color:
               type: colorpicker
               label: Foreground Color
 
-            header.bg_color:
-              type: colorpicker
-              label: Background Color
+            Background:
+              type: section
+              title: Background
 
             header.bg_image:
               type: filepicker
@@ -39,14 +43,28 @@ form:
                 - .mp4
                 - .webm
 
-            header.bg_veil:
-              type: range
-              label: Background Veil
-              default: 0
+            header.bg_position:
+              type: text
+              label: Background Position
+              help: Use css background-position property.
+
+            header.bg_fit:
+              type: select
+              label: Background Fit
+              help: Use css background-size property.
+              default: cover
+              options:
+                cover: 'cover'
+                contain: 'contain'
 
             module-options:
               type: section
               title: Module Options
+
+            header.bg_veil:
+              type: range
+              label: Background Veil
+              default: 0
 
             header.bg_loop:
               type: toggle
