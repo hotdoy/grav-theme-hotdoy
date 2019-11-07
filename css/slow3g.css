@@ -48,7 +48,7 @@ MEDIA LOADING BG
 ###########################################################
 */
 
-img:not(.no3g){
+/*img:not(.no3g){
 	background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
 	background-size: 200%;
 	-webkit-animation: imagePlaceholder 1.5s ease infinite;
@@ -56,16 +56,7 @@ img:not(.no3g){
 	animation: imagePlaceholder 1.5s ease infinite;
 }
 
-img[src$='.png'],
-img[src$='.svg'],
-img[src$='.webp']{
-	background-color: transparent;
-	background: none;
-	background-size: 100%;
-	animation: none;
-}
-
 @keyframes imagePlaceholder {
     0%{background-position:-100% 0}
     100%{background-position:100% 0}
-}
+}*/

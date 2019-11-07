@@ -4,14 +4,15 @@
 {# {% set fg_color = fg_color|default(page.header.fg_color ?? theme.fg_color) %} #}
 {# {% set bg_color = bg_color|default(page.header.bg_color ?? theme.bg_color) %} #}
 {# {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %} #}
-{# {% set bg_loop = bg_loop|default(page.header.bg_loop) %} #}
 {# {% set bg_video = bg_video|default(page.header.bg_video ? page.media[page.header.bg_video]) %} #}
+{# {% set bg_position = bg_position|default(page.header.bg_position ?? '50% 50%') %} #}
+{# {% set bg_fit = bg_fit|default(page.header.bg_fit ?? 'cover') %} #}
 {# {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %} #}
 {# {% set min_height = min_height|default(page.header.min_height) %} #}
+{# {% set bg_loop = bg_loop|default(page.header.bg_loop) %} #}
 {# {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %} #}
-{# {% set reveal_image = reveal_image|default('scalein delay-500 duration-5000') %} #}
-{# {% set reveal_video = reveal_video|default('scalein delay-500 duration-5000') %} #}
-{# {% set reveal_content = reveal_content|default('fadeinfromtop delay-200 duration-2000') %} #}
+{# {% set reveal_media = reveal_media|default('scalein delay-500 duration-5000') %} #}
+{# {% set reveal_content = reveal_content|default('fadeinfromtop delay-0 duration-2000') %} #}
 {# {% block bg_veil %}{% endblock %}  #}
 {# {% block image %}{% endblock %} #}
 {# {% block video %}{% endblock %} #}
