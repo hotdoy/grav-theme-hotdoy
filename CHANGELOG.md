@@ -1,3 +1,8 @@
+# v1.1.6
+##  08/11/2019
+1. [Bugfix](#bugfix)
+* updated breapoint shortcodes with new portrait and landscape class. Also re-added mobile and desktop classes.
+
 # v1.1.5
 ##  08/11/2019
 1. [New](#new)
