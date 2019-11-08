@@ -1,9 +1,12 @@
+{% set title = page.title %}
 {% set items = items|default(page.header.drawers) %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set reveal_title = reveal_title|default('fadeinfrombottom delay-0 duration-500') %}
 {% set reveal_drawer = reveal_drawer|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_detail = reveal_detail|default('fadeinfromtop delay-0 duration-500') %}
 
 <section class="drawers site {{ rythm }}">
+	{% if title %}<h2 class="title" data-reveal="{{ reveal_title }}">{{title}}</h2>{% endif %}
 	{% for item in items %}
 	<details class="item" data-reveal="{{ reveal_drawer }}">
 		<summary class="noselect">
