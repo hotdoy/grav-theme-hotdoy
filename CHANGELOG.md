@@ -1,3 +1,17 @@
+# v1.1.5
+##  08/11/2019
+1. [New](#new)
+* Splash can now control object-fit and object-position from admin panel.
+* Drawers now show title as an h2.
+2. [Improved](#improved)
+* Marquee no longer uses script and style tags. Added needed files to js and css templates.
+* Removed the ability to close the marquee (Too glitchy for me, but the script is still there is you want).
+* ```mobile``` and ```desktop``` utility class replaced with ```landscape``` and ```portrait```
+* removed a bunch of commented code.
+* reveal.js reverted to onAnimationEnd since slow3g no longer breaks things.
+3. [Bugfix](#bugfix)
+* Removed slow3g animated bg on assets(img, video) breaking some animation. 
+
 # v1.1.4
 ##  05/11/2019
 1. [New](#new)
@@ -5,7 +19,7 @@
 * Marquee is now bound to local storage (for 6 hours).
 2. [Improved](#improved)
 * typeface.css renamed simply font.css
-* Marquee has been moved to some z-index braquet as site-header
+* Marquee has been moved to same z-index braquet as site-header
 * default site-loader fade-out now set to 200ms
 
 # v1.1.3
