@@ -1,50 +1,11 @@
+{% set bg_color = theme.marquee_bg %}
+{% set fg_color = theme.marquee_fg %}
+
 {% if theme.marquee_content %}
-	<div class="marquee">
+	<div class="marquee" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}">
 	{{ theme.marquee_content|markdown }}
-	<span class="material-icons close">close</span>
-	<style>
-		.marquee{
-			display: none;
-			color:{{ theme.marquee_fg }};
-			background-color:{{ theme.marquee_bg }};
-			position: relative;
-			width: 100%;
-			text-align:center;
-			padding: 3px 0;
-			font-size: small;
-			z-index: 5000;
-		}
-		.marquee p{
-			margin: 0;
-			line-height: 1.4;
-			padding: 3px 25px;
-		}
-
-		.marquee a{
-			text-decoration: underline;
-			text-decoration-style: dotted;
-			color: inherit;
-		}
-
-		.marquee .close{
-			position: absolute;
-			top: 3px;
-			right: 3px;
-			font-size: 16px;
-			cursor: pointer;
-		}
-	</style>
-	<script type="text/javascript">
-
-		var storedTs  = localStorage.getItem('marquee-ts');
-		if (storedTs == null || Date.now() - storedTs > 21600) {
-			$('.marquee').show();
-		}
-
-		$('.marquee .close').on('click touch', function () {
-			$('.marquee').slideUp();
-			localStorage.setItem('marquee-ts', Date.now());
-		});
-	</script>
+	{# <span class="material-icons close">close</span> #}
 	</div>
 {% endif %}
+
+
