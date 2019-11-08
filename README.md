@@ -48,18 +48,18 @@ You should now have all the theme files under
 Hotdoy comes with a few options that can be set site-wide.  These options are:
 
 ```yaml
-enabled: true               # Enable the theme
-Browser Color:          	# Set the <meta name="theme-color"> for supported browsers.
-Background Color:			# Set the main background color (Used for text, modules and other non-interactive elements).
-Foreground Color:			# Set the main foreground color (Used for text, modules and other non-interactive elements).
-Alternate background Color:	# Set the alternate background color (used in buttons, link and other interactive elements).
-Alternate boreground Color:	# Set the alternate foreground color (used in buttons, link and other interactive elements).
-Rhythm:						# Space between modules and other elements.
-organization:				# A collection of field describing your organization (generate schema).
-google_tracking_id: 		# Google analytics id
-facebook_app_id: 	 		# Facebook App Id
-ficelle:					# Don't. It's a private image CDN and you need access from a guy you don't know. Sorry.
-marquee:					# A collection of field to add a small marquee at the top of every page.
+enabled:                    # Enable the theme
+Browser Color:              # Set the <meta name="theme-color"> for supported browsers.
+Background Color:           # Set the main background color (Used for text, modules and other non-interactive elements).
+Foreground Color:           # Set the main foreground color (Used for text, modules and other non-interactive elements).
+Alternate background Color: # Set the alternate background color (used in buttons, link and other interactive elements).
+Alternate boreground Color: # Set the alternate foreground color (used in buttons, link and other interactive elements).
+Rhythm:                     # Space between modules and other elements.
+organization:               # A collection of field describing your organization (generate schema).
+google_tracking_id:         # Google analytics id
+facebook_app_id:            # Facebook App Id
+ficelle:                    # Don't. It's a private image CDN and you need access from a guy you don't know. Sorry.
+marquee:                    # A collection of field to add a small marquee at the top of every page.
 ```
 
 To make modifications, you can copy the `user/themes/hotdoy/hotdoy.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
