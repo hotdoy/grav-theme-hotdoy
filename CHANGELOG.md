@@ -1,7 +1,15 @@
+# v1.1.7
+##  09/11/2019
+1. [Improved](#improved)
+* Sadly removed Ficelle cdn (Nobody can use it anyway).
+* Use srcset for responsive image in img.html.twig.
+2. [Bugfix](#bugfix)
+* Stop using onanimationend in reveal.js (and never going back).
+
 # v1.1.6
 ##  08/11/2019
 1. [Bugfix](#bugfix)
-* updated breapoint shortcodes with new portrait and landscape class. Also re-added mobile and desktop classes.
+* updated breakpoint shortcodes with new portrait and landscape class. Also re-added mobile and desktop classes.
 
 # v1.1.5
 ##  08/11/2019
