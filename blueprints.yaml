@@ -97,16 +97,6 @@ form:
       type: text
       label: Facebook App Id
 
-    ficelle:
-      type: toggle
-      label: Ficelle image CDN
-      help: Leave it off unless you know what this is. You need to be invited.
-      highlight: false
-      default: false
-      options: 
-        false: 'False'
-        true: 'True'
-
     marquee:
       type: section
       title: Marquee 
