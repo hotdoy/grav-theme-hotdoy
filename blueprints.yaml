@@ -48,6 +48,10 @@ form:
       help: The alternate foreground color.
       default: '#ffffff'
 
+    default_radius:
+      type: text
+      label: Default Border Radius
+
     rythm:
       type: text
       label: Rythm

@@ -21,7 +21,7 @@
 
 .video video{
 	width: 100%;
-	border-radius: var(--media-radius);
+	border-radius: var(--radius-1);
 }
 
 .video.full video{
