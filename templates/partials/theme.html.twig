@@ -3,12 +3,12 @@
 {% set bg_color = bg_color|default(page.header.bg_color ?? theme.bg_color) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt ?? theme.fg_color_alt) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt ?? theme.bg_color_alt) %}
-{% set media_radius = media_radius|default(page.header.media_radius ?? theme.media_radius) %}
+{% set default_radius = default_radius|default(page.header.default_radius ?? theme.default_radius) %}
 {% set rythm = rythm|default(theme.rythm) %}
 {% if nav_color %}--nav-fg:{{ nav_color }};{% endif %}
 {% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
 {% if fg_color %}--fg-color:{{ fg_color }};{% endif %}
 {% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}
 {% if bg_color_alt %}--bg-color-alt:{{ bg_color_alt }};{% endif %}
-{% if media_radius %}--media-radius:{{ media_radius }};{% endif %}
+{% if default_radius %}--radius-1:{{ default_radius }};{% endif %}
 {% if rythm %}--rythm:{{ rythm }};{% endif %}

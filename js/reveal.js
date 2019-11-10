@@ -39,20 +39,14 @@
 			  				let revealClassArray = revealClass.split(" ");
 			  				el.target.classList.add(...revealClassArray);
 
-			  				// Does not trigger on video element
-			  				// target.onanimationend = () =>{
-			  				// 	this.classList.remove('unrevealed');
-			  				// };
+                              let style = getComputedStyle(target);
+                              let duration = parseFloat(style.animationDuration.slice(0,-1));
+                              let delay = parseFloat(style.animationDelay.slice(0,-1));
+                              let totalDelay = (duration + delay) * 1000;
+                              setTimeout(function(){ 
+                                  target.classList.remove('unrevealed');
+                              }, totalDelay);
 
-			  				// Fix for video elements
-			  				let style = getComputedStyle(target);
-			  				let duration = parseFloat(style.animationDuration.slice(0,-1));
-			  				let delay = parseFloat(style.animationDelay.slice(0,-1));
-			  				let totalDelay = (duration + delay) * 1000;
-			  				setTimeout(function(){ 
-			  					target.classList.remove('unrevealed');
-			  				}, totalDelay);
-			  				
 			  			} else{
 			  				target.classList.add('revealed');
 			  				target.classList.remove('unrevealed');

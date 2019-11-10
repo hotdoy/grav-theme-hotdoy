@@ -43,7 +43,7 @@
 .hero .media-ctn img{
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: var(--media-radius);
+	border-radius: var(--radius-1);
 	width: 100%;
 }
 

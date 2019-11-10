@@ -4,12 +4,6 @@ dependencies
 	- slow3g.html.twig
 */
 
-/*
-###########################################################
-MESSAGE
-###########################################################
-*/
-
 .slow3g{
 	position: relative;
 	z-index: 99998;
@@ -39,24 +33,3 @@ MESSAGE
 	cursor: pointer;
 	font-size: small;
 }
-
-
-
-/*
-###########################################################
-MEDIA LOADING BG
-###########################################################
-*/
-
-/*img:not(.no3g){
-	background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
-	background-size: 200%;
-	-webkit-animation: imagePlaceholder 1.5s ease infinite;
-	-moz-animation: imagePlaceholder 1.5s ease infinite;
-	animation: imagePlaceholder 1.5s ease infinite;
-}
-
-@keyframes imagePlaceholder {
-    0%{background-position:-100% 0}
-    100%{background-position:100% 0}
-}*/

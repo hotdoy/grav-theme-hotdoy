@@ -1,5 +1,5 @@
 name: Hotdoy
-version: 1.1.4
+version: 1.1.7
 description: Hotdoy Theme
 icon: angellist
 author:
@@ -23,6 +23,12 @@ form:
       type: colorpicker
       label: Browser Color
       help: The color that browsers should use to customize the display of the page or of the surrounding user interface.
+   
+    bg_color:
+      type: colorpicker
+      label: Background Color
+      help: The default background color.
+      default: '#ffffff'
 
     fg_color:
       type: colorpicker
@@ -30,11 +36,11 @@ form:
       help: The default foreground color.
       default: '#313131'
 
-    bg_color:
+    bg_color_alt:
       type: colorpicker
-      label: Background Color
-      help: The default background color.
-      default: '#ffffff'
+      label: Alternate Background Color
+      help: The alternate background color.
+      default: '#673ab7'
 
     fg_color_alt:
       type: colorpicker
@@ -42,16 +48,9 @@ form:
       help: The alternate foreground color.
       default: '#ffffff'
 
-    bg_color_alt:
-      type: colorpicker
-      label: Alternate Background Color
-      help: The alternate background color.
-      default: '#673ab7'
-
-    media_radius:
+    default_radius:
       type: text
-      label: Media Border Radius
-      default: 0px
+      label: Default Border Radius
 
     rythm:
       type: text
@@ -101,16 +100,6 @@ form:
     facebook_app_id:
       type: text
       label: Facebook App Id
-
-    ficelle:
-      type: toggle
-      label: Ficelle image CDN
-      help: Leave it off unless you know what this is. You need to be invited.
-      highlight: false
-      default: false
-      options: 
-        false: 'False'
-        true: 'True'
 
     marquee:
       type: section

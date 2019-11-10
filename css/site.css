@@ -105,32 +105,37 @@ UTILS
 ###########################################################
 */
 
-.landscape{
+.landscape,
+.desktop{
 	display: block;
 }
 
 @media (max-width: 735px) {
-	.landscape{
+	.landscape,
+	.desktop{
 		display: none;
 	}
 }
 
-.portrait{
+.portrait,
+.mobile{
 	display: block;
 }
 
 @media (min-width: 735px) {
-	.portrait{display: none;}
+	.portrait,
+	.mobile{
+		display: none;
+	}
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	 -khtml-user-select: none; /* Konqueror HTML */
-	   -moz-user-select: none; /* Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-			user-select: none; /* Non-prefixed version, currently
-								  supported by Chrome and Opera */
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	 -khtml-user-select: none; 
+	   -moz-user-select: none; 
+		-ms-user-select: none; 
+			user-select: none; 
 }
 
 .display-none {

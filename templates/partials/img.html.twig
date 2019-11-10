@@ -1,22 +1,19 @@
 {% set image = image|default('') %}
-{% set src = src|default(image.url) %}
 {% set alt = alt|default('') %}
 {% set class = class|default('') %}
 {% set style = style|default('') %}
 {% set absolute_url = absolute_url|default(true) %}
-{% set ficelle = ficelle|default(theme.ficelle) %}
-{% set ficelle_url = 'https://ficelle.app/v1/?src=' %}
 {% set loading = loading|default('lazy') %}
 {% set reveal = reveal|default('') %}
 
-{% set computed_src %}
-{% if ficelle %}{{ ficelle_url }}{% endif %}
-{% if absolute_url or ficelle %}{{ uri.base() }}{% endif %}
-{% if image or src %}{{ src }}{% endif %}
-{% endset %}
+{% set src = image.url %}
+{% set src_375 = image.cropResize(375, 0).url %}
+{% set src_1368 = image.cropResize(1368, 0).url %}
+{% set src_1920 = image.cropResize(1920, 0).url %}
 
-<img src="{{ computed_src }}"
-loading="{{ loading }}"
+<img src="{{ src }}"
+srcset="{{ src_375 }} 375w, {{ src_1368 }} 1368w, {{ src_1920 }} 1920w"
+{% if loading %}loading="{{ loading }}"{% endif %}
 {% if class %}class="{{ class }}"{% endif %}
 {% if style %}style="{{ style }}"{% endif %}
 {% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
