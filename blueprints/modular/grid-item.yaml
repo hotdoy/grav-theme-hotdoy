@@ -8,6 +8,30 @@ form:
         content:
           fields:
 
+            theme:
+              type: section
+              title: Theme
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.bg_color_alt:
+              type: colorpicker
+              label: Alternate Background Color
+
+            header.fg_color_alt:
+              type: colorpicker
+              label: Alternate Foreground Color
+
+            header.border:
+              type: text
+              label: border
+
             module-options:
               type: section
               title: Module Options
@@ -37,4 +61,12 @@ form:
               default: 1
               validate:
                 min: 1
+                max: 12
+
+            header.start:
+              type: range
+              label: Start
+              default: 0
+              validate:
+                min: 0
                 max: 12

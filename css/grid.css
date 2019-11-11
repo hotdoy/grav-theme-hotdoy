@@ -32,6 +32,19 @@
 .grid .item[columns="11"]{grid-column: span 11;}
 .grid .item[columns="12"]{grid-column: span 12;}
 
+.grid .item[start="1"]{grid-column-start: 1;}
+.grid .item[start="2"]{grid-column-start: 2;}
+.grid .item[start="3"]{grid-column-start: 3;}
+.grid .item[start="4"]{grid-column-start: 4;}
+.grid .item[start="5"]{grid-column-start: 5;}
+.grid .item[start="6"]{grid-column-start: 6;}
+.grid .item[start="7"]{grid-column-start: 7;}
+.grid .item[start="8"]{grid-column-start: 8;}
+.grid .item[start="9"]{grid-column-start: 9;}
+.grid .item[start="10"]{grid-column-start: 10;}
+.grid .item[start="11"]{grid-column-start: 11;}
+.grid .item[start="12"]{grid-column-start: 12;}
+
 @media (max-width: 735px) {
 	.grid .item[columns]{grid-column: 1/-1;}
 }
@@ -58,6 +71,8 @@
 	min-height: 200px;
 	transition: box-shadow 0.2s;
 	border-radius: var(--radius-1);
+	background-color: var(--bg-color);
+	color: var(--fg-color);
 }
 
 .grid .item:hover{
