@@ -1,3 +1,15 @@
+# v1.2.0
+##  11/11/2019
+1. [New](#new)
+* Grid Modular using css grid (game changer).
+2. [Improved](#improved)
+* Material Icons shortcodes can now set font-size with the "size" attribute.
+* Default border radius control in admin blueprint.
+* ```.fill``` utility class for quick absolute container. 
+3. [Bugfix](#bugfix)
+* Default header padding fix on mobile
+* Added missing <sup> style.
+
 # v1.1.7
 ##  09/11/2019
 1. [Improved](#improved)
