@@ -15,14 +15,6 @@ form:
               type: section
               title: Module Options
 
-            header.bg_color:
-              type: colorpicker
-              label: Background Color
-
-            header.fg_color:
-              type: colorpicker
-              label: Foreground Color
-
             header.columns:
               type: range
               label: Columns
@@ -41,3 +33,4 @@ form:
                 rythm-null: 'Null'
                 rythm-half: 'Half'
                 rythm: 'Default'
+

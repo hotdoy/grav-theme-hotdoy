@@ -1,0 +1,21 @@
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
+{% set border = border|default(page.header.border) %}
+{% set columns = colums|default(page.header.columns) %}
+{% set rows = rows|default(page.header.rows) %}
+{% set start = start|default(page.header.start) %}
+
+<div 
+class="item" 
+columns="{{ columns }}" 
+rows="{{ rows }}"
+{% if start %}start="{{ start }}"{% endif %}
+data-reveal="fadeinfrombottom delay-100 duration-500"
+style="
+{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}
+{% if bg_color_alt %}--bg-color-alt:{{ bg_color_alt }};{% endif %}{% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}
+{% if border %}border: {{ border }};{% endif %}">
+	<div class="content">{{ page.content }}</div>
+</div>

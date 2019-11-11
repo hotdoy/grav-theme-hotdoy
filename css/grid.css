@@ -62,8 +62,6 @@
 .grid .item[rows="11"]{grid-row: span 11;}
 .grid .item[rows="12"]{grid-row: span 12;}
 
-
-/*TEMPORARY TEST STUFF*/
 .grid .item{
 	position: relative;
 	border: solid #d4d4d4 1px;

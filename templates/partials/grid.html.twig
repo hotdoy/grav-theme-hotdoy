@@ -1,1 +1,8 @@
-@todo
+{% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set columns = columns|default(page.header.columns) %}
+
+<section class="grid site {{ rythm }}" columns="{{ columns }}";>
+	{% for module in page.collection() %}
+	{{ module.content }}
+	{% endfor %}
+</section>
