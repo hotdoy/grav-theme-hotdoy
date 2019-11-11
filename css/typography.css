@@ -75,3 +75,8 @@ blockquote em{
 p strong{
 	font-family: var(--font-base-bold);
 }
+
+sup{
+    font-size: xx-small;
+    vertical-align: super;  
+}
