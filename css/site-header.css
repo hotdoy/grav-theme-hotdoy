@@ -19,7 +19,7 @@ html{
     z-index: 5000;
     display: flex;
     align-items: center;
-    padding: 0 calc(var(--gutter)*2);
+    padding: 0 var(--gutter);
     justify-content: space-between;
 }
 
