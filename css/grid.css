@@ -32,6 +32,10 @@
 .grid .item[columns="11"]{grid-column: span 11;}
 .grid .item[columns="12"]{grid-column: span 12;}
 
+@media (max-width: 735px) {
+	.grid .item[columns]{grid-column: 1/-1;}
+}
+
 .grid .item[rows="1"]{grid-row: span 1;}
 .grid .item[rows="2"]{grid-row: span 2;}
 .grid .item[rows="3"]{grid-row: span 3;}
@@ -49,21 +53,30 @@
 /*TEMPORARY TEST STUFF*/
 .grid .item{
 	position: relative;
-	border: solid #000 1px;
+	border: solid #d4d4d4 1px;
+	padding: 2rem;
 	min-height: 200px;
+	transition: box-shadow 0.2s;
+	border-radius: var(--radius-1);
 }
 
-.grid .item .image{
-	position: absolute;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
+.grid .item:hover{
+	box-shadow: var(--shadow-1);
 }
 
-.grid .item .title{
-    position: relative;
-    font-size: x-large;
-    margin: 10px;
-    z-index: 1001;
+.grid .item .content,
+.grid .item .content p,
+.grid .item .content h2,
+.grid .item .content h3,
+.grid .item .content h4,
+.grid .item .content h5,
+.grid .item .content h6{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 100%;
 }
+
+.grid .item .content *:first-child {margin-top: 0;}
+.grid .item .content *:last-child {margin-bottom: 0;}

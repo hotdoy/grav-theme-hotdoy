@@ -1,1 +1,10 @@
-{% extends '/partials/grid.html.twig' %}
+{% set fg_color = page.header.fg_color %}
+{% set bg_color = page.header.bg_color %}
+{% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set columns = columns|default(page.header.columns) %}
+
+<section class="grid site {{ rythm }}" columns="{{ columns }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}">
+	{% for module in page.collection() %}
+	{{ module.content }}
+	{% endfor %}
+</section>
