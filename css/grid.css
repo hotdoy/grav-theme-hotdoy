@@ -1,8 +1,8 @@
 .grid{
 	position: relative;
 	display: grid;
-	grid-column-gap: 1rem;
-	grid-row-gap: 1rem;
+	grid-column-gap: var(--gutter);
+	grid-row-gap: var(--gutter);
 	z-index: 1000;
 }
 
@@ -64,17 +64,11 @@
 
 .grid .item{
 	position: relative;
-	border: solid #d4d4d4 1px;
-	padding: 2rem;
-	min-height: 200px;
-	transition: box-shadow 0.2s;
+	padding: var(--gutter);
 	border-radius: var(--radius-1);
 	background-color: var(--bg-color);
 	color: var(--fg-color);
-}
-
-.grid .item:hover{
-	box-shadow: var(--shadow-1);
+	border: var(--border);
 }
 
 .grid .item .content,
