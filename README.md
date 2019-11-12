@@ -99,7 +99,7 @@ Use one of the 3 site witdh. [full], [site], [tight].
 * Content
 * Video
 * Drawers
-* Grid (you have to specify '@self.modular' in expert mode. [Read more about collection](https://learn.getgrav.org/16/content/collections)
+* Grid (you have to specify '@self.modular' in expert mode [Read more about collection](https://learn.getgrav.org/16/content/collections)).
 
 Every modular is a extended partial. In order to extend an existing Modular, simply copy the modular template file from hotdoy to the child theme. 
 If you only modify the commented variables and block, the module should be able to update without any issue. (Check the changelog before updating)
@@ -144,7 +144,7 @@ Pause or play videos depending on their visibility.
 
 ### notify
 User facing notification system. Works like that...
-``` notifymessage, bg_color, fg_color); ```
+``` notify(message, bg_color, fg_color); ```
 Also comes with notify.css. (default styles you could overwrite by making a copy in a child template).
 
 ### form.js
