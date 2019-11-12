@@ -3,6 +3,7 @@
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set border = border|default(page.header.border) %}
+{% set padding = padding|default(page.header.padding) %}
 {% set columns = colums|default(page.header.columns) %}
 {% set rows = rows|default(page.header.rows) %}
 {% set start = start|default(page.header.start) %}
@@ -12,7 +13,8 @@
 {% if fg_color %}--fg-color:{{ fg_color }};{% endif %}
 {% if bg_color_alt %}--bg-color-alt:{{ bg_color_alt }};{% endif %}
 {% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}
-{% if border %}--border: {{ border }};{% endif %}
+{% if border %}--border:{{ border }};{% endif %}
+{% if padding %}--padding:{{ padding }};{% endif %}
 {% endset %}
 
 <div class="item" columns="{{ columns }}" rows="{{ rows }}"{% if start %} start="{{ start }}"{% endif %} data-reveal="{{ reveal }}" style="{{ style }}">

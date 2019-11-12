@@ -64,7 +64,7 @@
 
 .grid .item{
 	position: relative;
-	padding: var(--gutter);
+	padding: var(--padding);
 	border-radius: var(--radius-1);
 	background-color: var(--bg-color);
 	color: var(--fg-color);

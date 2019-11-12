@@ -30,7 +30,11 @@ form:
 
             header.border:
               type: text
-              label: border
+              label: Border
+
+            header.padding:
+              type: text
+              label: Padding
 
             module-options:
               type: section
