@@ -1,7 +1,13 @@
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
 {% set columns = columns|default(page.header.columns) %}
+{% set border = border|default(page.header.border) %}
+{% set padding = padding|default(page.header.padding) %}
+{% set style %}
+{% if border %}--border:{{ border }};{% endif %}
+{% if padding %}--padding:{{ padding }};{% endif %}
+{% endset %}
 
-<section class="grid site {{ rythm }}" columns="{{ columns }}";>
+<section class="grid site {{ rythm }}" columns="{{ columns }}" style="{{ style }}">
 	{% for module in page.collection() %}
 	{{ module.content }}
 	{% endfor %}

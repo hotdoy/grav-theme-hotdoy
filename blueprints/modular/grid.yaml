@@ -10,6 +10,18 @@ form:
 
             content:
                 unset@: true
+                
+            theme:
+              type: section
+              title: Theme
+
+            header.border:
+              type: text
+              label: Border
+
+            header.padding:
+              type: text
+              label: Padding
 
             module-options:
               type: section
