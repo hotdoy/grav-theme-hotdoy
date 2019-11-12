@@ -55,10 +55,10 @@ Foreground Color:           # Set the main foreground color (Used for text, modu
 Alternate background Color: # Set the alternate background color (used in buttons, link and other interactive elements).
 Alternate boreground Color: # Set the alternate foreground color (used in buttons, link and other interactive elements).
 Rhythm:                     # Space between modules and other elements.
-organization:               # A collection of field describing your organization (generate schema).
+Radius:                     # Default border radius.
+Organization:               # A collection of field describing your organization (generate schema).
 google_tracking_id:         # Google analytics id
 facebook_app_id:            # Facebook App Id
-ficelle:                    # Don't. It's a private image CDN and you need access from a guy you don't know. Sorry.
 marquee:                    # A collection of field to add a small marquee at the top of every page.
 ```
 
@@ -75,7 +75,7 @@ The entire color theme is controllable inside the admin panel.
 
 ## Breakpoint
 show content on specific breakpoint.
-[mobile], [desktop]
+[portrait] and [landscape].
 
 ## Button
 Add buttons with out without material icons
@@ -94,18 +94,17 @@ Add [Material Icons](https://material.io/resources/icons/) with [i]
 Use one of the 3 site witdh. [full], [site], [tight].
 
 # Modular
-More details to come.
 * Splash
 * Hero
 * Content
 * Video
 * Drawers
-* Grid (unreleased)
+* Grid (you have to specify '@self.modular' in expert mode. [Read more about collection](https://learn.getgrav.org/16/content/collections)
 
 Every modular is a extended partial. In order to extend an existing Modular, simply copy the modular template file from hotdoy to the child theme. 
 If you only modify the commented variables and block, the module should be able to update without any issue. (Check the changelog before updating)
 
-## Included Js (mostly)
+## Included Js
 
 ### reveal.js
 Add "reveal" animation to any element by adding ```data-reveal``` to it.
