@@ -52,7 +52,7 @@ SECTION WIDTH, GUTTERS, AND RYTHM
 	max-width: var(--width-site);
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1450px) {
 	.site{
 		width: var(--width-site);
 		margin-left: auto;
