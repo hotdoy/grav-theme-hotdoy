@@ -46,3 +46,25 @@ form:
                 rythm-half: 'Half'
                 rythm: 'Default'
 
+            collection:
+              type: section
+              title: Collection
+
+            header.content.items:
+              type: text
+              label: PLUGIN_ADMIN.ITEMS
+              default: '@self.modular'
+              size: medium
+
+            header.content.order.by:
+              type: text
+              label: PLUGIN_ADMIN.ORDER_BY
+              default: 'default'
+              size: small
+
+            header.content.order.dir:
+              type: text
+              label: PLUGIN_ADMIN.ORDER
+              help: '"desc" or "asc" are valid values'
+              default: 'asc'
+              size: small
