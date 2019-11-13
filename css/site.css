@@ -158,7 +158,10 @@ UTILS
 	left: 0;
 }
 
-
+/*fix for empty p shortcodes tends to leave behind*/
+p:empty{
+	display: none;
+}
 
 
 
