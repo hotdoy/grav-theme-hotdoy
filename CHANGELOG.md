@@ -1,3 +1,16 @@
+# v1.2.1
+##  12/11/2019
+1. [Improved](#improved)
+* Grid can now set border and padding of childrens.
+* Grid can control collection.
+* Grid has default collection.
+* Removed default styles of grid items.
+* Added css for a bunch of content use-cases in grid-item. 
+* It's my birthday 🎂
+2. [Bugfix](#bugfix)
+* Empty p elements should now be hidden.
+* Fixed some line break comming from embed shortcodes.
+
 # v1.2.0
 ##  11/11/2019
 1. [New](#new)
