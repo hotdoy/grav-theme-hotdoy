@@ -88,3 +88,11 @@
 
 .grid .item .content *:first-child {margin-top: 0;}
 .grid .item .content *:last-child {margin-bottom: 0;}
+
+.grid .site,
+.grid .full,
+.grid .tight{
+	width: auto;
+	margin-left: 0;
+    margin-right: 0;
+}
