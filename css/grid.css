@@ -45,10 +45,6 @@
 .grid .item[start="11"]{grid-column-start: 11;}
 .grid .item[start="12"]{grid-column-start: 12;}
 
-@media (max-width: 735px) {
-	.grid .item[columns]{grid-column: 1/-1;}
-}
-
 .grid .item[rows="1"]{grid-row: span 1;}
 .grid .item[rows="2"]{grid-row: span 2;}
 .grid .item[rows="3"]{grid-row: span 3;}
@@ -67,8 +63,13 @@
 	padding: var(--padding);
 	border-radius: var(--radius-1);
 	background-color: var(--bg-color);
+	background-size: cover;
 	color: var(--fg-color);
 	border: var(--border);
+}
+
+@media (max-width: 735px) {
+	.grid .item[columns]{grid-column: 1/-1;}
 }
 
 .grid .item .content p,

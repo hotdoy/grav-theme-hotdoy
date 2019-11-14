@@ -4,7 +4,6 @@
 {% if theme.marquee_content %}
 	<div class="marquee" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}">
 	{{ theme.marquee_content|markdown }}
-	{# <span class="material-icons close">close</span> #}
 	</div>
 {% endif %}
 

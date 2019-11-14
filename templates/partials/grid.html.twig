@@ -2,6 +2,7 @@
 {% set columns = columns|default(page.header.columns) %}
 {% set border = border|default(page.header.border) %}
 {% set padding = padding|default(page.header.padding) %}
+{% set gutter = gutter|default(page.header.gutter) %}
 {% set style %}
 {% if border %}--border:{{ border }};{% endif %}
 {% if padding %}--padding:{{ padding }};{% endif %}
@@ -9,6 +10,6 @@
 
 <section class="grid site {{ rythm }}" columns="{{ columns }}" style="{{ style }}">
 	{% for module in page.collection() %}
-	{{ module.content }}
+		{{ module.content }}
 	{% endfor %}
 </section>

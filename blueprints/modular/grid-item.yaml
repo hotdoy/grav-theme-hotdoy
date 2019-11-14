@@ -40,17 +40,6 @@ form:
               type: section
               title: Module Options
 
-            header.image:
-              type: filepicker
-              label: Image
-              preview_images: true
-              accept:
-                - .jpg
-                - .png
-                - .svg
-                - .gif
-                - .webp
-
             header.columns:
               type: range
               label: Columns

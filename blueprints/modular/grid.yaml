@@ -15,14 +15,6 @@ form:
               type: section
               title: Theme
 
-            header.border:
-              type: text
-              label: Border
-
-            header.padding:
-              type: text
-              label: Padding
-
             module-options:
               type: section
               title: Module Options
@@ -34,6 +26,14 @@ form:
               validate:
                 min: 1
                 max: 12
+
+            header.border:
+              type: text
+              label: Border
+
+            header.padding:
+              type: text
+              label: Padding
 
             header.rythm:
               type: toggle
