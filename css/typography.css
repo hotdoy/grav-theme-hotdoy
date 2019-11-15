@@ -37,29 +37,6 @@ p em{
 	font-family: var(--font-base-italic);
 }
 
-ul{
-	list-style: none;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-ul li:before{
-	content: " ";
-    width: 16px;
-    color: var(--bg-color-alt);
-    height: 16px;
-    background-image: url('../images/li.svg');
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    transform: translate(-2rem, 4px);
-}
-
-ul li{
-	padding: 0 var(--gutter) 0 var(--gutter);
-	margin-top: 0.5rem;
-}
-
 blockquote{
 	font-family: var(--font-alt);
 	font-size: x-large;
