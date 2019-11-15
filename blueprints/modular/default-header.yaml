@@ -1,4 +1,4 @@
-title: Default Header
+title: default-header
 '@extends': module
 
 form:
