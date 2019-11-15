@@ -140,3 +140,8 @@ a.nav-link:hover {
     from {opacity: 0; transform: translateY(100px);}
     to {opacity: 1; transform: translateY(0);}
 }
+
+
+.site-header .cart .cart-icon{
+    transform: translateY(6px);
+}

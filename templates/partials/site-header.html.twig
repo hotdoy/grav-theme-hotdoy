@@ -7,6 +7,14 @@
     {# nav desktop #}
     <nav class="site-nav landscape">
 		{% include '/partials/navigation.html.twig' %}
+         {% if theme.snipcart_api_key %}
+        <a class="snipcart-checkout nav-link">
+            <div class="cart">
+                <span class="material-icons cart-icon">shopping_cart</span>
+                <span class="snipcart-items-count"></span>
+            </div>
+        </a>
+        {% endif %}
     </nav>
 
     {# nav mobile #}
@@ -15,6 +23,14 @@
    	<nav class="mobile-nav-panel portrait">
         <div class="material-icons mobile-nav-close">close</div>
 		{% include '/partials/navigation.html.twig' %}
+         {% if theme.snipcart_api_key %}
+        <a class="snipcart-checkout nav-link">
+            <div class="cart">
+                <span class="material-icons cart-icon">shopping_cart</span>
+                <span class="snipcart-items-count"></span>
+            </div>
+        </a>
+        {% endif %}
     </nav>
 
 </header>
