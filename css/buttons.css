@@ -1,6 +1,8 @@
-a {
+a,
+button {
 	color: var(--bg-color-alt);
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .button{
@@ -10,7 +12,9 @@ a {
 	margin-bottom: 0.5rem;
 }
 
-.button>a{
+.button>a,
+button.button{
+	border: none;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -34,7 +38,8 @@ a {
 	padding-left: 5px;
 }
 
-.button.solid>a{
+.button.solid>a,
+button.button.solid{
 	text-align: center;
 	width: 100%;
 	display: flex;
@@ -48,12 +53,19 @@ a {
     transition: transform 0.1s, box-shadow 0.1s;
 }
 
-.button.solid>a:hover {
+button.button.solid{
+	width: auto;
+	margin: var(--rythm) auto;
+}
+
+.button.solid>a:hover,
+button.button.solid:hover {
 	box-shadow: var(--shadow-2);
 	transform: translateY(-2px);
 }
 
-.button.solid>a:active {
+.button.solid>a:active
+button.button.solid:active {
 	box-shadow: var(--shadow-1);
 	transform: translateY(0px);
 	transition: transform 0.1s, box-shadow 0.2s, opacity 0.2s;

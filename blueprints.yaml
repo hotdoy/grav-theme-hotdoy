@@ -101,6 +101,11 @@ form:
       type: text
       label: Facebook App Id
 
+    # snipcart_api_key:
+    #   type: text
+    #   label: Snipcart API Key
+    #   default: 'MDU0OGM2YjItMzZiZS00MjQ4LWJiNGQtOGVlYjE4ODAxMWVhNjM3MDEwNjY5ODU4OTU2Mzkx'
+
     marquee:
       type: section
       title: Marquee 

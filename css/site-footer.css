@@ -10,3 +10,9 @@ footer .copyright{
 	opacity: 0.5;
 
 }
+
+footer .green-hosting-badge{
+	width: 150px;
+    display: block;
+    margin: 0 auto;    
+}
