@@ -1,0 +1,14 @@
+title: product
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+
+            header.allo:
+              type: text
+              label: Hello World
+              default: Products with Snipcart are comming soon!
