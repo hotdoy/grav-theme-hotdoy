@@ -1,3 +1,9 @@
+# v1.2.2
+##  14/11/2019
+1. [Improved](#improved)
+* Added equal row height option in Grid.
+* General grid css maintenance.
+
 # v1.2.1
 ##  12/11/2019
 1. [Improved](#improved)
