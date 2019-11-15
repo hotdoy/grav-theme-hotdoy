@@ -27,6 +27,15 @@ form:
                 min: 1
                 max: 12
 
+            header.grid_auto_row:
+              label: Equal row height
+              type: toggle
+              highlight: False
+              default: False
+              options: 
+                false: 'False'
+                true: 'True'
+
             header.border:
               type: text
               label: Border

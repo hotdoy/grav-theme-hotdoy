@@ -1,5 +1,6 @@
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
 {% set columns = columns|default(page.header.columns) %}
+{% set grid_auto_row = grid_auto_row|default(page.header.grid_auto_row) %}
 {% set border = border|default(page.header.border) %}
 {% set padding = padding|default(page.header.padding) %}
 {% set gutter = gutter|default(page.header.gutter) %}
@@ -8,7 +9,7 @@
 {% if padding %}--padding:{{ padding }};{% endif %}
 {% endset %}
 
-<section class="grid site {{ rythm }}" columns="{{ columns }}" style="{{ style }}">
+<section class="grid site {{ rythm }} {% if grid_auto_row %}grid_auto_row{% endif %}" tcolumns="{{ columns }}" style="{{ style }}">
 	{% for module in page.collection() %}
 		{{ module.content }}
 	{% endfor %}
