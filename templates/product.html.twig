@@ -6,38 +6,34 @@
  	{# header #}
 	{% include 'partials/default-header.html.twig' with{'reveal_title': 'fadeinfrombottom delay-100 duration-500'} %}
 
-  	<div class="product-ctn site rythm">
+	{# image #}
+	<div class="content tight rythm">
+		{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
+		{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'reveal': 'fadeinfrombottom delay-150 duration-500' } %}
+	</div>
 
-		{# Images #}
-		<div class="images" data-reveal="fadeinfrombottom delay-150 duration-500">
-			{% for media in page.media %}
-				{{ media.html() }}
-			{% endfor %}
-		</div>
-
-		{# Content #}
-		<div class="content" data-reveal="fadeinfrombottom delay-200 duration-500">
-
-	  		{{ page.content }}
-
-		  	<div class="button solid buy">
-				<a class="snipcart-add-item"
-				data-item-id="{{ page.title }}"
-				data-item-price="{{ page.header.price }}"
-				data-item-url="{{ page.url }}"
-				data-item-description="{{ page.header.description }}"
-				data-item-image="{{ page.media|first().url }}"
-				data-item-name="{{ page.title }}">
-				Buy {{ page.title }}
-				</a>
-		  	</div>
-
+	{# buy button #}
+	<div class="content tight rythm-half" data-reveal="fadeinfrombottom delay-100 duration-500">
+		<div class="button solid buy-button">
+			<a class="snipcart-add-item"
+			data-item-id="{{ page.title }}"
+			data-item-price="{{ page.header.price }}"
+			data-item-url="{{ page.url }}"
+			data-item-description="{{ page.header.description }}"
+			data-item-image="{{ image.url }}"
+			data-item-name="{{ page.title }}">
+			Buy {{ page.title }}
+			</a>
 		</div>
 	</div>
-</section>
-<section class="modular">
+
+	{# content #}
+	<div class="content rythm-half" data-reveal="fadeinfrombottom delay-100 duration-500">{{ page.content }}</div>
+
+	{# modules #}
 	{% for module in page.collection() %}
 	{{ module.content }}
 	{% endfor %}
+
 </section>
 {% endblock %}

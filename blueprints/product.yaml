@@ -1,5 +1,5 @@
 title: product
-'@extends': modular
+'@extends': default
 
 form:
   fields:
@@ -13,15 +13,23 @@ form:
               validate:
                 required: true
 
-            header.media_order:
-              label: Images
+            section_product:
+              type: section
+              title: Product
+
+            header.image:
+              type: filepicker
+              label: Product Image
+              preview_images: true
               validate:
                 required: true
+              accept:
+                - .jpg
 
             header.price:
               type: number
               label: Price
-              help: The price of the product. Note that you must use a ```.``` as decimal separator.
+              help: The price of the product. Note that you must use a "." as decimal separator.
               validate:
                 required: true
 
@@ -30,3 +38,26 @@ form:
               label: Short Description
               validate:
                 required: true
+
+            section_modular:
+              type: section
+              title: Modular
+
+            header.content.items:
+              type: text
+              label: PLUGIN_ADMIN.ITEMS
+              default: '@self.modular'
+              size: medium
+
+            header.content.order.by:
+              type: text
+              label: PLUGIN_ADMIN.ORDER_BY
+              placeholder: folder
+              size: small
+
+            header.content.order.dir:
+              type: text
+              label: PLUGIN_ADMIN.ORDER
+              help: '"desc" or "asc" are valid values'
+              placeholder: acs
+              size: small

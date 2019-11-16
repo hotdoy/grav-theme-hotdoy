@@ -3,68 +3,6 @@
 	position: absolute;
 }
 
-.product{
-	color: var(--fg-color);
-	position: relative;
-	z-index: 1000;
-}
-
-.product-ctn{
-	display: flex;
-	align-items: flex-start;
-}
-
-.product .images{
-	width: 50%;
-}
-
-.product .images>img{
-	width: 100%;
-}
-
-.product .content{
-	width: 50%;
-	position: sticky;
-	top: var(--rythm);
-	overflow-y: auto;
-}
-
-.product .buy{
+.product .buy-button{
 	display: block;
-	margin: 2rem auto 2rem auto;
-	max-width: var(--width-tight);
 }
-
-@media (max-width: 735px) {
-	.product-ctn{
-		flex-wrap: wrap;
-	}
-
-	.product .images{
-		width: 100%;
-		display: flex;
-    	overflow-x: auto;
-    	scroll-snap-type: x;
-	}
-
-	.product .images>img{
-		scroll-snap-align: center;
-	}
-
-	.product .content{
-		width: 100%;
-		margin-top: var(--rythm);
-	}
-}
-
-	.product .content p,
-	.product .content h1,
-	.product .content h2,
-	.product .content h3,
-	.product .content h4,
-	.product .content h5,
-	.product .content h6,
-	.product .content ul{
-		padding-left: 0;
-		padding-right: 0;
-	}
