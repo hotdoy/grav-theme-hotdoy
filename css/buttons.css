@@ -6,7 +6,7 @@ button {
 }
 
 .button{
-	display: block;
+	display: inline-block;
 	margin-top: 1rem;
 }
 
