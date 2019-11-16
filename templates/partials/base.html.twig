@@ -27,8 +27,6 @@
         {% block page_content %}{% endblock %}
        
         <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
-        <script src="https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.js"></script>
-        
         {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
         {{ assets.js('after')|raw }}
     </body>

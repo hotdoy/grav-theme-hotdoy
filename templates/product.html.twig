@@ -3,21 +3,40 @@
 {% block page_content %}
 <section class="product">
 
-	{# header #}
-	{% include 'partials/default-header.html.twig' with{'reveal_title': 'fadeinfrombottom delay-100 duration-500'} %}
+  {# header #}
+  {% include 'partials/default-header.html.twig' with{'reveal_title': 'fadeinfrombottom delay-100 duration-500'} %}
 
-	{# content #}
-	{% include 'partials/content.html.twig' with{'reveal': 'fadeinfrombottom delay-150 duration-500'} %}
+  <div class="product-ctn rythm">
 
-    <button class="snipcart-add-item button solid"
-      data-item-id="starry-night"
-      data-item-price="79.99"
-      data-item-url="{{ page.url }}/"
-      data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-      data-item-image="https://demo.snipcart.com/assets/images/starry-night.jpg"
-      data-item-name="The Starry Night">
-      Add to cart
-    </button>
+  {# Images #}
+  <div class="images">
+    {% for media in page.media %}
+      {{ media.html() }}
+    {% endfor %}
+  </div>
+
+  {# Content #}
+  <div class="content">
+    {{ page.content }}
+
+    <div class="button solid">
+      <a class="snipcart-add-item"
+      data-item-id="{{ page.title }}"
+      data-item-price="{{ page.header.price }}"
+      data-item-url="{{ page.url }}"
+      data-item-description="{{ page.header.description }}"
+      data-item-image="{{ page.media|first().url }}"
+      data-item-name="{{ page.title }}">
+      Buy {{ page.title }}
+      </a>
+    </div>
+
+  </div>
+
+  </div>
+
+
+
 
 </section>
 {% endblock %}

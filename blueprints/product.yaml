@@ -8,7 +8,25 @@ form:
         content:
           fields:
 
-            header.allo:
+            header.title:
+              label: Name
+              validate:
+                required: true
+
+            header.media_order:
+              label: Images
+              validate:
+                required: true
+
+            header.price:
+              type: number
+              label: Price
+              help: The price of the product. Note that you must use a ```.``` as decimal separator.
+              validate:
+                required: true
+
+            header.description:
               type: text
-              label: Hello World
-              default: Products with Snipcart are comming soon!
+              label: Short Description
+              validate:
+                required: true

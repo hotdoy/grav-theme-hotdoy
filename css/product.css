@@ -1,4 +1,48 @@
 #snipcart{
 	z-index: 9000;
+	position: absolute;
+}
+
+.product{
+	color: var(--fg-color);
 	position: relative;
+	z-index: 1000;
+}
+
+.product-ctn{
+	display: flex;
+	align-items: flex-start;
+}
+
+.product .images{
+	width: 50%;
+}
+
+.product .images>img{
+	width: 100%;
+}
+
+.product .content{
+	width: 50%;
+	position: sticky;
+	top: var(--rythm);
+	margin-top: var(--rythm);
+}
+
+.product .content > *{
+	margin-left: 2rem;
+}
+
+@media (max-width: 735px) {
+	.product-ctn{
+		flex-wrap: wrap;
+	}
+
+	.product .images{
+		width: 100%;
+	}
+
+	.product .content{
+		width: 100%;
+	}
 }

@@ -7,6 +7,7 @@
 	{% do assets.addJs('theme://js/form.js', { group:'after' }) %}
 	{% do assets.addJs('theme://js/links.js', { group:'after'}) %}
 	{# {% do assets.addJs('theme://js/slow3g.js', { group:'after'}) %} #}
+	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.js', { group:'after'}) %}
 	{% do assets.addJs('theme://js/site-loader.js', { group:'after', priority: 0 }) %}
 {% endblock %}
 

@@ -5,7 +5,7 @@ form:
   fields:
     tabs:
       fields:
-        # content:
+        content:
         #   fields:
         #     content:
         #         unset@: true
