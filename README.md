@@ -1,6 +1,6 @@
 > Should be merging the Snipcart branch pretty soon! 
-A complete pass will be made on all basic styles and structures, mainly to ensure a more simple approach to the "content" context
-(most of the markdowns). If youawnt to use this theme, you better wait a week or two. I'll break stuff for sure.
+And then a complete pass will be made on all basic styles and structures, mainly to ensure a more simple approach to the "content" context
+(most of the markdowns). If you awnt to use this theme, better wait a week or two.
 
 # Hotdoy Theme
 
