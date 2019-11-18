@@ -7,13 +7,21 @@
 	{% include 'partials/default-header.html.twig' with{'reveal_title': 'fadeinfrombottom delay-100 duration-500'} %}
 
 	{# image #}
-	<div class="content tight rythm">
+	<div class="tight rythm">
 		{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
-		{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'reveal': 'fadeinfrombottom delay-150 duration-500' } %}
+		{% include '/partials/img.html.twig' with {'image': image, 'class': 'product-image', 'reveal': 'fadeinfrombottom delay-150 duration-500' } %}
+	</div>
+
+	{# price #}
+	<div class="tight product-price" data-reveal>
+		<div>
+			{{ page.header.price|number_format(2) }} CAD
+			<span>+taxes and shipping</span>
+		</div>
 	</div>
 
 	{# buy button #}
-	<div class="content tight rythm-half" data-reveal="fadeinfrombottom delay-100 duration-500">
+	<div class="tight" data-reveal="fadeinfrombottom delay-100 duration-500">
 		<div class="button solid buy-button">
 			<a class="snipcart-add-item"
 			data-item-id="{{ page.title }}"
@@ -28,7 +36,7 @@
 	</div>
 
 	{# content #}
-	<div class="content rythm-half" data-reveal="fadeinfrombottom delay-100 duration-500">{{ page.content }}</div>
+	<div class="content" data-reveal="fadeinfrombottom delay-100 duration-500">{{ page.content }}</div>
 
 	{# modules #}
 	{% for module in page.collection() %}
