@@ -8,7 +8,7 @@
 {% set reveal_media = reveal_media|default('fadeinfrombottom delay-100 duration-500') %}
 
 <section class="module hero site {{ rythm }}">
-	<div class="hero__ctn {% if reverse %}reverse{% endif %}">
+	<div class="hero__ctn {% if reverse %}hero--reverse{% endif %}">
 
 		{% block content %}
 			<div class="hero__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
