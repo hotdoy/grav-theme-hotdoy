@@ -15,33 +15,35 @@
 {% set computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
 {% set computed_style =  computed_bg_position ~ computed_bg_fit%}
 
-<section class="splash full {{ rythm }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %}">
+<section class="module splash full {{ rythm }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %}">
 
-	{% block bg_veil %}
-		{% if bg_veil %}
-		<div class="veil" style="opacity:{{bg_veil}};"></div>
-		{% endif %}
-	{% endblock %} 
-	
-	{% block image %}
-		{% if bg_image and not bg_video %}
-		{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'bg-image', 'alt': bg_image_alt, 'style': computed_style , 'reveal': reveal_media} %}
-		{% endif %}
-	{% endblock %}
+	<div class="splash__ctn site">
+		{% block bg_veil %}
+			{% if bg_veil %}
+			<div class="splash__veil" style="opacity:{{bg_veil}};"></div>
+			{% endif %}
+		{% endblock %} 
+		
+		{% block image %}
+			{% if bg_image and not bg_video %}
+			{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': computed_style , 'reveal': reveal_media} %}
+			{% endif %}
+		{% endblock %}
 
-	{% block video %}
-		{% if bg_video %}
-		<video class="bg-video" data-reveal="{{ reveal_media }}" autoplay="autoplay" muted="muted"
-		{% if bg_loop %} loop="loop" {% endif %} 
-		{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
-		style="{{ computed_style }}">
-		{% if bg_video %}<source src="{{ bg_video.url }}" type="video/mp4">{% endif %}
-		</video>
-		{% endif %}
-	{% endblock %}
+		{% block video %}
+			{% if bg_video %}
+			<video class="splash__video" data-reveal="{{ reveal_media }}" autoplay="autoplay" muted="muted"
+			{% if bg_loop %} loop="loop" {% endif %} 
+			{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
+			style="{{ computed_style }}">
+			{% if bg_video %}<source src="{{ bg_video.url }}" type="video/mp4">{% endif %}
+			</video>
+			{% endif %}
+		{% endblock %}
 
-	{% block content %}
-		<div class="content-ctn site" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
-	{% endblock %}
+		{% block content %}
+			<div class="site splash__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
+		{% endblock %}
+	</div>
 	
 </section>
