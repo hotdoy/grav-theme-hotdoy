@@ -1,7 +1,3 @@
-> Should be merging the Snipcart branch pretty soon! 
-And then a complete pass will be made on all basic styles and structures, mainly to ensure a more simple approach to the "content" context
-(most of the markdowns). If you awnt to use this theme, better wait a week or two.
-
 # Hotdoy Theme
 
 ![alt text](https://raw.githubusercontent.com/hotdoy/grav-theme-hotdoy/master/screenshot.jpg)
@@ -64,6 +60,7 @@ Organization:               # A collection of field describing your organization
 google_tracking_id:         # Google analytics id
 facebook_app_id:            # Facebook App Id
 marquee:                    # A collection of field to add a small marquee at the top of every page.
+snipcart:                   # Snipcart Id for eCommerce integration.
 ```
 
 To make modifications, you can copy the `user/themes/hotdoy/hotdoy.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
@@ -118,18 +115,6 @@ You can learn more about this on [Github](https://github.com/hotdoy/reveal.js/bl
 ### links.js
 Small link manager. Mostly to add or remove attributes.
 Add ```target="_blank"``` to link starting with ```http``` by default.
-
-### slow3g.js
-User facing utilities for slow networks.
-
-**slow3g.js**  
-Warn users 2 seconds after a link is clicked if nothing happens by adding a full page overlay blocking further interaction and preventing more request.
-
-**slow3g.html.twig**  
-Slow network message template.
-
-**slow3g.css**  
-Styles for the message template.
 
 ### site-header.js
 Default site header / menu.
