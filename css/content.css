@@ -8,15 +8,7 @@
 .content h3,
 .content h4,
 .content h5,
-.content h6{
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: var(--gutter);
-	padding-right: var(--gutter);
-	max-width: var(--width-tight);
-}
-
-.content blockquote,
+.content h6,
 .content ul{
 	margin-left: auto;
 	margin-right: auto;
@@ -25,10 +17,12 @@
 	max-width: var(--width-tight);
 }
 
-@media (max-width: 735px) {
-	.content ul{
-		padding-left: calc(var(--gutter)*3);
-	}
+.content blockquote{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+	max-width: var(--width-tight);
 }
 
 .content > *:last-child {
@@ -54,7 +48,8 @@
 	.content h3,
 	.content h4,
 	.content h5,
-	.content h6{
+	.content h6,
+	.content ul{
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -144,24 +139,6 @@
 }
 
 .content ul{
-	list-style: none;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-.content ul li:before{
-	content: " ";
-    width: 16px;
-    color: var(--bg-color-alt);
-    height: 16px;
-    background-image: url('../images/li.svg');
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    transform: translate(-2rem, 4px);
-}
-
-.content ul li{
-	padding: 0 var(--gutter) 0 var(--gutter);
-	margin-top: 0.5rem;
+	list-style-type: disc;
+	list-style-position: inside;
 }

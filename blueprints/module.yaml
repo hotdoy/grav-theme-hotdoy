@@ -8,7 +8,7 @@ form:
         # content:
         #   fields:
         #     content:
-        #         unset@: true
+        #       unset@: true
         options:
           fields:
             taxonomies:

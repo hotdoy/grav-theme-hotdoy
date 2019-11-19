@@ -20,15 +20,12 @@
 
     <body style="{% include 'partials/theme.html.twig' %}">
         {% block site_loader %}{% include 'partials/site-loader.html.twig' %}{% endblock %}
-        {% block marquee %}{% include 'partials/marquee.html.twig' %}{% endblock %} 
+        {% block site_marquee %}{% include 'partials/marquee.html.twig' %}{% endblock %} 
         {% block site_header %}{% include 'partials/site-header.html.twig' %}{% endblock %} 
-        {% block slow3g %}{% include 'partials/slow3g.html.twig' %}{% endblock %} 
 
         {% block page_content %}{% endblock %}
        
-        {# <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div> #}
-        {#<script src="https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.js"></script>#}
-        
+        <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
         {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
         {{ assets.js('after')|raw }}
     </body>

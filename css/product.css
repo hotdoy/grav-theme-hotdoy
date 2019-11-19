@@ -1,0 +1,28 @@
+#snipcart{
+	z-index: 9000;
+	position: absolute;
+}
+
+.product{
+
+}
+
+.product__image{
+	width: 100%;
+}
+
+.product__price{
+	font-family: var(--font-alt);
+	margin: 2rem auto;
+    font-size: 2em;
+}
+
+
+.product__price--sup{
+    font-size: 16px;
+}
+
+.product__buy{
+	display: block !important;
+	margin: 2rem auto;
+}

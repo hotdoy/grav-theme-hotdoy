@@ -7,15 +7,15 @@
 {% set reveal_content = reveal_content|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_media = reveal_media|default('fadeinfrombottom delay-100 duration-500') %}
 
-<section class="hero site {{ rythm }}">
-	<div class="ctn {% if reverse %}reverse{% endif %}">
+<section class="module hero site {{ rythm }}">
+	<div class="hero__ctn {% if reverse %}reverse{% endif %}">
 
 		{% block content %}
-			<div class="content-ctn" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
+			<div class="hero__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
 		{% endblock %}
 		
 		{% block media %}
-			<div class="media-ctn" data-reveal="{{ reveal_media }}">	
+			<div class="hero__media" data-reveal="{{ reveal_media }}">	
 				{% if video %}
 				<video autoplay="autoplay" muted="muted" loop="loop" {% if image %}poster="{{ image.url }}"{% endif %}>
 					<source src="{{ video.url }}" type="video/mp4">
