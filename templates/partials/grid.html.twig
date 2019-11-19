@@ -9,7 +9,7 @@
 {% if padding %}--padding:{{ padding }};{% endif %}
 {% endset %}
 
-<section class="grid site {{ rythm }} {% if grid_auto_row %}grid--auto_row{% endif %}" tcolumns="{{ columns }}" style="{{ style }}">
+<section class="module grid site {{ rythm }} {% if grid_auto_row %}grid--auto_row{% endif %}" tcolumns="{{ columns }}" style="{{ style }}">
 	{% for module in page.collection() %}
 		{{ module.content }}
 	{% endfor %}
