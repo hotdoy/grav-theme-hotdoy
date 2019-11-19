@@ -2,7 +2,7 @@
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm-half') %}
 {% set reveal_title = reveal_title|default('fadeinfrombottom delay-150 duration-500') %}
 
-<section class="default-header {{ rythm }}">
+<section class="default-header tight {{ rythm }}">
 	{% block title %}
 		<h1 {% if reveal_title %}data-reveal="{{ reveal_title }}"{% endif %}>{{ title }}</h1>
 	{% endblock %}
