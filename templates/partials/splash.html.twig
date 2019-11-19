@@ -8,7 +8,7 @@
 {% set min_height = min_height|default(page.header.min_height) %}
 {% set bg_loop = bg_loop|default(page.header.bg_loop) %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
-{% set reveal_media = reveal_media|default('scalein delay-500 duration-5000') %}
+{% set reveal_media = reveal_media|default('') %}
 {% set reveal_content = reveal_content|default('fadeinfromtop delay-0 duration-2000') %}
 
 {% set computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
