@@ -18,7 +18,7 @@
 	animation-timing-function: var(--transition-timing-1);
 }
 @keyframes fadeinfromtop {
-	from {opacity: 0; transform: translateY(-15px);}
+	from {opacity: 0; transform: translateY(-50px);}
 	to {opacity: 1;}
 }
 
