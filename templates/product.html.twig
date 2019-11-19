@@ -9,20 +9,18 @@
 	{# image #}
 	<div class="tight rythm">
 		{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
-		{% include '/partials/img.html.twig' with {'image': image, 'class': 'product-image', 'reveal': 'fadeinfrombottom delay-150 duration-500' } %}
+		{% include '/partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': 'fadeinfrombottom delay-150 duration-500' } %}
 	</div>
 
 	{# price #}
-	<div class="tight product-price">
-		<div>
-			{{ page.header.price|number_format(2) }} CAD
-			<span>+taxes and shipping</span>
-		</div>
+	<div class="tight product__price">
+		{{ page.header.price|number_format(2) }} CAD
+		<span class="product__price--sup">+taxes and shipping</span>
 	</div>
 
 	{# buy button #}
 	<div class="tight">
-		<div class="button solid buy-button">
+		<div class="button solid product__buy">
 			<a class="snipcart-add-item"
 			data-item-id="{{ page.title }}"
 			data-item-price="{{ page.header.price }}"

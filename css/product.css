@@ -3,26 +3,26 @@
 	position: absolute;
 }
 
+.product{
 
-.product .product-image{
+}
+
+.product__image{
 	width: 100%;
 }
 
-.product .buy-button{
-	display: block;
-	margin: 2rem auto;
-}
-
-
-.product .product-price>div{
+.product__price{
 	font-family: var(--font-alt);
 	margin: 2rem auto;
     font-size: 2em;
 }
 
 
-.product .product-price span{
-    font-family: var(--font-alt);
+.product__price--sup{
     font-size: 16px;
 }
 
+.product__buy{
+	display: block !important;
+	margin: 2rem auto;
+}
