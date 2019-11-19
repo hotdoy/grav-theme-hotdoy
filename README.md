@@ -1,4 +1,4 @@
-> **SNIPCART WARNING** : The newest version of Snipcart that comes with the theme seems to have some issues. I will be contacting them  to try to figure out if something can be done on my side
+> **SNIPCART WARNING** : The newest version of Snipcart that comes with the theme seems to have some issues. I will be contacting them  to try and figure out if something can be done on my side.
 
 # Hotdoy Theme
 
