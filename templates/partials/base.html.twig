@@ -24,8 +24,11 @@
         {% block site_header %}{% include 'partials/site-header.html.twig' %}{% endblock %} 
 
         {% block page_content %}{% endblock %}
-       
-        <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
+        
+        {% if theme.snipcart_api_key %}
+            <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
+        {% endif %}
+        
         {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
         {{ assets.js('after')|raw }}
     </body>

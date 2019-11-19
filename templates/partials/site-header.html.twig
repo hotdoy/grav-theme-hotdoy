@@ -8,12 +8,11 @@
     <nav class="site-nav landscape">
 		{% include '/partials/navigation.html.twig' %}
          {% if theme.snipcart_api_key %}
-        <a class="snipcart-checkout nav-link">
-            <div class="cart">
-                <span class="material-icons cart-icon">shopping_cart</span>
-                {# <span class="snipcart-items-count"></span> #}
-            </div>
-        </a>
+            <a class="snipcart-checkout nav-link">
+                <div class="cart">
+                    <span class="material-icons cart-icon">shopping_cart</span>
+                </div>
+            </a>
         {% endif %}
     </nav>
 
@@ -24,12 +23,12 @@
         <div class="material-icons mobile-nav-close">close</div>
 		{% include '/partials/navigation.html.twig' %}
          {% if theme.snipcart_api_key %}
-        <a class="snipcart-checkout nav-link">
-            <div class="cart">
-                <span class="material-icons cart-icon">shopping_cart</span>
-                <span class="snipcart-items-count"></span>
-            </div>
-        </a>
+            <a class="snipcart-checkout nav-link">
+                <div class="cart">
+                    <span class="material-icons cart-icon">shopping_cart</span>
+                    <span class="snipcart-items-count"></span>
+                </div>
+            </a>
         {% endif %}
     </nav>
 
