@@ -20,30 +20,31 @@
 {% set img_computed_style =  img_computed_bg_position ~ img_computed_bg_fit%}
 
 <section class="module splash full {{ rythm }}" style="{{ module_computed_style }}">
+
+	{% block bg_veil %}
+		{% if bg_veil %}
+		<div class="splash__veil" style="opacity:{{bg_veil}};"></div>
+		{% endif %}
+	{% endblock %} 
+	
+	{% block image %}
+		{% if bg_image and not bg_video %}
+		{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_style , 'reveal': reveal_media} %}
+		{% endif %}
+	{% endblock %}
+
+	{% block video %}
+		{% if bg_video %}
+		<video class="splash__video" data-reveal="{{ reveal_media }}" autoplay="autoplay" muted="muted"
+		{% if bg_loop %} loop="loop" {% endif %} 
+		{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
+		style="{{ computed_style }}">
+		{% if bg_video %}<source src="{{ bg_video.url }}" type="video/mp4">{% endif %}
+		</video>
+		{% endif %}
+	{% endblock %}
+
 	<div class="splash__ctn site">
-		{% block bg_veil %}
-			{% if bg_veil %}
-			<div class="splash__veil" style="opacity:{{bg_veil}};"></div>
-			{% endif %}
-		{% endblock %} 
-		
-		{% block image %}
-			{% if bg_image and not bg_video %}
-			{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_style , 'reveal': reveal_media} %}
-			{% endif %}
-		{% endblock %}
-
-		{% block video %}
-			{% if bg_video %}
-			<video class="splash__video" data-reveal="{{ reveal_media }}" autoplay="autoplay" muted="muted"
-			{% if bg_loop %} loop="loop" {% endif %} 
-			{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
-			style="{{ computed_style }}">
-			{% if bg_video %}<source src="{{ bg_video.url }}" type="video/mp4">{% endif %}
-			</video>
-			{% endif %}
-		{% endblock %}
-
 		{% block content %}
 			<div class="site splash__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
 		{% endblock %}
