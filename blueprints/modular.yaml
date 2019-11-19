@@ -12,9 +12,9 @@ form:
               type: section
               title: Theme
 
-            header.browser_color:
+            header.meta_theme:
               type: colorpicker
-              label: Browser Color
+              label: Meta Theme
            
             header.bg_color:
               type: colorpicker

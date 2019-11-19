@@ -19,9 +19,9 @@ form:
       type: section
       title: Theme
 
-    browser_color:
+    meta_theme:
       type: colorpicker
-      label: Browser Color
+      label: Meta Theme
    
     bg_color:
       type: colorpicker

@@ -29,7 +29,8 @@
 {% endfor %}
 
 {# Android Meta Theme Color #}
-{% if theme.browser_color %}<meta name="theme-color" content="{{ theme.browser_color }}">{% endif %}
+{% set meta_theme = meta_theme|default(page.header.meta_theme ?? theme.meta_theme) %}
+{% if meta_theme %}<meta name="theme-color" content="{{ meta_theme }}">{% endif %}
 
 {# Facebook App ID #}
 {% if theme.facebook_app_id %}<meta property="fb:app_id" content="{{ theme.facebook_app_id }}">{% endif %}
