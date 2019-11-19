@@ -28,7 +28,7 @@
 	margin-bottom: 0;
 }
 
-.drawer__summary__title:focus{
+.drawer__summary:focus{
 	outline: 0;
 }
 
