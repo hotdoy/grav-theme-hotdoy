@@ -6,16 +6,24 @@
 {% set reveal_detail = reveal_detail|default('fadeinfromtop delay-0 duration-500') %}
 
 <section class="drawers site {{ rythm }}">
-	{% if title %}<h2 class="title" data-reveal="{{ reveal_title }}">{{title}}</h2>{% endif %}
+
+	{% if title %}
+		<h2 class="drawers__title" data-reveal="{{ reveal_title }}">{{title}}</h2>
+	{% endif %}
+
 	{% for item in items %}
-	<details class="item" data-reveal="{{ reveal_drawer }}">
-		<summary class="noselect">
-			<h3>{{ item.summary }}</h3>
-			{% block icon %}
-				<i class="material-icons">keyboard_arrow_down</i>
-			{% endblock %}
-		</summary>
-		<div class="content {{ reveal_detail }}">{{ item.detail|markdown }}</div>
-	</details>
+		<details class="drawer__detail" data-reveal="{{ reveal_drawer }}">
+			
+			<summary class="noselect drawer__summary">
+
+				<h3 class="drawer__summary__title">{{ item.summary }}</h3>
+				{% block icon %}
+					<i class="material-icons drawer__summary__icon">keyboard_arrow_down</i>
+				{% endblock %}
+			</summary>
+
+			<div class="drawer__content {{ reveal_detail }}">{{ item.detail|markdown }}</div>
+
+		</details>
 	{% endfor %}
 </section>

@@ -3,11 +3,11 @@
 	z-index: 1000;
 }
 
-.drawers h2.title{
+.drawers__title{
 	margin-bottom: 1rem;
 }
 
-.drawers .item{
+.drawer__detail{
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 1rem;
@@ -16,7 +16,7 @@
 	box-sizing: content-box;
 }
 
-.drawers summary{
+.drawer__summary{
 	font-family: var(--font-alt);
 	display: flex;
 	padding-right: 3rem;
@@ -24,52 +24,51 @@
     cursor: pointer;
 }
 
-.drawers summary>h3{
+.drawer__summary__title{
 	margin-bottom: 0;
 }
 
-.drawers summary:focus{
+.drawer__summary__title:focus{
 	outline: 0;
 }
 
-.drawers summary *{
+.drawer__summary *{
 	display: inline;
 }
 
-summary::-webkit-details-marker {
+.drawer__summary::-webkit-details-marker {
   display: none;
 }
 
-summary i { 
+.drawer__summary__icon { 
 	position: absolute;
-	right: var(--gutter);
+	right: 0;
 	font-weight: normal;
 	transition: all 0.2s;
 }
 
 @media (min-width: 1300px) {
-	summary:after{
+	.drawer__summary:after{
 		right: 0;
 	}
 }
 
-details[open] summary i {
+.drawer__detail[open] .drawer__summary__icon {
 	transform: rotate(180deg);
 }
 
-.drawers .content{
+.drawer__content{
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 
-/*Overwrite regular content width*/
-.drawers .content *{
+.drawer__content *{
 	margin-left: 0;
 	max-width: 90%;
 	padding-left: 0;
     padding-right: 0;
 }
 
-.drawers summary h3{
+.drawer__summary__title{
 	margin-top: 0;
 }
