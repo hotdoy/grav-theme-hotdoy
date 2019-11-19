@@ -1,3 +1,15 @@
+# v1.2.3
+##  18/11/2019
+1. [New](#new)
+* Snipcart integration.
+* Product template.
+* All modules css rewitten using BEM.
+2. [Improved](#improved)
+* All modules are now wrapped.
+* Splash module animation made snappier.
+3. [Bugfix](#bugfix)
+* Fixed blueprint content tab disapearing on some module.
+
 # v1.2.2
 ##  14/11/2019
 1. [Improved](#improved)
