@@ -1,5 +1,7 @@
-{% set fg_color = fg_color|default(page.header.fg_color ?? theme.fg_color) %}
-{% set bg_color = bg_color|default(page.header.bg_color ?? theme.bg_color) %}
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
 {% set bg_video = bg_video|default(page.header.bg_video ? page.media[page.header.bg_video]) %}
 {% set bg_position = bg_position|default(page.header.bg_position ?? '50% 50%') %}
@@ -10,13 +12,14 @@
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
 {% set reveal_media = reveal_media|default('') %}
 {% set reveal_content = reveal_content|default('fadeinfromtop delay-0 duration-2000') %}
+{% set module_computed_style %}
+	{% include '/partials/theme-module.html.twig' %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %} %}
+{% endset %}
+{% set img_computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
+{% set img_computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
+{% set img_computed_style =  img_computed_bg_position ~ img_computed_bg_fit%}
 
-{% set computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
-{% set computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
-{% set computed_style =  computed_bg_position ~ computed_bg_fit%}
-
-<section class="module splash full {{ rythm }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %}">
-
+<section class="module splash full {{ rythm }}" style="{{ module_computed_style }}">
 	<div class="splash__ctn site">
 		{% block bg_veil %}
 			{% if bg_veil %}
@@ -26,7 +29,7 @@
 		
 		{% block image %}
 			{% if bg_image and not bg_video %}
-			{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': computed_style , 'reveal': reveal_media} %}
+			{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_style , 'reveal': reveal_media} %}
 			{% endif %}
 		{% endblock %}
 
@@ -45,5 +48,4 @@
 			<div class="site splash__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
 		{% endblock %}
 	</div>
-	
 </section>

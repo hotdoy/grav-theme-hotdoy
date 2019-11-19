@@ -20,6 +20,14 @@ form:
               type: colorpicker
               label: Foreground Color
 
+            header.bg_color_alt:
+              type: colorpicker
+              label: Alternate Background Color
+
+            header.fg_color_alt:
+              type: colorpicker
+              label: Alternate Foreground Color
+
             Background:
               type: section
               title: Background

@@ -22,31 +22,46 @@ form:
     browser_color:
       type: colorpicker
       label: Browser Color
-      help: The color that browsers should use to customize the display of the page or of the surrounding user interface.
    
     bg_color:
       type: colorpicker
       label: Background Color
-      help: The default background color.
       default: '#ffffff'
 
     fg_color:
       type: colorpicker
       label: Foreground Color
-      help: The default foreground color.
       default: '#313131'
 
     bg_color_alt:
       type: colorpicker
       label: Alternate Background Color
-      help: The alternate background color.
       default: '#673ab7'
 
     fg_color_alt:
       type: colorpicker
       label: Alternate Foreground Color
-      help: The alternate foreground color.
       default: '#ffffff'
+
+    nav_bg_color:
+      type: colorpicker
+      label: Nav Background Color
+      default: 'transparent'
+
+    nav_fg_color:
+      type: colorpicker
+      label: Nav Foreground Color
+      default: '#313131'
+
+    nav_panel_bg_color:
+      type: colorpicker
+      label: Nav Panel Background Color
+      default: '#ffffff'
+
+    nav_panel_fg_color:
+      type: colorpicker
+      label: Nav Panel Foreground Color
+      default: '#313131'
 
     default_radius:
       type: text

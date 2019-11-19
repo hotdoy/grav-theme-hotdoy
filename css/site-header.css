@@ -1,11 +1,3 @@
-html{
-    --nav-fg: var(--fg-color);
-    --nav-bg: transparent;
-    --nav-height: var(--rythm);
-    --nav-panel-fg: var(--fg-color);
-    --nav-panel-bg: var(--bg-color);
-}
-
 .site-header{
     position: relative;
     margin-right: auto;
@@ -14,8 +6,8 @@ html{
     width: var(--width-full);
     max-width: 1920px;
     height: var(--nav-height);
-    color: var(--nav-fg);
-    background-color: var(--nav-bg);
+    color: var(--nav-fg-color);
+    background-color: var(--nav-bg-color);
     z-index: 5000;
     display: flex;
     align-items: center;
@@ -24,7 +16,7 @@ html{
 }
 
 .site-logo{
-    color: var(--nav-fg);
+    color: var(--nav-fg-color);
     text-decoration: none;
 }
 
@@ -81,8 +73,9 @@ a.nav-link:hover {
     position: absolute;
     top: var(--gutter);
     right: var(--gutter);
-    color: var(--bg-color-alt);
+    color: var(--nav-panel-fg-color);
     cursor: pointer;
+    font-size: 40px;
 }
 
 .mobile-nav-panel-veil{
@@ -100,13 +93,12 @@ a.nav-link:hover {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 20%;
+    top: 0;
     right: 0;
     left: 0;
-    bottom:0;
-    border-radius: 20px 20px 0 0;
+    bottom: 0;
     box-shadow: 0 7px 50px 5px rgba(0, 0, 0, 0.2);
-    background-color: var(--nav-panel-bg);
+    background-color: var(--nav-panel-bg-color);
 }
 
 @media (min-width: 735px) {
@@ -133,7 +125,7 @@ a.nav-link:hover {
     padding: 10px 20px;
     margin-left: 0;
     border-bottom: none;
-    color: var(--nav-panel-fg);
+    color: var(--nav-panel-fg-color);
 }
 
 @keyframes navanimation {

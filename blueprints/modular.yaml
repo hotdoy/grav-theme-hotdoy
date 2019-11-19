@@ -12,22 +12,30 @@ form:
               type: section
               title: Theme
 
-            header.nav_color:
+            header.browser_color:
               type: colorpicker
-              label: Nav Color
-            
-            header.fg_color:
-              type: colorpicker
-              label: Foreground Color
-            
+              label: Browser Color
+           
             header.bg_color:
               type: colorpicker
               label: Background Color
-            
-            header.fg_color_alt:
+
+            header.fg_color:
               type: colorpicker
-              label: Foreground Alt Color
-            
+              label: Foreground Color
+
             header.bg_color_alt:
               type: colorpicker
-              label: Background Alt Color
+              label: Alternate Background Color
+
+            header.fg_color_alt:
+              type: colorpicker
+              label: Alternate Foreground Color
+
+            header.nav_bg_color:
+              type: colorpicker
+              label: Nav Background Color
+
+            header.nav_fg_color:
+              type: colorpicker
+              label: Nav Foreground Color

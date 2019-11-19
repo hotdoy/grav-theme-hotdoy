@@ -1,11 +1,17 @@
-{% set nav_color = nav_color|default(page.header.nav_color) %}
+{% set nav_bg_color = nav_bg_color|default(page.header.nav_bg_color ?? theme.nav_bg_color) %}
+{% set nav_fg_color = nav_fg_color|default(page.header.nav_fg_color ?? theme.nav_fg_color) %}
+{% set nav_panel_bg_color = nav_panel_bg_color|default(page.header.nav_panel_bg_color ?? theme.nav_panel_bg_color) %}
+{% set nav_panel_fg_color = nav_panel_fg_color|default(page.header.nav_panel_fg_color ?? theme.nav_panel_fg_color) %}
 {% set fg_color = fg_color|default(page.header.fg_color ?? theme.fg_color) %}
 {% set bg_color = bg_color|default(page.header.bg_color ?? theme.bg_color) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt ?? theme.fg_color_alt) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt ?? theme.bg_color_alt) %}
 {% set default_radius = default_radius|default(page.header.default_radius ?? theme.default_radius) %}
 {% set rythm = rythm|default(theme.rythm) %}
-{% if nav_color %}--nav-fg:{{ nav_color }};{% endif %}
+{% if nav_bg_color %}--nav-bg-color:{{ nav_bg_color }};{% endif %}
+{% if nav_fg_color %}--nav-fg-color:{{ nav_fg_color }};{% endif %}
+{% if nav_panel_bg_color %}--nav-panel-bg-color:{{ nav_panel_bg_color }};{% endif %}
+{% if nav_panel_fg_color %}--nav-panel-fg-color:{{ nav_panel_fg_color }};{% endif %}
 {% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
 {% if fg_color %}--fg-color:{{ fg_color }};{% endif %}
 {% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}
