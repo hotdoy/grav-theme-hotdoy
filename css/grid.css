@@ -7,7 +7,7 @@
 }
 
 @media (min-width: 735px) {
-	.grid .grid-auto-rows: {
+	.grid--auto-rows: {
 		grid-auto-rows: 1fr;
 	}
 }
@@ -25,48 +25,48 @@
 .grid[tcolumns="11"]{grid-template-columns: repeat(11, 1fr);}
 .grid[tcolumns="12"]{grid-template-columns: repeat(12, 1fr);}
 
-.grid .item[columns="1"]{grid-column: span 1;}
-.grid .item[columns="2"]{grid-column: span 2;}
-.grid .item[columns="3"]{grid-column: span 3;}
-.grid .item[columns="4"]{grid-column: span 4;}
-.grid .item[columns="5"]{grid-column: span 5;}
-.grid .item[columns="6"]{grid-column: span 6;}
-.grid .item[columns="7"]{grid-column: span 7;}
-.grid .item[columns="8"]{grid-column: span 8;}
-.grid .item[columns="9"]{grid-column: span 9;}
-.grid .item[columns="10"]{grid-column: span 10;}
-.grid .item[columns="11"]{grid-column: span 11;}
-.grid .item[columns="12"]{grid-column: span 12;}
+.grid__item[columns="1"]{grid-column: span 1;}
+.grid__item[columns="2"]{grid-column: span 2;}
+.grid__item[columns="3"]{grid-column: span 3;}
+.grid__item[columns="4"]{grid-column: span 4;}
+.grid__item[columns="5"]{grid-column: span 5;}
+.grid__item[columns="6"]{grid-column: span 6;}
+.grid__item[columns="7"]{grid-column: span 7;}
+.grid__item[columns="8"]{grid-column: span 8;}
+.grid__item[columns="9"]{grid-column: span 9;}
+.grid__item[columns="10"]{grid-column: span 10;}
+.grid__item[columns="11"]{grid-column: span 11;}
+.grid__item[columns="12"]{grid-column: span 12;}
 
-.grid .item[rows="1"]{grid-row: span 1;}
-.grid .item[rows="2"]{grid-row: span 2;}
-.grid .item[rows="3"]{grid-row: span 3;}
-.grid .item[rows="4"]{grid-row: span 4;}
-.grid .item[rows="5"]{grid-row: span 5;}
-.grid .item[rows="6"]{grid-row: span 6;}
-.grid .item[rows="7"]{grid-row: span 7;}
-.grid .item[rows="8"]{grid-row: span 8;}
-.grid .item[rows="9"]{grid-row: span 9;}
-.grid .item[rows="10"]{grid-row: span 10;}
-.grid .item[rows="11"]{grid-row: span 11;}
-.grid .item[rows="12"]{grid-row: span 12;}
+.grid__item[rows="1"]{grid-row: span 1;}
+.grid__item[rows="2"]{grid-row: span 2;}
+.grid__item[rows="3"]{grid-row: span 3;}
+.grid__item[rows="4"]{grid-row: span 4;}
+.grid__item[rows="5"]{grid-row: span 5;}
+.grid__item[rows="6"]{grid-row: span 6;}
+.grid__item[rows="7"]{grid-row: span 7;}
+.grid__item[rows="8"]{grid-row: span 8;}
+.grid__item[rows="9"]{grid-row: span 9;}
+.grid__item[rows="10"]{grid-row: span 10;}
+.grid__item[rows="11"]{grid-row: span 11;}
+.grid__item[rows="12"]{grid-row: span 12;}
 
-.grid .item[start="1"]{grid-column-start: 1;}
-.grid .item[start="2"]{grid-column-start: 2;}
-.grid .item[start="3"]{grid-column-start: 3;}
-.grid .item[start="4"]{grid-column-start: 4;}
-.grid .item[start="5"]{grid-column-start: 5;}
-.grid .item[start="6"]{grid-column-start: 6;}
-.grid .item[start="7"]{grid-column-start: 7;}
-.grid .item[start="8"]{grid-column-start: 8;}
-.grid .item[start="9"]{grid-column-start: 9;}
-.grid .item[start="10"]{grid-column-start: 10;}
-.grid .item[start="11"]{grid-column-start: 11;}
-.grid .item[start="12"]{grid-column-start: 12;}
+.grid__item[start="1"]{grid-column-start: 1;}
+.grid__item[start="2"]{grid-column-start: 2;}
+.grid__item[start="3"]{grid-column-start: 3;}
+.grid__item[start="4"]{grid-column-start: 4;}
+.grid__item[start="5"]{grid-column-start: 5;}
+.grid__item[start="6"]{grid-column-start: 6;}
+.grid__item[start="7"]{grid-column-start: 7;}
+.grid__item[start="8"]{grid-column-start: 8;}
+.grid__item[start="9"]{grid-column-start: 9;}
+.grid__item[start="10"]{grid-column-start: 10;}
+.grid__item[start="11"]{grid-column-start: 11;}
+.grid__item[start="12"]{grid-column-start: 12;}
 
 
 
-.grid .item{
+.grid__item{
 	position: relative;
 	padding: var(--padding);
 	border-radius: var(--radius-1);
@@ -77,26 +77,26 @@
 }
 
 @media (max-width: 735px) {
-	.grid .item[columns]{grid-column: 1/-1;}
+	.grid__item[columns]{grid-column: 1/-1;}
 }
 
-.grid .item .content h1,
-.grid .item .content h2,
-.grid .item .content h3,
-.grid .item .content h4,
-.grid .item .content h5,
-.grid .item .content h6,
-.grid .item .content p,
-.grid .item .content img,
-.grid .item .content video,
-.grid .item .content iframe{
+.grid__item .content h1,
+.grid__item .content h2,
+.grid__item .content h3,
+.grid__item .content h4,
+.grid__item .content h5,
+.grid__item .content h6,
+.grid__item .content p,
+.grid__item .content img,
+.grid__item .content video,
+.grid__item .content iframe{
 	margin: 1rem auto;
 	max-width: 100%;
 	padding: 0 0;
 }
 
-.grid .item .content *:first-child {margin-top: 0;}
-.grid .item .content *:last-child {margin-bottom: 0;}
+.grid__item .content *:first-child {margin-top: 0;}
+.grid__item .content *:last-child {margin-bottom: 0;}
 
 .grid .site,
 .grid .full,

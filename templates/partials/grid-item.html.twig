@@ -17,6 +17,6 @@
 {% if padding %}--padding:{{ padding }};{% endif %}
 {% endset %}
 
-<div class="item" columns="{{ columns }}" rows="{{ rows }}"{% if start %} start="{{ start }}"{% endif %} data-reveal="{{ reveal }}" style="{{ style }}">
+<div class="grid__item" columns="{{ columns }}" rows="{{ rows }}"{% if start %} start="{{ start }}"{% endif %} data-reveal="{{ reveal }}" style="{{ style }}">
 	<div class="content">{{ page.content }}</div>
 </div>
