@@ -5,15 +5,25 @@
 {% set absolute_url = absolute_url|default(true) %}
 {% set loading = loading|default('lazy') %}
 {% set reveal = reveal|default('') %}
+{% set filetype =  image.url|split('.')|last %}
 
 {% set src = image.url %}
-{% set src_375 = image.cropResize(375, 0).url %}
-{% set src_1368 = image.cropResize(1368, 0).url %}
-{% set src_1920 = image.cropResize(1920, 0).url %}
+{% if filetype == 'svg' or filetype == 'gif' %}
+	<img src="{{ src }}"
+	{% if loading %}loading="{{ loading }}"{% endif %}
+	{% if class %}class="{{ class }}"{% endif %}
+	{% if style %}style="{{ style }}"{% endif %}
+	{% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
+{% else %}
+	{% set src_375 = image.cropResize(375, 0).url %}
+	{% set src_1368 = image.cropResize(1368, 0).url %}
+	{% set src_1920 = image.cropResize(1920, 0).url %}
+	<img src="{{ src }}" srcset="{{ src_375 }} 375w, {{ src_1368 }} 1368w, {{ src_1920 }} 1920w"
+	{% if loading %}loading="{{ loading }}"{% endif %}
+	{% if class %}class="{{ class }}"{% endif %}
+	{% if style %}style="{{ style }}"{% endif %}
+	{% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
+{% endif %}
 
-<img src="{{ src }}"
-srcset="{{ src_375 }} 375w, {{ src_1368 }} 1368w, {{ src_1920 }} 1920w"
-{% if loading %}loading="{{ loading }}"{% endif %}
-{% if class %}class="{{ class }}"{% endif %}
-{% if style %}style="{{ style }}"{% endif %}
-{% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
+
+
