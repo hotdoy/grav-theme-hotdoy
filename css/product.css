@@ -9,6 +9,7 @@
 
 .product__image{
 	width: 100%;
+	border-radius: var(--radius-1);
 }
 
 .product__price{
