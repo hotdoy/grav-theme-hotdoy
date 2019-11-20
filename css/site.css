@@ -82,6 +82,11 @@ SECTION WIDTH, GUTTERS, AND RYTHM
 	margin-top: var(--rythm)
 }
 
+.rythm-padding{
+	padding-top: var(--rythm);
+	padding-bottom: var(--rythm);
+}
+
 
 .gutter {
 	padding-left: var(--gutter);

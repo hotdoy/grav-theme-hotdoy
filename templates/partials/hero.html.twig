@@ -4,11 +4,20 @@
 {% set image_alt = image_alt|default(page.header.image_alt) %}
 {% set reverse = reverse|default(page.header.reverse) %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
+{% set module_computed_style %}
+	{% include '/partials/theme-module.html.twig' %}
+{% endset %}
 {% set reveal_content = reveal_content|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_media = reveal_media|default('fadeinfrombottom delay-100 duration-500') %}
 
-<section class="module hero site {{ rythm }}">
-	<div class="hero__ctn {% if reverse %}hero--reverse{% endif %}">
+
+
+<section class="module hero {{ rythm }} {% if bg_color %} rythm-padding {% endif %}" style="{{ module_computed_style }}">
+	<div class="hero__ctn site {% if reverse %}hero--reverse{% endif %}">
 
 		{% block content %}
 			<div class="hero__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>

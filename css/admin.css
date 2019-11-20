@@ -202,5 +202,5 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #notifications, #news-feed {
-    font-family: courier;
+    font-family: courier !important;
 }

@@ -1,11 +1,11 @@
 .hero{
 	color: var(--fg-color);
+	background-color: var(--bg-color);
 	position: relative;
 	z-index: 1000;
 }
 
 .hero__ctn{
-	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
