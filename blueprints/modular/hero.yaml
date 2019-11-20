@@ -8,10 +8,6 @@ form:
         content:
           fields:
 
-            module-options:
-              type: section
-              title: Module Options
-
             header.image:
               type: filepicker
               label: Image
@@ -39,6 +35,26 @@ form:
               accept:
                 - .mp4
                 - .webm
+
+            header.bg_image:
+              type: filepicker
+              label: Background Image
+              preview_images: true
+              accept:
+                - .jpg
+                - .png
+                - .svg
+                - .gif
+                - .webp
+
+            header.bg_image_alt:
+              type: text
+              label: Background Image Alt
+              
+            header.bg_veil:
+              type: range
+              label: Background Veil
+              default: 0
 
             header.reverse:
               type: toggle
