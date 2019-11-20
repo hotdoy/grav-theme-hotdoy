@@ -200,3 +200,7 @@ h1, h2, h3, h4, h5, h6{
 .secondary-accent .button-group .dropdown-menu {
     background: #20c997;
 }
+
+#notifications, #news-feed {
+    font-family: courier;
+}
