@@ -24,7 +24,7 @@ button.button{
 }
 
 .button:hover .material-icons {
-	padding-left: 10px;
+	transform: translateX(5px);
 }
 
 .button.solid{
@@ -32,7 +32,7 @@ button.button{
 }
 
 .button.solid:hover .material-icons {
-	padding-left: 5px;
+	transform: translateX(5px);
 }
 
 .button.solid>a,
