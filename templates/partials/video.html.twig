@@ -1,26 +1,36 @@
 {% set video = video|default(page.header.video ? page.media[page.header.video]) %}
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 {% set loop = loop|default(page.header.loop) %}
-{% set fg_color = page.header.fg_color ?? theme.fg_color %}
-{% set bg_color = page.header.bg_color ?? theme.bg_color %}
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set width = width|default('site') %}
 {% set rythm = rythm|default('rythm') %}
 {% set reveal_video = reveal_video|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_content = reveal_content|default('fadeinfrombottom delay-200 duration-500') %}
+{% set module_computed_style %}
+	{% include '/partials/theme-module.html.twig' %} %}
+{% endset %}
 
-<section class="video {{ width }} {{ rythm }}" style="{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}" data-reveal="{{ reveal_video }}">
+<section class="module video full {{ rythm }}" style="{{ module_computed_style }}" data-reveal="{{ reveal_video }}">
+
+	<div class="video__ctn site">
 
 	{% block content %}
 		{% if content %}
-		<div class="content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
+		<div class="video__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
 		{% endif %}
 	{% endblock %}
 
 	{% block video %}
-		<video class="" autoplay="autoplay" muted="muted"
+		<video class="video__video" autoplay="autoplay" muted="muted"
 		{% if loop %}loop="loop"{% endif %} 
 		{% if image %}poster="{{ image.url }}"{% endif %}>
 		{% if video %}<source src="{{ video.url }}" type="video/mp4">{% endif %}
 		</video>
 	{% endblock %}
+
+	</div>
+	
 </section>

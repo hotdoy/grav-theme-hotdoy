@@ -1,7 +1,7 @@
 # v1.2.4
 ##  21/11/2019
 1. [Improved](#improved)
-* Modular theme now use a new theme-modular partial.
+* Modular theme now use a new theme-modular partial making them all the same.
 * added custom css to admin panel (it's a mess)
 * Hero now support background
 * Buttons use tranform for hover effects
