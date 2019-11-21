@@ -7,6 +7,8 @@
 {% set columns = colums|default(page.header.columns) %}
 {% set rows = rows|default(page.header.rows) %}
 {% set start = start|default(page.header.start) %}
+{% set align_v = align_v|default(page.header.align_v) %}
+{% set align_h = align_h|default(page.header.align_h) %}
 {% set reveal = reveal|default('fadeinfrombottom delay-100 duration-500') %}
 {% set style %}
 {% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
@@ -17,6 +19,6 @@
 {% if padding %}--padding:{{ padding }};{% endif %}
 {% endset %}
 
-<div class="grid__item" columns="{{ columns }}" rows="{{ rows }}"{% if start %} start="{{ start }}"{% endif %} data-reveal="{{ reveal }}" style="{{ style }}">
-	<div class="content">{{ page.content }}</div>
+<div class="grid__item {{ align_v }}" columns="{{ columns }}" rows="{{ rows }}"{% if start %} start="{{ start }}"{% endif %} data-reveal="{{ reveal }}" style="{{ style }}">
+	<div class="grid__item__content {{ align_h }}">{{ page.content|markdown }}</div>
 </div>

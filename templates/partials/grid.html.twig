@@ -1,16 +1,23 @@
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
 {% set columns = columns|default(page.header.columns) %}
-{% set grid_auto_row = grid_auto_row|default(page.header.grid_auto_row) %}
+{% set align_content = align_content|default(page.header.align_content) %}
 {% set border = border|default(page.header.border) %}
 {% set padding = padding|default(page.header.padding) %}
-{% set gutter = gutter|default(page.header.gutter) %}
-{% set style %}
-{% if border %}--border:{{ border }};{% endif %}
-{% if padding %}--padding:{{ padding }};{% endif %}
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
+{% set computed_style %}
+	{% if border %}--border:{{ border }};{% endif %}
+	{% if padding %}--padding:{{ padding }};{% endif %}
+	{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
+	{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}
+	{% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}
+	{% if bg_color_alt %}--bg-color-alt:{{ bg_color_alt }};{% endif %}
 {% endset %}
 
-<section class="module grid site {{ rythm }} {% if grid_auto_row %}grid--auto_row{% endif %}" tcolumns="{{ columns }}" style="{{ style }}">
-	{% for module in page.collection() %}
-		{{ module.content }}
+<section class="module grid site {{ rythm }}" tcolumns="{{ columns }}" style="{{ computed_style }}">
+	{% for page in page.collection() %}
+		{{ page.content }}
 	{% endfor %}
 </section>

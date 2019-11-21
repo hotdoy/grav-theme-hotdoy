@@ -28,6 +28,26 @@ form:
               type: colorpicker
               label: Alternate Foreground Color
 
+            header.align_h:
+              type: toggle
+              label: Horizontal Alignment
+              highlight: align-left
+              default: align-left
+              options: 
+                grid__item__content--h-align-left: 'Left'
+                grid__item__content--h-align-center: 'Center'
+                grid__item__content--h-align-right: 'Right'
+
+            header.align_v:
+              type: toggle
+              label: Vertical Alignment
+              highlight: align-start
+              default: align-start
+              options: 
+                grid__item--v-align-start: 'Top'
+                grid__item--v-align-center: 'Center'
+                grid__item--v-align-end: 'Bottom'
+
             header.border:
               type: text
               label: Border

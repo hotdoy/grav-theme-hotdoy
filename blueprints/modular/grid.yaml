@@ -10,39 +10,10 @@ form:
 
             content:
                 unset@: true
-                
-            theme:
+
+            grid:
               type: section
-              title: Theme
-
-            module-options:
-              type: section
-              title: Module Options
-
-            header.columns:
-              type: range
-              label: Columns
-              default: 1
-              validate:
-                min: 1
-                max: 12
-
-            header.grid_auto_row:
-              label: Equal row height
-              type: toggle
-              highlight: False
-              default: False
-              options: 
-                false: 'False'
-                true: 'True'
-
-            header.border:
-              type: text
-              label: Border
-
-            header.padding:
-              type: text
-              label: Padding
+              title: Grid
 
             header.rythm:
               type: toggle
@@ -54,6 +25,42 @@ form:
                 rythm-null: 'Null'
                 rythm-half: 'Half'
                 rythm: 'Default'
+
+            header.columns:
+              type: range
+              label: Columns
+              default: 3
+              validate:
+                min: 1
+                max: 12
+
+            items:
+              type: section
+              title: Items
+
+            header.border:
+              type: text
+              label: Item Border
+
+            header.padding:
+              type: text
+              label: Item Padding
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.bg_color_alt:
+              type: colorpicker
+              label: Alternate Background Color
+
+            header.fg_color_alt:
+              type: colorpicker
+              label: Alternate Foreground Color
 
             collection:
               type: section
