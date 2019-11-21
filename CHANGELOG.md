@@ -1,3 +1,17 @@
+# v1.2.4
+##  21/11/2019
+1. [Improved](#improved)
+* Modular theme now use a new theme-modular partial.
+* added custom css to admin panel (it's a mess)
+* Hero now support background
+* Buttons use tranform for hover effects
+* Grid items can now align vertically and horizontally
+* Added defauult value to grids
+* Browser color renammed Meta Color
+2. [Bugfix](#bugfix)
+* Added missing radius on product image
+* fix svg in img partial
+
 # v1.2.3
 ##  18/11/2019
 1. [New](#new)
