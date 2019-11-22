@@ -1,69 +1,46 @@
-a,
-button {
+a {
 	color: var(--bg-color-alt);
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.button{
+.btn {
 	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s;
 }
-
-.button>a,
-button.button{
-	border: none;
-	text-align: center;
+.btn.btn--solid>a {
 	display: flex;
-	align-items: center;
-    color: var(--bg-color-alt);
+    background: var(--bg-color-alt);
+    color: var(--fg-color-alt);
+    border-radius: 4px;
+    padding: 7px 20px;
 }
 
-.button i.material-icons{
+.btn.btn--solid .material-icons {
+	padding-left: 20px;
+}
+
+.btn.btn--solid:hover{
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-1);
+}
+
+.btn.btn--solid:active{
+	transform: translateY(-1px);
+}
+
+.btn.btn--link>a {
+	display: flex;
+}
+
+.btn.btn--link .material-icons {
 	padding-left: 5px;
 	transition: all 0.2s;
 }
 
-.button:hover .material-icons {
+.btn.btn--link:hover .material-icons {
 	transform: translateX(5px);
 }
 
-.button.solid{
-	display: inline-block;
-}
 
-.button.solid:hover .material-icons {
-	transform: translateX(5px);
-}
-
-.button.solid>a,
-button.button.solid{
-	text-align: center;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--bg-color-alt);
-    color: var(--fg-color-alt);
-    text-decoration: none;
-    padding: 7px 35px;
-    border-radius: 4px;
-    transition: transform 0.1s, box-shadow 0.1s;
-}
-
-button.button.solid{
-	width: auto;
-	margin: var(--rythm) auto;
-}
-
-.button.solid>a:hover,
-button.button.solid:hover {
-	box-shadow: var(--shadow-2);
-	transform: translateY(-2px);
-}
-
-.button.solid>a:active
-button.button.solid:active {
-	box-shadow: var(--shadow-1);
-	transform: translateY(0px);
-	transition: transform 0.1s, box-shadow 0.2s, opacity 0.2s;
-}
