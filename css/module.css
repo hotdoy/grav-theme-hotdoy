@@ -1,0 +1,6 @@
+.module{
+	position: relative;
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+	z-index: 1000;
+}

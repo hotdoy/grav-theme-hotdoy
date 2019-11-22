@@ -1,9 +1,4 @@
-.video{
-	color: var(--fg-color);
-	background-color: var(--bg-color);
-	position: relative;
-	z-index: 1000;
-}
+.module--video{}
 
 .video__content{
 	position: absolute;

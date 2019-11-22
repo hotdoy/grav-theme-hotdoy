@@ -1,9 +1,13 @@
-.grid{
+.module--grid{
 	position: relative;
+	background-color: var(--bg-color);
+	z-index: 1000;
+}
+
+.grid{
 	display: grid;
 	grid-column-gap: var(--gutter);
 	grid-row-gap: var(--gutter);
-	z-index: 1000;
 }
 
 .grid[tcolumns="1"]{grid-template-columns: repeat(1, 1fr);}
@@ -58,8 +62,6 @@
 .grid__item[start="11"]{grid-column-start: 11;}
 .grid__item[start="12"]{grid-column-start: 12;}
 
-
-
 .grid__item{
 	position: relative;
 	padding: var(--padding);
@@ -72,22 +74,6 @@
 
 @media (max-width: 735px) {
 	.grid__item[columns]{grid-column: 1/-1;}
-}
-
-.grid__item h1,
-.grid__item h2,
-.grid__item h3,
-.grid__item h4,
-.grid__item h5,
-.grid__item h6,
-.grid__item p,
-.grid__item img,
-.grid__item video,
-.grid__item iframe{
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	max-width: 100%;
-	padding: 0 0;
 }
 
 .grid__item *:first-child {margin-top: 0;}
@@ -138,4 +124,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.grid__item h1,
+.grid__item h2,
+.grid__item h3,
+.grid__item h4,
+.grid__item h5,
+.grid__item h6,
+.grid__item p,
+.grid__item img,
+.grid__item video,
+.grid__item iframe{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	max-width: 100%;
+	padding: 0 0;
 }

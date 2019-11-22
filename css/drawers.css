@@ -1,7 +1,4 @@
-.drawers{
-	position: relative;
-	z-index: 1000;
-}
+.module--drawers{}
 
 .drawers__title{
 	margin-bottom: 1rem;

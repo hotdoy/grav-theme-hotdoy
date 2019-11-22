@@ -75,7 +75,6 @@ SECTION WIDTH, GUTTERS, AND RYTHM
 	padding-bottom: var(--rythm);
 }
 
-
 .gutter {
 	padding-left: var(--gutter);
 	padding-right: var(--gutter);
@@ -175,6 +174,7 @@ hr{
 img{
 	max-width: 100%;
 	display: block;
+	border-radius: var(--radius-1);
 }
 
 code{

@@ -34,31 +34,35 @@ form:
                 min: 1
                 max: 12
 
-            items:
-              type: section
-              title: Items
-
-            header.border:
-              type: text
-              label: Item Border
-
-            header.padding:
-              type: text
-              label: Item Padding
-
             header.bg_color:
               type: colorpicker
               label: Background Color
 
-            header.fg_color:
+            items:
+              type: section
+              title: Items
+
+            header.item_border:
+              type: text
+              label: Border
+
+            header.item_padding:
+              type: text
+              label: Padding
+
+            header.item_bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.item_fg_color:
               type: colorpicker
               label: Foreground Color
 
-            header.bg_color_alt:
+            header.item_bg_color_alt:
               type: colorpicker
               label: Alternate Background Color
 
-            header.fg_color_alt:
+            header.item_fg_color_alt:
               type: colorpicker
               label: Alternate Foreground Color
 

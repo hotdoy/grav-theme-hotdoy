@@ -1,9 +1,4 @@
-.hero{
-	color: var(--fg-color);
-	background-color: var(--bg-color);
-	position: relative;
-	z-index: 1000;
-}
+.module--hero{}
 
 .hero__bg-image{
 	width: 100%;
