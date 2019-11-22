@@ -96,6 +96,27 @@ h1, h2, h3, h4, h5, h6{
     background: var(--notice);
     color: var(--alert-fg);
 }
+.notice{
+    display: none;
+}
+
+#messages {
+    position: fixed;
+    bottom: 20px;
+    right: 28px;
+    z-index: 9999;
+
+    animation-name: alertfadeout;
+    animation-delay: 3s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes alertfadeout {
+    from {}
+    to {transform: translateX(200%);}
+}
+
 .info {
     background: var(--notice);
     color: var(--alert-fg);
@@ -204,3 +225,4 @@ h1, h2, h3, h4, h5, h6{
 #notifications, #news-feed {
     font-family: courier !important;
 }
+
