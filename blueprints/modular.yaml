@@ -8,6 +8,12 @@ form:
         content:
           fields:
 
+            content:
+              unset@: true
+
+            header.media_order:
+              unset@: true
+
             theme:
               type: section
               title: Theme
