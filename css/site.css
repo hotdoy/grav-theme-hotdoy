@@ -33,31 +33,19 @@ SECTION WIDTH, GUTTERS, AND RYTHM
 */
 
 .tight{
-	margin-left: var(--gutter);
-	margin-right: var(--gutter);
 	max-width: var(--width-tight);
-}
-
-@media (min-width: 735px) {
-	.tight{
-		width: var(--width-tight);
-		margin-left: auto;
-		margin-right: auto;
-	}
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
 }
 
 .site{
-	margin-left: var(--gutter);
-	margin-right: var(--gutter);
 	max-width: var(--width-site);
-}
-
-@media (min-width: 1450px) {
-	.site{
-		width: var(--width-site);
-		margin-left: auto;
-		margin-right: auto;
-	}
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
 }
 
 .full{

@@ -12,19 +12,17 @@
 	border-radius: var(--radius-1);
 }
 
-.product__price{
-	font-family: var(--font-alt);
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-    font-size: 2em;
+.product__buy{
+	margin: 2rem auto;
 }
 
+.product__price{
+	font-family: var(--font-alt);
+	padding-left: 1rem;
+}
 
 .product__price--sup{
     font-size: 16px;
 }
 
-.product__buy{
-	display: block !important;
-	margin: 2rem auto;
-}
+

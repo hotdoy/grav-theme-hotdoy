@@ -24,9 +24,3 @@ html{
 	--radius-2: 8px;
 	--transition-timing-1: cubic-bezier(0.19, 1, 0.22, 1); 
 }
-
-@media screen and (min-width: 735px) {
-	html {
-		--gutter: 2rem;
-	}
-}

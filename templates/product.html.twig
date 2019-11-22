@@ -13,14 +13,8 @@
 	</div>
 
 	{# price #}
-	<div class="tight product__price">
-		{{ page.header.price|number_format(2) }} CAD
-		<span class="product__price--sup">+taxes and shipping</span>
-	</div>
-
-	{# buy button #}
-	<div class="tight">
-		<div class="button solid product__buy">
+	<div class="tight product__buy">
+		<div class="btn btn--solid product__btn">
 			<a class="snipcart-add-item"
 			data-item-id="{{ page.title }}"
 			data-item-price="{{ page.header.price }}"
@@ -28,9 +22,10 @@
 			data-item-description="{{ page.header.description }}"
 			data-item-image="{{ image.url }}"
 			data-item-name="{{ page.title }}">
-			Buy {{ page.title }}
+			Buy This
 			</a>
 		</div>
+		<span class="product__price">{{ page.header.price|number_format(2) }} CAD</span>
 	</div>
 
 	{# content #}
