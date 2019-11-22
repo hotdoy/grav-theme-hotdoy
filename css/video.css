@@ -1,6 +1,6 @@
 .video{
-	padding-left: 0;
-	padding-right: 0;
+	color: var(--fg-color);
+	background-color: var(--bg-color);
 	position: relative;
 	z-index: 1000;
 }

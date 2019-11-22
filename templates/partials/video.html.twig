@@ -5,24 +5,20 @@
 {% set fg_color = fg_color|default(page.header.fg_color) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
-{% set width = width|default('site') %}
-{% set rythm = rythm|default('rythm') %}
+{% set rythm = rythm|default(page.header.rythm) %}
 {% set reveal_video = reveal_video|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_content = reveal_content|default('fadeinfrombottom delay-200 duration-500') %}
 {% set module_computed_style %}
 	{% include '/partials/theme-module.html.twig' %} %}
 {% endset %}
 
-<section class="module video full {{ rythm }}" style="{{ module_computed_style }}" data-reveal="{{ reveal_video }}">
-
+<section class="module video full {{ rythm }} {% if bg_color %}rythm-padding{% endif %}" style="{{ module_computed_style }}" data-reveal="{{ reveal_video }}">
 	<div class="video__ctn site">
-
 	{% block content %}
 		{% if content %}
 		<div class="video__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
 		{% endif %}
 	{% endblock %}
-
 	{% block video %}
 		<video class="video__video" autoplay="autoplay" muted="muted"
 		{% if loop %}loop="loop"{% endif %} 
@@ -30,7 +26,5 @@
 		{% if video %}<source src="{{ video.url }}" type="video/mp4">{% endif %}
 		</video>
 	{% endblock %}
-
 	</div>
-	
 </section>
