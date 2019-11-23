@@ -8,10 +8,6 @@ form:
         content:
           fields:
 
-            module-options:
-              type: section
-              title: Module Options
-
             header.video:
               type: filepicker
               label: Video
@@ -20,7 +16,7 @@ form:
 
             header.image:
               type: filepicker
-              label: Background Image
+              label: Poster
               preview_images: true
               accept:
                 - .jpg
@@ -38,16 +34,6 @@ form:
                 0: 'False'
                 1: 'True'
 
-            header.width:
-              type: toggle
-              label: Width
-              highlight: site
-              default: site
-              options: 
-                tight: 'Tight'
-                site: 'Site'
-                full: 'full'
-
             header.rythm:
               type: toggle
               label: Rythm
@@ -58,7 +44,21 @@ form:
                 rythm-null: 'Null'
                 rythm-half: 'Half'
                 rythm: 'Default'
-              
+
+            text:
+              type: section
+              title: Content
+
+            header.align_h:
+              type: toggle
+              label: Horizontal Alignment
+              highlight: video__content--h-align-center
+              default: video__content--h-align-center
+              options: 
+                video__content--h-align-left: 'Left'
+                video__content--h-align-center: 'Center'
+                video__content--h-align-right: 'Right'
+
             theme:
               type: section
               title: Theme
