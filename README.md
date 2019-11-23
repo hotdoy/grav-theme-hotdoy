@@ -1,4 +1,6 @@
-> **SNIPCART WARNING** : The newest version of Snipcart that comes with the theme seems to have some issues. I will be contacting them  to try and figure out if something can be done on my side.
+> **WARNING!** : I am currently doing a lot of breaking changes. You might want to wait for the next release if you plan on modding this theme and keep receiving updates.
+
+> **SNIPCART WARNING!** : The newest version of Snipcart that comes with the theme seems to have some issues. I'll be contacting them  to try and figure out if something can be done on my side.
 
 # Hotdoy Theme
 
