@@ -107,6 +107,7 @@ form:
     google_tracking_id:
       type: text
       label: Google Analytics Tracking ID
+      description: <a href="https://analytics.google.com/">Google Analytics</a>
 
     # google_maps_api_key:
     #   type: text
@@ -115,11 +116,12 @@ form:
     facebook_app_id:
       type: text
       label: Facebook App Id
+      description: <a href="https://developers.facebook.com/docs/apps/">Facebook App Development</a>
 
-    # snipcart_api_key:
-    #   type: text
-    #   label: Snipcart API Key
-    #   default: 'MDU0OGM2YjItMzZiZS00MjQ4LWJiNGQtOGVlYjE4ODAxMWVhNjM3MDEwNjY5ODU4OTU2Mzkx'
+    snipcart_api_key:
+      type: text
+      label: Snipcart API Key
+      description: <a href="https://snipcart.com/">Snipcart</a>
 
     marquee:
       type: section
