@@ -1,3 +1,20 @@
+# v1.2.5
+##  23/11/2019
+1. [New](#new)
+2. [Improved](#improved)
+* Re done all buttons from scratch
+* Theme options in Video modular
+* Improved many modules class name
+* Simplified width CSS a lot (full, site, tight).
+* Some cleanup in grids
+* Site header css changes (Introduced BEM)
+* Site header now use "site" width instead of custom width.
+3. [Bugfix](#bugfix)
+* Prevent "module" base blueprint from appearing in opage option
+* Removed non outputed content field from modular page
+4. [Bug](#bug)
+* Drawers toggle icons are acting up.
+
 # v1.2.4
 ##  21/11/2019
 1. [Improved](#improved)
