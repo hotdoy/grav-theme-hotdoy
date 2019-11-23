@@ -186,3 +186,46 @@ code{
 	padding: 2px 5px;
 	font-family: Courier New, Courier, monospace; 
 }
+
+
+
+
+
+/*
+###########################################################
+MARKDOWN NOTICES
+###########################################################
+*/
+
+.notices {
+    max-width: calc(var(--width-tight) - var(--gutter)*2);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	padding: var(--gutter);
+}
+
+.notices p a{
+	color: inherit;
+	text-decoration: underline;
+}
+
+.notices.yellow {
+    background: #fcf8f2;
+    color: #df8a13;
+}
+
+.notices.red {
+    background: #f443360d;
+    color: #F44336;
+}
+
+.notices.blue {
+    background: #2196f317;
+    color: #2196F3;
+}
+
+.notices.green {
+    background: #00968814;
+    color: #009688;
+}
