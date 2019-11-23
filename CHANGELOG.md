@@ -1,3 +1,8 @@
+# v1.2.6
+##  23/11/2019
+1. [New](#new)
+* Added support for markdown notices
+
 # v1.2.5
 ##  23/11/2019
 1. [New](#new)
