@@ -11,6 +11,7 @@ BODY
 }
 
 body {
+	position: relative;
 	min-height: 100vh;
 	overflow-y: scroll;
 	color: var(--fg-color);

@@ -1,14 +1,14 @@
-<header id="site-header" class="site-header">
+<header class="header site">
 	
 	{# Logo #}
-    <a class="site-logo landscape" href="{{ base_url == '' ? '/' : base_url }}">Hotdoy</a>
-    <a class="site-logo portrait" href="{{ base_url == '' ? '/' : base_url }}">Hotdoy</a>
+    <a class="header__logo landscape" href="{{ base_url == '' ? '/' : base_url }}">Hotdoy</a>
+    <a class="header__logo portrait" href="{{ base_url == '' ? '/' : base_url }}">Hotdoy</a>
 
     {# nav desktop #}
-    <nav class="site-nav landscape">
+    <nav class="header__nav landscape">
 		{% include '/partials/navigation.html.twig' %}
          {% if theme.snipcart_api_key %}
-            <a class="snipcart-checkout nav-link">
+            <a class="snipcart-checkout nav__link">
                 <div class="cart">
                     <span class="material-icons cart-icon">shopping_cart</span>
                 </div>
@@ -23,7 +23,7 @@
         <div class="material-icons mobile-nav-close">close</div>
 		{% include '/partials/navigation.html.twig' %}
          {% if theme.snipcart_api_key %}
-            <a class="snipcart-checkout nav-link">
+            <a class="snipcart-checkout nav__link">
                 <div class="cart">
                     <span class="material-icons cart-icon">shopping_cart</span>
                     <span class="snipcart-items-count"></span>
