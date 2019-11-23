@@ -5,7 +5,8 @@
 		let links = $('a[href^=http]');
 		links.each(function(){
 			$(this).attr({
-				target: '_blank'
+				target: '_blank',
+				rel: 'noopener'
 			});
 		})
 	}
