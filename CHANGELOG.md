@@ -1,3 +1,10 @@
+# v1.2.9
+## 24/11/2019
+1. [New](#new)
+* Added tracking
+2. [Bugfix](#bugfix)
+* Removed green-hosting badge
+
 # v1.2.8
 ##  23/11/2019
 1. [New](#new)
