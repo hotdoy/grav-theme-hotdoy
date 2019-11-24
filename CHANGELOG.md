@@ -1,3 +1,8 @@
+# v1.2.10
+## 24/11/2019
+1. [Bugfix](#bugfix)
+* Prevent tracking script and div if opted out of theme tracking
+
 # v1.2.9
 ## 24/11/2019
 1. [New](#new)
