@@ -1,5 +1,5 @@
 title: hero
-'@extends': module
+'@extends': modular/module
 
 form:
   fields:

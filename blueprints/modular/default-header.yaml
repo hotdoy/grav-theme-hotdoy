@@ -1,5 +1,5 @@
 title: default-header
-'@extends': module
+'@extends': modular/module
 
 form:
   fields:
