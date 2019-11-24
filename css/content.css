@@ -20,8 +20,8 @@
 .content blockquote{
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: var(--gutter);
-	padding-right: var(--gutter);
+	padding-left: 4rem;
+	padding-right: 4rem;
 	max-width: var(--width-tight);
 }
 
