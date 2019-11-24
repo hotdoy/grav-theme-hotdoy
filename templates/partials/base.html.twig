@@ -28,7 +28,11 @@
         {% if theme.snipcart_api_key %}
             <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
         {% endif %}
-        
+
+        {% if theme.tracking %}
+            <div hidden id="tracking" data-ref="https://tracking.hotdoy.org/?ref={{ base_url_absolute }}"></div>
+        {% endif %}
+
         {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
         {{ assets.js('after')|raw }}
     </body>
