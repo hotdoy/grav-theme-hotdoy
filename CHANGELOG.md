@@ -1,3 +1,12 @@
+# v1.2.7
+##  23/11/2019
+1. [New](#new)
+* Add noopener to external links
+2. [Improved](#improved)
+* Updated Snipcart and added key field is thme config
+3. [Bugfix](#bugfix)
+* Fixed modular having no fields in admin panel.
+
 # v1.2.6
 ##  23/11/2019
 1. [New](#new)
