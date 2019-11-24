@@ -1,3 +1,10 @@
+# v1.2.8
+##  23/11/2019
+1. [New](#new)
+* New screenshot
+2. [Improved](#improved)
+* Fixed padding on blockquote
+
 # v1.2.7
 ##  23/11/2019
 1. [New](#new)
