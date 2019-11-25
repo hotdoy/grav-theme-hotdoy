@@ -4,12 +4,12 @@
 
 # Hotdoy Theme
 
-![alt text](https://raw.githubusercontent.com/hotdoy/grav-theme-hotdoy/master/screenshot.jpg)
+![Theme screenshot](https://raw.githubusercontent.com/hotdoy/grav-theme-hotdoy/master/screenshot.jpg)
 
 The **Hotdoy** Theme is meant to be a starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
-It is in active developpement and not suited for production at the moment.
+It is in active developpement and not suited for inheritance at the moment unless you dont mind thing changing all the times.
 
-A live demo is available at [hotdoy.ca](https://hotdoy.ca). (I dump the thing periodically).
+A live demo is available at [hotdoy.ca](https://hotdoy.ca). I still have content to write but you get the idea.
 
 For the moment, here is a list of what I run..
 * Admin Panel
@@ -25,6 +25,7 @@ For the moment, here is a list of what I run..
 * Quick Tray Links
 * Shortcode Core
 * Sitemap
+* Google Maps
 
 # Installation
 Installing the Hotdoy theme can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
@@ -81,11 +82,11 @@ The entire color theme is controllable inside the admin panel.
 
 ## Breakpoint
 show content on specific breakpoint.
-[portrait] and [landscape].
+[portrait], [mobile] and [landscape], [desktop].
 
 ## Button
 Add buttons with out without material icons
-[btn-solid], [btn-link].
+[btn-solid], [btn], [btn-link], [link] 
 
 ## Embed
 Add [youtube] and [vimeo] by id
@@ -119,7 +120,6 @@ You can learn more about this on [Github](https://github.com/hotdoy/reveal.js/bl
 
 ### links.js
 Small link manager. Mostly to add or remove attributes.
-Add ```target="_blank"``` to link starting with ```http``` by default.
 
 ### site-header.js
 Default site header / menu.
@@ -136,10 +136,13 @@ Default site-loader / transitions.
 ### video.js
 Pause or play videos depending on their visibility.
 
-### notify
+### notify.js
 User facing notification system. Works like that...
 ``` notify(message, bg_color, fg_color); ```
 Also comes with notify.css. (default styles you could overwrite by making a copy in a child template).
 
 ### form.js
 Submits forms trough ajax. Then notify the user using notify.js
+
+### tracking.js
+Sends domain information to me so I know what to do next in the theme.
