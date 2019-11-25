@@ -2,22 +2,20 @@
 {% set items = items|default(page.header.drawers) %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
 {% set reveal_title = reveal_title|default('fadeinfrombottom delay-0 duration-500') %}
-{% set reveal_drawer = reveal_drawer|default('fadeinfrombottom delay-100 duration-500') %}
-{% set reveal_detail = reveal_detail|default('fadeinfromtop delay-0 duration-500') %}
+{% set reveal_detail = reveal_drawer|default('fadeinfrombottom delay-100 duration-500') %}
+{% set reveal_content = reveal_content|default('fadeinfromtop delay-0 duration-500') %}
 
 <section class="module module--drawers site {{ rythm }}">
 	{% if title %}
 		<h2 class="drawers__title" data-reveal="{{ reveal_title }}">{{title}}</h2>
 	{% endif %}
 	{% for item in items %}
-		<details class="drawer__detail" data-reveal="{{ reveal_drawer }}">
+		<details class="drawer__detail" data-reveal="{{ reveal_detail }}">
 			<summary class="noselect drawer__summary">
 				<h3 class="drawer__summary__title">{{ item.summary }}</h3>
-				{% block icon %}
-					<i class="material-icons drawer__summary__icon">keyboard_arrow_down</i>
-				{% endblock %}
+				{% block drawer_icon %}<div class="material-icons drawer__summary__icon">keyboard_arrow_down</div>{% endblock %}
 			</summary>
-			<div class="drawer__content {{ reveal_detail }}">{{ item.detail|markdown }}</div>
+			<div class="drawer__content {{ reveal_content }}">{{ item.detail|markdown }}</div>
 		</details>
 	{% endfor %}
 </section>

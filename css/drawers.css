@@ -17,18 +17,16 @@
 	padding-right: 3rem;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .drawer__summary__title{
 	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .drawer__summary:focus{
 	outline: 0;
-}
-
-.drawer__summary *{
-	display: inline;
 }
 
 .drawer__summary::-webkit-details-marker {
@@ -38,8 +36,7 @@
 .drawer__summary__icon { 
 	position: absolute;
 	right: 0;
-	font-weight: normal;
-	transition: all 0.2s;
+	transition: transform 0.2s;
 }
 
 .drawer__detail[open] .drawer__summary__icon {
@@ -56,8 +53,4 @@
 	max-width: 90%;
 	padding-left: 0;
     padding-right: 0;
-}
-
-.drawer__summary__title{
-	margin-top: 0;
 }
