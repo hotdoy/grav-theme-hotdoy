@@ -1,3 +1,8 @@
+# v1.2.11
+## 25/11/2019
+1. [Bugfix](#bugfix)
+* Fixed modular drawer icon position
+
 # v1.2.10
 ## 24/11/2019
 1. [Bugfix](#bugfix)
