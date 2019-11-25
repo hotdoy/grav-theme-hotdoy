@@ -65,6 +65,7 @@ google_tracking_id:         # Google analytics id
 facebook_app_id:            # Facebook App Id
 marquee:                    # A collection of field to add a small marquee at the top of every page.
 snipcart:                   # Snipcart Id for eCommerce integration.
+tracking:                   # Send me information on domains that use the theme so I know what not to break.
 ```
 
 To make modifications, you can copy the `user/themes/hotdoy/hotdoy.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
