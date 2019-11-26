@@ -19,39 +19,29 @@
 
 <section class="{{ modular_classes }}" style="{{ modular_styles }}">
 
-	{% block bg_veil %}
-		{% if bg_veil %}
-		<div class="hero__veil fill" style="opacity:{{bg_veil}};"></div>
-		{% endif %}
-	{% endblock %} 
+	{% if bg_veil %}
+	<div class="hero__veil fill" style="opacity:{{bg_veil}};"></div>
+	{% endif %}
 	
-	{% block image %}
-		{% if bg_image %}
-		<div class="hero__bg-image-ctn fill">
-			{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'hero__bg-image', 'alt': bg_image_alt} %}
-		</div>
-		{% endif %}
-	{% endblock %}
+	{% if bg_image %}
+	<div class="hero__bg-image-ctn fill">
+		{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'hero__bg-image', 'alt': bg_image_alt} %}
+	</div>
+	{% endif %}
 
 	<div class="hero__ctn site {% if reverse %}hero--reverse{% endif %}">
-
-		{% block content %}
-			<div class="hero__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
-		{% endblock %}
-		
-		{% block media %}
-			<div class="hero__media" data-reveal="{{ reveal_media }}">	
-				{% if video %}
-				<video autoplay="autoplay" muted="muted" loop="loop" {% if image %}poster="{{ image.url }}"{% endif %}>
-					<source src="{{ video.url }}" type="video/mp4">
-				</video>
-				{% elseif image %}
-				{% set computed_style %}{% if image_width %}{{ 'width:' ~ image_width ~ '%;' }}{% endif %}{% endset %}
-				{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'style': computed_style } %}
-				{% endif %}
-			</div>
-		{% endblock %}
-
+		<div class="hero__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
+		<div class="hero__media" data-reveal="{{ reveal_media }}">	
+			{% if video %}
+			<video autoplay="autoplay" muted="muted" loop="loop" {% if image %}poster="{{ image.url }}"{% endif %}>
+				<source src="{{ video.url }}" type="video/mp4">
+			</video>
+			{% elseif image %}
+			{% set computed_style %}{% if image_width %}{{ 'width:' ~ image_width ~ '%;' }}{% endif %}{% endset %}
+			{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'style': computed_style } %}
+			{% endif %}
+		</div>
 	</div>
+	
 </section>
 

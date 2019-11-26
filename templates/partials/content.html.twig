@@ -16,8 +16,6 @@
 {% endset %}
 
 <section class="{{ modular_classes }}" style="{{ modular_styles }}">
-	<div class="content__ctn {{ width }} {{ align }}" {% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
-		{{ content }}
-	</div>
+	<div class="content__ctn {{ width }} {{ align }}" {% if reveal %}data-reveal="{{ reveal }}"{% endif %}>{{ content }}</div>
 </section>
 

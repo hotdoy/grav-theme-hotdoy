@@ -5,7 +5,9 @@
 {% set reveal_detail = reveal_drawer|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_content = reveal_content|default('fadeinfromtop delay-0 duration-500') %}
 
-<section class="modular modular--drawers site {{ rythm }}">
+{% set modular_classes = 'modular modular--drawers site ' ~ rythm %}
+
+<section class="{{ modular_classes }}">
 	{% if title %}
 		<h2 class="drawers__title" data-reveal="{{ reveal_title }}">{{title}}</h2>
 	{% endif %}
