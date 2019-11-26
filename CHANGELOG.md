@@ -1,3 +1,8 @@
+# v1.2.12
+## 25/11/2019
+1. [](#improved)
+* Content modular now support theme and width.
+
 # v1.2.11
 ## 25/11/2019
 1. [Bugfix](#bugfix)
