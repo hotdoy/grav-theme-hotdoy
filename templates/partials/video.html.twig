@@ -13,7 +13,7 @@
 {% set modular_classes = 'modular modular--video ' ~ rythm ~ (bg_color ? ' rythm-padding' : '') %}
 {% set modular_styles %}{% include '/partials/theme-module.html.twig' %} %}{% endset %}
 
-<section class="{{ modular_classes }}" style="{{ modular_styles }}" data-reveal="{{ reveal_video }}">
+<section class="{{ modular_classes }}" style="{{ modular_styles }}">
 	<div class="video__ctn site">
 	{% block content %}
 		{% if content %}
@@ -21,7 +21,7 @@
 		{% endif %}
 	{% endblock %}
 	{% block video %}
-		<video class="video__video" autoplay="autoplay" muted="muted"
+		<video class="video__video" autoplay="autoplay" muted="muted" data-reveal="{{ reveal_video }}"
 		{% if loop %}loop="loop"{% endif %} 
 		{% if image %}poster="{{ image.url }}"{% endif %}>
 		{% if video %}<source src="{{ video.url }}" type="video/mp4">{% endif %}
