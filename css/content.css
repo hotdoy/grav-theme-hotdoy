@@ -1,21 +1,11 @@
 .module--content {}
 
-.content > *:last-child {
+.content__ctn > *:last-child {
 	margin-bottom: 0;
 }
 
-.content > *:first-child {
+.content__ctn > *:first-child {
 	margin-top: 0;
-}
-
-.content blockquote{
-	font-size: 2rem;
-}
-
-@media (min-width: 735px) {
-	.content blockquote{
-		font-size: 2.8rem;
-	}
 }
 
 .content twitter-widget{
