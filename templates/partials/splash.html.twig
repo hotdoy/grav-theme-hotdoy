@@ -12,14 +12,18 @@
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
 {% set reveal_media = reveal_media|default('') %}
 {% set reveal_content = reveal_content|default('fadeinfromtop delay-0 duration-2000') %}
-{% set module_computed_style %}
-	{% include '/partials/theme-module.html.twig' %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %} %}
+
+{% set modular_classes = 'modular modular--splash full ' ~ rythm %}
+
+{% set modular_styles %}
+{% include '/partials/theme-module.html.twig' %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %}
 {% endset %}
+
 {% set img_computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
 {% set img_computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
-{% set img_computed_style =  img_computed_bg_position ~ img_computed_bg_fit%}
+{% set img_styles =  img_computed_bg_position ~ img_computed_bg_fit%}
 
-<section class="module module--splash full {{ rythm }}" style="{{ module_computed_style }}">
+<section class="{{ modular_classes }}" style="{{ modular_styles }}">
 
 	{% block bg_veil %}
 		{% if bg_veil %}
@@ -29,7 +33,7 @@
 	
 	{% block image %}
 		{% if bg_image and not bg_video %}
-		{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_style , 'reveal': reveal_media} %}
+		{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_styles , 'reveal': reveal_media} %}
 		{% endif %}
 	{% endblock %}
 
@@ -49,4 +53,5 @@
 			<div class="site splash__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
 		{% endblock %}
 	</div>
+
 </section>

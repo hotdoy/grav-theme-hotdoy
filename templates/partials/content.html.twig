@@ -9,19 +9,13 @@
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 
-{% set module_class %}
-module
-content
-{{ rythm }} 
-{% if bg_color or bg_image %}rythm-padding{% endif %}
-{{ class }}
-{% endset %}
+{% set modular_classes = 'modular modular--content ' ~ rythm ~ (bg_color ? ' rythm-padding' : '') ~ ' ' ~ class %}
 
-{% set module_style %}
+{% set modular_styles %}
 {% include '/partials/theme-module.html.twig' %}
 {% endset %}
 
-<section class="{{ module_class }}" style="{{ module_style }}"{% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
+<section class="{{ modular_classes }}" style="{{ modular_styles }}"{% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
 	<div class="content__ctn {{ width }} {{ align }}" >
 		{{ content }}
 	</div>

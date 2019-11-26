@@ -8,11 +8,13 @@
 {% set item_bg_color_alt = item_bg_color_alt|default(page.header.item_bg_color_alt) %}
 {% set item_fg_color_alt = item_fg_color_alt|default(page.header.item_fg_color_alt) %}
 
-{% set computed_style %}
+{% set modular_classes = 'modular modular--grid ' ~ rythm ~ (bg_color ? ' rythm-padding' : '') %}
+
+{% set modular_styles %}
 {% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
 {% endset %}
 
-{% set item_computed_style %}
+{% set items_styles %}
 {% if item_border %}--border:{{ item_border }};{% endif %}
 {% if item_padding %}--padding:{{ item_padding }};{% endif %}
 {% if item_bg_color %}--bg-color:{{ item_bg_color }};{% endif %}
@@ -21,8 +23,8 @@
 {% if item_bg_color_alt %}--bg-color-alt:{{ item_bg_color_alt }};{% endif %}
 {% endset %}
 
-<section class="module module--grid {{ rythm }} {% if bg_color %}rythm-padding{% endif %}" {% if computed_style %}style="{{ computed_style }}"{% endif %}>
-	<div class="grid site" tcolumns="{{ columns }}" {% if item_computed_style %}style="{{ item_computed_style }}"{% endif %}>
+<section class="{{ modular_classes }}" {% if computed_style %}style="{{ modular_styles }}"{% endif %}>
+	<div class="grid site" tcolumns="{{ columns }}" style="{{ items_styles }}">
 		{% for page in page.collection() %}
 			{{ page.content }}
 		{% endfor %}

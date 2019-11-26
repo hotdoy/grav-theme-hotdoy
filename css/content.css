@@ -1,4 +1,4 @@
-.module--content {}
+.modular--content {}
 
 .content__ctn > *:last-child {
 	margin-bottom: 0;
@@ -8,7 +8,7 @@
 	margin-top: 0;
 }
 
-.content twitter-widget{
+.modular--content twitter-widget{
 	margin-left: auto !important;
 	margin-right: auto !important;
 	margin-top: 2rem !important;
@@ -17,7 +17,7 @@
 	padding-right: var(--gutter);
 }
 
-.content .embed {
+.modular--content .embed {
 	position: relative;
 	padding-bottom: 56.25%; 
 	height: 0; 
@@ -27,7 +27,7 @@
 	margin-top: 3rem;
 }
 
-.content .embed iframe {
+.modular--content .embed iframe {
 	position: absolute; 
 	top: 0; 
 	left: 0; 
@@ -38,14 +38,14 @@
 }
 
 @media (min-width: 735px) {
-	.content twitter-widget{
+	.modular--content twitter-widget{
 		padding-left: 0;
 		padding-right: 0;
 		transform: translateX(-1rem) !important;
 	}
 }
 
-.content img{
+.modular--content img{
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
@@ -55,7 +55,7 @@
 	border-radius: var(--radius-1);
 }
 
-.content figure.image-caption figcaption {
+.modular--content figure.image-caption figcaption {
 	text-align: center;
     opacity: 0.7;
     font-size: 90%;
@@ -63,7 +63,7 @@
     margin-bottom: 2rem;
 }
 
-.content video{
+.modular--content video{
 	margin-right: auto;
 	margin-left: auto;
 	max-width: var(--width-site);
@@ -74,19 +74,19 @@
 	border-radius: var(--radius-1);
 }
 
-.content>.tight,
-.content>.site{
+.modular--content>.tight,
+.modular--content>.site{
 	margin-bottom: 2rem;
 }
 
-.content pre code{
+.modular--content pre code{
 	margin-top: 2rem;
 	margin-bottom: 2rem;
     display: block;
     overflow-x: auto;
 }
 
-.content ul{
+.modular--content ul{
 	list-style-type: disc;
 	list-style-position: inside;
 }

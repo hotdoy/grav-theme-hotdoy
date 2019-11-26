@@ -11,11 +11,13 @@
 {% set fg_color = fg_color|default(page.header.fg_color) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
-{% set module_computed_style %}{% include '/partials/theme-module.html.twig' %}{% endset %}
 {% set reveal_content = reveal_content|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_media = reveal_media|default('fadeinfrombottom delay-100 duration-500') %}
 
-<section class="module module--hero {{ rythm }} {% if bg_color or bg_image %}rythm-padding{% endif %}" style="{{ module_computed_style }}">
+{% set modular_classes = 'modular modular--hero ' ~ rythm ~ (bg_color or bg_image ? ' rythm-padding' : '') %}
+{% set modular_styles %}{% include '/partials/theme-module.html.twig' %}{% endset %}
+
+<section class="{{ modular_classes }}" style="{{ modular_styles }}">
 
 	{% block bg_veil %}
 		{% if bg_veil %}

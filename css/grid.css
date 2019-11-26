@@ -1,8 +1,4 @@
-.module--grid{
-	position: relative;
-	background-color: var(--bg-color);
-	z-index: 1000;
-}
+.modular--grid{}
 
 .grid{
 	display: grid;
