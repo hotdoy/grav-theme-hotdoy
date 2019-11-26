@@ -29,7 +29,7 @@
 	</div>
 
 	{# content #}
-	<div class="content" data-reveal="fadeinfrombottom delay-100 duration-500">{{ page.content }}</div>
+	{% include 'partials/content.html.twig' with{'class': 'product__content'} %}
 
 	{# modules #}
 	{% for module in page.collection() %}

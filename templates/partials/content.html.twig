@@ -1,8 +1,29 @@
 {% set content = content|default(content|raw) %}
-{% set class = class|default('') %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set width = width|default(page.header.width ?? 'tight') %}
 {% set reveal = reveal|default('fadeinfrombottom delay-100 duration-500') %}
+{% set align = align|default(page.header.align ?? 'content--left') %}
+{% set class = class|default('') %}
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 
-{% if content %}
-<section class="content {{ rythm }} {{ class }}"{% if reveal %} data-reveal="{{ reveal }}"{% endif %}>{{ content }}</section>
-{% endif %}
+{% set module_class %}
+module
+content
+{{ rythm }} 
+{% if bg_color or bg_image %}rythm-padding{% endif %}
+{{ class }}
+{% endset %}
+
+{% set module_style %}
+{% include '/partials/theme-module.html.twig' %}
+{% endset %}
+
+<section class="{{ module_class }}" style="{{ module_style }}"{% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
+	<div class="content__ctn {{ width }} {{ align }}" >
+		{{ content }}
+	</div>
+</section>
+

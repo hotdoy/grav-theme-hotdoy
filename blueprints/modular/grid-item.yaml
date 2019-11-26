@@ -31,8 +31,8 @@ form:
             header.align_h:
               type: toggle
               label: Horizontal Alignment
-              highlight: align-left
-              default: align-left
+              highlight: grid__item__content--h-align-left
+              default: grid__item__content--h-align-left
               options: 
                 grid__item__content--h-align-left: 'Left'
                 grid__item__content--h-align-center: 'Center'
