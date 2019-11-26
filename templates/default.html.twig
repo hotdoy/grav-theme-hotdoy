@@ -1,10 +1,14 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block page_content %}
-<section class="default">
+<section class="page__default">
 
 	{# header #}
-	{% include 'partials/default-header.html.twig' with{'reveal_title': 'fadeinfrombottom delay-100 duration-500'} %}
+	{% include 'partials/content.html.twig' with {
+		'content':'<h1>' ~ page.title ~ '</h1>',
+		'align': 'content--center',
+		'reveal': 'fadeinfrombottom delay-100 duration-500',
+		'rythm': 'rythm-half'}%}
 
 	{# content #}
 	{% include 'partials/content.html.twig' with{'reveal': 'fadeinfrombottom delay-150 duration-500'} %}
