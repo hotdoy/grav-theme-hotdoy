@@ -22,4 +22,42 @@ form:
                 rythm-null: 'Null'
                 rythm-half: 'Half'
                 rythm: 'Default'
-                
+
+            header.align:
+              type: toggle
+              label: Text Alignment
+              highlight: content--left
+              default: content--left
+              options: 
+                content--left: 'Left'
+                content--center: 'Center'
+                content--right: 'Right'
+
+            header.width:
+              type: toggle
+              label: Width
+              highlight: tight
+              default: tight
+              options: 
+                tight: 'Tight'
+                site: 'Site'
+            
+            theme:
+              type: section
+              title: Theme
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.bg_color_alt:
+              type: colorpicker
+              label: Alternate Background Color
+
+            header.fg_color_alt:
+              type: colorpicker
+              label: Alternate Foreground Color
