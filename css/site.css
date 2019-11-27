@@ -204,7 +204,7 @@ MARKDOWN NOTICES
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2rem;
-	padding: var(--gutter);
+	padding: var(--gutter) calc(var(--gutter)*2);
 }
 
 .notices p a{
