@@ -1,6 +1,5 @@
 {% set content = content|default(content|raw) %}
 {% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
-{% set width = width|default(page.header.width ?? 'tight') %}
 {% set reveal = reveal|default('fadeinfrombottom delay-100 duration-500') %}
 {% set align = align|default(page.header.align ?? 'content--left') %}
 {% set class = class|default('') %}
@@ -16,6 +15,6 @@
 {% endset %}
 
 <section class="{{ modular_classes }}" style="{{ modular_styles }}">
-	<div class="content__ctn {{ width }} {{ align }}" {% if reveal %}data-reveal="{{ reveal }}"{% endif %}>{{ content }}</div>
+	<div class="content__ctn site {{ align }}" {% if reveal %}data-reveal="{{ reveal }}"{% endif %}>{{ content }}</div>
 </section>
 

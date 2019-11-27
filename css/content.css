@@ -11,10 +11,30 @@
 .modular--content twitter-widget{
 	margin-left: auto !important;
 	margin-right: auto !important;
-	margin-top: 2rem !important;
-	margin-bottom: 2rem !important;
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
 	padding-left: var(--gutter);
 	padding-right: var(--gutter);
+}
+
+.modular--content p,
+.modular--content h1,
+.modular--content h2,
+.modular--content h3,
+.modular--content h4,
+.modular--content h5,
+.modular--content h6{
+	max-width: var(--width-tight);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modular--content .content__ctn>.site{
+	padding: 0;
+}
+
+.modular--content blockquote>p{
+	max-width: none;
 }
 
 .modular--content .embed {
