@@ -1,3 +1,11 @@
+# v1.2.14
+## 26/11/2019
+1. [](#improved)
+	* width-tight set to 650px
+	* Simplified youtube and vimeo shortcodes to youtube="id". **(breaking change!)**
+	* Content modular is now always width-site so child elements can set their own width. 
+	* Forms used in content modular width related css moved to content.css
+
 # v1.2.13
 ## 26/11/2019
 1. [](#improved)
