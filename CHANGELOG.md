@@ -1,3 +1,11 @@
+# v1.2.15
+## 27/11/2019
+1. [](#improved)
+	* BREAKING! fixed a typo in```rhythm``` everywhere. This will break a lot of things. I suggest you find and replace. Figured now was the best time to do it since still no one is using the theme.
+	* Moved rhythm at the bottom of blueprints.
+	* BREAKING! ```rhythm-negative``` is now ```rhythm-header```
+	* improved padding in markdown notices.
+
 # v1.2.14
 ## 26/11/2019
 1. [](#improved)
