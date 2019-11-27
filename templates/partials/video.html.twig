@@ -6,11 +6,11 @@
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set align_h = align_h|default(page.header.align_h) %}
-{% set rythm = rythm|default(page.header.rythm) %}
+{% set rhythm = rhythm|default(page.header.rhythm) %}
 {% set reveal_video = reveal_video|default('fadeinfrombottom delay-100 duration-500') %}
 {% set reveal_content = reveal_content|default('fadeinfrombottom delay-200 duration-500') %}
 	
-{% set modular_classes = 'modular modular--video ' ~ rythm ~ (bg_color ? ' rythm-padding' : '') %}
+{% set modular_classes = 'modular modular--video ' ~ rhythm ~ (bg_color ? ' rhythm-padding' : '') %}
 {% set modular_styles %}{% include '/partials/theme-module.html.twig' %} %}{% endset %}
 
 <section class="{{ modular_classes }}" style="{{ modular_styles }}">

@@ -67,9 +67,9 @@ form:
       type: text
       label: Default Border Radius
 
-    rythm:
+    rhythm:
       type: text
-      label: Rythm
+      label: Rhythm
       default: 6rem
 
     organization:

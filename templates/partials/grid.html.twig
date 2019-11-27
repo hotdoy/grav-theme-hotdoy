@@ -1,4 +1,4 @@
-{% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
 {% set columns = columns|default(page.header.columns) %}
 {% set bg_color = grid_bg_color|default(page.header.bg_color) %}
 {% set item_border = item_border|default(page.header.item_border) %}
@@ -8,7 +8,7 @@
 {% set item_bg_color_alt = item_bg_color_alt|default(page.header.item_bg_color_alt) %}
 {% set item_fg_color_alt = item_fg_color_alt|default(page.header.item_fg_color_alt) %}
 
-{% set modular_classes = 'modular modular--grid ' ~ rythm ~ (bg_color ? ' rythm-padding' : '') %}
+{% set modular_classes = 'modular modular--grid ' ~ rhythm ~ (bg_color ? ' rhythm-padding' : '') %}
 
 {% set modular_styles %}
 {% if bg_color %}--bg-color:{{ bg_color }};{% endif %}

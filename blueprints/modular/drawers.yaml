@@ -30,13 +30,13 @@ form:
               type: section
               title: Module Options
 
-            header.rythm:
+            header.rhythm:
               type: toggle
-              label: Rythm
-              highlight: rythm
-              default: rythm
+              label: Rhythm
+              highlight: rhythm
+              default: rhythm
               options: 
-                rythm-header: 'Header'
-                rythm-null: 'Null'
-                rythm-half: 'Half'
-                rythm: 'Default'
+                rhythm-header: 'Header'
+                rhythm-null: 'Null'
+                rhythm-half: 'Half'
+                rhythm: 'Default'

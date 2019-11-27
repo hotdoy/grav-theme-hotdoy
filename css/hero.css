@@ -82,6 +82,6 @@
 	}
 }
 
-.rythm-negative.rythm-padding {
-	padding-top: calc(1.5 * var(--rythm));
+.rhythm-negative.rhythm-padding {
+	padding-top: calc(1.5 * var(--rhythm));
 }

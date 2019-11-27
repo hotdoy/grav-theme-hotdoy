@@ -1,5 +1,5 @@
 {% set content = content|default(content|raw) %}
-{% set rythm = rythm|default(page.header.rythm ?? 'rythm') %}
+{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
 {% set reveal = reveal|default('fadeinfrombottom delay-100 duration-500') %}
 {% set align = align|default(page.header.align ?? 'content--left') %}
 {% set class = class|default('') %}
@@ -8,7 +8,7 @@
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 
-{% set modular_classes = 'modular modular--content ' ~ rythm ~ (bg_color ? ' rythm-padding' : '') ~ ' ' ~ class %}
+{% set modular_classes = 'modular modular--content ' ~ rhythm ~ (bg_color ? ' rhythm-padding' : '') ~ ' ' ~ class %}
 
 {% set modular_styles %}
 {% include '/partials/theme-module.html.twig' %}

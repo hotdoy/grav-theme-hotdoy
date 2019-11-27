@@ -61,17 +61,6 @@ form:
               description: Percentage of device viewport height.
               default: 100
 
-            header.rythm:
-              type: toggle
-              label: Rythm
-              highlight: rythm
-              default: rythm
-              options: 
-                rythm-header: 'Header'
-                rythm-null: 'Null'
-                rythm-half: 'Half'
-                rythm: 'Default'
-
             theme:
               type: section
               title: Theme
@@ -91,3 +80,14 @@ form:
             header.fg_color_alt:
               type: colorpicker
               label: Alternate Foreground Color
+
+            header.rhythm:
+              type: toggle
+              label: Rhythm
+              highlight: rhythm
+              default: rhythm
+              options: 
+                rhythm-header: 'Header'
+                rhythm-null: 'Null'
+                rhythm-half: 'Half'
+                rhythm: 'Default'

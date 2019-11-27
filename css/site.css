@@ -29,7 +29,7 @@ body {
 
 /*
 ###########################################################
-SECTION WIDTH, GUTTERS, AND RYTHM
+SECTION WIDTH, GUTTERS, AND RHYTHM
 ###########################################################
 */
 
@@ -55,26 +55,26 @@ SECTION WIDTH, GUTTERS, AND RYTHM
 	max-width: var(--width-full);
 }
 
-.rythm-negative,
-.rythm-header{
+.rhythm-negative,
+.rhythm-header{
 	margin-top: calc(var(--nav-height)*-1);
 }
 
-.rythm-null{
+.rhythm-null{
 	margin-top: 0;
 }
 
-.rythm-half{
-	margin-top: calc(var(--rythm)/2);
+.rhythm-half{
+	margin-top: calc(var(--rhythm)/2);
 }
 
-.rythm{
-	margin-top: var(--rythm)
+.rhythm{
+	margin-top: var(--rhythm)
 }
 
-.rythm-padding{
-	padding-top: var(--rythm);
-	padding-bottom: var(--rythm);
+.rhythm-padding{
+	padding-top: var(--rhythm);
+	padding-bottom: var(--rhythm);
 }
 
 .gutter {
@@ -166,8 +166,8 @@ MISC ELEMENTS
 */
 
 hr{
-	margin-top: var(--rythm);
-	margin-bottom: var(--rythm);
+	margin-top: var(--rhythm);
+	margin-bottom: var(--rhythm);
 	border: transparent;
     border-top: 1px solid var(--fg-color);
     opacity: 0.2;

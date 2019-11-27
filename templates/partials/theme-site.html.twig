@@ -7,7 +7,7 @@
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt ?? theme.fg_color_alt) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt ?? theme.bg_color_alt) %}
 {% set default_radius = default_radius|default(page.header.default_radius ?? theme.default_radius) %}
-{% set rythm = rythm|default(theme.rythm) %}
+{% set rhythm = rhythm|default(theme.rhythm) %}
 {% if nav_bg_color %}--nav-bg-color:{{ nav_bg_color }};{% endif %}
 {% if nav_fg_color %}--nav-fg-color:{{ nav_fg_color }};{% endif %}
 {% if nav_panel_bg_color %}--nav-panel-bg-color:{{ nav_panel_bg_color }};{% endif %}
@@ -17,4 +17,4 @@
 {% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}
 {% if bg_color_alt %}--bg-color-alt:{{ bg_color_alt }};{% endif %}
 {% if default_radius %}--radius-1:{{ default_radius }};{% endif %}
-{% if rythm %}--rythm:{{ rythm }};{% endif %}
+{% if rhythm %}--rhythm:{{ rhythm }};{% endif %}

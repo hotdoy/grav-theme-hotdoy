@@ -15,17 +15,6 @@ form:
               type: section
               title: Grid
 
-            header.rythm:
-              type: toggle
-              label: Rythm
-              highlight: rythm
-              default: rythm
-              options: 
-                rythm-header: 'Header'
-                rythm-null: 'Null'
-                rythm-half: 'Half'
-                rythm: 'Default'
-
             header.columns:
               type: range
               label: Columns
@@ -33,10 +22,6 @@ form:
               validate:
                 min: 1
                 max: 12
-
-            header.bg_color:
-              type: colorpicker
-              label: Background Color
 
             items:
               type: section
@@ -66,9 +51,24 @@ form:
               type: colorpicker
               label: Alternate Foreground Color
 
-            collection:
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            theme:
               type: section
-              title: Collection
+              title: Theme
+
+            header.rhythm:
+              type: toggle
+              label: Rhythm
+              highlight: rhythm
+              default: rhythm
+              options: 
+                rhythm-header: 'Header'
+                rhythm-null: 'Null'
+                rhythm-half: 'Half'
+                rhythm: 'Default'
 
             header.content.items:
               type: text

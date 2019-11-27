@@ -31,8 +31,8 @@
 }
 
 .modular--content form{
-	margin-top: var(--rythm);
-	margin-bottom: var(--rythm);
+	margin-top: var(--rhythm);
+	margin-bottom: var(--rhythm);
 }
 
 .modular--content .content__ctn>.site{

@@ -220,7 +220,7 @@
 1. [](#new)
 	* Form inputs now use theme colors.
 	* All module blueprints now extend module.yaml.
-	* Added new rythm-half to all modules
+	* Added new rhythm-half to all modules
 2. [](#improved)
 	* Modular page blueprint cleaned up.
 	* Form inputs now use courier (might change soon).

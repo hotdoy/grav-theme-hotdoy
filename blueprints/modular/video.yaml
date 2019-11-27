@@ -34,17 +34,6 @@ form:
                 0: 'False'
                 1: 'True'
 
-            header.rythm:
-              type: toggle
-              label: Rythm
-              highlight: rythm
-              default: rythm
-              options: 
-                rythm-header: 'Header'
-                rythm-null: 'Null'
-                rythm-half: 'Half'
-                rythm: 'Default'
-
             text:
               type: section
               title: Content
@@ -78,3 +67,14 @@ form:
             header.fg_color_alt:
               type: colorpicker
               label: Alternate Foreground Color
+
+            header.rhythm:
+              type: toggle
+              label: rhythm
+              highlight: rhythm
+              default: rhythm
+              options: 
+                rhythm-header: 'Header'
+                rhythm-null: 'Null'
+                rhythm-half: 'Half'
+                rhythm: 'Default'
