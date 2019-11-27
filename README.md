@@ -1,6 +1,10 @@
-> **WARNING!** : I am currently doing a lot of breaking changes. You might want to wait for the next release if you plan on modding this theme and keep receiving updates.
+> **WARNING!** : I am currently doing a lot of breaking changes. Like all the time, everyday. So you might want to wait if you plan on using this theme for [inheritance](https://learn.getgrav.org/16/themes/customization) and keep receiving updates.
 
-> **SNIPCART WARNING!** : The newest version of Snipcart that comes with the theme seems to have some issues. I'll be contacting them  to try and figure out if something can be done on my side.
+> **SNIPCART** : Snipcart integration seems broken. I'll be contacting them  to try and figure out if something can be done eventually but commerce not being my main focus, i'll probably come back to this later on.
+
+> **WHAT'S NEXT?** : This week should be about a Google Maps modular and hopefully fixing Snipcart (not a priority).
+
+> **And then...?** : Finally include a demo with the theme with proper examples.
 
 # Hotdoy Theme
 
@@ -25,7 +29,6 @@ For the moment, here is a list of what I run..
 * Quick Tray Links
 * Shortcode Core
 * Sitemap
-* Google Maps
 
 # Installation
 Installing the Hotdoy theme can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
@@ -89,7 +92,7 @@ Add buttons with out without material icons
 [btn-solid], [btn], [btn-link], [link] 
 
 ## Embed
-Add [youtube] and [vimeo] by id
+Add [youtube=id] and [vimeo=id] by id
 
 ## Note
 Use [note] to add unrendered content.
