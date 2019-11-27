@@ -55,7 +55,8 @@ SECTION WIDTH, GUTTERS, AND RYTHM
 	max-width: var(--width-full);
 }
 
-.rythm-negative{
+.rythm-negative,
+.rythm-header{
 	margin-top: calc(var(--nav-height)*-1);
 }
 

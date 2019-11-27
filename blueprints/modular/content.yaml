@@ -18,7 +18,7 @@ form:
               highlight: rythm
               default: rythm
               options: 
-                rythm-negative: 'Negative'
+                rythm-header: 'Header'
                 rythm-null: 'Null'
                 rythm-half: 'Half'
                 rythm: 'Default'
