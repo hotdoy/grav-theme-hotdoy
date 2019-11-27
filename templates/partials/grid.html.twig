@@ -1,5 +1,6 @@
 {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
 {% set columns = columns|default(page.header.columns) %}
+{% set behaviour = behaviour|default(page.header.behaviour) %}
 {% set bg_color = grid_bg_color|default(page.header.bg_color) %}
 {% set item_border = item_border|default(page.header.item_border) %}
 {% set item_padding = item_padding|default(page.header.item_padding) %}
@@ -24,7 +25,7 @@
 {% endset %}
 
 <section class="{{ modular_classes }}" {% if computed_style %}style="{{ modular_styles }}"{% endif %}>
-	<div class="grid site" tcolumns="{{ columns }}" style="{{ items_styles }}">
+	<div class="grid site {{ behaviour }}" tcolumns="{{ columns }}" style="{{ items_styles }}">
 		{% for page in page.collection() %}
 			{{ page.content }}
 		{% endfor %}

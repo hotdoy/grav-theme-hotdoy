@@ -69,7 +69,15 @@
 }
 
 @media (max-width: 735px) {
-	.grid__item[columns]{grid-column: 1/-1;}
+	.grid--wrap .grid__item[columns]{
+		grid-column: 1/-1;
+	}
+	.grid--scroll{
+		overflow-x: auto;
+	}
+	.grid--scroll .grid__item{
+		width: 80vw;
+	}
 }
 
 .grid__item *:first-child {margin-top: 0;}

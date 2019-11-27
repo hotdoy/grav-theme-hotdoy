@@ -1,3 +1,8 @@
+# v1.2.16
+## 27/11/2019
+1. [](#new)
+	* Added option modular option to wrap or scroll on smaller screens.
+
 # v1.2.15
 ## 27/11/2019
 1. [](#improved)

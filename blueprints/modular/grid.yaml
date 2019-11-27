@@ -23,6 +23,17 @@ form:
                 min: 1
                 max: 12
 
+            header.behaviour:
+              type: toggle
+              label: Behaviour
+              help: Determine whether the grid wrap of scroll on smaller screen.
+              highlight: grid--wrap
+              default: grid--wrap
+              options: 
+                grid--wrap: 'Wrap'
+                grid--scroll: 'Scroll'
+                
+
             items:
               type: section
               title: Items
