@@ -23,10 +23,16 @@
 .modular--content h3,
 .modular--content h4,
 .modular--content h5,
-.modular--content h6{
+.modular--content h6,
+.modular--content form{
 	max-width: var(--width-tight);
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.modular--content form{
+	margin-top: var(--rythm);
+	margin-bottom: var(--rythm);
 }
 
 .modular--content .content__ctn>.site{

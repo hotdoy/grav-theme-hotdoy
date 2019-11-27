@@ -1,21 +1,3 @@
-form{
-	position: relative;
-	margin-top: var(--rythm);
-	margin-bottom: var(--rythm);
-	max-width: var(--width-tight);
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: var(--gutter);
-	padding-right: var(--gutter);
-}
-
-@media (min-width: 735px) {
-	form{
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
 .form-field{
 	margin-top: 1rem;
 }
