@@ -1,3 +1,8 @@
+# v1.2.17
+## 28/11/2019
+1. [](#improved)
+	* Abandonning css grid in favor of flexbox for grid modular.
+
 # v1.2.16
 ## 27/11/2019
 1. [](#new)

@@ -14,29 +14,29 @@ form:
             grid:
               type: section
               title: Grid
-
-            header.columns:
-              type: range
-              label: Columns
-              default: 3
-              validate:
-                min: 1
-                max: 12
-
-            header.behaviour:
-              type: toggle
-              label: Behaviour
-              help: Determine whether the grid wrap of scroll on smaller screen.
-              highlight: grid--wrap
-              default: grid--wrap
-              options: 
-                grid--wrap: 'Wrap'
-                grid--scroll: 'Scroll'
-                
-
+               
             items:
               type: section
               title: Items
+
+            header.item_width_portrait:
+              type: toggle
+              label: Item Width Portrait
+              highlight: 100%
+              default: 100%
+              options: 
+                100%: '1/1'
+                50%: '1/2'
+
+            header.item_width_landscape:
+              type: toggle
+              label: Item Width Portrait
+              highlight: 33.33%
+              default: 33.33%
+              options: 
+                50%: '1/2'
+                33.33%: '1/3'
+                25%: '1/4'
 
             header.item_border:
               type: text
@@ -62,13 +62,13 @@ form:
               type: colorpicker
               label: Alternate Foreground Color
 
-            header.bg_color:
-              type: colorpicker
-              label: Background Color
-
             theme:
               type: section
               title: Theme
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
 
             header.rhythm:
               type: toggle
@@ -80,22 +80,3 @@ form:
                 rhythm-null: 'Null'
                 rhythm-half: 'Half'
                 rhythm: 'Default'
-
-            header.content.items:
-              type: text
-              label: PLUGIN_ADMIN.ITEMS
-              default: '@self.modular'
-              size: medium
-
-            header.content.order.by:
-              type: text
-              label: PLUGIN_ADMIN.ORDER_BY
-              default: 'default'
-              size: small
-
-            header.content.order.dir:
-              type: text
-              label: PLUGIN_ADMIN.ORDER
-              help: '"desc" or "asc" are valid values'
-              default: 'asc'
-              size: small
