@@ -30,7 +30,7 @@
 				Buy This
 				</a>
 			</div>
-			<span class="product__price">{{ page.header.price|number_format(2) }} CAD</span>
+			<span class="product__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</span>
 		</div>
 	</div>
 

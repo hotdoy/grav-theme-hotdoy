@@ -192,6 +192,11 @@ code{
 	display: none;
 }
 
+#snipcart{
+	z-index: 9000;
+	position: absolute;
+}
+
 
 
 /*
