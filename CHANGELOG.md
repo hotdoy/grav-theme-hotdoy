@@ -1,3 +1,12 @@
+# v1.2.20
+## 29/11/2019
+1. [](#improved)
+	* Improved theme blueprint
+	* General modular maintenance
+
+2. [](#bufix)
+	* Fixed Snipcart
+
 # v1.2.19
 ## 29/11/2019
 1. [](#bufix)

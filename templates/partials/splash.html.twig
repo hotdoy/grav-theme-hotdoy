@@ -1,7 +1,3 @@
-{% set bg_color = bg_color|default(page.header.bg_color) %}
-{% set fg_color = fg_color|default(page.header.fg_color) %}
-{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
-{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
 {% set bg_video = bg_video|default(page.header.bg_video ? page.media[page.header.bg_video]) %}
 {% set bg_position = bg_position|default(page.header.bg_position ?? '50% 50%') %}
@@ -9,6 +5,10 @@
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
 {% set min_height = min_height|default(page.header.min_height) %}
 {% set bg_loop = bg_loop|default(page.header.bg_loop) %}
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
 {% set reveal_media = reveal_media|default('') %}
 {% set reveal_content = reveal_content|default('fadeinfrombottom delay-100 duration-500') %}

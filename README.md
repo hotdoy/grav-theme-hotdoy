@@ -1,10 +1,6 @@
 > **WARNING!** : I am currently doing a lot of breaking changes. Like all the time, everyday. So you might want to wait if you plan on using this theme for [inheritance](https://learn.getgrav.org/16/themes/customization) and keep receiving updates.
 
-> **SNIPCART** : Snipcart integration seems broken. I'll be contacting them  to try and figure out if something can be done eventually but commerce not being my main focus, i'll probably come back to this later on.
-
-> **WHAT'S NEXT?** : This week should be about a Google Maps modular and hopefully fixing Snipcart (not a priority).
-
-> **And then...?** : Finally include a demo with the theme with proper examples.
+> **WHAT'S NEXT?** : This week should be about a Google Maps modular ~~and hopefully fixing Snipcart~~ (done!). I was thinking of maybe changing the way reveal animations are attributed to a modular by giving everyone it's own class and stuffing all of that in one css file so you could control all animations from there.
 
 # Hotdoy Theme
 

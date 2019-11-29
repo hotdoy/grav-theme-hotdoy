@@ -131,6 +131,7 @@ form:
     google_maps_api_key:
       type: text
       label: Google Maps API Key
+      description: COMING SOON!
 
     facebook_app_id:
       type: text
