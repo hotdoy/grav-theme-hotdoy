@@ -2,23 +2,12 @@
 {% set fg_color = fg_color|default(page.header.fg_color) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
-{% set border = border|default(page.header.border) %}
-{% set padding = padding|default(page.header.padding) %}
 {% set align_v = align_v|default(page.header.align_v) %}
 {% set align_h = align_h|default(page.header.align_h) %}
 {% set reveal = reveal|default('fadeinfrombottom delay-100 duration-500') %}
+{% set modular_classes = 'grid__item ' ~ align_v %}
+{% set modular_styles %}{% include '/partials/theme-module.html.twig' %}{% endset %}
 
-{% set item_classes = 'grid__item ' ~ align_v %}
-
-{% set item_styles %}
-{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
-{% if fg_color %}--fg-color:{{ fg_color }};{% endif %}
-{% if bg_color_alt %}--bg-color-alt:{{ bg_color_alt }};{% endif %}
-{% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}
-{% if border %}--border:{{ border }};{% endif %}
-{% if padding %}--padding:{{ padding }};{% endif %}
-{% endset %}
-
-<div class="{{ item_classes }}" data-reveal="{{ reveal }}" style="{{ item_styles }}">
+<div class="{{ modular_classes }}" data-reveal="{{ reveal }}" style="{{ modular_styles }}">
 	<div class="grid__item__content {{ align_h }}">{{ page.content|markdown }}</div>
 </div>

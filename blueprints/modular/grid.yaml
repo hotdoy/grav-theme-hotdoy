@@ -9,16 +9,10 @@ form:
           fields:
 
             content:
-                unset@: true
-
-            grid:
-              type: section
-              title: Grid
-               
-            items:
-              type: section
-              title: Items
-
+              unset@: true
+            header.media_order:
+              unset@: true
+              
             header.item_width_portrait:
               type: toggle
               label: Item Width Portrait
@@ -37,31 +31,7 @@ form:
                 50%: '1/2'
                 33.33%: '1/3'
                 25%: '1/4'
-
-            header.item_border:
-              type: text
-              label: Border
-
-            header.item_padding:
-              type: text
-              label: Padding
-
-            header.item_bg_color:
-              type: colorpicker
-              label: Background Color
-
-            header.item_fg_color:
-              type: colorpicker
-              label: Foreground Color
-
-            header.item_bg_color_alt:
-              type: colorpicker
-              label: Alternate Background Color
-
-            header.item_fg_color_alt:
-              type: colorpicker
-              label: Alternate Foreground Color
-
+                
             theme:
               type: section
               title: Theme
@@ -69,6 +39,18 @@ form:
             header.bg_color:
               type: colorpicker
               label: Background Color
+              
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.bg_color_alt:
+              type: colorpicker
+              label: Alternate Background Color
+
+            header.fg_color_alt:
+              type: colorpicker
+              label: Alternate Foreground Color
 
             header.rhythm:
               type: toggle

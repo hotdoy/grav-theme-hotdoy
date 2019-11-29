@@ -1,37 +1,20 @@
 {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
-{# {% set behaviour = behaviour|default(page.header.behaviour) %} #}
-{% set bg_color = grid_bg_color|default(page.header.bg_color) %}
-{% set item_border = item_border|default(page.header.item_border) %}
-{% set item_padding = item_padding|default(page.header.item_padding) %}
-{% set item_bg_color = item_bg_color|default(page.header.item_bg_color) %}
-{% set item_fg_color = item_fg_color|default(page.header.item_fg_color) %}
-{% set item_bg_color_alt = item_bg_color_alt|default(page.header.item_bg_color_alt) %}
-{% set item_fg_color_alt = item_fg_color_alt|default(page.header.item_fg_color_alt) %}
-
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set item_width_landscape = item_width_landscape|default(page.header.item_width_landscape) %}
 {% set item_width_portrait = item_width_portrait|default(page.header.item_width_portrait) %}
-
 {% set modular_classes = 'modular modular--grid ' ~ rhythm ~ (bg_color ? ' rhythm-padding' : '') %}
-
 {% set modular_styles %}
-{% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
-{# {% if behaviour %}--grid-behaviour:{{ behaviour }};{% endif %} #}
-{% endset %}
-
-{% set items_styles %}
-{% if item_border %}--border:{{ item_border }};{% endif %}
-{% if item_padding %}--padding:{{ item_padding }};{% endif %}
-{% if item_bg_color %}--bg-color:{{ item_bg_color }};{% endif %}
-{% if item_fg_color %}--fg-color:{{ item_fg_color }};{% endif %}
-{% if item_fg_color_alt %}--fg-color-alt:{{ item_fg_color_alt }};{% endif %}
-{% if item_bg_color_alt %}--bg-color-alt:{{ item_bg_color_alt }};{% endif %}
-{% if item_width_landscape %}--item-width-landscape:{{ item_width_landscape }};{% endif %}
-{% if item_width_portrait %}--item-width-portrait:{{ item_width_portrait }};{% endif %}
+	{% include '/partials/theme-module.html.twig' %}
+	{% if item_width_landscape %}--item-width-landscape:{{ item_width_landscape }};{% endif %}
+	{% if item_width_portrait %}--item-width-portrait:{{ item_width_portrait }};{% endif %}
 {% endset %}
 
 <section class="{{ modular_classes }}" style="{{ modular_styles }}">
 	<div class="site">
-		<div class="grid" style="{{ items_styles }}">
+		<div class="grid">
 			{% for page in page.collection() %}
 				{{ page.content }}
 			{% endfor %}
