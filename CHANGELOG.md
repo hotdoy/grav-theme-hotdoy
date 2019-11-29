@@ -1,3 +1,8 @@
+# v1.2.19
+## 29/11/2019
+1. [](#bufix)
+	* fixed grid item width properties
+
 # v1.2.18
 ## 28/11/2019
 1. [](#improved)

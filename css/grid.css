@@ -15,12 +15,12 @@
 	padding: var(--gutter);
 	background-color: var(--bg-color);
 	color: var(--fg-color);
-	width: calc(var(--item-width-portrait) - calc(var(--gutter)*2));
+	width: calc(var(--item-width-portrait) - (var(--gutter)*2));
 }
 
 @media (min-width: 735px) {
 	.grid__item{
-		width: calc(var(--item-width-landscape) - calc(var(--gutter)*2));
+		width: calc(var(--item-width-landscape) - (var(--gutter)*2));
 	}
 }
 
