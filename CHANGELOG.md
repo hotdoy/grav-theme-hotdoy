@@ -1,3 +1,9 @@
+# v1.2.18
+## 28/11/2019
+1. [](#improved)
+	* Moved most grid-item modular options to parent grid modular.
+	* General maintenance.
+
 # v1.2.17
 ## 28/11/2019
 1. [](#improved)
