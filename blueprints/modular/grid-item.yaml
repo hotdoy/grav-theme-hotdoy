@@ -8,26 +8,6 @@ form:
         content:
           fields:
             
-            header.align_h:
-              type: toggle
-              label: Horizontal Alignment
-              highlight: grid__item__content--h-align-left
-              default: grid__item__content--h-align-left
-              options: 
-                grid__item__content--h-align-left: 'Left'
-                grid__item__content--h-align-center: 'Center'
-                grid__item__content--h-align-right: 'Right'
-
-            header.align_v:
-              type: toggle
-              label: Vertical Alignment
-              highlight: align-start
-              default: align-start
-              options: 
-                grid__item--v-align-start: 'Top'
-                grid__item--v-align-center: 'Center'
-                grid__item--v-align-end: 'Bottom'
-
             theme:
               type: section
               title: Theme

@@ -2,12 +2,9 @@
 {% set fg_color = fg_color|default(page.header.fg_color) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
-{% set align_v = align_v|default(page.header.align_v) %}
-{% set align_h = align_h|default(page.header.align_h) %}
 {% set reveal = reveal|default('fadeinfrombottom delay-100 duration-500') %}
-{% set modular_classes = 'grid__item ' ~ align_v %}
 {% set modular_styles %}{% include '/partials/theme-module.html.twig' %}{% endset %}
 
-<div class="{{ modular_classes }}" data-reveal="{{ reveal }}" style="{{ modular_styles }}">
-	<div class="grid__item__content {{ align_h }}">{{ page.content|markdown }}</div>
+<div class="grid__item" data-reveal="{{ reveal }}" style="{{ modular_styles }}">
+	<div class="grid__item__content">{{ page.content|markdown }}</div>
 </div>

@@ -1,20 +1,23 @@
-{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
+{% set item_width_landscape = item_width_landscape|default(page.header.item_width_landscape) %}
+{% set item_width_portrait = item_width_portrait|default(page.header.item_width_portrait) %}
+{% set item_align_h = item_align_h|default(page.header.item_align_h) %}
+{% set item_align_v = item_align_v|default(page.header.item_align_v) %}
 {% set bg_color = bg_color|default(page.header.bg_color) %}
 {% set fg_color = fg_color|default(page.header.fg_color) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
-{% set item_width_landscape = item_width_landscape|default(page.header.item_width_landscape) %}
-{% set item_width_portrait = item_width_portrait|default(page.header.item_width_portrait) %}
+{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
 {% set modular_classes = 'modular modular--grid ' ~ rhythm ~ (bg_color ? ' rhythm-padding' : '') %}
 {% set modular_styles %}
 	{% include '/partials/theme-module.html.twig' %}
 	{% if item_width_landscape %}--item-width-landscape:{{ item_width_landscape }};{% endif %}
 	{% if item_width_portrait %}--item-width-portrait:{{ item_width_portrait }};{% endif %}
 {% endset %}
+{% set grid_classes = 'grid' ~ (item_align_h ? ' ' ~ item_align_h : '') ~ (item_align_v ? ' ' ~ item_align_v : '') %}
 
 <section class="{{ modular_classes }}" style="{{ modular_styles }}">
 	<div class="site">
-		<div class="grid">
+		<div class="{{ grid_classes }}">
 			{% for page in page.collection() %}
 				{{ page.content }}
 			{% endfor %}
