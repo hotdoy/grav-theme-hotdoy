@@ -84,37 +84,24 @@ h1, h2, h3, h4, h5, h6{
     background: var(--button-solid-bg);
 }
 .button {
-    color: var(--button-fg);
-    background: var(--button-bg);
+    color: #ffffff;
+    background: #20c997;
 }
 .button:hover {
-    color: var(--button-fg);
-    background: var(--button-bg);
+    color: #ffffff;
+    background: #20c997;
 }
-
+.button.secondary {
+    color: rgba(255,255,255,0.85);
+    border-radius: 4px;
+    background: #20c997;
+}
 .notice, .note {
     background: var(--notice);
     color: var(--alert-fg);
 }
 .notice{
     display: none;
-}
-
-#messages {
-    position: fixed;
-    bottom: 20px;
-    right: 28px;
-    z-index: 9999;
-
-    animation-name: alertfadeout;
-    animation-delay: 3s;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes alertfadeout {
-    from {}
-    to {transform: translateX(200%);}
 }
 
 .info {
