@@ -24,7 +24,7 @@ form:
 
             header.item_width_landscape:
               type: toggle
-              label: Item Width Portrait
+              label: Item Width Landscape
               highlight: 33.33%
               default: 33.33%
               options: 
