@@ -9,11 +9,14 @@
 
 .product__image{
 	width: 100%;
+	max-width: var(--width-tight);
+	margin:0 auto;
 	border-radius: var(--radius-1);
 }
 
 .product__buy{
 	margin: 2rem auto;
+	max-width: var(--width-tight);
 }
 
 .product__price{

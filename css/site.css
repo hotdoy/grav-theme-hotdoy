@@ -201,7 +201,7 @@ MARKDOWN NOTICES
 */
 
 .notices {
-    max-width: calc(var(--width-tight) - var(--gutter)*2);
+    max-width: var(--width-tight);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2rem;

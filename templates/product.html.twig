@@ -11,34 +11,31 @@
 	'rhythm': 'rhythm-half'}%}
 
 	{# image #}
-	<div class="tight rhythm">
+	<div class="site rhythm">
 		{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 		{% include '/partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': 'fadeinfrombottom delay-150 duration-500' } %}
 	</div>
 
 	{# price #}
-	<div class="tight product__buy">
-		<div class="btn btn--solid product__btn">
-			<a class="snipcart-add-item"
-			data-item-id="{{ page.title }}"
-			data-item-price="{{ page.header.price }}"
-			data-item-url="{{ page.url }}"
-			data-item-description="{{ page.header.description }}"
-			data-item-image="{{ image.url }}"
-			data-item-name="{{ page.title }}">
-			Buy This
-			</a>
+	<div class="site">
+		<div class="product__buy">
+			<div class="btn btn--solid product__btn">
+				<a class="snipcart-add-item"
+				data-item-id="{{ page.title }}"
+				data-item-price="{{ page.header.price }}"
+				data-item-url="{{ page.url }}"
+				data-item-description="{{ page.header.description }}"
+				data-item-image="{{ image.url }}"
+				data-item-name="{{ page.title }}">
+				Buy This
+				</a>
+			</div>
+			<span class="product__price">{{ page.header.price|number_format(2) }} CAD</span>
 		</div>
-		<span class="product__price">{{ page.header.price|number_format(2) }} CAD</span>
 	</div>
 
 	{# content #}
 	{% include 'partials/content.html.twig' with{'class': 'product__content'} %}
-
-	{# modules #}
-	{% for module in page.collection() %}
-	{{ module.content }}
-	{% endfor %}
 
 </section>
 {% endblock %}
