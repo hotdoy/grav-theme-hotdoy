@@ -96,6 +96,9 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 4px;
     background: #20c997;
 }
+.primary-accent .button {
+    background: #20c997;
+}
 .notice, .note {
     background: var(--notice);
     color: var(--alert-fg);
@@ -213,3 +216,17 @@ h1, h2, h3, h4, h5, h6{
     font-family: courier !important;
 }
 
+/*Login*/
+#admin-login-wrapper {
+    background: none;
+}
+#admin-login h1 {
+    background-color: #1d1d1d;
+}
+#admin-login {
+    background: #1d1d1d;
+}
+.primary-accent {
+    background: #1d1d1d;
+    color: #fff;
+}
