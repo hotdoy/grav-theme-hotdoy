@@ -106,6 +106,7 @@ Use one of the 3 site witdh. [full], [site], [tight].
 * Video
 * Drawers
 * Grid
+* Map
 
 Every modular is a extended partial. In order to extend an existing Modular, simply copy the modular template file from hotdoy to the child theme. 
 If you only modify the commented variables and block, the module should be able to update without any issue. (Check the changelog before updating)
