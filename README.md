@@ -1,4 +1,4 @@
-> [Send beer money](https://www.paypal.me/hotdoy).
+## [Send beer money](https://www.paypal.me/hotdoy).
 
 > **WARNING!** : I am currently doing a lot of breaking changes. Like all the time, everyday. So you might want to wait if you plan on using this theme for [inheritance](https://learn.getgrav.org/16/themes/customization) and keep receiving updates.
 
