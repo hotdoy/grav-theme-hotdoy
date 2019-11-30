@@ -1,0 +1,11 @@
+.modular--map{}
+
+.map{
+	height: 400px;
+}
+
+@media (min-width: 735px) {
+    .map{
+        height: 600px;
+    }
+}

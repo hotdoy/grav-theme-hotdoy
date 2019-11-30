@@ -8,7 +8,6 @@
 {% endfor %}]
 {% endset %}
 
-
 {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
 {% set bg_color = bg_color|default(page.header.bg_color) %}
 {% set fg_color = fg_color|default(page.header.fg_color) %}
@@ -18,10 +17,9 @@
 {% set modular_classes = 'modular modular--map ' ~ rhythm %}
 {% set modular_styles %}{% include '/partials/theme-module.html.twig' %}{% endset %}
 
-
 <section class="{{ modular_classes }}" style="{{ modular_styles }}">
      <div class="site">
-          <div id="map-{{ random() }}" class="map" style="height:400px;"
+          <div id="map-{{ random() }}" class="map"
           data-lat="{{ center_lat }}"
           data-lng="{{ center_lng }}"
           data-zoom="{{ zoom }}"
