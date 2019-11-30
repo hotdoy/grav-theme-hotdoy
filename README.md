@@ -1,6 +1,8 @@
+> [Send beer money](https://www.paypal.me/hotdoy).
+
 > **WARNING!** : I am currently doing a lot of breaking changes. Like all the time, everyday. So you might want to wait if you plan on using this theme for [inheritance](https://learn.getgrav.org/16/themes/customization) and keep receiving updates.
 
-> **WHAT'S NEXT?** : This week should be about a Google Maps modular ~~and hopefully fixing Snipcart~~ (done!). I was thinking of maybe changing the way reveal animations are attributed to a modular by giving everyone it's own class and stuffing all of that in one css file so you could control all animations from there.
+> **WHAT'S NEXT?** : This week should be about ~~a Google Maps modular and hopefully fixing Snipcart~~ (done!). I was thinking of maybe changing the way reveal animations are attributed to a modular by giving everyone it's own class and stuffing all of that in one css file so you could control all animations from there.
 
 # Hotdoy Theme
 
