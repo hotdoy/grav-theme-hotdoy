@@ -1,5 +1,11 @@
+# v1.3.1
+## 30/11/2019
+1. [](#improved)
+	* Moved map styles to proper css file.
+	* Improved height on desktop
+
 # v1.3.0
-## 29/11/2019
+## 30/11/2019
 1. [](#new)
 	* Added Google Maps modular with support for snazzy directly in the theme blueprint and multiple markers
 2. [](#improved)
