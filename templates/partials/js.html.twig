@@ -7,6 +7,10 @@
 	{% do assets.addJs('theme://js/form.js', { group:'after' }) %}
 	{% do assets.addJs('theme://js/links.js', { group:'after'}) %}
 	
+	{% if theme.google_maps_api_key %}
+		{% do assets.addJs('theme://js/map.js', { group:'after'}) %}
+    {% endif %}
+	
 	{% if theme.tracking %}
 		{% do assets.addJs('theme://js/tracking.js', { group:'after'}) %}
 	{% endif %}

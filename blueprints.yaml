@@ -131,7 +131,10 @@ form:
     google_maps_api_key:
       type: text
       label: Google Maps API Key
-      description: COMING SOON!
+
+    snazzy_maps:
+      type: textarea
+      label: Snazzy Maps
 
     facebook_app_id:
       type: text

@@ -62,8 +62,6 @@ form:
               label: Background Veil
               default: 0
 
-
-                
             theme:
               type: section
               title: Theme
