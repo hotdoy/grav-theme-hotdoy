@@ -16,9 +16,6 @@
             {{ assets.css()|raw }}
             {{ assets.js('before')|raw }}
         {% endblock %}
-        {% if theme.google_maps_api_key %}
-            <script src="https://maps.googleapis.com/maps/api/js?key={{theme.google_maps_api_key}}&callback=initMap" async defer></script>
-        {% endif %}
     </head>
 
     <body style="{% include 'partials/theme-site.html.twig' %}">
@@ -29,14 +26,11 @@
         {% block page_content %}{% endblock %}
         
         {% if theme.snipcart_api_key %}
-            <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
-            <script src="https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"></script>
+        <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
         {% endif %}
 
-
-
         {% if theme.tracking %}
-            <div hidden id="tracking" data-ref="https://tracking.hotdoy.org/?ref={{ base_url_absolute }}"></div>
+        <div hidden id="tracking" data-ref="https://tracking.hotdoy.org/?ref={{ base_url_absolute }}"></div>
         {% endif %}
 
         {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}

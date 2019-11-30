@@ -8,9 +8,14 @@
 	{% do assets.addJs('theme://js/links.js', { group:'after'}) %}
 	
 	{% if theme.google_maps_api_key %}
-		{% do assets.addJs('theme://js/map.js', { group:'after'}) %}
+    	{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key ~ '&callback=initMap', { group:'after'}) %}
+    	{% do assets.addJs('theme://js/map.js', { group:'after'}) %}
     {% endif %}
-	
+
+    {% if theme.snipcart_api_key %}
+    	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js', { group:'after'}) %}
+    {% endif %}
+
 	{% if theme.tracking %}
 		{% do assets.addJs('theme://js/tracking.js', { group:'after'}) %}
 	{% endif %}

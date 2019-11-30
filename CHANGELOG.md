@@ -1,3 +1,10 @@
+# v1.3.0
+## 29/11/2019
+1. [](#new)
+	* Added Google Maps modular with support for snazzy directly in the theme blueprint and multiple markers
+2. [](#improved)
+	* Cleaned theme blueprint
+
 # v1.2.20
 ## 29/11/2019
 1. [](#improved)
