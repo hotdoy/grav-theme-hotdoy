@@ -12,7 +12,7 @@
 
 	        var map = new google.maps.Map(this, {
 				zoom: zoom,
-				center: {lat: lat,lng: lng},
+				center: new google.maps.LatLng(lat, lng),
 				styles: styles || undefined,
 				zoomControl: true,
 				panControl: true,
