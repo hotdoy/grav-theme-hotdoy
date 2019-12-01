@@ -5,7 +5,7 @@
 2. [](#improved)
 	* Map modular make sure all markers are visible.
 	* Product must now have an ID.
-	* Made default theme values similar to demo site.
+	* Made default theme values similar to demo site
 	* BREAKING! - Streamlined Material icons shortcodes.
 	* Removed logo from email template.
 
