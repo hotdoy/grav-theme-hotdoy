@@ -11,9 +11,6 @@ form:
             content:
               unset@: true
 
-            header.media_order:
-              unset@: true
-
             theme:
               type: section
               title: Theme
