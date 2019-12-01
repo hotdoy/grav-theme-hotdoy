@@ -237,3 +237,9 @@ MARKDOWN NOTICES
     background: #00968814;
     color: #009688;
 }
+
+.notices.dev{
+	font-family: courier;
+	text-align: center;
+	font-weight: bold;
+}

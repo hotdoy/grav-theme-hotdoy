@@ -18,6 +18,8 @@
 
 	{# price #}
 	<div class="site">
+
+		{% if theme.snipcart_api_key %}
 		<div class="product__buy">
 			<div class="btn btn--solid product__btn">
 				<a class="snipcart-add-item"
@@ -30,6 +32,12 @@
 			</div>
 			<span class="product__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</span>
 		</div>
+		{% else %}
+     	<div class="notices red dev">
+     		<p>Snipcart API Key not found.<br>
+     		Check theme configuration.</p>
+     	</div>
+		{% endif %}
 	</div>
 
 	{# content #}
