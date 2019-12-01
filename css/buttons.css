@@ -6,6 +6,8 @@ a {
 
 .btn {
 	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
 	cursor: pointer;
 	transition: all 0.2s;
 }
@@ -18,7 +20,7 @@ a {
 }
 
 .btn.btn--solid .material-icons {
-	padding-left: 20px;
+	padding-left: 7px;
 }
 
 .btn.btn--solid:hover{
