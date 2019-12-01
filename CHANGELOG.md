@@ -1,3 +1,12 @@
+# v1.3.3
+## 01/12/2019
+1. [](#new)
+	* Added debug text for modular/page requiring api keys
+2. [](#bugfix)
+	* Replaced all multilangual demo content with non-multilangual content.
+	* Removed a bugged default value in theme blueprint
+	* Prevent some embeded iframes to overflow.
+
 # v1.3.2
 ## 01/12/2019
 1. [](#new)
