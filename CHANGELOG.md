@@ -1,3 +1,14 @@
+# v1.3.2
+## 01/12/2019
+1. [](#new)
+	* Added demo content.
+2. [](#improved)
+	* Map modular make sure all markers are visible.
+	* Product must now have an ID.
+	* Made default theme values similar to demo site.
+	* BREAKING! - Streamlined Material icons shortcodes.
+	* Removed logo from email template.
+
 # v1.3.1
 ## 30/11/2019
 1. [](#improved)
