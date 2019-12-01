@@ -4,33 +4,36 @@
 	var initMap = function(){
 	   	var $el = $('.map');
 	    $el.each(function (index) {
-	        var lat = parseFloat($(this).data('lat'));
-	        var lng = parseFloat($(this).data('lng'));
 	        var zoom = parseInt($(this).data('zoom'));
-	        var	locations = $(this).data('locations');
-	        var	styles = $(this).data('snazzy');
-
+	        var	locations = JSON.parse($(this).data('locations'));
+	        var	styles = $(this).data('styles');
+ 			var marker, i;
+ 			var bounds = new google.maps.LatLngBounds();
 	        var map = new google.maps.Map(this, {
 				zoom: zoom,
-				center: new google.maps.LatLng(lat, lng),
+				center: new google.maps.LatLng(locations[0][1], locations[0][2]),
 				styles: styles || undefined,
 				zoomControl: true,
 				panControl: true,
 				streetViewControl: false,
 				mapTypeControl: false,
-				scrollwheel: true,
+				scrollwheel: false,
 				mapTypeId: 'roadmap',
 				draggable: true,
 	        });
 
- 			var marker, i;
- 			locations = JSON.parse(locations);
 	        for (i = 0; i < locations.length; i++) { 
-	       			marker = new google.maps.Marker({
-	       				title: locations[i][0],
-						position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+	        	var title = locations[i][0];
+	        	var position = new google.maps.LatLng(locations[i][1], locations[i][2])
+       			marker = new google.maps.Marker({
+       				title: title,
+					position: position,
 				});
+	       		bounds.extend(position);
 				marker.setMap(map);
+	        }
+	        if (locations.length > 1) {
+	        	map.fitBounds(bounds);
 	        }
 	    });
 	}

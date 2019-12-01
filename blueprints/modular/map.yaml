@@ -20,35 +20,28 @@ form:
               style: vertical
               label: Markers
               fields:
+
                 .title:
                   type: text
                   label: Title
+
                 .lat:
                   type: text
-                  size: small
                   label: Latitude
+
                 .lng:
                   type: text
-                  size: small
                   label: Longitude
-
-            header.center_lat:
-              type: text
-              size: small
-              label: Center Latitude
-
-            header.center_lng:
-              type: text
-              size: small
-              label: Center Longitude
 
             header.zoom:
               type: range
               label: Zoom
-              default: 8
+              default: 15
+              description: '1-World > 5-Landmass > 10-City > 15-Streets > 20-Buildings'
+              help: 'Only used if 1 marker. Outer bounds will be automatically determined otherwise.'
               validate:
-                min: 0
-                max: 19
+                min: 1
+                max: 20
 
             header.rhythm:
               type: toggle
