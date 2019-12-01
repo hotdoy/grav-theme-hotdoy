@@ -36,7 +36,7 @@ form:
     bg_color_alt:
       type: colorpicker
       label: Alternate Background Color
-      default: '#673ab7'
+      default: '#009688'
 
     fg_color_alt:
       type: colorpicker
@@ -56,16 +56,17 @@ form:
     nav_panel_bg_color:
       type: colorpicker
       label: Nav Panel Background Color
-      default: '#ffffff'
+      default: '#009688'
 
     nav_panel_fg_color:
       type: colorpicker
       label: Nav Panel Foreground Color
-      default: '#313131'
+      default: '#ffffff'
 
     default_radius:
       type: text
       label: Default Border Radius
+      default: none
 
     rhythm:
       type: text
@@ -91,11 +92,6 @@ form:
       label: Phone Formatted
       help: Phone number formatted as an international number.
 
-    org_phone_display:
-      type: text
-      label: Phone Display
-      help: Phone number as it should visually appear on the website.
-
     org_email:
       type: text
       label: Email
@@ -112,12 +108,12 @@ form:
     marquee_bg:
       type: colorpicker
       label: Marquee Background Color
-      default: '#000'
+      default: '#000000'
 
     marquee_fg:
       type: colorpicker
       label: Marquee Foreground color
-      default: '#fff'
+      default: '#ffffff'
 
     analytics:
       type: section
