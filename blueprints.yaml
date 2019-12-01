@@ -46,7 +46,6 @@ form:
     nav_bg_color:
       type: colorpicker
       label: Nav Background Color
-      default: 'transparent'
 
     nav_fg_color:
       type: colorpicker
