@@ -13,8 +13,13 @@
 	margin-right: auto !important;
 	margin-top: 3rem !important;
 	margin-bottom: 3rem !important;
-	padding-left: var(--gutter);
-	padding-right: var(--gutter);
+}
+
+.modular--content iframe.instagram-media{
+	margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
 }
 
 .modular--content p,
@@ -63,14 +68,6 @@
 
 }
 
-@media (min-width: 735px) {
-	.modular--content twitter-widget{
-		padding-left: 0;
-		padding-right: 0;
-		transform: translateX(-1rem) !important;
-	}
-}
-
 .modular--content img{
 	margin-right: auto;
 	margin-left: auto;
@@ -106,8 +103,8 @@
 }
 
 .modular--content pre code{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	max-width: var(--width-tight);
+	margin: 2rem auto;
     display: block;
     overflow-x: auto;
 }
