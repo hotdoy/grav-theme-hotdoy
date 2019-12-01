@@ -6,10 +6,9 @@ class MaterialIconShortcode extends Shortcode
 {
     public function init()
     {
-        $this->shortcode->getHandlers()->add('i', function(ShortcodeInterface $sc) {
-        	$size = $sc->getParameter('size');
-        	$size_computed = 'style="font-size:' . $size . ';"';
-            return '<i class="material-icons"' . $size_computed .'>'. $sc->getContent() . '</i>';
+        $this->shortcode->getHandlers()->add('mi', function(ShortcodeInterface $sc) {
+        	$mi = $sc->getParameter('mi', $this->getBbCode($sc));
+            return '<span class="material-icons">'. $mi . '</span>';
         });
     }
 }
