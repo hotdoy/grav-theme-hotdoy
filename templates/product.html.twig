@@ -21,14 +21,12 @@
 		<div class="product__buy">
 			<div class="btn btn--solid product__btn">
 				<a class="snipcart-add-item"
-				data-item-id="{{ page.title }}"
+				data-item-id="{{ page.header.id }}"
 				data-item-price="{{ page.header.price }}"
 				data-item-url="{{ page.url }}"
 				data-item-description="{{ page.header.description }}"
 				data-item-image="{{ image.url }}"
-				data-item-name="{{ page.title }}">
-				Buy This
-				</a>
+				data-item-name="{{ page.title }}">Buy This</a>
 			</div>
 			<span class="product__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</span>
 		</div>

@@ -8,14 +8,15 @@ form:
         content:
           fields:
 
-            header.title:
-              label: Name
-              validate:
-                required: true
-
             section_product:
               type: section
               title: Product
+
+            header.id:
+              type: text
+              label: Product ID
+              validate:
+                required: true
 
             header.image:
               type: filepicker
@@ -39,25 +40,25 @@ form:
               validate:
                 required: true
 
-            section_modular:
-              type: section
-              title: Modular
+            # section_modular:
+            #   type: section
+            #   title: Modular
 
-            header.content.items:
-              type: text
-              label: PLUGIN_ADMIN.ITEMS
-              default: '@self.modular'
-              size: medium
+            # header.content.items:
+            #   type: text
+            #   label: PLUGIN_ADMIN.ITEMS
+            #   default: '@self.modular'
+            #   size: medium
 
-            header.content.order.by:
-              type: text
-              label: PLUGIN_ADMIN.ORDER_BY
-              placeholder: folder
-              size: small
+            # header.content.order.by:
+            #   type: text
+            #   label: PLUGIN_ADMIN.ORDER_BY
+            #   placeholder: folder
+            #   size: small
 
-            header.content.order.dir:
-              type: text
-              label: PLUGIN_ADMIN.ORDER
-              help: '"desc" or "asc" are valid values'
-              placeholder: acs
-              size: small
+            # header.content.order.dir:
+            #   type: text
+            #   label: PLUGIN_ADMIN.ORDER
+            #   help: '"desc" or "asc" are valid values'
+            #   placeholder: acs
+            #   size: small
