@@ -1,3 +1,14 @@
+.unrevealed{opacity:0;}
+
+.revealed{	
+	opacity: 0;
+	animation-name: fadeinfrombottom;
+	animation-duration: 0.5s;
+	animation-delay: 0.1;
+	animation-fill-mode: forwards;
+	animation-timing-function: var(--transition-timing-1);
+}
+
 .fadein {
 	animation-name: fadein;
 	animation-duration: 0.2s;
