@@ -11,8 +11,8 @@
 {% set fg_color = fg_color|default(page.header.fg_color) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
-{% set reveal_content = reveal_content|default('fadeinfrombottom delay-100 duration-500') %}
-{% set reveal_media = reveal_media|default('fadeinfrombottom delay-100 duration-500') %}
+{% set reveal_content = reveal_content|default('') %}
+{% set reveal_media = reveal_media|default('') %}
 
 {% set modular_classes = 'modular modular--hero ' ~ rhythm ~ (bg_color or bg_image ? ' rhythm-padding' : '') %}
 {% set modular_styles %}{% include '/partials/theme-module.html.twig' %}{% endset %}
