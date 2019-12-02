@@ -1,6 +1,6 @@
 > **WARNING!** : I am currently doing a lot of breaking changes. Like all the time, everyday. So you might want to wait if you plan on using this theme for [inheritance](https://learn.getgrav.org/16/themes/customization) and keep receiving updates.
 
-> **What's Next?** : Thinking about changing how reveal animations work. So you might see some change in class names used un reveal attributes (all over the place) and the animations, delay, and duration css files. 
+> **What's Next?** : Changing how reveal animations works. So you might see some change in class names used in reveal attributes (all over the place) and the animations, delay, and duration css files. The aim is to have an easy and non-disruptive way of customizing animations without having to extend whole modular or pages. It will most likely result in a single css file.
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
