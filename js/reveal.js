@@ -1,11 +1,5 @@
 (function ($) {
 	'use strict';
-
-	var addRevealStyle = function(){
-		var css = '.unrevealed{opacity:0;}.revealed{opacity:1;transition:opacity 0.7s;}';
-		$('<style>').text(css).appendTo(document.head);
-	}
-
 	var reveal = function(){
 		const elements = document.querySelectorAll('[data-reveal]');
 		const observerConfig = {rootMargin: '-30px', threshold: 0.1};
@@ -63,7 +57,6 @@
 	}
 
 	var init = function () {
-		addRevealStyle();
 		reveal();
 	};
 
