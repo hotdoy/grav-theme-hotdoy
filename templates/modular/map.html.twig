@@ -14,11 +14,14 @@
 {% set modular_classes = 'modular modular--map ' ~ rhythm %}
 {% set modular_styles %}{% include '/partials/theme-module.html.twig' %}{% endset %}
 
-<section class="{{ modular_classes }}" style="{{ modular_styles }}" data-reveal="">
+<section class="{{ modular_classes }}" style="{{ modular_styles }}">
      <div class="site">
 
      	{% if theme.google_maps_api_key %}
-     	<div id="map-{{ random() }}" class="map"
+     	<div 
+        id="map-{{ random() }}" 
+        class="map"
+        data-reveal=""
         data-zoom="{{ zoom }}"
         data-styles='{{ theme.snazzy_maps }}'
         data-locations='{{ locations }}'>

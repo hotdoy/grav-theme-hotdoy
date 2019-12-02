@@ -7,11 +7,11 @@
 	{% include 'partials/content.html.twig' with {
 		'content':'<h1>' ~ page.title ~ '</h1>',
 		'align': 'content--center',
-		'reveal': 'fadeinfrombottom delay-100 duration-500',
+		'reveal': 'revealed delay-100 duration-500',
 		'rhythm': 'rhythm-half'}%}
 
 	{# content #}
-	{% include 'partials/content.html.twig' with{'reveal': 'fadeinfrombottom delay-150 duration-500'} %}
+	{% include 'partials/content.html.twig' with{'reveal': 'revealed delay-150 duration-500'} %}
 
 </section>
 {% endblock %}

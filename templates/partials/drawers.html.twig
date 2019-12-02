@@ -1,16 +1,13 @@
 {% set display_title = page.display_title %}
 {% set items = items|default(page.header.drawers) %}
 {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
-{% set reveal_title = reveal_title|default('fadeinfrombottom delay-0 duration-500') %}
-{% set reveal_detail = reveal_drawer|default('fadeinfrombottom delay-100 duration-500') %}
+
+{% set reveal_detail = reveal_drawer|default('') %}
 {% set reveal_content = reveal_content|default('fadeinfromtop delay-0 duration-500') %}
 
 {% set modular_classes = 'modular modular--drawers site ' ~ rhythm %}
 
 <section class="{{ modular_classes }}">
-	{% if display_title %}
-		<h2 class="drawers__title" data-reveal="{{ reveal_title }}">{{display_title}}</h2>
-	{% endif %}
 	{% for item in items %}
 		<details class="drawer__detail" data-reveal="{{ reveal_detail }}">
 			<summary class="noselect drawer__summary">

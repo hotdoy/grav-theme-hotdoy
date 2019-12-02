@@ -7,13 +7,13 @@
 	{% include 'partials/content.html.twig' with {
 	'content':'<h1>' ~ page.title ~ '</h1>',
 	'align': 'content--center',
-	'reveal': 'fadeinfrombottom delay-100 duration-500',
+	'reveal': 'revealed delay-100 duration-500',
 	'rhythm': 'rhythm-half'}%}
 
 	{# image #}
 	<div class="site rhythm">
 		{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
-		{% include '/partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': 'fadeinfrombottom delay-150 duration-500' } %}
+		{% include '/partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': 'revealed delay-150 duration-500' } %}
 	</div>
 
 	{# price #}

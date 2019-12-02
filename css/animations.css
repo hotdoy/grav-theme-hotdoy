@@ -2,21 +2,15 @@
 
 .revealed{	
 	opacity: 0;
-	animation-name: fadeinfrombottom;
+	animation-name: revealed;
 	animation-duration: 0.5s;
 	animation-delay: 0.1;
 	animation-fill-mode: forwards;
 	animation-timing-function: var(--transition-timing-1);
 }
 
-.fadein {
-	animation-name: fadein;
-	animation-duration: 0.2s;
-	animation-fill-mode: forwards;
-	animation-timing-function: var(--transition-timing-1);
-}
-@keyframes fadein {
-	from {opacity: 0;}
+@keyframes revealed {
+	from {opacity: 0; transform: translateY(50px);}
 	to {opacity: 1;}
 }
 
@@ -29,18 +23,6 @@
 }
 @keyframes fadeinfromtop {
 	from {opacity: 0; transform: translateY(-30px);}
-	to {opacity: 1;}
-}
-
-.fadeinfrombottom {
-	opacity: 0;
-	animation-name: fadeinfrombottom;
-	animation-duration: 0.2s;
-	animation-fill-mode: forwards;
-	animation-timing-function: var(--transition-timing-1);
-}
-@keyframes fadeinfrombottom {
-	from {opacity: 0; transform: translateY(50px);}
 	to {opacity: 1;}
 }
 
@@ -63,17 +45,4 @@
 @keyframes scalein {
 	from {opacity: 0; transform: scale3d(1.1,1.1,1)}
 	to {opacity: 1; transform: scale3d(1,1,1)}
-}
-
-.opacitate {
-	opacity: 0;
-	animation-name: opacitate;
-	animation-delay: 0s;
-	animation-duration: 0.2s;
-	animation-fill-mode: forwards;
-	animation-timing-function: var(--transition-timing-1);
-}
-@keyframes opacitate {
-	from {opacity: 0.5;}
-	to {opacity: 1;}
 }
