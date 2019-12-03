@@ -60,13 +60,20 @@ Background Color:           # Set the main background color (Used for text, modu
 Foreground Color:           # Set the main foreground color (Used for text, modules and other non-interactive elements).
 Alternate background Color: # Set the alternate background color (used in buttons, link and other interactive elements).
 Alternate boreground Color: # Set the alternate foreground color (used in buttons, link and other interactive elements).
-Rhythm:                     # Space between modules and other elements.
-Radius:                     # Default border radius.
+nav_bg_color
+nav_fg_color
+nav_panel_bg_color
+nav_panel_fg_color
+default_radius:             # Default border radius.
+rhythm:                     # Space between modules and other elements.
 Organization:               # A collection of field describing your organization (generate schema).
 google_tracking_id:         # Google analytics id
 facebook_app_id:            # Facebook App Id
 marquee:                    # A collection of field to add a small marquee at the top of every page.
 snipcart:                   # Snipcart Id for eCommerce integration.
+analytics
+google_maps_api_key
+snazzy_maps
 tracking:                   # Send me information on domains that use the theme so I know what not to break.
 ```
 
@@ -113,38 +120,3 @@ Use one of the 3 site witdh. [full], [site], [tight].
 Every modular is a extended partial. In order to extend an existing Modular, simply copy the modular template file from hotdoy to the child theme. 
 If you only modify the commented variables and block, the module should be able to update without any issue. (Check the changelog before updating)
 
-## Included Js
-
-### reveal.js
-Add "reveal" animation to any element by adding ```data-reveal``` to it.
-A default fadein will then be added when the element enters the screen.
-You can learn more about this on [Github](https://github.com/hotdoy/reveal.js/blob/master/README.md) 
-
-### links.js
-Small link manager. Mostly to add or remove attributes.
-
-### site-header.js
-Default site header / menu.
-* site-header.js
-* site-header.html.twig
-* site-header.css
-
-### site-loader
-Default site-loader / transitions.
-* site-loader.js
-* site-loader.html.twig
-* site-loader.css
-
-### video.js
-Pause or play videos depending on their visibility.
-
-### notify.js
-User facing notification system. Works like that...
-``` notify(message, bg_color, fg_color); ```
-Also comes with notify.css. (default styles you could overwrite by making a copy in a child template).
-
-### form.js
-Submits forms trough ajax. Then notify the user using notify.js
-
-### tracking.js
-Sends domain information to me so I know what to do next in the theme.
