@@ -1,6 +1,5 @@
 .modular--content {
 	max-width: 100vw;
-	overflow: hidden;
 }
 
 .content__ctn > *:first-child {

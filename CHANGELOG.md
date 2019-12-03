@@ -1,3 +1,15 @@
+# v1.3.4
+## 02/12/2019
+1. [](#improved)
+	* Reveal.js no longer add style to header
+	* .unrevealed and .revealed claases moved to animationa.css for now
+	* Default revealed animation is now fadeinfrombottom.
+	* All modular have been cleaned up of reveal animation.
+2. [](#bugfix)
+	* Fixed a bunch of whitespace in markup
+	* Removed a superfluoous margin at the end of content modular. 
+	* Removed an overflow hidden in content modular causing glitched reveal animation.
+
 # v1.3.3
 ## 01/12/2019
 1. [](#new)
