@@ -3,12 +3,12 @@
 	overflow: hidden;
 }
 
-.content__ctn > *:last-child {
-	margin-bottom: 0;
-}
-
 .content__ctn > *:first-child {
 	margin-top: 0;
+}
+
+.content__ctn > *:last-child {
+	margin-bottom: 0;
 }
 
 .modular--content twitter-widget{
@@ -49,6 +49,8 @@
 
 .modular--content blockquote>p{
 	max-width: none;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .modular--content .embed {
@@ -98,11 +100,6 @@
 	margin-top: 2rem;
 	overflow: hidden;
 	border-radius: var(--radius-1);
-}
-
-.modular--content>.tight,
-.modular--content>.site{
-	margin-bottom: 2rem;
 }
 
 .modular--content pre code{
