@@ -9,9 +9,9 @@
 {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
 {% set modular_classes = 'modular modular--grid ' ~ rhythm ~ (bg_color ? ' rhythm-padding' : '') %}
 {% set modular_styles %}
-	{% include '/partials/theme-module.html.twig' %}
-	{% if item_width_landscape %}--item-width-landscape:{{ item_width_landscape }};{% endif %}
-	{% if item_width_portrait %}--item-width-portrait:{{ item_width_portrait }};{% endif %}
+{% include '/partials/theme-module.html.twig' %}
+{% if item_width_landscape %}--item-width-landscape:{{ item_width_landscape }};{% endif %}
+{% if item_width_portrait %}--item-width-portrait:{{ item_width_portrait }};{% endif %}
 {% endset %}
 {% set grid_classes = 'grid' ~ (item_align_h ? ' ' ~ item_align_h : '') ~ (item_align_v ? ' ' ~ item_align_v : '') %}
 
