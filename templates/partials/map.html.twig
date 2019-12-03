@@ -1,0 +1,34 @@
+{% set zoom = zoom|default(page.header.zoom) %}
+{% set locations %}
+[{% for marker in page.header.markers %}
+["{{ marker.title }}", "{{ marker.lat }}", "{{ marker.lng }}"]{% if not loop.last %},{% endif %}
+{% endfor %}]
+{% endset %}
+{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
+{% set bg_color = bg_color|default(page.header.bg_color) %}
+{% set fg_color = fg_color|default(page.header.fg_color) %}
+{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
+{% set modular_reveal = modular_reveal|default('') %}
+{% set modular_classes = 'modular modular--map ' ~ rhythm %}
+{% set modular_styles %}{% include '/partials/theme-module.html.twig' %}{% endset %}
+
+<section class="{{ modular_classes }}" style="{{ modular_styles }}" data-reveal="{{ modular_reveal }}">
+     <div class="site">
+     	{% if theme.google_maps_api_key %}
+     	<div 
+        id="map-{{ random() }}" 
+        class="map"
+        data-reveal=""
+        data-zoom="{{ zoom }}"
+        data-styles='{{ theme.snazzy_maps }}'
+        data-locations='{{ locations }}'>
+        </div>
+     	{% else %}
+     	<div class="notices red dev">
+     		<p>Google Maps API Key not found.<br>
+     		Check theme configuration.</p>
+     	</div>
+     	{% endif %}
+     </div>
+</section>
