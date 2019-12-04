@@ -42,7 +42,7 @@
                               }, totalDelay);
 
 			  			} else{
-			  				target.classList.add('revealed');
+			  				target.classList.add('reveal');
 			  				target.classList.remove('unrevealed');
 			  			}
 			   		}

@@ -1,0 +1,17 @@
+.unrevealed {
+	opacity:0;
+}
+
+.reveal {	
+	opacity: 0;
+	animation-name: reveal;
+	animation-duration: 0.5s;
+	animation-delay: 0.1;
+	animation-fill-mode: forwards;
+	animation-timing-function: var(--transition-timing-1);
+}
+
+@keyframes reveal {
+	from {opacity: 0; transform: translateY(50px);}
+	to {opacity: 1;}
+}
