@@ -68,20 +68,9 @@ a.nav__link:hover {
     position: absolute;
     top: var(--gutter);
     right: var(--gutter);
-    color: var(--nav-panel-fg-color);
+    color: var(--fg-color);
     cursor: pointer;
     font-size: 40px;
-}
-
-.mobile-nav-panel-veil{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #313131;
-    opacity: 0.5;
 }
 
 .mobile-nav-panel{
@@ -93,7 +82,7 @@ a.nav__link:hover {
     left: 0;
     bottom: 0;
     box-shadow: 0 7px 50px 5px rgba(0, 0, 0, 0.2);
-    background-color: var(--nav-panel-bg-color);
+    background-color: var(--bg-color);
 }
 
 @media (min-width: 735px) {
@@ -108,11 +97,16 @@ a.nav__link:hover {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation-name: navanimation;
+    animation-name: navpanelin;
     animation-delay: 0;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes navpanelin {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .mobile-nav-panel .nav__link{
@@ -120,14 +114,10 @@ a.nav__link:hover {
     padding: 10px 20px;
     margin-left: 0;
     border-bottom: none;
-    color: var(--nav-panel-fg-color);
-}
-
-@keyframes navanimation {
-    from {opacity: 0; transform: translateY(100px);}
-    to {opacity: 1; transform: translateY(0);}
+    color: var(--fg-color);
 }
 
 .site-header .cart .cart-icon{
     transform: translateY(6px);
 }
+

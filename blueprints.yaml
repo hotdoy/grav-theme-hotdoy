@@ -52,16 +52,6 @@ form:
       label: Nav Foreground Color
       default: '#313131'
 
-    nav_panel_bg_color:
-      type: colorpicker
-      label: Nav Panel Background Color
-      default: '#009688'
-
-    nav_panel_fg_color:
-      type: colorpicker
-      label: Nav Panel Foreground Color
-      default: '#ffffff'
-
     default_radius:
       type: text
       label: Default Border Radius

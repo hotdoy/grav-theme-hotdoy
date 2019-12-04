@@ -12,8 +12,6 @@ html{
 	
     --nav-bg-color: transparent;
     --nav-fg-color: var(--fg-color);
-    --nav-panel-bg-color: var(--bg-color);
-    --nav-panel-fg-color: var(--fg-color);
     --nav-height: var(--rhythm);
 
 	--shadow-0: 0 0 0 0 rgba(0,0,0,0);
