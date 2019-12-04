@@ -28,7 +28,7 @@
 	padding-right: 3rem;
 }
 
-.hero--reverse .hero__content {
+.hero__ctn--reverse .hero__content {
 	padding-left: 3rem;
 	padding-right: 0;
 }
@@ -62,7 +62,7 @@
 	}
 
 	.hero__content,
-	.hero--reverse .hero__content{
+	.hero__ctn--reverse .hero__content{
 		width: 100%;
 		padding-top: 2rem;
 		padding-left: 0;
@@ -74,10 +74,10 @@
 	}
 }
 
-.hero--reverse {}
+.hero__ctn--reverse {}
 
 @media (min-width: 735px){
-	.hero--reverse{
+	.hero__ctn--reverse{
 		flex-direction: row-reverse;
 	}
 }
