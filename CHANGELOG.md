@@ -1,5 +1,17 @@
+# v1.3.5
+## 04/12/2019
+
+1. [](#new)
+	* Added reveal.css to allow easier reveal animation changes.
+2. [](#improved)
+	* default "revealed" animation renammed to "reveal".
+	* Removed all mobile nav panel customization from admin panel since site-header is ment to be inherited and built upon.
+3. [](#bugfix)
+	* removed condition preventing img default reveal animation.
+
 # v1.3.4
 ## 02/12/2019
+
 1. [](#improved)
 	* Reveal.js no longer add style to header
 	* .unrevealed and .revealed claases moved to animationa.css for now
@@ -12,6 +24,7 @@
 
 # v1.3.3
 ## 01/12/2019
+
 1. [](#new)
 	* Added debug text for modular/page requiring api keys
 2. [](#bugfix)
@@ -21,6 +34,7 @@
 
 # v1.3.2
 ## 01/12/2019
+
 1. [](#new)
 	* Added demo content.
 2. [](#improved)
@@ -32,12 +46,14 @@
 
 # v1.3.1
 ## 30/11/2019
+
 1. [](#improved)
 	* Moved map styles to proper css file.
 	* Improved height on desktop
 
 # v1.3.0
 ## 30/11/2019
+
 1. [](#new)
 	* Added Google Maps modular with support for snazzy directly in the theme blueprint and multiple markers
 2. [](#improved)
@@ -45,6 +61,7 @@
 
 # v1.2.20
 ## 29/11/2019
+
 1. [](#improved)
 	* Improved theme blueprint
 	* General modular maintenance
@@ -54,27 +71,32 @@
 
 # v1.2.19
 ## 29/11/2019
+
 1. [](#bufix)
 	* fixed grid item width properties
 
 # v1.2.18
 ## 28/11/2019
+
 1. [](#improved)
 	* Moved most grid-item modular options to parent grid modular.
 	* General maintenance.
 
 # v1.2.17
 ## 28/11/2019
+
 1. [](#improved)
 	* Abandonning css grid in favor of flexbox for grid modular.
 
 # v1.2.16
 ## 27/11/2019
+
 1. [](#new)
 	* Added option modular option to wrap or scroll on smaller screens.
 
 # v1.2.15
 ## 27/11/2019
+
 1. [](#improved)
 	* BREAKING! fixed a typo in```rhythm``` everywhere. This will break a lot of things. I suggest you find and replace. Figured now was the best time to do it since still no one is using the theme.
 	* Moved rhythm at the bottom of blueprints.
@@ -83,6 +105,7 @@
 
 # v1.2.14
 ## 26/11/2019
+
 1. [](#improved)
 	* width-tight set to 650px
 	* Simplified youtube and vimeo shortcodes to youtube="id". **(breaking change!)**
@@ -91,6 +114,7 @@
 
 # v1.2.13
 ## 26/11/2019
+
 1. [](#improved)
 	* Reveal animations have been moved to the content for a bunch of modular instead of the outter container.
 	* Page classes now follow "page__{template-name}".
