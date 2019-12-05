@@ -19,16 +19,35 @@ form .form-label{
 INPUTS & TEXTAREA
 ###########################################################
 */
+form input,
+form select,
+form textarea,
+form input::placeholder,
+form select::placeholder,
+form textarea::placeholder{
+	font-family: var(--font-base);
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+form input::placeholder,
+form select::placeholder,
+form textarea::placeholder,
+form input[type="date"]{
+	color: #b1bbc5;	
+}
 
 form input,
 form select{
 	width: 100%;
-	height: 3rem;
 	border: 0;
 	padding: 10px;
-	border-bottom: solid transparent 1px;
+	border: solid transparent 1px;
 	background-color: #f6f9fc;
+    padding: 10px;
 	transition: all 0.2s;
+	border-radius: 4px;
 }
 
 form textarea{
@@ -36,17 +55,19 @@ form textarea{
 	height: 150px;
 	max-width: 100%;
 	min-width: 100%;
-	border: 0;
+	border: solid transparent 1px;
 	padding: 10px;
 	background-color: #f6f9fc;
 	transition: all 0.2s;
+	border-radius: 4px;
 }
 
 form input:focus,
 form select:focus,
 form textarea:focus{
 	outline: none;
-	border-bottom: 1px solid var(--bg-color-alt);
+	background-color: white;
+	border: solid #f6f9fc 1px;
 }
 
 
