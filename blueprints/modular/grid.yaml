@@ -55,40 +55,12 @@ form:
                 grid__item--v-align-start: 'Top'
                 grid__item--v-align-center: 'Center'
                 grid__item--v-align-end: 'Bottom'
-                
-            theme:
-              type: section
-              title: Theme
 
-            header.bg_color:
-              type: colorpicker
-              label: Background Color
-              
-            header.fg_color:
-              type: colorpicker
-              label: Foreground Color
-
-            header.bg_color_alt:
-              type: colorpicker
-              label: Alternate Background Color
-
-            header.fg_color_alt:
-              type: colorpicker
-              label: Alternate Foreground Color
-
-            header.rhythm:
-              type: toggle
-              label: Rhythm
-              highlight: rhythm
-              default: rhythm
-              options: 
-                rhythm-header: 'Header'
-                rhythm-null: 'Null'
-                rhythm-half: 'Half'
-                rhythm: 'Default'
+        options:
+          fields:
 
             modular_title:
-              type: spacer
+              type: section
               title: PLUGIN_ADMIN.MODULAR_SETUP
 
             header.content.items:

@@ -25,18 +25,18 @@ form:
                   label: Detail
                   validate:
                     type: textarea
+                    
+        options:
+          fields:
 
-            module-options:
-              type: section
-              title: Module Options
+            header.bg_color:
+              unset@: true
 
-            header.rhythm:
-              type: toggle
-              label: Rhythm
-              highlight: rhythm
-              default: rhythm
-              options: 
-                rhythm-header: 'Header'
-                rhythm-null: 'Null'
-                rhythm-half: 'Half'
-                rhythm: 'Default'
+            header.fg_color:
+              unset@: true
+
+            header.bg_color_alt:
+              unset@: true
+
+            header.fg_color_alt:
+              unset@: true

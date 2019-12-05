@@ -15,11 +15,44 @@ form:
 
         options:
           fields:
+
+            theme:
+              type: section
+              title: Theme
+
+            header.bg_color:
+              type: colorpicker
+              label: Background Color
+
+            header.fg_color:
+              type: colorpicker
+              label: Foreground Color
+
+            header.bg_color_alt:
+              type: colorpicker
+              label: Alternate Background Color
+
+            header.fg_color_alt:
+              type: colorpicker
+              label: Alternate Foreground Color
+
+            header.rhythm:
+              type: toggle
+              label: Rhythm
+              highlight: rhythm
+              default: rhythm
+              options: 
+                rhythm-header: 'Header'
+                rhythm-null: 'Null'
+                rhythm-half: 'Half'
+                rhythm: 'Default'
+
             taxonomies:
               unset@: true
               fields:
                 header.taxonomy:
                   unset@: true
+                  
         advanced:
           type: tab
           title: PLUGIN_ADMIN.ADVANCED

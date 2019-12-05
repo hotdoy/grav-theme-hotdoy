@@ -5,25 +5,9 @@ form:
   fields:
     tabs:
       fields:
-        content:
+     
+        options:
           fields:
-            
-            theme:
-              type: section
-              title: Theme
 
-            header.bg_color:
-              type: colorpicker
-              label: Background Color
-
-            header.fg_color:
-              type: colorpicker
-              label: Foreground Color
-
-            header.bg_color_alt:
-              type: colorpicker
-              label: Alternate Background Color
-
-            header.fg_color_alt:
-              type: colorpicker
-              label: Alternate Foreground Color
+            header.rhythm:
+              unset@: true
