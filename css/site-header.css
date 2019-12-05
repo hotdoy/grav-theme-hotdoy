@@ -64,13 +64,16 @@ a.nav__link:hover {
     cursor: pointer;
 }
 
+.mobile-nav-open{
+    transform: translateY(5px);
+}
+
 .mobile-nav-close{
     position: absolute;
-    top: 29px;
+    top: 50px;
     right: var(--gutter);
     color: var(--fg-color);
     cursor: pointer;
-    font-size: 40px;
 }
 
 .mobile-nav-panel{
