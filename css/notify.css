@@ -30,7 +30,7 @@
 
 .notify-in {
     opacity: 0;
-    animation-name: fadeinfrombottom;
+    animation-name: reveal;
     animation-delay: 0.5s;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;

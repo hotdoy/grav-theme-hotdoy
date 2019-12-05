@@ -1,4 +1,3 @@
-
 function notify(message, bg_color, fg_color, bg_src){
     var done = document.createElement('div');
     done.setAttribute('class', 'notify-done material-icons');
