@@ -64,7 +64,7 @@
 	.hero__content,
 	.hero__ctn--reverse .hero__content{
 		width: 100%;
-		padding-top: 2rem;
+		padding-top: 1rem;
 		padding-left: 0;
 		padding-right: 0;
 	}
