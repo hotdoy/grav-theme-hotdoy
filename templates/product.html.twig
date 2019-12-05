@@ -28,7 +28,7 @@
 				data-item-url="{{ page.url }}"
 				data-item-description="{{ page.header.description }}"
 				data-item-image="{{ image.url }}"
-				data-item-name="{{ page.title }}">Buy This</a>
+				data-item-name="{{ page.title }}">Buy {{ page.title }}</a>
 			</div>
 			<span class="product__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</span>
 		</div>
