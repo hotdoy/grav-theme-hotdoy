@@ -24,32 +24,29 @@ form input,
 form select{
 	width: 100%;
 	height: 3rem;
-	border-radius: 5px;
-	font-family: 'courier', sans-serif;
-	border: solid var(--fg-color) 1px;
-	background-color: var(--bg-color);
+	border: 0;
 	padding: 10px;
+	border-bottom: solid transparent 1px;
+	background-color: #f6f9fc;
 	transition: all 0.2s;
 }
 
 form textarea{
-	font-family: 'courier', sans-serif;
 	width: 100%;
 	height: 150px;
 	max-width: 100%;
 	min-width: 100%;
-	border-radius: 5px;
-	border: solid var(--fg-color) 1px;
+	border: 0;
 	padding: 10px;
-	transition: border-color 0.2s;
+	background-color: #f6f9fc;
+	transition: all 0.2s;
 }
 
 form input:focus,
 form select:focus,
 form textarea:focus{
 	outline: none;
-	border: solid var(--bg-color-alt) 1px;
-	box-shadow: 0px 0px 3px var(--bg-color-alt);
+	border-bottom: 1px solid var(--bg-color-alt);
 }
 
 
@@ -79,14 +76,12 @@ form button{
 form button:hover,
 form button:focus {
 	outline: none;
-	box-shadow: var(--shadow-2);
 	transform: translateY(-2px);
+	box-shadow: var(--shadow-1);
 }
 
 form button:active {
-	box-shadow: var(--shadow-1);;
-	transform: translateY(0px);
-	transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+	transform: translateY(-1px);
 }
 
 
@@ -140,8 +135,7 @@ CHECKBOXES & RADIO
     width: 20px;
     border: solid var(--fg-color) 1px;
     left: 0px;
-    border-radius: 5px;
-    background-color: var(--bg-color);
+    background-color: #f6f9fc;
 }
 
 .form-field [data-grav-field="radio"] label::before {
