@@ -1,6 +1,6 @@
 > **WARNING!** : I am currently doing a lot of breaking changes. Like all the time, everyday. So you might want to wait if you plan on using this theme for [inheritance](https://learn.getgrav.org/16/themes/customization) and keep receiving updates.
 
-> **So what I'm I breaking this week?** : This week is about margin/padding management, moving all modular theme (colors, spacing) to the master module.yaml file and doing a quick style exploration pass on forms. So no new feature. Just improvement. (I'll break shit nontheless).
+> **So what I'm I breaking this week?** : This week is about margin/padding management, moving all modular theme (colors, spacing) to the master module.yaml file and managing everything in one place. Also quick style exploration pass on forms. So no new feature. Just improvement. (I'll break shit nontheless). Also rhythm class names kinda suck so i'll probably change some of that. 
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
