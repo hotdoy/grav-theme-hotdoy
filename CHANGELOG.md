@@ -1,3 +1,17 @@
+# v1.3.6
+## 04/12/2019
+
+1. [](#improved)
+	* Minor spacing fixes
+	* Buy btn now includes product name
+	* Completelly removed border-radius from theme as the result was never convincing.
+	* Snipcart item count commented out
+	* Snipcart cart icon moved to navigation partial
+	* Blocquote and embeds now use half rhythm in stead of defenitive values
+	* Started a cs pass on forms.
+2. [](#bugfix)
+	* Fixed notify-in animation
+
 # v1.3.5
 ## 04/12/2019
 
