@@ -17,6 +17,12 @@
 .product__price{
 	font-family: var(--font-alt);
 	padding-left: 1rem;
+	float: right;
+}
+
+.product__btn{
+	margin-right: 0;
+    margin-bottom: 0;
 }
 
 .product__price--sup{
@@ -26,4 +32,5 @@
 .product__content{
 	margin-top: 2rem;
 }
+
 
