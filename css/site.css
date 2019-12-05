@@ -176,7 +176,6 @@ hr{
 img{
 	max-width: 100%;
 	display: block;
-	border-radius: var(--radius-1);
 }
 
 code{

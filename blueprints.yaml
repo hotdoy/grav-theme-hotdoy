@@ -52,11 +52,6 @@ form:
       label: Nav Foreground Color
       default: '#313131'
 
-    default_radius:
-      type: text
-      label: Default Border Radius
-      default: none
-
     rhythm:
       type: text
       label: Rhythm

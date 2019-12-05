@@ -8,10 +8,10 @@
 	animation-duration: 0.5s;
 	animation-delay: 0.1;
 	animation-fill-mode: forwards;
-	animation-timing-function: var(--transition-timing-1);
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @keyframes reveal {
-	from {opacity: 0; transform: translateY(50px);}
+	from {opacity: 0; transform: translateY(75px);}
 	to {opacity: 1;}
 }

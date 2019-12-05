@@ -3,7 +3,7 @@
 	animation-name: fadeinfromtop;
 	animation-duration: 0.2s;
 	animation-fill-mode: forwards;
-	animation-timing-function: var(--transition-timing-1);
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 @keyframes fadeinfromtop {
 	from {opacity: 0; transform: translateY(-30px);}
@@ -13,7 +13,7 @@
 .fadeouttobottom {
 	animation-name: fadeouttobottom;
 	animation-duration: 0.2s;
-	animation-timing-function: var(--transition-timing-1);
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 @keyframes fadeouttobottom {
 	from {opacity: 1; transform: translateY(0px);}
@@ -24,7 +24,7 @@
 	animation-name: scalein;
 	animation-iteration-count: 1;
 	animation-duration: 0.2s;
-	animation-timing-function: var(--transition-timing-1);
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 @keyframes scalein {
 	from {opacity: 0; transform: scale3d(1.1,1.1,1)}

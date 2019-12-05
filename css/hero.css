@@ -52,7 +52,6 @@
 .hero__media img{
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: var(--radius-1);
 	width: 100%;
 }
 

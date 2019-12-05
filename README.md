@@ -47,38 +47,6 @@ You should now have all the theme files under
 
     /your/site/grav/user/themes/hotdoy
 
-# Theme Options
-
-Hotdoy comes with a few options that can be set site-wide.  These options are:
-
-```yaml
-enabled:                    # Enable the theme
-Browser Color:              # Set the <meta name="theme-color"> for supported browsers.
-Background Color:           # Set the main background color (Used for text, modules and other non-interactive elements).
-Foreground Color:           # Set the main foreground color (Used for text, modules and other non-interactive elements).
-Alternate background Color: # Set the alternate background color (used in buttons, link and other interactive elements).
-Alternate boreground Color: # Set the alternate foreground color (used in buttons, link and other interactive elements).
-nav_bg_color
-nav_fg_color
-nav_panel_bg_color
-nav_panel_fg_color
-default_radius:             # Default border radius.
-rhythm:                     # Space between modules and other elements.
-Organization:               # A collection of field describing your organization (generate schema).
-google_tracking_id:         # Google analytics id
-facebook_app_id:            # Facebook App Id
-marquee:                    # A collection of field to add a small marquee at the top of every page.
-snipcart:                   # Snipcart Id for eCommerce integration.
-analytics
-google_maps_api_key
-snazzy_maps
-tracking:                   # Send me information on domains that use the theme so I know what not to break.
-```
-
-To make modifications, you can copy the `user/themes/hotdoy/hotdoy.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
-
-> NOTE: Do not modify the `user/themes/hotdoy/hotdoy.yaml` file directly or your changes will be lost with any updates
-
 # Concept
 The theme is made to be my starter kit for grav projects. But anybody is welcome to try and use it.
 Everything will be made readily extendable (in time). It uses css variables heavily so forget old browsers (sorry ie).
