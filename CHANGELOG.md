@@ -1,3 +1,12 @@
+# v1.3.7
+## 05/12/2019
+
+1. [](#improved)
+	* Theme options (colors, rhythm) as been moved out of modulars and into the master module.yaml
+2. [](#bugfix)
+	* Fixed burger position
+	* Fixed grid-item content margins irregularity
+
 # v1.3.6
 ## 04/12/2019
 
