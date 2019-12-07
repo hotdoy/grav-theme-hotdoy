@@ -1,0 +1,8 @@
+{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
+
+<section 
+class="modular {% block modular_classes %}{% endblock %} {{ rhythm }}" 
+style="{% include '/partials/theme-module.html.twig' %}" 
+data-reveal="{% block modular_reveal %}{% endblock %}">
+{% block modular_content %}{% endblock %}
+</section>
