@@ -1,4 +1,4 @@
-> **WARNING!** : I will completely refactor how modular margins and padding works. That mean changing all modular blueprints and templates. Class names are going to change and page will have to be resaved with the new values after the patch. Expect to receive said patch anytime between now (2019-12-06) and next week.
+> **WARNING!** : I will completely refactor how modular margins and padding works. That mean changing all modular blueprints and templates. Class names are going to change and page will have to be resaved with the new values after the patch. Expect to receive said patch anytime between 2019-12-06 and 2019-12-12. If you extended or use inheritance, things will break. I'm sorry. I have to do it now so things like that won't happen in the future.
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
