@@ -1,7 +1,20 @@
-{% extends '/partials/drawers.html.twig' %}
+{% extends '/partials/modular.html.twig' %}
 
-{# {% set title = page.title %} #}
-{# {% set items = items|default(page.header.drawers) %} #}
-{# {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %} #}
-{# {% set reveal_detail = reveal_drawer|default('') %} #}
-{# {% set reveal_content = reveal_content|default('') %} #}
+{% set modular_class %}
+modular--drawers
+{% if page.header.bg_color or bg_image %}rhythm-padding{% endif %}
+{% endset %}
+
+{% block modular_content %}
+	<div class="site">
+	{% for drawer in page.header.drawers %}
+		<details class="drawer__detail" data-reveal="">
+			<summary class="noselect drawer__summary">
+				<h3 class="drawer__summary__title">{{ drawer.summary }}</h3>
+				<div class="material-icons drawer__summary__icon">keyboard_arrow_down</div>
+			</summary>
+			<div class="drawer__content fadeinfromtop delay-0 duration-500">{{ drawer.detail|markdown }}</div>
+		</details>
+	{% endfor %}
+	</div>
+{% endblock %}

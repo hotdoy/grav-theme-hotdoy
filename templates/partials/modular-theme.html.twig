@@ -2,6 +2,7 @@
 {% set bg_color = bg_color|default(page.header.bg_color) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %}
+	
 {% if bg_color %}--bg-color:{{ bg_color }};{% endif %}
 {% if fg_color %}--fg-color:{{ fg_color }};{% endif %}
 {% if fg_color_alt %}--fg-color-alt:{{ fg_color_alt }};{% endif %}

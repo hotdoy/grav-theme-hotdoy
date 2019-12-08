@@ -1,5 +1,5 @@
 title: drawers
-'@extends': modular/module
+'@extends': modular/modular
 
 form:
   fields:
@@ -25,18 +25,3 @@ form:
                   label: Detail
                   validate:
                     type: textarea
-                    
-        options:
-          fields:
-
-            header.bg_color:
-              unset@: true
-
-            header.fg_color:
-              unset@: true
-
-            header.bg_color_alt:
-              unset@: true
-
-            header.fg_color_alt:
-              unset@: true

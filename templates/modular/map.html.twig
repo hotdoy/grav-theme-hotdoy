@@ -7,10 +7,7 @@
 {% endfor %}]
 {% endset %}
 
-{% block modular_classes %}
-{{ parent() }} 
-modular--map
-{% endblock %}
+{% set modular_class = 'modular_map' %}
 
 {% block modular_content %}
  <div class="site">

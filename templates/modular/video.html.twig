@@ -7,11 +7,10 @@
 {% set reveal_video = reveal_video|default('reveal delay-100 duration-500') %}
 {% set reveal_content = reveal_content|default('reveal delay-200 duration-500') %}
 	
-{% block modular_classes %}
-{{ parent() }} 
+{% set modular_class %}
 modular--video
 {% if page.header.bg_color %}rhythm-padding{% endif %}
-{% endblock %}
+{% endset %}
 
 {% block modular_content %}
 	<div class="video__ctn site">

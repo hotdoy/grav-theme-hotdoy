@@ -1,17 +1,41 @@
-{% extends '/partials/hero.html.twig' %}
+{% extends '/partials/modular.html.twig' %}
 
-{# {% set video = video|default(page.header.video ? page.media[page.header.video]) %} #}
-{# {% set image = image|default(page.header.image ? page.media[page.header.image]) %} #}
-{# {% set image_width = image_width|default(page.header.image_width) %} #}
-{# {% set image_alt = image_alt|default(page.header.image_alt) %} #}
-{# {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %} #}
-{# {% set bg_image_alt = bg_image_alt|default(page.header.bg_image_alt) %} #}
-{# {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %} #}
-{# {% set reverse = reverse|default(page.header.reverse) %} #}
-{# {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %} #}
-{# {% set bg_color = bg_color|default(page.header.bg_color) %} #}
-{# {% set fg_color = fg_color|default(page.header.fg_color) %} #}
-{# {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %} #}
-{# {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %} #}
-{# {% set reveal_content = reveal_content|default('') %} #}
-{# {% set reveal_media = reveal_media|default('') %} #}
+{% set video = video|default(page.header.video ? page.media[page.header.video]) %}
+{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
+{% set image_width = image_width|default(page.header.image_width) %}
+{% set image_alt = image_alt|default(page.header.image_alt) %}
+{% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
+{% set bg_image_alt = bg_image_alt|default(page.header.bg_image_alt) %}
+{% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
+{% set reverse = reverse|default(page.header.reverse) %}
+
+{% set modular_class %}
+modular--hero
+{% if page.header.bg_color or bg_image %}rhythm-padding{% endif %}
+{% endset %}
+
+{% block modular_content %}
+	{% if bg_veil %}
+	<div class="hero__veil fill" style="opacity:{{bg_veil}};"></div>
+	{% endif %}
+	
+	{% if bg_image %}
+	<div class="hero__bg-image-ctn fill">
+		{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'hero__bg-image', 'alt': bg_image_alt} %}
+	</div>
+	{% endif %}
+
+	<div class="hero__ctn site {% if reverse %}hero__ctn--reverse{% endif %}">
+		<div class="hero__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
+		<div class="hero__media" data-reveal="{{ reveal_media }}">	
+			{% if video %}
+			<video autoplay="autoplay" muted="muted" loop="loop" {% if image %}poster="{{ image.url }}"{% endif %}>
+				<source src="{{ video.url }}" type="video/mp4">
+			</video>
+			{% elseif image %}
+			{% set computed_style %}{% if image_width %}{{ 'width:' ~ image_width ~ '%;' }}{% endif %}{% endset %}
+			{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'style': computed_style } %}
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}

@@ -1,5 +1,5 @@
 title: splash
-'@extends': modular/module
+'@extends': modular/modular
 
 form:
   fields:

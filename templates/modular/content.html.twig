@@ -1,12 +1,19 @@
-{% extends '/partials/content.html.twig' %}
+{% extends '/partials/modular.html.twig' %}
 
-{# {% set content = content|default(content|raw) %} #}
-{# {% set align = align|default(page.header.align ?? 'content--left') %} #}
-{# {% set reveal = reveal|default('') %} #}
-{# {% set class = class|default('') %} #}
-{# {% set bg_color = bg_color|default(page.header.bg_color) %} #}
-{# {% set fg_color = fg_color|default(page.header.fg_color) %} #}
-{# {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt) %} #}
-{# {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt) %} #}
-{# {% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %} #}
+{% set class = class|default('') %}
+{% set style = style|default('') %}
+{% set reveal = reveal|default('') %}
+
+{% set modular_class %}
+modular--content
+{% if page.header.bg_color %}rhythm-padding{% endif %}
+{{ class }}
+{% endset %}
+
+{% set align = align|default(page.header.align ?? 'content--left') %}
+	
+{% block modular_content %}
+	<div class="content__ctn site {{ align }}">{{ content }}</div>
+{% endblock %}
+
 	

@@ -1,4 +1,6 @@
-.modular--splash{}
+.modular--splash{
+	overflow: hidden;
+}
 
 .splash__ctn{
 	position: relative;
@@ -9,7 +11,6 @@
 	padding-top: var(--rhythm);
 	padding-bottom: var(--rhythm);
 	min-height: 100vh;
-	overflow: hidden;
 }
 
 .splash__image,

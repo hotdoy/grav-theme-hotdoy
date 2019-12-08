@@ -1,5 +1,5 @@
 title: content
-'@extends': modular/module
+'@extends': modular/modular
 
 form:
   fields:
