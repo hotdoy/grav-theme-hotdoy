@@ -69,7 +69,7 @@ Add [youtube=id] and [vimeo=id] by id
 Use [note] to add unrendered content.
 
 ## Material Icons
-Add [Material Icons](https://material.io/resources/icons/) with [i]
+Add [mi="icon-name"](https://material.io/resources/icons/) with [i]
 
 ## Width
 Use one of the 3 site witdh. [full], [site], [tight].
@@ -82,7 +82,4 @@ Use one of the 3 site witdh. [full], [site], [tight].
 * Drawers
 * Grid
 * Map
-
-Every modular is a extended partial. In order to extend an existing Modular, simply copy the modular template file from hotdoy to the child theme. 
-If you only modify the commented variables and block, the module should be able to update without any issue. (Check the changelog before updating)
 
