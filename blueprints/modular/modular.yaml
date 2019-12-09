@@ -36,16 +36,36 @@ form:
               type: colorpicker
               label: Alternate Foreground Color
 
-            header.rhythm:
+            header.margin:
               type: toggle
-              label: Rhythm
-              highlight: rhythm
-              default: rhythm
+              label: Margin
+              highlight: top
+              default: top
               options: 
-                rhythm-header: 'Header'
-                rhythm-null: 'Null'
-                rhythm-half: 'Half'
-                rhythm: 'Default'
+                top: 'Top'
+                bottom: 'Bottom'
+                both: 'Both'
+                none: 'none'
+
+            header.padding:
+              type: toggle
+              label: Padding
+              highlight: none
+              default: none
+              options: 
+                top: 'Top'
+                bottom: 'Bottom'
+                both: 'Both'
+                none: 'None'
+                
+            header.role:
+              type: toggle
+              label: Role
+              highlight: default
+              default: default
+              options: 
+                header: 'Header'
+                default: 'Default'
 
             taxonomies:
               unset@: true

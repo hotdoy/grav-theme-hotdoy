@@ -54,8 +54,8 @@ form:
 
     rhythm:
       type: text
-      label: Rhythm
-      default: 6rem
+      label: Vertical Rhythm
+      default: 8rem
 
     organization:
       type: section

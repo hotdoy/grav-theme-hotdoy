@@ -69,7 +69,7 @@ SECTION WIDTH, GUTTERS, AND RHYTHM
 }
 
 .rhythm{
-	margin-top: var(--rhythm)
+	margin-top: var(--rhythm);
 }
 
 .rhythm-padding{
