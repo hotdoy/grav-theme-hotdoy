@@ -1,16 +1,13 @@
 {% extends '/partials/modular.html.twig' %}
-
+{% set modular_name = 'video' %}
+{% set modular_class = page.header.bg_color or page.header.bg_image ? 'rhythm-padding' : '' %}
+	
 {% set video = video|default(page.header.video ? page.media[page.header.video]) %}
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 {% set loop = loop|default(page.header.loop) %}
 {% set align_h = align_h|default(page.header.align_h) %}
 {% set reveal_video = reveal_video|default('reveal delay-100 duration-500') %}
 {% set reveal_content = reveal_content|default('reveal delay-200 duration-500') %}
-	
-{% set modular_class %}
-modular--video
-{% if page.header.bg_color %}rhythm-padding{% endif %}
-{% endset %}
 
 {% block modular_content %}
 	<div class="video__ctn site">

@@ -1,52 +1,37 @@
 {% extends '/partials/modular.html.twig' %}
+{% set modular_name = 'splash' %}
 
 {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
 {% set bg_video = bg_video|default(page.header.bg_video ? page.media[page.header.bg_video]) %}
 {% set bg_position = bg_position|default(page.header.bg_position ?? '50% 50%') %}
 {% set bg_fit = bg_fit|default(page.header.bg_fit ?? 'cover') %}
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
-{% set min_height = min_height|default(page.header.min_height) %}
 {% set bg_loop = bg_loop|default(page.header.bg_loop) %}
-
-{% set modular_styles %}
-{% include '/partials/theme-module.html.twig' %}{% if min_height %}min-height:{{ min_height }}vh;{% endif %}
-{% endset %}
-
 {% set img_computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
 {% set img_computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
 {% set img_styles =  img_computed_bg_position ~ img_computed_bg_fit%}
 
-{% set modular_class = 'modular--splash' %}
-
 {% block modular_content %}
 
-	{% block bg_veil %}
-		{% if bg_veil %}
-		<div class="splash__veil" style="opacity:{{bg_veil}};"></div>
-		{% endif %}
-	{% endblock %} 
+	{% if bg_veil %}
+	<div class="splash__veil" style="opacity:{{bg_veil}};"></div>
+	{% endif %}
 	
-	{% block image %}
-		{% if bg_image and not bg_video %}
-		{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_styles , 'reveal': 'scalein duration-5000 delay-0'} %}
-		{% endif %}
-	{% endblock %}
+	{% if bg_image and not bg_video %}
+	{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_styles , 'reveal': 'scalein duration-5000 delay-0'} %}
+	{% endif %}
 
-	{% block video %}
-		{% if bg_video %}
-		<video class="splash__video" data-reveal="scalein duration-5000 delay-0" autoplay="autoplay" muted="muted"
-		{% if bg_loop %} loop="loop" {% endif %} 
-		{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
-		style="{{ computed_style }}">
-		{% if bg_video %}<source src="{{ bg_video.url }}" type="video/mp4">{% endif %}
-		</video>
-		{% endif %}
-	{% endblock %}
+	{% if bg_video %}
+	<video class="splash__video" data-reveal="scalein duration-5000 delay-0" autoplay="autoplay" muted="muted"
+	{% if bg_loop %} loop="loop" {% endif %} 
+	{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
+	style="{{ computed_style }}">
+	{% if bg_video %}<source src="{{ bg_video.url }}" type="video/mp4">{% endif %}
+	</video>
+	{% endif %}
 
 	<div class="splash__ctn site">
-		{% block content %}
-			<div class="site splash__content" data-reveal="">{{ content|raw }}</div>
-		{% endblock %}
+		<div class="site splash__content" data-reveal="">{{ content|raw }}</div>
 	</div>
 
 {% endblock %}

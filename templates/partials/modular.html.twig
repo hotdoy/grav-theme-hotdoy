@@ -1,12 +1,14 @@
-{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
-{% set class = class|default('') %}
-{% set style = style|default('') %}
-{% set reveal = reveal|default('') %}
-
+{% set modular_name = modular_name|default('') %}
 {% set modular_class = modular_class|default('') %}
+{% set modular_style = modular_style|default('') %}
+{% set modular_reveal = modular_reveal|default('') %}
 
-<section class="modular {{ modular_class }} {{ rhythm }}" 
-style="{% include '/partials/modular-theme.html.twig' %}" 
+{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
+
+{% set computed_modular_name = 'modular--' ~ modular_name %}
+
+<section class="modular {{ computed_modular_name }} {{ modular_class }} {{ rhythm }}" 
+style="{% include '/partials/modular-theme.html.twig' %} {{ modular_style }}" 
 {% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
 {% block modular_content %}{% endblock %}
 </section>

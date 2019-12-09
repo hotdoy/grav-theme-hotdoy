@@ -54,9 +54,3 @@ form:
               options: 
                 0: 'False'
                 1: 'True'
-                
-            header.min_height:
-              type: range
-              label: Minimum Height
-              description: Percentage of device viewport height.
-              default: 100

@@ -1,19 +1,9 @@
 {% extends '/partials/modular.html.twig' %}
-
-{% set class = class|default('') %}
-{% set style = style|default('') %}
-{% set reveal = reveal|default('') %}
-
-{% set modular_class %}
-modular--content
-{% if page.header.bg_color %}rhythm-padding{% endif %}
-{{ class }}
-{% endset %}
-
-{% set align = align|default(page.header.align ?? 'content--left') %}
+{% set modular_name = 'content' %}
+{% set modular_class = page.header.bg_color ? 'rhythm-padding' : '' %}
 	
+{% set align = align|default(page.header.align ?? 'content--left') %}
+
 {% block modular_content %}
 	<div class="content__ctn site {{ align }}">{{ content }}</div>
 {% endblock %}
-
-	
