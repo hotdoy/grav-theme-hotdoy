@@ -55,6 +55,22 @@ SECTION WIDTH, GUTTERS, AND RHYTHM
 	max-width: var(--width-full);
 }
 
+.gutter {
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+}
+
+@media (min-width: 735px) {
+	.gutter{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/*
+ALL RHYTHM CLASSES ARE DEPRECATED AND WILL BE DELETED IN FUTURE VERSIONS
+USE MODULAR.CSS INSTEAD.
+*/
 .rhythm-negative,
 .rhythm-header{
 	margin-top: calc(var(--nav-height)*-1);
@@ -75,18 +91,6 @@ SECTION WIDTH, GUTTERS, AND RHYTHM
 .rhythm-padding{
 	padding-top: var(--rhythm);
 	padding-bottom: var(--rhythm);
-}
-
-.gutter {
-	padding-left: var(--gutter);
-	padding-right: var(--gutter);
-}
-
-@media (min-width: 735px) {
-	.gutter{
-		padding-left: 0;
-		padding-right: 0;
-	}
 }
 
 

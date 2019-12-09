@@ -1,9 +1,9 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'content' %}
-{% set modular_class = page.header.bg_color ? 'rhythm-padding' : '' %}
 	
 {% set align = align|default(page.header.align ?? 'content--left') %}
+{% set content_reveal = content_reveal|default('') %}
 
 {% block modular_content %}
-	<div class="content__ctn site {{ align }}">{{ content }}</div>
+	<div class="content__ctn site {{ align }}" data-reveal="{{ content_reveal }}">{{ content }}</div>
 {% endblock %}

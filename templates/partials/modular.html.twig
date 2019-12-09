@@ -1,14 +1,41 @@
 {% set modular_name = modular_name|default('') %}
 {% set modular_class = modular_class|default('') %}
 {% set modular_style = modular_style|default('') %}
-{% set modular_reveal = modular_reveal|default('') %}
+{% set modular_reveal = modular_reveal|default(0) %}
 
-{% set rhythm = rhythm|default(page.header.rhythm ?? 'rhythm') %}
+{%- set margin -%}
+{%- if page.header.margin == 'top' %}m-t
+{%- elseif page.header.margin == 'bottom' %}m-b
+{%- elseif page.header.margin == 'both' %}m-tb
+{%- elseif page.header.margin == 'none' %}
+{%- else -%}m-t
+{%- endif -%}
+{%- endset -%}
 
-{% set computed_modular_name = 'modular--' ~ modular_name %}
+{%- set padding -%}
+{%- if page.header.padding == 'top' %}p-t
+{%- elseif page.header.padding == 'bottom' %}p-b
+{%- elseif page.header.padding == 'both' %}p-tb
+{%- elseif page.header.padding == 'none' %}
+{%- endif -%}
+{%- endset -%}
 
-<section class="modular {{ computed_modular_name }} {{ modular_class }} {{ rhythm }}" 
-style="{% include '/partials/modular-theme.html.twig' %} {{ modular_style }}" 
-{% if reveal %}data-reveal="{{ reveal }}"{% endif %}>
+{% set role = role|default(page.header.role == 'header' ? 'r-header' : '') %}
+
+{%- set computed_modular_class %}
+modular modular--{{ modular_name }}
+{%- if margin %} {{ margin }}{% endif -%} 
+{%- if padding %} {{ padding }}{% endif -%} 
+{%- if role %} {{ role }}{% endif -%} 
+{%- if modular_class %} {{ modular_class }}{% endif -%}
+{% endset -%}
+
+{%- set computed_style %}
+{%- include '/partials/modular-theme.html.twig' %}
+{%- if modular_style %} {{ modular_style }}{% endif -%}
+{% endset -%}
+
+<section class="{{ computed_modular_class }}" style="{{ computed_style }}" 
+{% if modular_reveal %}data-reveal="{{ modular_reveal }}"{% endif %}>
 {% block modular_content %}{% endblock %}
 </section>
