@@ -1,6 +1,5 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'video' %}
-{% set modular_class = page.header.bg_color or page.header.bg_image ? 'rhythm-padding' : '' %}
 	
 {% set video = video|default(page.header.video ? page.media[page.header.video]) %}
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
