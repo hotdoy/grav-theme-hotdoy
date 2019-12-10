@@ -1,4 +1,7 @@
-> **WARNING! Update 1.4.0** : Big changes for all modular pages. You will need to re-save ALL modular after the update. For the new margin and padding system, check the "options" tab in any modular.
+> **WARNING! Update 1.4.0** : Big changes for all modular pages. You will need to re-save ALL modular after the update. 
+Check the "options" tab in any modular to access the new modular theme options.
+
+> **What's next?**: Nothing specific. I will probably just clean and maintain existing stuff for a week or two. ```grid``` and ```grid-item``` might receive some love since they where mostly ignored in the 1.4 patch. I have plans for some kind of modular sliders but nothing specific for now. Holiday vacations are comming in fast!
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
