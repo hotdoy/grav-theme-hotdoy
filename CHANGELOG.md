@@ -1,3 +1,9 @@
+# v1.4.0
+## 07/12/2019
+1. [](#new)
+	* Refactor of all modular blueprints and templates.
+	* Refactor of modular spacing rules.
+
 # v1.3.7
 ## 05/12/2019
 
