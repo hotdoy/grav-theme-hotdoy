@@ -7,10 +7,8 @@
 		    form.submit(function(e) {
 		        e.preventDefault();
 
-			    var loader = $('<div class="form-loader"></div>');
-			    form.append(loader);
+		        form.addClass('submitting');
 			    form.find('button').blur();
-			    loader.fadeTo(500, 0.7);
 
 		        $.ajax({
 		            url: form.attr('action'),
@@ -23,12 +21,12 @@
 		            	$(form)[0].reset();
 		            	console.log('form submission success!');
 		            	notify(message, status);
-		            	loader.fadeOut(500);
+		            	form.removeClass('submitting');
 		            },
 		            error: function() {
 		            	console.log('form submission failed!!!');
 		            	notify('Submission failed. Refresh page and retry.', '#f44336');
-		            	loader.fadeOut(500);
+		            	form.removeClass('submitting');
 		            }
 		        });
 		    });
