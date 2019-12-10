@@ -8,6 +8,7 @@
 
 The **Hotdoy** Theme is meant to be a starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
 It is in active developpement and not suited for inheritance at the moment unless you dont mind thing changing all the times.
+You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead.
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). I still have content to write but you get the idea.
 
