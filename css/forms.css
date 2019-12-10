@@ -43,7 +43,7 @@ form select{
 	width: 100%;
 	border: 0;
 	padding: 10px;
-	border: solid transparent 1px;
+	border: solid #e6edf5 2px;
 	background-color: #f6f9fc;
     padding: 10px;
 	transition: all 0.2s;
@@ -55,7 +55,7 @@ form textarea{
 	height: 150px;
 	max-width: 100%;
 	min-width: 100%;
-	border: solid transparent 1px;
+	border: solid #e6edf5 2px;
 	padding: 10px;
 	background-color: #f6f9fc;
 	transition: all 0.2s;
@@ -67,7 +67,7 @@ form select:focus,
 form textarea:focus{
 	outline: none;
 	background-color: white;
-	border: solid #f6f9fc 1px;
+	border: solid #e6edf5 2px;
 }
 
 
@@ -154,7 +154,7 @@ CHECKBOXES & RADIO
 .form-field [data-grav-field="radio"] label::before {
     height: 20px;
     width: 20px;
-    border: solid var(--fg-color) 1px;
+    border: solid #e6edf5 2px;
     left: 0px;
     background-color: #f6f9fc;
 }
@@ -169,7 +169,7 @@ CHECKBOXES & RADIO
     width: 9px;
     border-left: 2px solid;
     border-bottom: 2px solid;
-    transform: rotate(-45deg) translate(2px, 2px);
+    transform: rotate(-45deg) translate(3px, 3px);
     left: 3px;
     top: 6px;
     color: var(--fg-color-alt);
@@ -183,8 +183,8 @@ CHECKBOXES & RADIO
     height: 6px;
     width: 6px;
     background-color: var(--fg-color-alt);
-    left: 8px;
-    top: 8px;
+    left: 9px;
+    top: 9px;
     border-radius: 50%;
 }
 
