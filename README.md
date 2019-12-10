@@ -1,4 +1,4 @@
-> **WARNING!** : I will completely refactor how modular margins and padding works. That mean changing all modular blueprints and templates. Class names are going to change and page will have to be resaved with the new values after the patch. Expect to receive said patch anytime between 2019-12-06 and 2019-12-12. If you extended or use inheritance, things will break. I'm sorry. I have to do it now so things like that won't happen in the future.
+> **WARNING! Update 1.4.0** : Big changes for all modular pages. You will need to re-save ALL modular after the update. For the new margin and padding system, check the "options" tab in any modular.
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
@@ -56,11 +56,11 @@ The entire color theme is controllable inside the admin panel.
 
 ## Breakpoint
 show content on specific breakpoint.
-[portrait], [mobile] and [landscape], [desktop].
+[portrait], [mobile] or [landscape], [desktop].
 
 ## Button
 Add buttons with out without material icons
-[btn-solid], [btn], [btn-link], [link] 
+[btn], [link] 
 
 ## Embed
 Add [youtube=id] and [vimeo=id] by id
