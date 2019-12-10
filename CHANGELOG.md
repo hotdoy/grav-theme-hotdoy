@@ -1,3 +1,8 @@
+# v1.4.1
+## 10/12/2019
+1. [](#improved)
+	* Improved form styles and submitting state
+
 # v1.4.0
 ## 07/12/2019
 1. [](#new)
