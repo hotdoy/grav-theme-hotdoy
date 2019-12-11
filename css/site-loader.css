@@ -15,3 +15,23 @@ dependencies
 	align-items: center;
 	justify-content: center;
 }
+
+#site-loader .placeholder{
+	opacity: 0;
+	animation-name: placeholder;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#site-laoder .placeholder>img{
+	width: 100%;
+}
+
+@keyframes placeholder{
+	0% {opacity: 0; transform: translateY(75px);}
+	30% {opacity: 0.5; transform: translateY(0);}
+	60% {opacity: 0.5; transform: translateY(0);}
+	100% {opacity: 0; transform: translateY(-75px);}
+}
