@@ -85,6 +85,7 @@ BUTTONS
 */
 
 form button{
+	position: relative;
 	width: 100%;
 	padding: 10px 35px;
 	height: 3rem;

@@ -1,3 +1,8 @@
+# v1.4.2
+## 10/12/2019
+1. [](#bugfix)
+	* Fixed form submit button position.
+	
 # v1.4.1
 ## 10/12/2019
 1. [](#improved)
