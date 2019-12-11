@@ -1,3 +1,10 @@
+# v1.4.3
+## 11/12/2019
+1. [](#new)
+	* site-loader show placeholder content after a short delay
+2. [](#bugfix)
+	* Fixed Google Maps init error
+
 # v1.4.2
 ## 10/12/2019
 1. [](#bugfix)
