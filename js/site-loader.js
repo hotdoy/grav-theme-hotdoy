@@ -1,7 +1,3 @@
-// dependencies
-// - site-loader.js
-// - site-loader.css
-
 (function ($) {
 	'use strict';
 

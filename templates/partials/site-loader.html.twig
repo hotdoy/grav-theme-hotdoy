@@ -1,11 +1,11 @@
-{# 
-	dependencies
-	- site-loader.js
-	- site-loader.css
- #}
-{% set allow = uri.query('sl') ?? '1' %}
-
-{% if allow %}
-	<div id="site-loader" data-reveal-initialdelay="200"></div>
-{% endif %}
-
+<div id="site-loader" data-reveal-initialdelay="200">
+	<div class="tight placeholder">
+		<svg width="588" height="359" viewBox="0 0 588 359" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect width="588" height="217" rx="8" fill="#D5D7D7"/>
+			<rect y="247" width="549" height="16" rx="2" fill="#D5D7D7"/>
+			<rect y="279" width="477" height="16" rx="2" fill="#D5D7D7"/>
+			<rect y="311" width="513" height="16" rx="2" fill="#D5D7D7"/>
+			<rect y="343" width="140" height="16" rx="2" fill="#D5D7D7"/>
+		</svg>
+	</div>
+</div>
