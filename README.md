@@ -1,7 +1,9 @@
 > **WARNING! Update 1.4.0** : Big changes for all modular pages. You will need to re-save ALL modular after the update. 
 Check the "options" tab in any modular to access the new modular theme options.
 
-> **What's next?** : Nothing specific. I will probably just clean and maintain existing stuff for a week or two. ```grid``` and ```grid-item``` might receive some love since they where mostly ignored in the 1.4 patch. I have plans for some kind of modular sliders but no clear ideas. I remember reading somewhere it was possible to customize the Admin Panel feed and since I'm breaking stuff so often, it might be a good way to communicate with the user base so that is on my mind as well. Holiday vacations are comming in fast!
+> **Anything else?** : Yep. I am testing a new site loader on mobile with placeholder content in v1.4.3 and I think it's here to stay.
+
+> **What's next?** : Nothing specific. I will probably just clean and maintain existing stuff for a week or two. ```grid``` and ```grid-item``` might receive some love since they where mostly ignored in the 1.4 patch. I have plans for some kind of modular sliders but still only an idea. I recently realized Snipcart and Google Maps integrations are tanking Lighthouse and Page Speed audit so I'll have to come up with something.
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
