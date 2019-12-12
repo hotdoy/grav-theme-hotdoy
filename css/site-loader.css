@@ -27,7 +27,7 @@
 	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-#site-loader .placeholder svg{
+#site-loader .placeholder img{
 	width: 100%;
 }
 
