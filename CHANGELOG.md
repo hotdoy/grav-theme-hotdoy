@@ -1,3 +1,12 @@
+# v1.4.4
+## 12/12/2019
+1. [](#improved)
+	* Addded loading lazy attr to tracking iframe
+	* Bumped snipcart to 3.0.4.
+	* Defered 3rd party script.
+2. [](#bugfix)
+	* Presumed fix for site-loader placeholder width 
+
 # v1.4.3
 ## 11/12/2019
 1. [](#new)
