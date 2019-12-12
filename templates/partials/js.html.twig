@@ -2,22 +2,22 @@
 	{% do assets.addJs('theme://js/jquery.js', { group:'before' }) %}
 	{% do assets.addJs('theme://js/site-header.js', { group:'after' }) %}
 	{% do assets.addJs('theme://js/reveal.js', { group:'after' }) %}
-	{% do assets.addJs('theme://js/video.js', { group:'after' }) %}
-	{% do assets.addJs('theme://js/notify.js', { group:'after' }) %}
-	{% do assets.addJs('theme://js/form.js', { group:'after' }) %}
 	{% do assets.addJs('theme://js/links.js', { group:'after'}) %}
+	{% do assets.addJs('theme://js/form.js', { group:'after' }) %}
+	{% do assets.addJs('theme://js/notify.js', { group:'after' }) %}
+	{% do assets.addJs('theme://js/video.js', { group:'after' }) %}
 	
 	{% if theme.google_maps_api_key %}
-    	{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key, { group:'after'}) %}
+    	{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key, { group:'after', position: 'after', loading : 'defer'}) %}
     	{% do assets.addJs('theme://js/map.js', { group:'after'}) %}
     {% endif %}
 
     {% if theme.snipcart_api_key %}
-    	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js', { group:'after'}) %}
+    	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.4/default/snipcart.js', { group:'after', position: 'after', loading : 'defer'}) %}
     {% endif %}
 
 	{% if theme.tracking %}
-		{% do assets.addJs('theme://js/tracking.js', { group:'after'}) %}
+		{% do assets.addJs('theme://js/tracking.js', { group:'after', position: 'after', loading : 'defer'}) %}
 	{% endif %}
 	
 	{% do assets.addJs('theme://js/site-loader.js', { group:'after', priority: 0 }) %}

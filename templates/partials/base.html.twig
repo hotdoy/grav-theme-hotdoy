@@ -20,18 +20,18 @@
         {% block site_loader %}{% include 'partials/site-loader.html.twig' %}{% endblock %}
         {% block site_marquee %}{% include 'partials/marquee.html.twig' %}{% endblock %} 
         {% block site_header %}{% include 'partials/site-header.html.twig' %}{% endblock %} 
-
         {% block page_content %}{% endblock %}
-        
+        {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
+       
+        {{ assets.js('after')|raw }}
+
         {% if theme.snipcart_api_key %}
         <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
+        <script src="https://cdn.snipcart.com/themes/v3.0.4/default/snipcart.js"></script>
         {% endif %}
-
         {% if theme.tracking %}
         <div hidden id="tracking" data-ref="https://tracking.hotdoy.org/?ref={{ base_url_absolute }}"></div>
         {% endif %}
 
-        {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
-        {{ assets.js('after')|raw }}
     </body>
 </html>
