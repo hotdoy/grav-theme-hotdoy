@@ -31,7 +31,7 @@
 .modular--content h4,
 .modular--content h5,
 .modular--content h6,
-.modular--content form
+.modular--content form,
 .modular--content ul{
 	max-width: var(--width-tight);
 	margin-left: auto;
