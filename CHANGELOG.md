@@ -1,6 +1,13 @@
 # v1.4.4
 ## 12/12/2019
 1. [](#improved)
+	* Video embed shortcodes now support full URLs.
+2. [](#bugfix)
+	* Fixed spacing issues with theme buttons used in grid-item.
+
+# v1.4.4
+## 12/12/2019
+1. [](#improved)
 	* Addded loading lazy attr to tracking iframe
 	* Bumped snipcart to 3.0.4.
 	* Defered 3rd party script.
