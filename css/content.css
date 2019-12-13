@@ -122,8 +122,8 @@
 /*Kaltura video*/
 .kWidgetIframeContainer{margin: 2rem auto;}
 
-.modular--content p>.tight,
-.modular--content p>.site{
+.modular--content .content__ctn > .tight,
+.modular--content .content__ctn > .site{
 	padding-left: 0;
 	padding-right: 0;
 }
