@@ -1,35 +1,33 @@
-{% block css %}
-	{% do assets.addCss('theme://css/site-loader.css', { loading : 'inline', position: 'before' }) %}
-	{% do assets.addCss('theme://css/theme.css') %}
-	{% do assets.addCss('theme://css/reset.css') %}
-	{% do assets.addCss('theme://css/site.css') %}
-	{% do assets.addCss('theme://css/fonts.css') %}
-	{% do assets.addCss('theme://css/material-icons.css') %}
-	{% do assets.addCss('theme://css/typography.css') %}
-	{% do assets.addCss('theme://css/reveal.css') %}
-	{% do assets.addCss('theme://css/site-header.css') %}
-	{% do assets.addCss('theme://css/site-footer.css') %}
-	{% do assets.addCss('theme://css/buttons.css') %}
-	{% do assets.addCss('theme://css/forms.css') %}
-	{% do assets.addCss('theme://css/notify.css') %}
-	{% do assets.addCss('theme://css/marquee.css') %}
-	{% do assets.addCss('theme://css/animations.css') %}
-	{% do assets.addCss('theme://css/durations.css') %}
-	{% do assets.addCss('theme://css/delays.css') %}
-	{% do assets.addCss('theme://css/modular.css') %}
-	{% do assets.addCss('theme://css/content.css') %}
-	{% do assets.addCss('theme://css/map.css') %}
-	{% do assets.addCss('theme://css/video.css') %}
-	{% do assets.addCss('theme://css/drawers.css') %}
-	{% do assets.addCss('theme://css/hero.css') %}
-	{% do assets.addCss('theme://css/splash.css') %}
-	{% do assets.addCss('theme://css/grid.css') %}
-	{% do assets.addCss('theme://css/product.css') %}
+{% do assets.addCss('theme://css/site-loader.css', { loading : 'inline', position: 'before' }) %}
+{% do assets.addCss('theme://css/theme.css') %}
+{% do assets.addCss('theme://css/reset.css') %}
+{% do assets.addCss('theme://css/site.css') %}
+{% do assets.addCss('theme://css/fonts.css') %}
+{% do assets.addCss('theme://css/material-icons.css') %}
+{% do assets.addCss('theme://css/typography.css') %}
+{% do assets.addCss('theme://css/reveal.css') %}
+{% do assets.addCss('theme://css/site-header.css') %}
+{% do assets.addCss('theme://css/site-footer.css') %}
+{% do assets.addCss('theme://css/buttons.css') %}
+{% do assets.addCss('theme://css/forms.css') %}
+{% do assets.addCss('theme://css/notify.css') %}
+{% do assets.addCss('theme://css/marquee.css') %}
+{% do assets.addCss('theme://css/animations.css') %}
+{% do assets.addCss('theme://css/durations.css') %}
+{% do assets.addCss('theme://css/delays.css') %}
+{% do assets.addCss('theme://css/modular.css') %}
+{% do assets.addCss('theme://css/content.css') %}
+{% do assets.addCss('theme://css/map.css') %}
+{% do assets.addCss('theme://css/video.css') %}
+{% do assets.addCss('theme://css/drawers.css') %}
+{% do assets.addCss('theme://css/hero.css') %}
+{% do assets.addCss('theme://css/splash.css') %}
+{% do assets.addCss('theme://css/grid.css') %}
+{% do assets.addCss('theme://css/swiper.css') %}
+{% do assets.addCss('theme://css/product.css') %}
 
-	{% if theme.snipcart_api_key %}
-		{% do assets.addCss('https://cdn.snipcart.com/themes/v3.0.4/default/snipcart.css') %}
-	{% endif %}
-	
-	{% do assets.addCss('theme://css/custom.css') %}
-{% endblock %}
+{% if theme.snipcart_api_key %}
+	{% do assets.addCss('https://cdn.snipcart.com/themes/v3.0.4/default/snipcart.css') %}
+{% endif %}
 
+{% do assets.addCss('theme://css/custom.css') %}

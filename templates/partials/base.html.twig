@@ -8,8 +8,8 @@
         {% include 'partials/canonical.html.twig' %}
         {% include 'partials/analytics.html.twig' %}
         {% include 'partials/preload.html.twig' %}
-        {% include 'partials/css.html.twig' %}
-        {% include 'partials/js.html.twig' %}
+        {% block css %}{% include 'partials/css.html.twig' %}{% endblock %}
+        {% block js %}{% include 'partials/js.html.twig' %}{% endblock %}
         {% block assets deferred %}
             {{ assets.css()|raw }}
             {{ assets.js('before')|raw }}
