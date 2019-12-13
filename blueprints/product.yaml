@@ -40,6 +40,32 @@ form:
               validate:
                 required: true
 
+            section_images:
+              type: section
+              title: Images
+
+
+            header.images:
+              name: images
+              type: list
+              style: vertical
+              label: Images
+              fields:
+                .image:
+                  type: filepicker
+                  label: Image
+                  preview_images: true
+                  accept:
+                    - .jpg
+                    - .png
+                    - .svg
+                    - .gif
+                    - .webp
+
+                .alt:
+                  type: text
+                  label: Alt
+
             # section_modular:
             #   type: section
             #   title: Modular

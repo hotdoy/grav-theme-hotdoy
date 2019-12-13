@@ -1,4 +1,8 @@
 {% extends 'partials/base.html.twig' %}
+{% block js %}
+{{ parent() }}
+{% do assets.addJs('theme://js/product.js', { group:'after' }) %}
+{% endblock %}
 
 {% block page_content %}
 <section class="page__product">
@@ -10,11 +14,43 @@
 	'content_reveal': 'reveal delay-100 duration-500',
 	'modular_class': 'm-t_2'}%}
 
+	{# Swiper #}
+	{% if page.header.images %}
+	<div class="site rhythm">
+		<div class="swiper-container product-gallery-top">
+			<div class="swiper-wrapper">
+			{% for item in page.header.images %}
+				{% set image = item.image ? page.media[item.image] %}
+				{% set alt = item.alt %}
+				<div class="swiper-slide">
+					{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': '0'} %}
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+		<div class="swiper-container product-gallery-thumbs">
+			<div class="swiper-wrapper">
+	    	{% for item in page.header.images %}
+				{% set image = item.image ? page.media[item.image] %}
+				{% set alt = item.alt %}
+				<div class="swiper-slide">
+					<div class="fill">
+						{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': '0'} %}
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+	
 	{# image #}
+	{% elseif page.header.image %}
 	<div class="site rhythm">
 		{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 		{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': 'reveal delay-150 duration-500' } %}
 	</div>
+	{% endif %}
+
 
 	{# price #}
 	<div class="site">
