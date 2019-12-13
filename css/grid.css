@@ -89,3 +89,8 @@
 	max-width: 100%;
 	padding: 0 0;
 }
+
+.grid__item .btn{
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
