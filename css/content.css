@@ -62,7 +62,7 @@
 	margin-top: calc(var(--rhythm)/2);
 }
 
-.modular--content .embed iframe {
+.modular--content .embed iframe{
 	position: absolute; 
 	top: 0; 
 	left: 0; 
@@ -117,4 +117,13 @@
 }
 .content--right{
 	text-align: right;
+}
+
+/*Kaltura video*/
+.kWidgetIframeContainer{margin: 2rem auto;}
+
+.modular--content p>.tight,
+.modular--content p>.site{
+	padding-left: 0;
+	padding-right: 0;
 }
