@@ -1,0 +1,20 @@
+{% set player_id = 'kaltura-' ~ random() %}
+<div class="site">
+	<script src="https://video.quadcom.ch/p/{{ partner_id }}/sp/10100/embedIframeJs/uiconf_id/{{ uiconf_id }}/partner_id/{{ partner_id }}"></script>
+	<div style="width: 100%;display: inline-block;position: relative;"> 
+		<div id="dummy" style="margin-top: 56.25%;"></div>
+		<div id="{{ player_id }}" style="position:absolute;top:0;left:0;left: 0;right: 0;bottom:0;border:solid thin black;"></div>
+	</div>
+	<script>
+	kWidget.embed({
+	  "targetId": "{{ player_id }}",
+	  "wid": "_101",
+	  "uiconf_id": "{{ uiconf_id }}",
+	  "flashvars": {
+	    "streamerType": "auto"
+	  },
+	  "cache_st": 1576270232,
+	  "entry_id": "{{ entry_id }}"
+	});
+	</script>
+</div>
