@@ -18,7 +18,7 @@
   background-color: var(--bg-color);
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem var(--gutter);
 }
 
 .product__price{
