@@ -1,5 +1,15 @@
-# v1.4.4
-## 12/12/2019
+# v1.4.6
+## 13/12/2019
+1. [](#new)
+	* Added swiper image galery as product header
+	* Added a sticky buy button in product
+2. [](#improved)
+	* Allow use of css and js twig block in base
+3. [](#bugfix)
+	* Fixed spacing issues with theme buttons used in grid-item.
+
+# v1.4.5
+## 13/12/2019
 1. [](#improved)
 	* Video embed shortcodes now support full URLs.
 2. [](#bugfix)
