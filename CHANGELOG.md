@@ -1,3 +1,10 @@
+# v1.4.7
+## 14/12/2019
+1. [](#new)
+	* Swiper as shortcode
+2. [](#improved)
+	* Various alignment fixed
+
 # v1.4.6
 ## 13/12/2019
 1. [](#new)
