@@ -7,11 +7,12 @@
 	max-width: var(--width-tight);
 	margin:0 auto;
 }
-
-.product__buy{
+.product__buy__wrapper{
   position: sticky;
   top: 0;
   z-index: 1001;
+}
+.product__buy{
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;

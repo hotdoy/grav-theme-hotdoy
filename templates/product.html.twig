@@ -55,7 +55,7 @@
 	{# price #}
 	<div>
 		{% if theme.snipcart_api_key %}
-		<div class="site">
+		<div class="product__buy__wrapper site">
 			<div class="product__buy">
 				<div class="btn btn--solid product__btn">
 					<a class="snipcart-add-item"
@@ -74,11 +74,10 @@
      		<p>Snipcart API Key not found.<br>
      		Check theme configuration.</p>
      	</div>
-
 		{% endif %}
 		
-	{# content #}
-	{% include 'modular/content.html.twig' with{'modular_class': 'product__content'} %}
+		{# content #}
+		{% include 'modular/content.html.twig' with{'modular_class': 'product__content'} %}
 	</div>
 
 </section>
