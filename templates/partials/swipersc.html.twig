@@ -1,0 +1,13 @@
+{% set swiper_width = swiper_width|default('tight') %}
+
+<div class="swiper-container swipersc {{ swiper_width }}" id="swiper-{{ random() }}" >
+	<div class="swiper-wrapper">
+		{% set slides = swiper_slides|regex_replace('(^\n?<p>|<\/p>$)','') %}
+   		{% for slide in slides|split('>') %}
+		{% if not loop.last %}
+		<div class="swiper-slide">{{- slide -}}></div>
+		{% endif %}
+   		{% endfor %}
+	</div>
+	<div class="swiper-pagination"></div>
+</div>

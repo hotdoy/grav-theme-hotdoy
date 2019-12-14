@@ -1,0 +1,16 @@
+.swipersc{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.swipersc .swiper-slide{
+	width: 100%;
+	height: 100%;
+}
+
+.swipersc img{
+	margin-top: 0;
+	margin-bottom: 0;
+}
