@@ -1,7 +1,5 @@
-> **WARNING! Update 1.4.0** : Big changes for all modular pages. You will need to re-save ALL modular after the update. 
+> **WARNING! Update 1.4.x** : Big changes for all modular pages. You will need to re-save ALL modular after the update. 
 Check the "options" tab in any modular to access the new modular theme options.
-
-> **Anything else?** : Yep. I am testing a new site loader on mobile with placeholder content in v1.4.3 and I think it's here to stay.
 
 > **What's next?** : Embed shortcodes (youtube & vimeo) will get an update allowing the use of full url instead of IDs.
 
@@ -89,3 +87,5 @@ Use one of the 3 site witdh. [full], [site], [tight].
 * Grid
 * Map
 
+## Attributions and sponsors
+* Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the integration of [Swiper.js](https://swiperjs.com/) in the product page header and modular.
