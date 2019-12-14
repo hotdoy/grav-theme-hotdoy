@@ -18,7 +18,7 @@
   background-color: var(--bg-color);
   align-items: center;
   justify-content: space-between;
-  padding: 1rem var(--gutter);
+  padding: 1rem 0;
 }
 
 .product__price{
@@ -29,7 +29,7 @@
 
 .product__btn{
 	margin-right: 0;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .product__price--sup{
@@ -40,12 +40,15 @@
 	margin-top: 2rem;
 }
 
-.swiper-container {
+.product-gallery-thumbs {
   width: 100%;
   max-width: var(--width-tight);
   height: 300px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+  padding: 10px 0;
+  height: 6rem;
 }
 
 .product-gallery-top {
@@ -56,13 +59,6 @@
 .product-gallery-top .swiper-slide {
   width: 100%;
   height: 100%;
-}
-
-
-.product-gallery-thumbs {
-  box-sizing: border-box;
-  padding: 10px 0;
-  height: 6rem;
 }
 
 .product-gallery-thumbs .swiper-slide {
