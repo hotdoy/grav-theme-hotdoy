@@ -87,5 +87,5 @@ Use one of the 3 site witdh. [full], [site], [tight].
 * Grid
 * Map
 
-## Attributions and sponsors
+# Attributions and sponsors
 * Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the integration of [Swiper.js](https://swiperjs.com/) in the product page header and modular.
