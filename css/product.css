@@ -9,8 +9,16 @@
 }
 
 .product__buy{
-	margin: 2rem auto;
-	max-width: var(--width-tight);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  display: flex;
+  margin: 1rem auto;
+  max-width: var(--width-tight);
+  background-color: var(--bg-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
 }
 
 .product__price{
