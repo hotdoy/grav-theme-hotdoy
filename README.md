@@ -88,4 +88,4 @@ Use one of the 3 site witdh. [full], [site], [tight].
 * Map
 
 # Attributions and sponsors
-* Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the integration of [Swiper.js](https://swiperjs.com/) in the product page header and modular.
+* Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the addition of [Swiper.js](https://swiperjs.com/) in the product page header and soon to come modular.
