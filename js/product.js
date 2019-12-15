@@ -12,7 +12,7 @@
 	    var galleryTop = new Swiper('.product-gallery-top', {
 	    	spaceBetween: 10,
 	    	thumbs: {
-	    	swiper: galleryThumbs
+	    	swiper: galleryThumbs,
 	    	}
     	});
 	}

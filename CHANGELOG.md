@@ -1,3 +1,10 @@
+# v1.4.8
+## 14/12/2019
+1. [](#bugfix)
+	* Fixed product sticky buy button
+2. [](#new)
+	* Preminilary support for Kaltura via shortcode
+
 # v1.4.7
 ## 14/12/2019
 1. [](#new)
