@@ -2,6 +2,7 @@
 Check the "options" tab in any modular to access the new modular theme options.
 
 > **What's next?** : Embed shortcodes (youtube & vimeo) will get an update allowing the use of full url instead of IDs.
+EDIT: That's done.
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
