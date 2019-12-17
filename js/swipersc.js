@@ -11,7 +11,6 @@
     				el: '.swiper-pagination',
   				},
 	    	});
-	    	console.log(id);
 		})
 	}
 
