@@ -124,3 +124,23 @@ a.nav__link:hover {
     transform: translateY(6px);
 }
 
+.snipcart-items-count{
+    position: absolute;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #009688;
+}
+.landscape .snipcart-items-count{
+    top: -4px;
+    left: 13px;
+}
+.portrait .snipcart-items-count{
+    top: 4px;
+    left: 32px;
+}
