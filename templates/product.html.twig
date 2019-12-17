@@ -16,14 +16,14 @@
 
 	{# Swiper #}
 	{% if page.header.images %}
-	<div class="site rhythm" data-reveal="reveal delay-150 duration-500">
+	<div class="tight rhythm" data-reveal="reveal delay-150 duration-500">
 		<div class="swiper-container product-gallery-top">
 			<div class="swiper-wrapper">
 			{% for item in page.header.images %}
 				{% set image = item.image ? page.media[item.image] %}
 				{% set alt = item.alt %}
 				<div class="swiper-slide">
-					{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': '0'} %}
+					{% include 'partials/img.html.twig' with {'image': image, 'alt': alt, 'class': 'product__image', 'reveal': '0'} %}
 				</div>
 			{% endfor %}
 			</div>
@@ -35,7 +35,7 @@
 				{% set alt = item.alt %}
 				<div class="swiper-slide">
 					<div class="fill">
-						{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': '0'} %}
+						{% include 'partials/img.html.twig' with {'image': image, 'alt': alt, 'class': 'product__image', 'reveal': '0'} %}
 					</div>
 				</div>
 			{% endfor %}
