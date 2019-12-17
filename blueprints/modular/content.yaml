@@ -17,3 +17,12 @@ form:
                 content--left: 'Left'
                 content--center: 'Center'
                 content--right: 'Right'
+
+            header.width:
+              type: toggle
+              label: Width
+              highlight: tight
+              default: tight
+              options: 
+                tight: 'Tight'
+                site: 'Site'

@@ -1,9 +1,24 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'content' %}
 	
-{% set align = align|default(page.header.align ?? 'content--left') %}
+{% set align = align|default(page.header.align ?? 'left') %}
+{%- set align -%}
+{%- if align == 'left' -%}content--left
+{%- elseif align == 'center' -%}content--center
+{%- else -%}{{- align -}}
+{%- endif -%}
+{%- endset -%}
+
+{% set width = width|default(page.header.width ?? 'tight') %}
+{%- set width -%}
+{%- if width == 'tight' -%}tight
+{%- elseif width == 'site' -%}site
+{%- else -%}{{- width -}}
+{%- endif -%}
+{%- endset -%}
+
 {% set content_reveal = content_reveal|default('') %}
 
 {% block modular_content %}
-	<div class="content__ctn site {{ align }}" data-reveal="{{ content_reveal }}">{{ content }}</div>
+	<div class="content__ctn {{ width }} {{ align }}" data-reveal="{{ content_reveal }}">{{ content }}</div>
 {% endblock %}
