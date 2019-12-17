@@ -1,8 +1,7 @@
 > **WARNING! Update 1.4.x** : Big changes for all modular pages. You will need to re-save ALL modular after the update. 
 Check the "options" tab in any modular to access the new modular theme options.
 
-> **What's next?** : Embed shortcodes (youtube & vimeo) will get an update allowing the use of full url instead of IDs.
-EDIT: That's done.
+> **What's next ?** : Product page will get a much needed upgrade. Product Collections are starting to be missed and I am in talk with a designer for an all around bump in visual language.
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
@@ -89,4 +88,5 @@ Use one of the 3 site witdh. [full], [site], [tight].
 * Map
 
 # Attributions and sponsors
-* Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the addition of [Swiper.js](https://swiperjs.com/).
+* Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the addition of [Swiper.js](https://swiperjs.com/) Shortcode.
+* Thank you to [Gemma Chua-Tran](https://unsplash.com/@gemmachuatran) for the amazing photos used in the Skeleton and demo content.
