@@ -14,9 +14,9 @@ form:
               highlight: content--left
               default: content--left
               options: 
-                content--left: 'Left'
-                content--center: 'Center'
-                content--right: 'Right'
+                left: 'Left'
+                center: 'Center'
+                right: 'Right'
 
             header.width:
               type: toggle
