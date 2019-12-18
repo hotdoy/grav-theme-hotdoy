@@ -130,11 +130,12 @@ a.nav__link:hover {
     color: #fff;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #009688;
+    background-color: #b1b1b1;
 }
 .landscape .snipcart-items-count{
     top: -4px;
