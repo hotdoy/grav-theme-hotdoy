@@ -79,12 +79,14 @@ Add [mi="icon-name"](https://material.io/resources/icons/) with [i]
 Use one of the 3 site witdh. [full], [site], [tight].
 
 ## Swiper
+```
 [swiper]
 ![]()
 ![]()
 ![]()
 ...
 [/swiper]
+```
 
 # Modular
 * Splash
