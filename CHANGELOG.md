@@ -1,3 +1,14 @@
+# v1.4.9
+## 18/12/2019
+1. [](#new)
+	* Added simple cart product count
+	* site-header use site.title value instead of hardcoded one.
+	* Content modular now controls it's own width (site/tight).
+	* embed and othet content type now follow the content modular width instead of trying to define their own.
+	* Button shortcodes are being worked on a lot.
+2. [](#improved)
+	* btn-link and btn-solid shortcodes have been removed in favor of simpler btn and link.
+
 # v1.4.8
 ## 14/12/2019
 1. [](#bugfix)
