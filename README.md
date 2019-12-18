@@ -10,8 +10,8 @@ Check the "options" tab in any modular to access the new modular theme options.
 ![Theme screenshot](https://raw.githubusercontent.com/hotdoy/grav-theme-hotdoy/master/screenshot.jpg)
 
 The **Hotdoy** Theme is meant to be a starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
-It is in active developpement and not suited for inheritance at the moment unless you dont mind thing changing all the times.
-You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead.
+It is in active developpement and probably not suited for production unless you dont mind thing changing all the times.
+You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly.
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). I still have content to write but you get the idea.
 
@@ -63,11 +63,15 @@ show content on specific breakpoint.
 [portrait], [mobile] or [landscape], [desktop].
 
 ## Button
-Add buttons with out without material icons
-[btn], [link].
+Add buttons with out without material icons. 
+```
+[btn href="https://google.com"], [link href="mypage" i="done"].
+```
+You currently have to use absolute url to page media but I am working on something way more solid. (should be in the next release)
 
 ## Embed
-Add [youtube=id] and [vimeo=id] by id
+Add [youtube=url] and [vimeo=url] by URL.
+The older version was working with ID only and sucked.
 
 ## Note
 Use [note] to add unrendered content.
