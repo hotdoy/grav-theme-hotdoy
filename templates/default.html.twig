@@ -7,11 +7,11 @@
 	{% include 'modular/content.html.twig' with {
 		'content':'<h1>' ~ page.title ~ '</h1>',
 		'align': 'center',
-		'content_reveal': 'reveal delay-100 duration-500',
+		'content_reveal': 'reveal transition-delay-100',
 		'modular_class': 'm-t_2'}%}
 
 	{# content #}
-	{% include 'modular/content.html.twig' with {'content_reveal': 'reveal delay-150 duration-500'} %}
+	{% include 'modular/content.html.twig' with {'content_reveal': 'reveal transition-delay-150'} %}
 
 </section>
 {% endblock %}

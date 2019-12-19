@@ -18,11 +18,11 @@
 	{% endif %}
 	
 	{% if bg_image and not bg_video %}
-	{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_styles , 'reveal': 'scalein duration-5000 delay-0'} %}
+	{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_styles , 'reveal': 'scalein animation-duration-5000 animation-delay-0'} %}
 	{% endif %}
 
 	{% if bg_video %}
-	<video class="splash__video" data-reveal="scalein duration-5000 delay-0" autoplay="autoplay" muted="muted"
+	<video class="splash__video" data-reveal="scalein animation-duration-5000 animation-delay-0" autoplay="autoplay" muted="muted"
 	{% if bg_loop %} loop="loop" {% endif %} 
 	{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
 	style="{{ computed_style }}">

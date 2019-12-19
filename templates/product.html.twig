@@ -15,7 +15,7 @@
 
 	{# Swiper #}
 	{% if page.header.images %}
-	<div class="rhythm" data-reveal>
+	<div class="rhythm" data-reveal="reveal transition-delay-150 transition-duration-500">
 		<div class="swiper-container product-gallery-top">
 			<div class="swiper-wrapper">
 			{% for item in page.header.images %}
@@ -44,9 +44,9 @@
 	
 	{# Single Image #}
 	{% elseif page.header.image %}
-	<div class="rhythm">
+	<div class="rhythm" data-reveal="reveal transition-delay-150 transition-duration-500">
 		{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
-		{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image', 'reveal': 'reveal delay-150 duration-500' } %}
+		{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image' } %}
 	</div>
 	{% endif %}
 

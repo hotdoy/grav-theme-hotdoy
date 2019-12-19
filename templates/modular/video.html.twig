@@ -5,8 +5,9 @@
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 {% set loop = loop|default(page.header.loop) %}
 {% set align_h = align_h|default(page.header.align_h) %}
-{% set reveal_video = reveal_video|default('reveal delay-100 duration-500') %}
-{% set reveal_content = reveal_content|default('reveal delay-200 duration-500') %}
+{% set reveal_ = value %}
+{% set reveal_video = reveal_video|default('reveal transition-delay-100 transition-duration-500') %}
+{% set reveal_content = reveal_content|default('reveal transition-delay-200 transition-duration-1000') %}
 
 {% block modular_content %}
 	<div class="video__ctn site">

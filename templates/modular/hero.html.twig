@@ -22,8 +22,8 @@
 	{% endif %}
 
 	<div class="hero__ctn site {% if reverse %}hero__ctn--reverse{% endif %}">
-		<div class="hero__content" data-reveal="{{ reveal_content }}">{{ content|raw }}</div>
-		<div class="hero__media" data-reveal="{{ reveal_media }}">	
+		<div class="hero__content" data-reveal>{{ content|raw }}</div>
+		<div class="hero__media" data-reveal>	
 			{% if video %}
 			<video autoplay="autoplay" muted="muted" loop="loop" {% if image %}poster="{{ image.url }}"{% endif %}>
 				<source src="{{ video.url }}" type="video/mp4">
