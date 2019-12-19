@@ -1,4 +1,5 @@
-/*DEFAULT*/
+/*##################################################*/
+/*DEPRECATED - USED PROPERTY PREFIXED CLASS INSTEAD*/
 .delay-0{animation-delay: 0s;}
 .delay-100{animation-delay: 0.1s;}
 .delay-150{animation-delay: 0.15s;}
@@ -12,3 +13,40 @@
 .delay-1000{animation-delay: 1s;}
 .delay-1500{animation-delay: 1.5s;}
 .delay-2000{animation-delay: 2s;}
+/*##################################################*/
+
+.animation-delay-0{animation-delay: 0s;}
+.animation-delay-100{animation-delay: 0.1s;}
+.animation-delay-150{animation-delay: 0.15s;}
+.animation-delay-200{animation-delay: 0.2s;}
+.animation-delay-250{animation-delay: 0.25s;}
+.animation-delay-300{animation-delay: 0.3s;}
+.animation-delay-350{animation-delay: 0.35s;}
+.animation-delay-400{animation-delay: 0.4s;}
+.animation-delay-450{animation-delay: 0.45s;}
+.animation-delay-500{animation-delay: 0.5s;}
+.animation-delay-1000{animation-delay: 1s;}
+.animation-delay-1500{animation-delay: 1.5s;}
+.animation-delay-2000{animation-delay: 2s;}
+.animation-delay-2500{animation-delay: 2.5s;}
+.animation-delay-3000{animation-delay: 3s;}
+.animation-delay-4000{animation-delay: 4s;}
+.animation-delay-5000{animation-delay: 5s;}
+
+.transition-delay-0{transition-delay: 0s;}
+.transition-delay-100{transition-delay: 0.1s;}
+.transition-delay-150{transition-delay: 0.15s;}
+.transition-delay-200{transition-delay: 0.2s;}
+.transition-delay-250{transition-delay: 0.25s;}
+.transition-delay-300{transition-delay: 0.3s;}
+.transition-delay-350{transition-delay: 0.35s;}
+.transition-delay-400{transition-delay: 0.4s;}
+.transition-delay-450{transition-delay: 0.45s;}
+.transition-delay-500{transition-delay: 0.5s;}
+.transition-delay-1000{transition-delay: 1s;}
+.transition-delay-1500{transition-delay: 1.5s;}
+.transition-delay-2000{transition-delay: 2s;}
+.transition-delay-2500{transition-delay: 2.5s;}
+.transition-delay-3000{transition-delay: 3s;}
+.transition-delay-4000{transition-delay: 4s;}
+.transition-delay-5000{transition-delay: 5s;}
