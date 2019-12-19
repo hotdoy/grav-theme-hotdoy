@@ -1,3 +1,9 @@
+# v1.4.10
+## 19/12/2019
+1. [](#improved)
+	* Complete rewrite of embedShortcode.
+	* Basic Youtube iFrame API integration.
+
 # v1.4.9
 ## 18/12/2019
 1. [](#new)
