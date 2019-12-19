@@ -1,7 +1,7 @@
 > **WARNING! Update 1.4.x** : Big changes for all modular pages. You will need to re-save ALL modular after the update. 
 Check the "options" tab in any modular to access the new modular theme options.
 
-> **What's next ?** : Product page will get a much needed upgrade. Product Collections are starting to be missed and I am in talk with a designer for an all around bump in visual language.
+> **What's next ?** : Product page will get a much needed upgrade. Product Collections are starting to be missed and I am in talk with a designer for an all around bump in visual language. Also YouTube is in need of a real integration.
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
