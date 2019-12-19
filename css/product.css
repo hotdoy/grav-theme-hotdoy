@@ -4,7 +4,6 @@
 
 .product__image{
 	width: 100%;
-	max-width: var(--width-tight);
 	margin:0 auto;
 }
 .product__buy__wrapper{
@@ -18,7 +17,6 @@
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  max-width: var(--width-tight);
   background-color: var(--bg-color);
   align-items: center;
   margin-left: auto;
@@ -48,7 +46,6 @@
 
 .product-gallery-thumbs {
   width: 100%;
-  max-width: var(--width-tight);
   height: 300px;
   margin-left: auto;
   margin-right: auto;
