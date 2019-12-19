@@ -34,9 +34,10 @@
 			  				el.target.classList.add(...revealClassArray);
 
                               let style = getComputedStyle(target);
-                              let duration = parseFloat(style.animationDuration.slice(0,-1));
-                              let delay = parseFloat(style.animationDelay.slice(0,-1));
-                              let totalDelay = (duration + delay) * 1000;
+                              let animationDuration = parseFloat(style.animationDuration.slice(0,-1));
+                              let animationDelay = parseFloat(style.animationDelay.slice(0,-1));
+                              let totalDelay = (animationDuration + animationDelay) * 1000;
+                              console.log(totalDelay);
                               setTimeout(function(){ 
                                   target.classList.remove('unrevealed');
                               }, totalDelay);

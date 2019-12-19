@@ -1,17 +1,12 @@
 .unrevealed {
+	transition: all;
 	opacity:0;
+	transform: translateY(75px);
 }
 
-.reveal {	
-	opacity: 0;
-	animation-name: reveal;
-	animation-duration: 0.5s;
-	animation-delay: 0.1;
-	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-@keyframes reveal {
-	from {opacity: 0; transform: translateY(75px);}
-	to {opacity: 1;}
+.reveal {
+	transition: all;	
+	opacity: 1;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
