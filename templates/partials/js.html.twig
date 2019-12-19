@@ -7,6 +7,9 @@
 {% do assets.addJs('theme://js/video.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/swiper.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/swipersc.js', { group:'after' }) %}
+{% do assets.addJs('theme://js/youtube.js', { group:'after' }) %}
+
+{% do assets.addJs('https://youtube.com/iframe_api', { group:'after' }) %}
 
 {% if theme.google_maps_api_key %}
 	{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key, { group:'after', position: 'after', loading : 'defer'}) %}
