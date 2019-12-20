@@ -1,5 +1,14 @@
+# v1.4.12
+## 20/12/2019
+
+1. [](#new)
+	* Added image lazyloading for all images using the img partial.
+2. [](#improved)
+	* Some js files and function name have been slightly changed. I you experience problem on a up-to-date theme. Open an issue.
+
 # v1.4.11
 ## 19/12/2019
+
 1. [](#improved)
 	* Changed delay and duration utility class names.
 	* Deprecated old delay and duration utility class.
@@ -12,12 +21,14 @@
 
 # v1.4.10
 ## 19/12/2019
+
 1. [](#improved)
 	* Complete rewrite of embedShortcode.
 	* Basic Youtube iFrame API integration.
 
 # v1.4.9
 ## 18/12/2019
+
 1. [](#new)
 	* Added simple cart product count
 	* site-header use site.title value instead of hardcoded one.
@@ -29,6 +40,7 @@
 
 # v1.4.8
 ## 14/12/2019
+
 1. [](#bugfix)
 	* Fixed product sticky buy button
 2. [](#new)
@@ -36,6 +48,7 @@
 
 # v1.4.7
 ## 14/12/2019
+
 1. [](#new)
 	* Swiper as shortcode
 2. [](#improved)
@@ -43,6 +56,7 @@
 
 # v1.4.6
 ## 13/12/2019
+
 1. [](#new)
 	* Added swiper image galery as product header
 	* Added a sticky buy button in product
@@ -53,6 +67,7 @@
 
 # v1.4.5
 ## 13/12/2019
+
 1. [](#improved)
 	* Video embed shortcodes now support full URLs.
 2. [](#bugfix)
@@ -60,6 +75,7 @@
 
 # v1.4.4
 ## 12/12/2019
+
 1. [](#improved)
 	* Addded loading lazy attr to tracking iframe
 	* Bumped snipcart to 3.0.4.
@@ -69,6 +85,7 @@
 
 # v1.4.3
 ## 11/12/2019
+
 1. [](#new)
 	* site-loader show placeholder content after a short delay
 2. [](#bugfix)
@@ -76,16 +93,19 @@
 
 # v1.4.2
 ## 10/12/2019
+
 1. [](#bugfix)
 	* Fixed form submit button position.
 	
 # v1.4.1
 ## 10/12/2019
+
 1. [](#improved)
 	* Improved form styles and submitting state
 
 # v1.4.0
 ## 07/12/2019
+
 1. [](#new)
 	* Refactor of all modular blueprints and templates.
 	* Refactor of modular spacing rules.
