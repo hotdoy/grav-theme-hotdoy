@@ -153,3 +153,17 @@ form:
     price_suffix:
       type: text
       label: Price Suffix
+
+    image-processing:
+      type: section
+      title: Image Processing 
+
+    lazyload:
+      type: toggle
+      label: Defer Image Loading
+      help: Only load images using the img partial when in viewport.
+      highlight: 1
+      default: 1
+      options: 
+        0: 'False'
+        1: 'True'
