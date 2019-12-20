@@ -1,7 +1,7 @@
 (function ($) {
 	'use strict';
 
-	var mapInit = function(){
+	var initMap = function(){
 	   	var $el = $('.map');
 	    $el.each(function (index) {
 	        var zoom = parseInt($(this).data('zoom'));
@@ -39,7 +39,7 @@
 	}
 
 	var init = function () {
-		mapInit();
+		initMap();
 	};
 
 	$(init);
