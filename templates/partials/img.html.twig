@@ -4,6 +4,7 @@
 {% set style = style|default('') %}
 {% set absolute_url = absolute_url|default(true) %}
 {% set loading = loading|default('lazy') %}
+{% set lazyload = true %}
 {% set filetype =  image.url|split('.')|last %}
 
 {% set src = image.url %}
@@ -13,12 +14,20 @@
 	{% if class %}class="{{ class }}"{% endif %}
 	{% if style %}style="{{ style }}"{% endif %}>
 {% else %}
+	{% set src_ph = image.cropResize(16, 0).url %}
 	{% set src_375 = image.cropResize(375, 0).url %}
 	{% set src_1368 = image.cropResize(1368, 0).url %}
 	{% set src_1920 = image.cropResize(1920, 0).url %}
-	<img src="{{ src }}" srcset="{{ src_375 }} 375w, {{ src_1368 }} 1368w, {{ src_1920 }} 1920w"
+	<img 
+	{% if lazyload %}
+	data-src="{{ src }}"
+	{% if src_ph %}src="{{ src_ph }}" {% endif %}
+	{% else %}
+	src="{{ src }}" 
+	srcset="{{ src_375 }} 375w, {{ src_1368 }} 1368w, {{ src_1920 }} 1920w"
+	{% endif %}
 	{% if loading %}loading="{{ loading }}"{% endif %}
-	{% if class %}class="{{ class }}"{% endif %}
+	{% if class or lazyload %}class="{% if lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
 	{% if style %}style="{{ style }}"{% endif %}>
 {% endif %}
 

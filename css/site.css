@@ -191,6 +191,11 @@ img{
 	display: block;
 }
 
+img.lazyload,
+img.lazyloading{
+	image-rendering: pixelated;
+}
+
 code{
 	display: inline;
 	background-color: #f7f7f7;
