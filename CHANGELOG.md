@@ -1,3 +1,15 @@
+# v1.4.11
+## 19/12/2019
+1. [](#improved)
+	* Changed delay and duration utility class names.
+	* Deprecated old delay and duration utility class.
+	* Pass on all modular to fix delay and duration class names.
+	* Reveal is now a transition by default instead of an animation.
+	* Product template now uses the "thight" width for the whole page.
+	* img partial no longer can set reveal.
+2. [](#bugfix)
+	* Fixed fullscreen mode on embeded iframes (Youtube, Vimeo, etc)
+
 # v1.4.10
 ## 19/12/2019
 1. [](#improved)
