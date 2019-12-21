@@ -1,10 +1,8 @@
-{% set google_tracking_id = theme.google_tracking_id %}
-{% if google_tracking_id %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ google_tracking_id }}"></script>
+{% if theme.google_tracking_id %}
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ google_tracking_id }}');
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', '{{ theme.google_tracking_id }}', 'auto');
+ga('send', 'pageview');
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 {% endif %}
