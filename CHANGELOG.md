@@ -1,3 +1,9 @@
+# v1.4.13
+## 21/12/2019
+
+1. [](#bugfix)
+	* Fixed form submission message not being visible (and made it bigger).
+
 # v1.4.12
 ## 20/12/2019
 

@@ -1,28 +1,27 @@
 function notify(message, bg_color, fg_color, bg_src){
     var done = document.createElement('div');
-    done.setAttribute('class', 'notify-done material-icons');
+    done.setAttribute('class', 'notify__done material-icons');
     done.innerHTML = 'done';
     done.addEventListener("click", function () {
-        $(this).parent().addClass('notify-out');
+        $(this).parent().addClass('notify--destroy');
         setTimeout(function(){
             done.parentNode.remove();
-        }, 500);
+        }, 1000);
     });
 
-    var notification = document.createElement('div');
-    notification.setAttribute('class', 'notify notify-in tight');
+    var notice = document.createElement('div');
+    notice.setAttribute('class', 'notify');
     if (bg_color) {
-        notification.style.backgroundColor = bg_color;
+        notice.style.backgroundColor = bg_color;
     }
     if (fg_color) {
-        notification.style.color = fg_color;
+        notice.style.color = fg_color;
     }
     if (bg_src) {
-        notification.style.backgroundImage = bg_src;
+        notice.style.backgroundImage = bg_src;
     }
-    notification.setAttribute('data-ts', Date.now());
-    notification.innerHTML = message;
-    notification.appendChild(done);
+    notice.innerHTML = message;
+    notice.appendChild(done);
 
-    $('body').append(notification);
+    $('body').append(notice);
 }
