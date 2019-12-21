@@ -30,7 +30,7 @@
 			</video>
 			{% elseif image %}
 			{% set computed_style %}{% if image_width %}{{ 'width:' ~ image_width ~ '%;' }}{% endif %}{% endset %}
-			{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'style': computed_style } %}
+			{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'style': computed_style} %}
 			{% endif %}
 		</div>
 	</div>
