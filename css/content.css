@@ -25,8 +25,8 @@
 }
 
 .modular--content form{
-	margin-top: var(--rhythm);
-	margin-bottom: var(--rhythm);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .modular--content .content__ctn>.site{
