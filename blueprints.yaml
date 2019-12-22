@@ -160,8 +160,17 @@ form:
 
     lazyload:
       type: toggle
-      label: Defer Image Loading
-      help: Only load images using the img partial when in viewport.
+      label: Defer Image Loading (Lazyload)
+      highlight: 1
+      default: 1
+      options: 
+        0: 'False'
+        1: 'True'
+
+    placeholder:
+      type: toggle
+      label: Use Low Resolution Placeholder
+      help: Lazyloading must be set to true
       highlight: 1
       default: 1
       options: 

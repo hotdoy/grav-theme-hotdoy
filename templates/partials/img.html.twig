@@ -2,36 +2,37 @@
 {% set alt = alt|default('') %}
 {% set class = class|default('') %}
 {% set style = style|default('') %}
-{% set absolute_url = absolute_url|default(true) %}
 {% set loading = loading|default('lazy') %}
-{% set lazyload = theme.lazyload|default('true') %}
 {% set filetype =  image.url|split('.')|last %}
 {% set reveal = reveal|default(false) %}
-
 {% set src = image.url %}
+{% set use_lazyload = theme.lazyload|default(true) %}
+{% set use_placeholder = theme.placeholder|default(true) %}
+{# {% set use_absolute_url = absolute_url|default(true) %} #}
+
+
 {% if filetype == 'svg' or filetype == 'gif' %}
 	<img 
-	{% if lazyload %}
-	data-src="{{ src }}"
-	{% else %}
-	src="{{ src }}"
-	{% endif %}
+	{% if use_lazyload %}data-src="{{ src }}"{% else %}src="{{ src }}"{% endif %}
 	{% if loading %}loading="{{ loading }}"{% endif %}
-	{% if class or lazyload %}class="{% if lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
+	{% if class or lazyload %}class="{% if use_lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
 	{% if style %}style="{{ style }}"{% endif %}>
 {% else %}
+	{% set src_ph = image.cropResize(16, 0).url %}
 	{% set src_375 = image.cropResize(375, 0).url %}
 	{% set src_1368 = image.cropResize(1368, 0).url %}
 	{% set src_1920 = image.cropResize(1920, 0).url %}
 	<img 
-	{% if lazyload %}
+	{% if use_lazyload %}
+	{% if use_placeholder %}src="{{ src_ph }}"{% endif %}
 	data-src="{{ src }}"
+	data-srcset="{{ src_375 }} 375w, {{ src_1368 }} 1368w, {{ src_1920 }} 1920w"
 	{% else %}
 	src="{{ src }}" 
 	srcset="{{ src_375 }} 375w, {{ src_1368 }} 1368w, {{ src_1920 }} 1920w"
 	{% endif %}
 	{% if loading %}loading="{{ loading }}"{% endif %}
-	{% if class or lazyload %}class="{% if lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
+	{% if class or use_lazyload %}class="{% if use_lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
 	{% if reveal %}data-reveal="{{ reveal }}"{% endif %}
 	{% if style %}style="{{ style }}"{% endif %}>
 {% endif %}
