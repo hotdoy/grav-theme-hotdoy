@@ -160,7 +160,7 @@ form:
 
     lazyload:
       type: toggle
-      label: Defer Image Loading (Lazyload)
+      label: Lazyload Images
       highlight: 1
       default: 1
       options: 
@@ -169,8 +169,7 @@ form:
 
     placeholder:
       type: toggle
-      label: Use Low Resolution Placeholder
-      help: Lazyloading must be set to true
+      label: Use Low Resolution Placeholder While Lazyloading
       highlight: 1
       default: 1
       options: 
