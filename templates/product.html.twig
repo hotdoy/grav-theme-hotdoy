@@ -23,7 +23,7 @@
 				{% set image = item.image ? page.media[item.image] %}
 				{% set alt = item.alt %}
 				<div class="swiper-slide">
-					{% include 'partials/img.html.twig' with {'image': image, 'alt': alt, 'class': 'product__image'} %}
+					{% include 'partials/img.html.twig' with {'image': image, 'alt': alt} %}
 				</div>
 			{% endfor %}
 			</div>
