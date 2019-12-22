@@ -7,9 +7,10 @@
     margin-right: auto;
 
     max-width: var(--width-tight);
-    height: 20vh;
+    min-height: 15vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
