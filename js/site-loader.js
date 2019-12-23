@@ -4,7 +4,7 @@
 	var siteLoader = function(){
 		var loader = $('#site-loader');
 		if (loader.length) {
-			$(loader).addClass('loaded');
+			$('body').addClass('loaded');
 		}
 	}
 

@@ -38,7 +38,7 @@
 	100% {opacity: 0; transform: translateY(-50px);}
 }
 
-#site-loader.loaded{
+body.loaded #site-loader{
 	transition: all 0.2s; 
 	opacity: 0;
 	visibility: hidden;
