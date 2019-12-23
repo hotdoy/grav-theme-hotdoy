@@ -32,12 +32,10 @@
 			  			if (revealClass.length) {
 			  				let revealClassArray = revealClass.split(" ");
 			  				el.target.classList.add(...revealClassArray);
-
                               let style = getComputedStyle(target);
                               let animationDuration = parseFloat(style.animationDuration.slice(0,-1));
                               let animationDelay = parseFloat(style.animationDelay.slice(0,-1));
                               let totalDelay = (animationDuration + animationDelay) * 1000;
-                              console.log(totalDelay);
                               setTimeout(function(){ 
                                   target.classList.remove('unrevealed');
                               }, totalDelay);
