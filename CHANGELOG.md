@@ -1,3 +1,14 @@
+# v1.4.14
+## 23/12/2019
+
+1. [](#improved)
+	* Swiper in product and shortcode now use object fit cover.
+	* Brought back a better version of img partial reveal
+	* Allow low-rez placeholder while lazyloading and related options in admin panel
+	* Fixed margins in forms used in some modular
+	* Reduced Notification height and fixed wrapping in multiple paragraph message.
+	* Use new async GA script 
+
 # v1.4.13
 ## 21/12/2019
 
