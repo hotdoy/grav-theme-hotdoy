@@ -1,6 +1,6 @@
 .swipersc{
 	width: 100%;
-	height: 100%;
+	height: 650px;
 	margin-bottom: 3rem;
     margin-top: 3rem;
 }
@@ -11,8 +11,10 @@
 }
 
 .swipersc img{
-	margin-top: 0;
-	margin-bottom: 0;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .swipersc .swiper-pagination-bullet-active{
