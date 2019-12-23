@@ -37,3 +37,9 @@
 	60% {opacity: 0.5; transform: translateY(0);}
 	100% {opacity: 0; transform: translateY(-50px);}
 }
+
+#site-loader.loaded{
+	transition: all 0.2s; 
+	opacity: 0;
+	visibility: hidden;
+}
