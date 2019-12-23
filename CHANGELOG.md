@@ -1,3 +1,11 @@
+# v1.4.15
+## 23/12/2019
+
+1. [](#improved)
+	* Updated snipcart to 3.0.5
+	* Site-loader no longer use jquery fadeOut
+	* Removed some console logs in reveal.js
+	
 # v1.4.14
 ## 23/12/2019
 
