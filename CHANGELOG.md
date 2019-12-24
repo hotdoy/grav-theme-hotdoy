@@ -1,3 +1,11 @@
+# v1.4.16
+## 24/12/2019
+
+1. [](#new)
+	* Modular can now use their page title as display title
+2. [](#improved)
+	* Product and shortcode swiper responsivness
+
 # v1.4.15
 ## 23/12/2019
 
