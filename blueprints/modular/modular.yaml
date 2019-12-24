@@ -67,6 +67,15 @@ form:
                 header: 'Header'
                 default: 'Default'
 
+            header.display_title:
+              type: toggle
+              label: Display Title
+              highlight: false
+              default: false
+              options: 
+                false: 'False'
+                true: 'True'
+
             taxonomies:
               unset@: true
               fields:

@@ -6,6 +6,11 @@
 	z-index: 1000;
 }
 
+.modular__title{
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
 .m-t{margin-top: var(--rhythm);}
 .m-b{margin-bottom: var(--rhythm);}
 .m-tb{margin-top: var(--rhythm);margin-bottom: var(--rhythm);}
@@ -17,3 +22,4 @@
 
 .r-default{}
 .r-header{margin-top: calc(var(--nav-height)*-1);}
+

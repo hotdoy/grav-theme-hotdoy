@@ -2,6 +2,7 @@
 {% set modular_class = modular_class|default('') %}
 {% set modular_style = modular_style|default('') %}
 {% set modular_reveal = modular_reveal|default(0) %}
+{% set modular_display_title = modular_display_title|default(page.header.display_title) %}
 
 {%- set margin -%}
 {%- if page.header.margin == 'top' %}m-t
@@ -37,5 +38,6 @@ modular modular--{{ modular_name }}
 
 <section class="{{ computed_modular_class }}" style="{{ computed_style }}" 
 {% if modular_reveal %}data-reveal="{{ modular_reveal }}"{% endif %}>
+{% if modular_display_title %}<div class="site modular__title"><h2>{{ page.title }}</h2></div>{% endif %}
 {% block modular_content %}{% endblock %}
 </section>
