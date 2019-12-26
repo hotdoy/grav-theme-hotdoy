@@ -1,3 +1,10 @@
+# v1.4.17
+## 26/12/2019
+
+1. [](#bugfix)
+	* Fixed grid modular spacing
+	* Fixed some h tags vertical spacing
+
 # v1.4.16
 ## 24/12/2019
 
