@@ -3,6 +3,9 @@
 
 {% set item_width_landscape = item_width_landscape|default(page.header.item_width_landscape) %}
 {% set item_width_portrait = item_width_portrait|default(page.header.item_width_portrait) %}
+
+{% set portrait_grid =  item_width_portrait != '100%' %}
+
 {% set item_align_h = item_align_h|default(page.header.item_align_h) %}
 {% set item_align_v = item_align_v|default(page.header.item_align_v) %}
 
@@ -10,7 +13,13 @@
 {% if item_width_landscape %}--item-width-landscape:{{ item_width_landscape }};{% endif %}
 {% if item_width_portrait %}--item-width-portrait:{{ item_width_portrait }};{% endif %}
 {% endset %}
-{% set grid_classes = 'grid' ~ (item_align_h ? ' ' ~ item_align_h : '') ~ (item_align_v ? ' ' ~ item_align_v : '') %}
+
+{% set grid_classes %}
+grid
+{%- if item_align_h %} {{ item_align_h }}{% endif %}
+{%- if item_align_v %} {{ item_align_v }}{% endif %}
+{%- if portrait_grid %} grid--portrait-grid{% endif %}
+{% endset %}
 
 {% block modular_content %}
 	<div class="site">

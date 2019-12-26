@@ -21,14 +21,14 @@ h1{
 
 h2{
 	font-family: var(--font-alt);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
     font-size: 2em;
     line-height: 1.2em;
 }
 
 h3{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     margin-top: 1.5rem;
     font-size: 1.5em;
     line-height: 1.2em;

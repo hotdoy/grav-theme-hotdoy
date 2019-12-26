@@ -11,6 +11,12 @@
 	margin-bottom: 3rem;
 }
 
+@media (min-width: 735px) {
+	.modular:after{
+		margin: 0 auto;
+	}
+}
+
 .m-t{margin-top: var(--rhythm);}
 .m-b{margin-bottom: var(--rhythm);}
 .m-tb{margin-top: var(--rhythm);margin-bottom: var(--rhythm);}
@@ -23,3 +29,16 @@
 .r-default{}
 .r-header{margin-top: calc(var(--nav-height)*-1);}
 
+/*DEBUG*/
+/*.modular:after{
+	content: "";
+	position: absolute;
+	max-width: calc(var(--width-site) - var(--gutter)*2);
+	margin: 0 var(--gutter);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid red;
+	z-index: 9999999;
+}*/
