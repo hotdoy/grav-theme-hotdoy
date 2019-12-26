@@ -8,7 +8,7 @@ class MaterialIconShortcode extends Shortcode
     {
         $this->shortcode->getHandlers()->add('mi', function(ShortcodeInterface $sc) {
         	$mi = $sc->getParameter('mi', $this->getBbCode($sc));
-            return '<span class="material-icons">'. $mi . '</span>';
+            return '<span class="material-icons material-icons--sc">'. $mi . '</span>';
         });
     }
 }
