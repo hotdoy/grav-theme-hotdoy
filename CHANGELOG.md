@@ -1,3 +1,12 @@
+# v1.4.18
+## 31/12/2019
+
+1. [](#new)
+	* New page css file naming scheme
+	* Complete revamp of the product template
+	* Header is now smaller on mobile
+	* All Swiper now use scrollbar as pagination
+
 # v1.4.17
 ## 26/12/2019
 
