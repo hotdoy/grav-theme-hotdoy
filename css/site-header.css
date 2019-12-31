@@ -70,7 +70,7 @@ a.nav__link:hover {
 
 .mobile-nav-close{
     position: absolute;
-    top: 50px;
+    top: 22px;
     right: var(--gutter);
     color: var(--fg-color);
     cursor: pointer;
