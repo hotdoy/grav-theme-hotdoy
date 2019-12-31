@@ -1,9 +1,8 @@
-> **WARNING! Update 1.4.x** : Big changes for all modular pages. You will need to re-save ALL modular after the update. 
-Check the "options" tab in any modular to access the new modular theme options.
-
 > **What's new ?** : Embed shortcodes have been split in two (youtube/vimeo) and the yt one just got a major level-up to a real integration using the youtube iframe api. Reveal animations are now transitions and utility classes for delays and durations have been upgraded. The old ones have been deprecated anbd should die in a future update. Button shortcodes have also been upgraded with a full twig template as foundation for the next step.
 
 > **What's next ?** : Product page will get a much needed visual upgrade and I am in talk with a designer for an all around bump in visual language. Button shortcodes will be further improved with "modes" allowing you to search for a specific page or page-media (or something like that).
+
+> **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor the addition of a feature. Write me a short message and we'll see what can be done! :D
 
 **You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
 
