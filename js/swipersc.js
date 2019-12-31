@@ -6,10 +6,10 @@
 		el.each(function(){
 			var id = $(this).attr('id');
 		    var swiper = new Swiper('#'+id, {
-	    		spaceBetween: 10,
-	    		pagination: {
-    				el: '.swiper-pagination',
-  				},
+		    	scrollbar: {
+		    		el: '.swiper-scrollbar',
+		    		draggable: true,
+				},
 	    	});
 		})
 	}

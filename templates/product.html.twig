@@ -17,7 +17,7 @@
 	{# Swiper #}
 	{% if page.header.images %}
 	<div class="rhythm" data-reveal="reveal transition-delay-150 transition-duration-500">
-		<div class="swiper-container product-gallery-top">
+		<div class="swiper-container product-gallery">
 			<div class="swiper-wrapper">
 			{% for item in page.header.images %}
 				{% set image = item.image ? page.media[item.image] %}
@@ -27,19 +27,7 @@
 				</div>
 			{% endfor %}
 			</div>
-		</div>
-		<div class="swiper-container product-gallery-thumbs">
-			<div class="swiper-wrapper">
-	    	{% for item in page.header.images %}
-				{% set image = item.image ? page.media[item.image] %}
-				{% set alt = item.alt %}
-				<div class="swiper-slide">
-					<div class="fill">
-						{% include 'partials/img.html.twig' with {'image': image, 'alt': alt, 'class': 'product__image'} %}
-					</div>
-				</div>
-			{% endfor %}
-			</div>
+			<div class="swiper-scrollbar"></div>
 		</div>
 	</div>
 	
@@ -50,7 +38,6 @@
 		{% include 'partials/img.html.twig' with {'image': image, 'class': 'product__image' } %}
 	</div>
 	{% endif %}
-
 
 	{# price #}
 	<div>
@@ -64,7 +51,7 @@
 					data-item-url="{{ page.url }}"
 					data-item-description="{{ page.header.description }}"
 					data-item-image="{{ image.url }}"
-					data-item-name="{{ page.title }}">Buy {{ page.title }}</a>
+					data-item-name="{{ page.title }}">Add to cart</a>
 				</div>
 				<span class="product__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</span>
 			</div>
