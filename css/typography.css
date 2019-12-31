@@ -69,3 +69,8 @@ sup{
     font-size: xx-small;
     vertical-align: super;  
 }
+
+ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}

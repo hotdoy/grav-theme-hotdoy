@@ -91,11 +91,6 @@
     overflow-x: auto;
 }
 
-.modular--content ul{
-	list-style-type: disc;
-	list-style-position: inside;
-}
-
 .content--left{
 	text-align: left;
 }
