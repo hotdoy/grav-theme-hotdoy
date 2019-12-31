@@ -38,6 +38,6 @@ modular modular--{{ modular_name }}
 
 <section class="{{ computed_modular_class }}" style="{{ computed_style }}" 
 {% if modular_reveal %}data-reveal="{{ modular_reveal }}"{% endif %}>
-{% if modular_display_title %}<div class="site modular__title"><h2>{{ page.title }}</h2></div>{% endif %}
+{% if modular_display_title %}<div class="site modular__title" data-reveal><h2>{{ page.title }}</h2></div>{% endif %}
 {% block modular_content %}{% endblock %}
 </section>
