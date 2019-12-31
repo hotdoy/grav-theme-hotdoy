@@ -1,8 +1,8 @@
 .swipersc{
 	width: 100%;
 	height: 500px;
-	margin-bottom: 3rem;
-    margin-top: 3rem;
+	margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 @media (min-width: 550px) {
     .swipersc{
@@ -22,6 +22,9 @@
   height: 100%;
 }
 
-.swipersc .swiper-pagination-bullet-active{
-	background: var(--bg-color-alt);
+.swipersc > .swiper-scrollbar {
+    left: 20px;
+    bottom: 20px;
+    width: auto;
+    right: 20px;
 }
