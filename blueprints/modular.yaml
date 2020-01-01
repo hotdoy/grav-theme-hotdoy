@@ -11,9 +11,13 @@ form:
             content:
               unset@: true
 
+        options:
+          fields:
+
             theme:
               type: section
               title: Theme
+              underline: true
 
             header.meta_theme:
               type: colorpicker

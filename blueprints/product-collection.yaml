@@ -1,0 +1,13 @@
+title: product-collection
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+
+            link_to_product:
+              type: section
+              title: Virtual Collection (incoming feature)

@@ -1,0 +1,13 @@
+.page--product-collection{}
+
+.collection__grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: -1rem;
+}
+
+.collection__item{
+	width: 50%;
+	overflow: hidden;
+}
