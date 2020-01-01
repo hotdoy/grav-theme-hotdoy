@@ -24,33 +24,33 @@
 		<div class="product__info">
 			<h1 class="product__info__title">{{ page.title }}</h1>
 			<p class="product__info__description">{{ page.header.description }}</p>
-			<div class="product__info__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</div>
-
-			<div>
-				{% if theme.snipcart_api_key %}
-				<div class="product__info__addtocart">
-					<div class="btn btn--solid">
-						<a class="snipcart-add-item"
-						data-item-id="{{ page.header.id }}"
-						data-item-price="{{ page.header.price }}"
-						data-item-url="{{ page.url }}"
-						data-item-description="{{ page.header.description }}"
-						data-item-image="{{ image.url }}"
-						data-item-name="{{ page.title }}">Add to cart</a>
-					</div>
-				</div>
-			
-				{% else %}
-		     	<div class="notices red dev"><p>Snipcart API Key not found.<br>Check theme configuration.</p></div>
-				{% endif %}
-				{% include 'modular/content.html.twig' with{'modular_class': 'product__info__content', 'width': 'full'} %}
-			</div>
+			{% include 'modular/content.html.twig' with{'modular_class': 'product__info__content', 'width': 'full'} %}
 		</div>
 	</div>
 
+	<div class="product__modular">
 	{% for module in page.collection() %}
 	{{ module.content }}
 	{% endfor %}
+	</div>
+
+	<div class="product__addtocart">
+		<div class="product__addtocart__wrapper site">
+			<div class="product__addtocart__info">
+				<span class="price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</span>
+				<span class="info">{{ page.title }}</span>
+			</div>
+			<div class="product__addtocart__button btn btn--solid">
+				<a class="snipcart-add-item"
+				data-item-id="{{ page.header.id }}"
+				data-item-price="{{ page.header.price }}"
+				data-item-url="{{ page.url }}"
+				data-item-description="{{ page.header.description }}"
+				data-item-image="{{ image.url }}"
+				data-item-name="{{ page.title }}">Add to cart</a>
+			</div>
+		</div>
+	</div>
 
 </section>
 {% endblock %}
