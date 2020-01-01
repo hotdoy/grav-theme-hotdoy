@@ -49,8 +49,5 @@
 }
 
 .drawer__content *{
-	margin-left: 0;
 	max-width: 90%;
-	padding-left: 0;
-    padding-right: 0;
 }
