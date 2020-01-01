@@ -28,9 +28,8 @@ form:
                 - .jpg
 
             header.price:
-              type: number
+              type: text
               label: Price
-              help: The price of the product. Note that you must use a "." as decimal separator.
               validate:
                 required: true
 
