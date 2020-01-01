@@ -13,7 +13,9 @@
 				<div class="swiper-wrapper">
 				{% for image in page.media.images %}
 					<div class="swiper-slide">
-						{% include 'partials/img.html.twig' with {'image': image} %}
+						<div class="fill">
+							{% include 'partials/img.html.twig' with {'image': image} %}
+						</div>
 					</div>
 				{% endfor %}
 				</div>
@@ -37,7 +39,7 @@
 	<div class="product__addtocart">
 		<div class="product__addtocart__wrapper site">
 			<div class="product__addtocart__info">
-				<span class="price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</span>
+				<span class="price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</span>
 				<span class="info">{{ page.title }}</span>
 			</div>
 			<div class="product__addtocart__button btn btn--solid">
