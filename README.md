@@ -1,10 +1,16 @@
-> **What's new ?** : Embed shortcodes have been split in two (youtube/vimeo) and the yt one just got a major level-up to a real integration using the youtube iframe api. Reveal animations are now transitions and utility classes for delays and durations have been upgraded. The old ones have been deprecated anbd should die in a future update. Button shortcodes have also been upgraded with a full twig template as foundation for the next step.
+> **What's new ?** : You can now use Product and Product Collection page templates as of v1.4.19. Product collection are a step it the right direction and will be worked on in te next weeks.
+Embed shortcodes have been split in two (youtube/vimeo) and the yt one just got a major level-up to a real integration using the youtube iframe api. 
+Reveal animations are now transitions and utility classes for delays and durations have been upgraded. The old ones have been deprecated and should die in a future update. 
 
-> **What's next ?** : Product page will get a much needed visual upgrade and I am in talk with a designer for an all around bump in visual language. Button shortcodes will be further improved with "modes" allowing you to search for a specific page or page-media (or something like that).
 
-> **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor the addition of a feature. Write me a short message and we'll see what can be done! :D
+> **What's next ?** : Button shortcodes will be further improved allowing you to search for a specific page or page-media (or something like that).
+Pagination will be added to product collections as well as "Virtual collections" letting you create lists of items in other collections (good for promotions and stuff like that) without having to duplicate content. 
+Marquee will be taken out of theme config and be generated via the creation of a page, allowing for multiple languages. 
+Site wide modal alert will be added in a similar fashion. 
 
-**You can [send me money](https://www.paypal.me/hotdoy) if you want to.**
+> **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
+
+**You can [send me money](https://www.paypal.me/hotdoy) to give me a hand.**
 
 # Hotdoy Theme
 
@@ -52,10 +58,10 @@ You should now have all the theme files under
 
     /your/site/grav/user/themes/hotdoy
 
-# Concept
-The theme is made to be my starter kit for grav projects. But anybody is welcome to try and use it.
-Everything will be made readily extendable (in time). It uses css variables heavily so forget old browsers (sorry ie).
-The entire color theme is controllable inside the admin panel.
+# Customization 
+All customization should be done using theme inheritance https://learn.getgrav.org/16/themes/customization#theme-inheritance to allow for future updates (and there will be updates). 
+The Hotdoy theme also provides a reference to a css/custom.css file via the Asset Manager. Luckily, the Asset Manager handles this for us, and if the file is not found, the reference is not added to the HTML.
+However, if you do provide a file called custom.css in Antimatter's css/ folder, this will get picked up and referenced. You just need to ensure that you provide CSS elements with enough specificity to override the default CSS.
 
 # Shortcodes
 
