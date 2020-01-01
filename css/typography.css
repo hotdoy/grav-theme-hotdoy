@@ -47,8 +47,8 @@ blockquote{
 	font-family: var(--font-alt);
 	font-size: 2em;
 	line-height: 1.5;
-	margin-top: calc(var(--rhythm)/2);
-	margin-bottom: calc(var(--rhythm)/2);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 @media (min-width: 735px) {

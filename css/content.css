@@ -45,8 +45,8 @@
 	height: 0; 
 	overflow: hidden; 
 	max-width: 100%;
-	margin-bottom: calc(var(--rhythm)/2);
-	margin-top: calc(var(--rhythm)/2);
+	margin-bottom: 2rem;
+	margin-top: 2rem;
 }
 
 .modular--content .embed iframe{
