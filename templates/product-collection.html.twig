@@ -1,7 +1,7 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block page_content %}
-<section class="page page--product-collection">
+<main class="page page--product-collection">
 
 	{# header #}
 	{% include 'modular/content.html.twig' with {
@@ -10,23 +10,22 @@
 		'content_reveal': 'reveal transition-delay-100',
 		'modular_class': 'm-t_2'}%}
 
-
-
-	<div class="collection__wrapper site">
-		<div class="collection__grid">
+	{# Grid #}
+	<section class="site m-t">
+		<div class="pc__grid">
 			{% for page in page.collection() %}
 
-				<div class="collection__item">
-					<div class="collection__item__image">
+				<a class="pc__grid__item" href="{{ page.url }}">
+					<div class="pc__grid__item__image fill">
 						{% include 'partials/img.html.twig' with {'image': page.media.images|first} %}
 					</div>
-					<div class="collection__item__title">{{ page.title }}</div>
-					<div class="collection__item__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</div>
-				</div>
+					<div class="pc__grid__item__title">{{ page.title }}</div>
+					<div class="pc__grid__item__price">{{ theme.price_prefix }} {{ page.header.price|number_format(2) }} {{ theme.price_suffix }}</div>
+				</a>
 
 			{% endfor %}
 		</div>
-	</div>
+	</section>
 
-</section>
+</main>
 {% endblock %}
