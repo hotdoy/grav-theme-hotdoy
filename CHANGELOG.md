@@ -1,3 +1,16 @@
+# v1.4.19
+## 31/12/2019
+
+1. [](#new)
+	* Introduction of product collection page (WIP)
+	* Product "Add to cart" as a fixed component
+2. [](#improved)
+	* Product gallery height
+	* Admin Product price is now a text field
+	* General spacing improvement here and there
+3. [](#bugfix)
+	* Fixed lists indent
+
 # v1.4.18
 ## 31/12/2019
 
