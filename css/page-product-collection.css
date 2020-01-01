@@ -1,6 +1,6 @@
 .page--product-collection{}
 
-.pc__grid{
+.product__grid{
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
