@@ -1,0 +1,7 @@
+{% for page in pages.children %}
+
+	{% if page.template == 'notification' %}
+		<script>notify("message", '#673ab7', '#ffffff');</script>
+	{% endif %}
+
+{% endfor %}

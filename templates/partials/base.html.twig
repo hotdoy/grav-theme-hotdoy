@@ -1,5 +1,6 @@
+{{ dump(pages) }}
 <!DOCTYPE html>
-<html lang="{{ config.site.default_lang }}">
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +13,7 @@
         {% block js %}{% include 'partials/js.html.twig' %}{% endblock %}
         {% block assets deferred %}
             {{ assets.css()|raw }}
+            {{ assets.js()|raw }}
             {{ assets.js('before')|raw }}
         {% endblock %}
     </head>
@@ -31,6 +33,7 @@
         {% if theme.tracking %}
         <div hidden id="tracking" data-ref="https://tracking.hotdoy.org/?ref={{ base_url_absolute }}"></div>
         {% endif %}
+        {% block notification %}{% include 'partials/notification.html.twig' %}{% endblock %}
 
     </body>
 </html>
