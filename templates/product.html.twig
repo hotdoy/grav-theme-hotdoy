@@ -26,7 +26,7 @@
 		<div class="product__info">
 			<h1 class="product__info__title">{{ page.title }}</h1>
 			<p class="product__info__description">{{ page.header.description }}</p>
-			{% include 'modular/content.html.twig' with{'modular_class': 'product__info__content', 'width': 'full'} %}
+			<div class="product__info__content">{{ page.content|raw }}</div>
 		</div>
 	</div>
 

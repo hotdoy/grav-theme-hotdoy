@@ -1,25 +1,23 @@
 {% set base_url = url|default(page.url) %}
 {% set pagination = pagination|default(page.collection.params.pagination) %}
-{% set strategy = strategy|default(page.header.pagination_strategy) %}
+{% set strategy = strategy|default('infinite') %}
 
 
-{% if pagination.hasNext and (strategy == 'loadMore' or strategy == 'infiniteScroll') %}
+{% if pagination.hasNext and (strategy == 'loadMore' or strategy == 'infinite') %}
 	{% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
-    <div class="button solid" data-pagination-sentinel="{{ strategy }}">
+    <div class="pagination__sentinel btn btn--solid" data-pagination="{{ strategy }}" {% if strategy == 'infinite' %}style="visibility:hidden;"{% endif %}>
     	<a rel="next" href="{{ url }}">Load More</a>
     </div>
 
-
-    {% if strategy == 'infiniteScroll' %}
-	<div class="pagination loader">
+    {% if strategy == 'infinite' %}
+	<div class="pagination__loader">
 		<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path fill="currentColor" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/></path>
 		</svg>
 	</div>
 	{% endif %}
 
 {% elseif pagination.hasNext or pagination.hasPrev and strategy == 'classic' %}
-	<ul class="pagination" style="display: flex; justify-content: center; margin-top: 10px;">
-
+	<ul class="pagination__pages" style="display: flex; justify-content: center; margin-top: 10px;">
 		{# prev #}
 	    {% if pagination.hasPrev %}
 	    {% set url =  (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}

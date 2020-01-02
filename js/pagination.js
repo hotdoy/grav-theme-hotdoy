@@ -1,10 +1,19 @@
+// example collection config in page md file with pagination:
+// content:
+//     items: '@self.children'
+//     order:
+//         by: folder
+//         dir: asc
+//     pagination: true
+//     limit: 12
+
 (function ($) {
 	'use strict';
 
-	var ctnSel = 'div[data-pagination-ctn]';
-	var sentinelSel = 'div[data-pagination-sentinel]';
-	var	loaderSel = '.loader';
-	var config = {rootMargin: '200px', threshold: 0};
+	var ctnSel = '[data-paginate]';
+	var sentinelSel = '[data-pagination]';
+	var	loaderSel = '.pagination__loader';
+	var config = {rootMargin: '0px', threshold: 0};
 
 	var paginationObserver = function(){
 		var sentinel = document.querySelectorAll(sentinelSel);
@@ -18,34 +27,34 @@
 			sentinel.forEach(s => {
 				if (s.intersectionRatio > 0) {
 					observer.unobserve(s.target);
-					pagination();
+					paginate();
 				}
 			});
 		}
 	}
 
-	var pagination = function(){
+	var paginate = function(){
 		var ctn = $(ctnSel);
 		var	sentinel = $(sentinelSel);
-		var infiniteScroll = sentinel.data('pagination-sentinel') == 'infiniteScroll';
-		var loadMore = sentinel.data('pagination-sentinel') == 'loadMore';
+		var infinite = sentinel.data('pagination') == 'infinite';
+		var loadMore = sentinel.data('pagination') == 'loadMore';
 		var	url = $(sentinel).find('a').attr('href');
 
-		if (url && infiniteScroll) {
+		if (url && infinite) {
 			sentinel.remove();
-			ajaxLoadMore(url, ctn, sentinel);
+			ajaxLoad(url, ctn, sentinel);
 		}
 
 		if (url && loadMore) {
 			sentinel.find('a').on('click touch', function(event){
 				event.preventDefault();
 				event.stopPropagation()
-		    	ajaxLoadMore(url, ctn, sentinel);
+		    	ajaxLoad(url, ctn, sentinel);
 			});
 		}
 	}
 
-	var ajaxLoadMore = function(url, ctn, sentinel){
+	var ajaxLoad = function(url, ctn, sentinel){
 		var	loader = $(loaderSel);
 		$.ajax({
 			url: url,
@@ -57,7 +66,6 @@
 				$(ctn).append(items);
 				$(data).remove();
 				paginationObserver();
-
 			}
 		});
 	}
