@@ -1,3 +1,19 @@
+# v1.4.20
+## 31/12/2019
+
+1. [](#new)
+	* Product collections can now be paginated
+	* Super basic site notifications (WIP)
+	* Gave the product card its own template (product-item.html.twig) 
+2. [](#improved)
+	* removed custom.css to allow simple customization
+	* tighter blockquote and embed margins
+	* tightened form submit with fields
+	* improved product grid class name
+3. [](#bugfix)
+	* fix Grav debugger no loading
+	* fix embed width in product content
+
 # v1.4.19
 ## 31/12/2019
 
