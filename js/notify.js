@@ -1,7 +1,6 @@
 function notify(message, bg_color, fg_color, id){
-
     let s = id ? localStorage.getItem(id) : null;     
-    if (s == null || Date.now() - s > 21600) {
+    if (s == null || Date.now() - s > 86400000) {
         var done = document.createElement('div');
         done.setAttribute('class', 'notify__done material-icons');
         done.innerHTML = 'done';
