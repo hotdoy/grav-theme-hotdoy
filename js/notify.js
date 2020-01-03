@@ -1,6 +1,6 @@
 function notify(message, bg_color, fg_color, id){
 
-    let s = id ? localStorage.getItem('notify-' + id) : null;     
+    let s = id ? localStorage.getItem(id) : null;     
     if (s == null || Date.now() - s > 21600) {
         var done = document.createElement('div');
         done.setAttribute('class', 'notify__done material-icons');
@@ -9,7 +9,7 @@ function notify(message, bg_color, fg_color, id){
             $(this).parent().addClass('notify--destroy');
 
             if (!!id) {
-               localStorage.setItem('notify-' + id, Date.now()); 
+               localStorage.setItem(id, Date.now()); 
             }
             setTimeout(function(){
                 done.parentNode.remove();

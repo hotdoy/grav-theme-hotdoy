@@ -20,6 +20,9 @@ form:
               style: vertical
               label: Notifications
               fields:
+                .id:
+                  type: text
+                  label: ID
                 .content:
                   type: editor
                   label: Content

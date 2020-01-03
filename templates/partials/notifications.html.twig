@@ -1,7 +1,7 @@
 {% for p in pages.children if p.template == 'notifications' %}
-	{% for n in p.header.notifications %}
+	{% for n in p.header.notifications if n.visible == true %}
 		{% set content = n.content|markdown %}
-		{% set id = n.remember ? p.modified %}
+		{% set id = n.remember ? n.id %}
 		{% set bg_color = n.bg_color %}
 		{% set fg_color = n.fg_color %}
 		{% if n.target %}
