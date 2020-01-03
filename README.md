@@ -5,7 +5,7 @@ Marquee will be deprecated since Notifications are way better.
 
 > **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
 
-**You can [send me 💰](https://www.paypal.me/hotdoy) to give me a hand.**
+**You can help by [sending me 💰](https://www.paypal.me/hotdoy).**
 
 # Hotdoy Theme
 
