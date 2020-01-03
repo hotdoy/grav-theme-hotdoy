@@ -1,12 +1,7 @@
-> **What's new ?** : You can now use Product and Product Collection page templates as of v1.4.19. Product collection are a step it the right direction and will be worked on in te next weeks.
-Embed shortcodes have been split in two (youtube/vimeo) and the yt one just got a major level-up to a real integration using the youtube iframe api. 
-Reveal animations are now transitions and utility classes for delays and durations have been upgraded. The old ones have been deprecated and should die in a future update. 
-
+> **What's new ?** : Notifications! You can now create a page using the Notifications blueprint and add global or targeted notifications. Folder name MUST be "notifications". (Make sure you set Routable and Visible to False in the Advanced tab).
 
 > **What's next ?** : Button shortcodes will be further improved allowing you to search for a specific page or page-media (or something like that).
-Pagination will be added to product collections as well as "Virtual collections" letting you create lists of items in other collections (good for promotions and stuff like that) without having to duplicate content. 
-Marquee will be taken out of theme config and be generated via the creation of a page, allowing for multiple languages. 
-Site wide modal alert will be added in a similar fashion. 
+Marquee will be deprecated since Notifications are way better.
 
 > **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
 
@@ -16,31 +11,14 @@ Site wide modal alert will be added in a similar fashion.
 
 ![Theme screenshot](https://raw.githubusercontent.com/hotdoy/grav-theme-hotdoy/master/screenshot.jpg)
 
-The **Hotdoy** Theme is meant to be a starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
-It is in active developpement and probably not suited for production unless you dont mind thing changing all the times.
+The **Hotdoy** Theme is meant to be my starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
+It is in active developpement and probably not suited for production unless you dont mind things changing all the times.
 You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly.
 
-A live demo is available at [hotdoy.ca](https://hotdoy.ca). I still have content to write but you get the idea.
-
-For the moment, here is a list of what I run..
-* Admin Panel
-* Admin Addon User Manager
-* Auto Date
-* Data Manager
-* DevTools
-* Email
-* Error
-* Form
-* Login
-* Problems
-* Quick Tray Links
-* Shortcode Core
-* Sitemap
+A live demo is available at [hotdoy.ca](https://hotdoy.ca). It is also my live testing ground so things can get a bit weird.
 
 # Installation
 Installing the Hotdoy theme can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
-
-The theme by itself is useful, but you may have an easier time getting up and running by installing a skeleton (not ready yet. Sorry).
 
 ## GPM Installation (Preferred)
 
@@ -61,7 +39,8 @@ You should now have all the theme files under
 # Customization 
 All customization should be done using theme inheritance https://learn.getgrav.org/16/themes/customization#theme-inheritance to allow for future updates (and there will be updates). 
 The Hotdoy theme also provides a reference to a css/custom.css file via the Asset Manager. Luckily, the Asset Manager handles this for us, and if the file is not found, the reference is not added to the HTML.
-However, if you do provide a file called custom.css in Antimatter's css/ folder, this will get picked up and referenced. You just need to ensure that you provide CSS elements with enough specificity to override the default CSS.
+However, if you do provide a file called custom.css in Hotdoy's css/ folder, it will get picked up and referenced. You just need to ensure that you provide CSS elements with enough specificity to override the default CSS.
+If you need any kind of customization other than that, You should use inheritance.
 
 # Shortcodes
 
@@ -77,8 +56,7 @@ Add buttons with out without material icons.
 You currently have to use absolute url to page media but I am working on something way more solid. (should be in the next release)
 
 ## Embed
-Add [youtube=url] and [vimeo=url] by URL.
-The older version was working with ID only and sucked.
+Add [youtube="url"] and [vimeo="url"] by URL.
 
 ## Note
 Use [note] to add unrendered content.
@@ -98,15 +76,6 @@ Use one of the 3 site witdh. [full], [site], [tight].
 ...
 [/swiper]
 ```
-
-# Modular
-* Splash
-* Hero
-* Content
-* Video
-* Drawers
-* Grid
-* Map
 
 # Attributions and sponsors
 * Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the addition of [Swiper.js](https://swiperjs.com/) Shortcode.
