@@ -1,5 +1,13 @@
+# v1.4.21
+## 03/01/2020
+
+1. [](#new)
+	* Notifications (using notify.js) can now be added per page or globally with local storage support. Notify.js received a small update as well.
+3. [](#bugfix)
+	* site-nav bg color can no longer be set from theme config
+
 # v1.4.20
-## 31/12/2019
+## 02/01/2020
 
 1. [](#new)
 	* Product collections can now be paginated
