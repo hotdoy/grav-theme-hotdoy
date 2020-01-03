@@ -1,0 +1,55 @@
+title: Notifications
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+
+            content:
+              unset@: true
+
+            header.media_order:
+              unset@: true 
+
+            header.notifications:
+              name: notifications
+              type: list
+              style: vertical
+              label: Notifications
+              fields:
+                .content:
+                  type: editor
+                  label: Content
+                .bg_color:
+                  type: colorpicker
+                  label: Background color
+                .fg_color:
+                  type: colorpicker
+                  label: Foreground color
+                .target:
+                  type: pages
+                  label: Target
+                  show_all: false
+                  show_modular: false
+                  multiple: true
+                  validate:
+                    type: array
+                .visible:
+                  type: toggle
+                  label: Visible
+                  highlight: true
+                  default: true
+                  options: 
+                    true: 'True'
+                    false: 'False'
+                .remember:
+                  type: toggle
+                  label: Remember
+                  highlight: true
+                  default: true
+                  options: 
+                    true: 'True'
+                    false: 'False'

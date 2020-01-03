@@ -7,7 +7,7 @@
     margin-right: auto;
 
     max-width: var(--width-tight);
-    min-height: 15vh;
+    min-height: 10vh;
 
     display: flex;
     flex-direction: column;
@@ -24,15 +24,16 @@
     z-index: 5000;
 }
 
-.notify *:first-child {margin-top: 0;}
-.notify *:last-child {margin-bottom: 0;}
+.notify *{
+    margin: 0;
+}
 
 .notify__done{
     position: absolute;
     top: 5px;
     right: 5px;
     opacity: 0.8;
-    color: white;
+    color: inherit;
     cursor: pointer;
 }
 

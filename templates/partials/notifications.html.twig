@@ -1,0 +1,16 @@
+{% for p in pages.children if p.template == 'notifications' %}
+
+	{% for n in p.header.notifications %}
+		{% set content = n.content|markdown %}
+		{% set id = n.remember ? p.modified %}
+		{% set bg_color = n.bg_color %}
+		{% set fg_color = n.fg_color %}
+		{% if n.target %}
+			{% for t in n.target if t == page.route %}
+				<script>notify("{{ content }}", "{{ bg_color }}", "{{ fg_color }}", "{{ id }}");</script>
+			{% endfor %}
+		{% else %}
+			<script>notify("{{ content }}", "{{ bg_color }}", "{{ fg_color }}", "{{ id }}");</script>
+		{% endif %}
+	{% endfor %}
+{% endfor %}

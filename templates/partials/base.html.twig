@@ -1,14 +1,14 @@
-{{ dump(pages) }}
+{{ dump(page) }}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% include 'partials/metadata.html.twig' %}
         <link rel="icon" type="image/png" href="favicon.png" />
-        {% include 'partials/canonical.html.twig' %}
-        {% include 'partials/analytics.html.twig' %}
-        {% include 'partials/preload.html.twig' %}
+        {% block metadata %}{% include 'partials/metadata.html.twig' %}{% endblock %}
+        {% block canonical %}{% include 'partials/canonical.html.twig' %}{% endblock %}
+        {% block analytics %}{% include 'partials/analytics.html.twig' %}{% endblock %}
+        {% block preload %}{% include 'partials/preload.html.twig' %}{% endblock %}
         {% block css %}{% include 'partials/css.html.twig' %}{% endblock %}
         {% block js %}{% include 'partials/js.html.twig' %}{% endblock %}
         {% block assets deferred %}
@@ -33,7 +33,6 @@
         {% if theme.tracking %}
         <div hidden id="tracking" data-ref="https://tracking.hotdoy.org/?ref={{ base_url_absolute }}"></div>
         {% endif %}
-        {% block notification %}{% include 'partials/notification.html.twig' %}{% endblock %}
-
+        {% include 'partials/notifications.html.twig' %}
     </body>
 </html>
