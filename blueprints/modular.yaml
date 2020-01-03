@@ -39,10 +39,6 @@ form:
               type: colorpicker
               label: Alternate Foreground Color
 
-            header.nav_bg_color:
-              type: colorpicker
-              label: Nav Background Color
-
             header.nav_fg_color:
               type: colorpicker
               label: Nav Foreground Color

@@ -8,7 +8,6 @@ html{
 	--fg-color: #313131;
 	--bg-color-alt: #2196f3;
 	--fg-color-alt: #fff;
-    --nav-bg-color: transparent;
     --nav-fg-color: var(--fg-color);
     --nav-height: calc(var(--rhythm)/2);
 

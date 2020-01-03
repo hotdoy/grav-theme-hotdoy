@@ -43,10 +43,6 @@ form:
       label: Alternate Foreground Color
       default: '#ffffff'
 
-    nav_bg_color:
-      type: colorpicker
-      label: Nav Background Color
-
     nav_fg_color:
       type: colorpicker
       label: Nav Foreground Color

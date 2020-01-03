@@ -3,7 +3,6 @@
     font-family: var(--font-alt);
     height: var(--nav-height);
     color: var(--nav-fg-color);
-    background-color: var(--nav-bg-color);
     z-index: 5000;
     display: flex;
     align-items: center;
