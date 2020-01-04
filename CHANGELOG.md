@@ -1,3 +1,17 @@
+# v1.4.22
+## 04/01/2020
+
+1. [](#new)
+	* Buttons using btn and link shortcodes can detect if linking to current page media and act accordingly.
+2. [](#bugfix)
+	* js asset group "before" removed and replace by default pipeline output to prevent double js bundle.
+	* Notify.js moved to default pipeline position
+	* Use jquery from grav core to prevent duplicate.
+3. [](#improved)
+	* Small product improvements for long product names.
+	* Removed small product description to remove clutter on mobile device
+	* Product name in addtocart bar now only appear on mobile
+
 # v1.4.21
 ## 03/01/2020
 
