@@ -3,6 +3,7 @@
 **Notifications**
 
 You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
+This can be use as a cookie consent popup or anything really.
 
 **Buttons**
 
