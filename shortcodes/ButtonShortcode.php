@@ -8,6 +8,7 @@ class ButtonShortcode extends Shortcode
     {
         $this->shortcode->getHandlers()->add('btn', function(ShortcodeInterface $sc) {
             $output = $this->twig->processTemplate('partials/buttonsc.html.twig', [
+                'page' => $this->grav['page'],
                 'label' => $sc->getContent(),
                 'href' => $sc->getParameter('href'),
                 'icon' => $sc->getParameter('i'),
@@ -19,6 +20,7 @@ class ButtonShortcode extends Shortcode
         $this->shortcode->getHandlers()->add('link', function(ShortcodeInterface $sc) {
             $i = $sc->getParameter('i');
                 $output = $this->twig->processTemplate('partials/buttonsc.html.twig', [
+                'page' => $this->grav['page'],
                 'label' => $sc->getContent(),
                 'href' => $sc->getParameter('href'),
                 'icon' => $i ? $i : 'arrow_forward',

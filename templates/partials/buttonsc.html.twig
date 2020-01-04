@@ -2,12 +2,19 @@
 {% set href = href|default('') %}
 {% set label = label|default('') %}
 {% set class = class|default('btn--solid') %}
+{% set href = href|default('') %}
+{% set blank = false %}
+{% set label = label|default('') %}
+{% set icon = icon|default('') %}
+
+{# looks for file in current page medias #}
+{% for f in page.media if href == f.filename %}
+	{% set href = f.url %}
+	{% set blank = true %}
+{% endfor %}
 
 <div class="btn {{ class }}">
-	<a href="{{ href }}">
-		{{ label }}
-		{% if icon %}
-		<span class="material-icons">{{ icon }}</span>
-		{% endif %}
-	</a>
+	<a href="{{ href }}" {% if blank %}target="_blank"{% endif %}>{{ label }}{% if icon %}<span class="material-icons">{{ icon }}</span>{% endif %}</a>
 </div>
+
+
