@@ -1,7 +1,7 @@
 > **What's new ?** : Notifications! You can now create a page using the Notifications blueprint and add global or targeted notifications. Folder name MUST be "notifications". (Make sure you set Routable and Visible to False in the Advanced tab).
+Buttons using the btn and link shortcodes can now scan page media and act as download button when a file is found by matching filename.
 
-> **What's next ?** : Button shortcodes will be further improved allowing you to search for a specific page or page-media (or something like that).
-Marquee will be deprecated since Notifications are way better.
+> **What's next ?** : Marquee will be deprecated since Notifications are way better. I also need to do an SEO pass on everything.
 
 > **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
 
