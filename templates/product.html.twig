@@ -1,8 +1,4 @@
 {% extends 'partials/base.html.twig' %}
-{% block js %}
-{{ parent() }}
-{% do assets.addJs('theme://js/product.js', { group:'after' }) %}
-{% endblock %}
 
 {% block page_content %}
 <section class="page page--product">
