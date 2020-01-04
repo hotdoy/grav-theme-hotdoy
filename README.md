@@ -13,7 +13,7 @@ Button ```btn``` and ```link``` shortcodes will now scan page media and act as d
 
 **Theme Marquee**
 
-Will be deprecated since Notifications are way better.
+Don't know what exactly... Probably refactor the marquee to work like Notifications.
 
 **SEO**  
 
