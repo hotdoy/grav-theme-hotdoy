@@ -1,11 +1,31 @@
-> **What's new ?** : Notifications! You can now create a page using the Notifications blueprint and add global or targeted notifications. Folder name MUST be "notifications". (Make sure you set Routable and Visible to False in the Advanced tab).
+## What's new ?
 
-> **What's next ?** : Button shortcodes will be further improved allowing you to search for a specific page or page-media (or something like that).
-Marquee will be deprecated since Notifications are way better.
+**Notifications**
 
-> **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
+You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
+This can be use as a cookie consent popup or anything really.
 
-**You can help by [sending me 💰](https://www.paypal.me/hotdoy).** (I will do PR and issues but really, just send money.)
+**Buttons**
+
+Button ```btn``` and ```link``` shortcodes will now scan page media and act as download button when a filename matches with the href attribute.
+
+## What's next ? 
+
+**Theme Marquee**
+
+Don't know what exactly... Probably refactor the marquee to work like Notifications.
+
+**SEO**  
+
+I am due for a full pass. Adding Schemas and stuff.
+
+## Need a ✋ ?
+
+If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
+
+## Can I help?
+
+Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 
 # Hotdoy Theme
 
