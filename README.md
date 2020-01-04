@@ -17,11 +17,7 @@ Don't know what exactly... Probably refactor the marquee to work like Notificati
 
 **SEO**  
 
-I am due for a full pass. Adding Schemas and stuff like that.
-
-**Snazzy Maps**  
-
-I don't like how snazzy is added to all map modular. Gotta fix that.
+I am due for a full pass. Adding Schemas and stuff.
 
 ## Need a ✋ ?
 
