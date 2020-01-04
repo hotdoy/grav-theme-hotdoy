@@ -22,11 +22,13 @@ I am due for a full pass. Adding Schemas and stuff like that.
 
 I don't like how snazzy is added to all map modular. Gotta fix that.
 
-**Need a ✋ ?**
+## Need a ✋ ?
 
 If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
 
-**You can help by [sending me 💰](https://www.paypal.me/hotdoy).** (I will do PR and issues but really, just send money.)
+## Can I help?
+
+Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 
 # Hotdoy Theme
 
