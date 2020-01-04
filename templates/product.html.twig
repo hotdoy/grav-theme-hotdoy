@@ -25,7 +25,6 @@
 
 		<div class="product__info">
 			<h1 class="product__info__title">{{ page.title }}</h1>
-			<p class="product__info__description">{{ page.header.description }}</p>
 			<div class="product__info__content modular--content">{{ page.content|raw }}</div>
 		</div>
 	</div>
@@ -40,7 +39,7 @@
 		<div class="product__addtocart__wrapper site">
 			<div class="product__addtocart__info">
 				<span class="price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</span>
-				<span class="info">{{ page.title }}</span>
+				<span class="info landscape">{{ page.title }}</span>
 			</div>
 			<div class="product__addtocart__button btn btn--solid">
 				<a class="snipcart-add-item"
