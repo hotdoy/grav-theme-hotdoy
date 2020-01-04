@@ -1,9 +1,30 @@
-> **What's new ?** : Notifications! You can now create a page using the Notifications blueprint and add global or targeted notifications. Folder name MUST be "notifications". (Make sure you set Routable and Visible to False in the Advanced tab).
-Buttons using the btn and link shortcodes can now scan page media and act as download button when a file is found by matching filename.
+## What's new ?
 
-> **What's next ?** : Marquee will be deprecated since Notifications are way better. I also need to do an SEO pass on everything.
+**Notifications**
 
-> **Need a ✋ ?** : If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
+You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
+
+**Buttons**
+
+Button ```btn``` and ```link``` shortcodes will now scan page media and act as download button when a filename matches with the href attribute.
+
+## What's next ? 
+
+**Theme Marquee**
+
+Will be deprecated since Notifications are way better.
+
+**SEO**  
+
+I am due for a full pass. Adding Schemas and stuff like that.
+
+**Snazzy Maps**  
+
+I don't like how snazzy is added to all map modular. Gotta fix that.
+
+**Need a ✋ ?**
+
+If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
 
 **You can help by [sending me 💰](https://www.paypal.me/hotdoy).** (I will do PR and issues but really, just send money.)
 
