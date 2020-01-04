@@ -9,22 +9,21 @@
 {% do assets.addJs('theme://js/swiper.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/swipersc.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/pagination.js', { group:'after' }) %}
-
+{% do assets.addJs('theme://js/product.js', { group:'after' }) %}
 {% do assets.addJs('https://youtube.com/iframe_api', { group:'after' }) %}
 {% do assets.addJs('theme://js/youtube.js', { group:'after' }) %}
-
 
 {% if theme.snipcart_api_key %}
 	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.5/default/snipcart.js', { group:'after' }) %}
 {% endif %}
 
 {% if theme.google_maps_api_key %}
-	{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key, { group:'after', position: 'after', loading : 'defer'}) %}
+	{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key, { group:'after' }) %}
 	{% do assets.addJs('theme://js/map.js', { group:'after'}) %}
 {% endif %}
 
 {% if theme.tracking %}
-	{% do assets.addJs('theme://js/tracking.js', { group:'after', position: 'after', loading : 'defer'}) %}
+	{% do assets.addJs('theme://js/tracking.js', { group:'after' }) %}
 {% endif %}
 
 {% do assets.addJs('theme://js/site-loader.js', { group:'after', priority: 0 }) %}
