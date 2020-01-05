@@ -12,7 +12,8 @@ Button ```btn``` and ```link``` shortcodes will now scan page media and act as d
 ## What's next ? 
 
 **NAV**
-I can already feel the menu coming back and bite me. I'll change it for sure. Along with the sketchy roles you can give to modular p
+
+I can already feel the menu coming back and bite me along with the sketchy roles you can give to modular p
 
 **Theme Marquee**
 
