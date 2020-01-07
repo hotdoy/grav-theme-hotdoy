@@ -2,26 +2,25 @@
 
 **Notifications**
 
-You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
-This can be use as a cookie consent popup or anything really.
+You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "/notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 **Buttons**
 
-Button ```btn``` and ```link``` shortcodes will now scan page media and act as download button when a filename matches with the href attribute.
+Button ```btn``` and ```link``` shortcodes will now check page.media and act as download button when similar filename is found (with proper href).
 
 ## What's next ? 
 
-**NAV**
-
-I can already feel the menu coming back and bite me along with the sketchy roles you can give to modular p
-
 **Theme Marquee**
 
-Don't know what exactly... Probably refactor the marquee to work like Notifications.
+Probably refactor the theme marquee to work like Notifications.
 
 **SEO**  
 
 I am due for a full pass. Adding Schemas and stuff.
+
+**Product**
+
+The ```add-to-cart``` fixed component is messing with my head. I'll change it for something simpler.
 
 ## Need a ✋ ?
 
