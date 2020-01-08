@@ -1,3 +1,10 @@
+# v1.4.23
+## 07/01/2020
+
+1. [](#improved)
+	* Simplified product buy button.
+	* Simplified product items (cards).
+
 # v1.4.22
 ## 04/01/2020
 
