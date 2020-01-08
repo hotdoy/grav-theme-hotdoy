@@ -1,7 +1,11 @@
 <a class="product-item" href="{{ page.url }}">
-	<div class="product-item__image fill">
-		{% include 'partials/img.html.twig' with {'image': page.media.images|first} %}
+	<div class="product-item__image">
+		<div class="fill">
+			{% include 'partials/img.html.twig' with {'image': page.media.images|first} %}
+		</div>
 	</div>
-	<div class="product-item__title">{{ page.title }}</div>
-	<div class="product-item__price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</div>
+	<div class="product-item__info">
+		<div class="product-item__info__title">{{ page.title }}</div>
+		<div class="product-item__info__price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</div>
+	</div>
 </a>
