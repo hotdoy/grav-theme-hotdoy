@@ -1,3 +1,14 @@
+# v1.4.24
+## 08/01/2020
+
+1. [](#improved)
+	* All of product css is now packaged in a single file
+	* Cleaned up splash and removed huge h1 (use the size shortcode if you need it)
+	* synced product-collection gutters with site gutters
+	* un-scope strong from p tags
+	* Better handle of spacing when multiple buttons 
+	* Removed "page-" from all page css files
+
 # v1.4.23
 ## 07/01/2020
 
