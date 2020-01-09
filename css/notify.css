@@ -5,33 +5,19 @@
     left: 1rem;
     margin-left: auto;
     margin-right: auto;
-
-    font-size: 12px;
-    line-height: 1.5;
-
     max-width: var(--width-tight);
-    min-height: 10vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    padding: 2rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
     border-radius: 8px;
     background-color: var(--bg-color-alt);
     color: var(--fg-color-alt);
     box-shadow: var(--shadow-2);
     transition: all 0.5s;
     z-index: 5000;
-}
-
-@media (min-width: 735px){
-    .notify{
-        font-size: inherit;
-        line-height: inherit;
-    }
 }
 
 .notify *{

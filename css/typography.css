@@ -1,38 +1,38 @@
+/*
+###########################################################
+REGULAR
+###########################################################
+*/
+
 html{
 	font-family: var(--font-base);
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 26px;
+	line-height: 1.5;
 }
 
 h1{
 	font-family: var(--font-alt);
+    font-size: 3rem;
+    line-height: 1.2;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    font-size: 3em;
-    line-height: 1.2em;
-}
-
-@media (min-width: 735px) {
-    h1{
-        font-size: 4em;
-    }
-
 }
 
 h2{
 	font-family: var(--font-alt);
+    font-size: 2rem;
+    line-height: 1.2;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    font-size: 2em;
-    line-height: 1.2;
+    
 }
 
 h3{
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
     font-size: 1.5em;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 p{
@@ -46,16 +46,10 @@ p em{
 
 blockquote{
 	font-family: var(--font-alt);
-	font-size: 2em;
-	line-height: 1.5;
+	font-size: 2rem;
+	line-height: 1.2;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-}
-
-@media (min-width: 735px) {
-    blockquote{
-        font-size: 2.5em;
-    }
 }
 
 blockquote em{
@@ -75,4 +69,27 @@ ul{
     list-style-type: disc;
     list-style-position: outside;
     margin-left: 1.2rem;
+}
+
+@media (min-width: 735px) {
+    h1{
+        font-size: 4em;
+    }
+
+    blockquote{
+        font-size: 2.5rem;
+    }
+}
+
+/*
+###########################################################
+SMALL
+###########################################################
+*/
+html .small{
+    font-size: 14px;
+}
+
+html .xsmall{
+    font-size: 12px;
 }

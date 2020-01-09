@@ -16,7 +16,7 @@ function notify(message, bg_color, fg_color, id){
         });
 
         var notice = document.createElement('div');
-        notice.setAttribute('class', 'notify');
+        notice.setAttribute('class', 'notify xsmall');
         if (!!bg_color) {
             notice.style.backgroundColor = bg_color;
         }

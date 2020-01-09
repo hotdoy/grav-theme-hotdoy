@@ -197,8 +197,6 @@ PRODUCT ITEM (CARD)
   }
 
   .product-item__info{
-    font-size: 16px;
-    line-height: 1.5;
     margin-top: 0.5rem;
     max-width: 60%;
   }
