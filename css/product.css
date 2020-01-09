@@ -47,18 +47,16 @@ PRODUCT DETAIL
 }
 
 .product__info{
-  margin-top: 0;
+  margin-top: 2rem;
   align-self: stretch;
 }
 
 .product__title{
-  margin-top: 1rem;
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
 .product__price{
-  margin-top: 2rem;
   font-size: 1.2em;
 }
 
