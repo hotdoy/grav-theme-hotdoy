@@ -35,33 +35,8 @@ html{
 }
 
 .splash__content{
-	z-index: 1003
-}
-
-.splash__content h1{
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 735px) {
-	.splash__content h1{
-		font-size: 100px;
-	    line-height: 80px;
-	    margin-bottom: 2rem;
-	}
-}
-
-@media (min-width: 1300px) {
-	.splash__content h1{
-		font-size: 200px;
-	    line-height: 150px;
-	    margin-bottom: 3rem;
-	}
-}
-
-.splash__content p{
-	max-width: var(--width-tight);
-	margin-left: auto;
-	margin-right: auto;
+	z-index: 1003;
+	text-align: center;
 }
 
 .splash__content *:first-child{
