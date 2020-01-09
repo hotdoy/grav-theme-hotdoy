@@ -81,15 +81,46 @@ ul{
     }
 }
 
+
+
+
+
 /*
 ###########################################################
 SMALL
 ###########################################################
 */
+
 html .small{
     font-size: 14px;
 }
 
+.small h1,
+.small h2,
+.small h3,
+.small p{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+/*
+###########################################################
+XSMALL
+###########################################################
+*/
+
 html .xsmall{
     font-size: 12px;
+}
+
+.xsmall h1,
+.xsmall h2,
+.xsmall h3,
+.xsmall p{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
