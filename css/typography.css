@@ -36,8 +36,8 @@ h3{
 }
 
 p{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 p em{
@@ -62,7 +62,7 @@ blockquote em{
 	font-family: var(--font-alt-italic);
 }
 
-p strong{
+strong{
 	font-family: var(--font-base-bold);
 }
 
