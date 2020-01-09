@@ -125,7 +125,7 @@ PRODUCT COLLECTION (GRID)
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  margin: -0.5rem 0 0 -0.5rem;
+  margin: calc(-1 * var(--gutter)) 0 0 calc(-1 * var(--gutter));
 }
 
 .page--product-collection .pagination__loader{
@@ -147,9 +147,9 @@ PRODUCT ITEM (CARD)
 */
 .product-item{
   position: relative;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  width: calc(50% - 0.5rem);
+  margin-top: var(--gutter);
+  margin-left: var(--gutter);
+  width: calc(50% - var(--gutter));
   overflow: hidden;
   color: var(--fg-color);
   transition: all 0.2s;
@@ -199,7 +199,7 @@ PRODUCT ITEM (CARD)
 
 @media (min-width: 735px){
   .product-item{
-    width: calc(33.333% - 0.5rem);
+    width: calc(33.333% - var(--gutter));
   }
 
   .product-item__info{
