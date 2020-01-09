@@ -43,10 +43,6 @@
 	padding-right: var(--gutter);
 }
 
-.hero__content h2{
-	margin-bottom: 0.5rem;
-}
-
 .hero__media{
     overflow: hidden;
     width: 50%;
@@ -67,7 +63,7 @@
 	.hero__content,
 	.hero__ctn--reverse .hero__content{
 		width: 100%;
-		margin-top: 1.5rem;
+		margin-top: 2rem;
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -83,8 +79,4 @@
 	.hero__ctn--reverse{
 		flex-direction: row-reverse;
 	}
-}
-
-.rhythm-negative.rhythm-padding {
-	padding-top: calc(1.5 * var(--rhythm));
 }
