@@ -4,7 +4,6 @@
 {% set bg_color = bg_color|default(page.header.bg_color ?? theme.bg_color) %}
 {% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt ?? theme.fg_color_alt) %}
 {% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt ?? theme.bg_color_alt) %}
-{% set rhythm = rhythm|default(theme.rhythm) %}
 {% if nav_bg_color %}--nav-bg-color:{{ nav_bg_color }};{% endif %}
 {% if nav_fg_color %}--nav-fg-color:{{ nav_fg_color }};{% endif %}
 {% if bg_color %}--bg-color:{{ bg_color }};{% endif %}

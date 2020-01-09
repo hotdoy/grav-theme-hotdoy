@@ -48,11 +48,6 @@ form:
       label: Nav Foreground Color
       default: '#313131'
 
-    rhythm:
-      type: text
-      label: Vertical Rhythm
-      default: 8rem
-
     organization:
       type: section
       title: Organization
