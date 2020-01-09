@@ -20,9 +20,9 @@
 		</div>
 
 		<div class="product__info">
-			<h1 class="product__info__title">{{ page.title }}</h1>
-			<div class="product__info__price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</div>
-			<div class="product__info__add btn btn--solid">
+			<h1 class="product__title">{{ page.title }}</h1>
+			<div class="product__price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</div>
+			<div class="product__add btn btn--solid">
 				<a class="snipcart-add-item"
 				data-item-id="{{ page.header.id }}"
 				data-item-price="{{ page.header.price }}"
@@ -34,7 +34,8 @@
 					<span class="material-icons cart-icon">shopping_cart</span>
 				</a>
 			</div>
-			<div class="product__info__content modular--content">{{ page.content|raw }}</div>
+			<hr class="product__hr" />
+			<div class="product__content modular--content">{{ page.content|raw }}</div>
 		</div>
 	</div>
 

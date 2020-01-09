@@ -43,6 +43,7 @@ SECTION WIDTH, GUTTERS, AND RHYTHM
 */
 
 .tight{
+	width: 100%;
 	max-width: var(--width-tight);
 	margin-left: auto;
 	margin-right: auto;
@@ -51,6 +52,7 @@ SECTION WIDTH, GUTTERS, AND RHYTHM
 }
 
 .site{
+	width: 100%;
 	max-width: var(--width-site);
 	margin-left: auto;
 	margin-right: auto;
@@ -59,9 +61,11 @@ SECTION WIDTH, GUTTERS, AND RHYTHM
 }
 
 .full{
+	width: 100%;
+	max-width: var(--width-full);
 	margin-left: auto;
 	margin-right: auto;
-	max-width: var(--width-full);
+	
 }
 
 .gutter {
@@ -260,3 +264,58 @@ MARKDOWN NOTICES
 	text-align: center;
 	font-weight: bold;
 }
+
+
+
+
+
+/*
+###########################################################
+MODULAR
+###########################################################
+*/
+
+.modular{
+	position: relative;
+	margin: 0;
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+	z-index: 1000;
+}
+
+.modular__title{
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+@media (min-width: 735px) {
+	.modular:after{
+		margin: 0 auto;
+	}
+}
+
+.m-t{margin-top: var(--rhythm);}
+.m-b{margin-bottom: var(--rhythm);}
+.m-tb{margin-top: var(--rhythm);margin-bottom: var(--rhythm);}
+.m-t_2{margin-top: calc(var(--rhythm)/2)};
+
+.p-t{padding-top: var(--rhythm);}
+.p-b{padding-bottom: var(--rhythm);}
+.p-tb{padding-top: var(--rhythm);padding-bottom: var(--rhythm);}
+
+.r-default{}
+.r-header{margin-top: calc(var(--nav-height)*-1);}
+
+/*DEBUG*/
+/*.modular:after{
+	content: "";
+	position: absolute;
+	max-width: calc(var(--width-site) - var(--gutter)*2);
+	margin: 0 var(--gutter);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid red;
+	z-index: 9999999;
+}*/
