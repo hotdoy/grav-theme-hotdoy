@@ -7,6 +7,10 @@
 {% set bg_fit = bg_fit|default(page.header.bg_fit ?? 'cover') %}
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
 {% set bg_loop = bg_loop|default(page.header.bg_loop) %}
+
+{% set height = height|default(page.header.height) %}
+{% set modular_style = '--splash-height:' ~ height ~ 'vh;'  %}
+
 {% set img_computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
 {% set img_computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
 {% set img_styles =  img_computed_bg_position ~ img_computed_bg_fit%}
@@ -18,7 +22,7 @@
 	{% endif %}
 	
 	{% if bg_image and not bg_video %}
-	{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_computed_styles , 'reveal': 'scalein animation-duration-5000 animation-delay-0'} %}
+	{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_styles , 'reveal': 'scalein animation-duration-5000 animation-delay-0'} %}
 	{% endif %}
 
 	{% if bg_video %}
@@ -30,8 +34,8 @@
 	</video>
 	{% endif %}
 
-	<div class="splash__ctn site fill">
-		<div class="site splash__content" data-reveal="">{{ content|raw }}</div>
+	<div class="splash__ctn fill">
+		<div class="splash__content site" data-reveal="">{{ content|raw }}</div>
 	</div>
 
 {% endblock %}

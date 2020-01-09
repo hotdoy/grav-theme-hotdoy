@@ -54,3 +54,8 @@ form:
               options: 
                 0: 'False'
                 1: 'True'
+
+            header.height:
+              type: range
+              label: Height
+              default: 80

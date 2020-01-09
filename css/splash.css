@@ -1,15 +1,16 @@
+html{
+	--splash-height:100vh;
+}
+
 .modular--splash{
 	overflow: hidden;
-	min-height: 100vh;
+	min-height: var(--splash-height);
 }
 
 .splash__ctn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-	padding-top: var(--rhythm);
-	padding-bottom: var(--rhythm);
 }
 
 .splash__image,
