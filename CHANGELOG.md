@@ -1,4 +1,13 @@
 # v1.4.24
+## 09/01/2020
+
+1. [](#improved)
+	* Started to add different text content (small & xsmall)
+	* Improved text css
+	* Removed deprecated slow3g asset
+	* Removed Rhythm concept from theme blueprint
+
+# v1.4.24
 ## 08/01/2020
 
 1. [](#improved)
