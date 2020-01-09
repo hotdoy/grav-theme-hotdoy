@@ -6,11 +6,20 @@ a {
 
 .btn {
 	display: inline-block;
-	margin-right: 0.7rem;
-	margin-bottom: 1rem;
+	/*margin-right: 0.7rem;*/
+	/*margin-bottom: 1rem;*/
 	cursor: pointer;
 	transition: all 0.2s;
 }
+
+.btn + .btn{
+	margin-left: 0.7rem;
+}
+
+br + .btn{
+	margin-top: 1rem;
+}
+
 .btn.btn--solid>a {
 	display: flex;
     background: var(--bg-color-alt);
