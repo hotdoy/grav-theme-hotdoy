@@ -10,13 +10,13 @@ Button ```btn``` and ```link``` shortcodes will now check page.media and act as 
 
 ## What's next ? 
 
+**Font Size**
+
+font-size shortcodes are comming for ```xsmall``` ```small``` and eventually ```big``` markdowns.
+
 **Font**
 
 I am looking at **Inter** as an all around replacement. 
-
-**Theme Marquee**
-
-Probably refactor the theme marquee to work like Notifications.
 
 **SEO**  
 
