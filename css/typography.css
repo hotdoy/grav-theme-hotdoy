@@ -125,3 +125,48 @@ html .xsmall{
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
+
+
+
+
+
+/*
+###########################################################
+BIG
+###########################################################
+*/
+
+html .big{
+    font-size: 24px;
+}
+
+.big h1,
+.big h2,
+.big h3,
+.big p{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+/*
+###########################################################
+HUGE
+###########################################################
+*/
+
+html .huge{
+    font-size: 48px;
+}
+
+.huge h1,
+.huge h2,
+.huge h3,
+.huge p{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
