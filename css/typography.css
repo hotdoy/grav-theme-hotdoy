@@ -29,6 +29,7 @@ h2{
 }
 
 h3{
+    font-family: var(--font-base);
     font-size: 1.5em;
     line-height: 1.2;
     margin-bottom: 1.5rem;
