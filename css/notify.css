@@ -12,6 +12,7 @@
     align-items: center;
     text-align: center;
     padding: 0.2rem 2rem;
+    min-height: 4rem;
     border-radius: 8px;
     background-color: var(--bg-color-alt);
     color: var(--fg-color-alt);
