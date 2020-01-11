@@ -8,6 +8,9 @@ form:
         content:
           fields:
 
-            link_to_product:
-              type: section
-              title: Virtual Collection (Incoming feature!)
+            text:
+                type: display
+                label: Virtual Collection (Wanted feature)
+                markdown: true
+                content: "Virtual collection would let you create collections without having to duplicate content. If you want to sponsor this feature, [Open an issue on Github](https://github.com/hotdoy/grav-theme-hotdoy/issues/new)."
+
