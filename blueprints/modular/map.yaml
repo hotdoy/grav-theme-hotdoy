@@ -42,18 +42,3 @@ form:
               validate:
                 min: 1
                 max: 20
-
-        options:
-          fields:
-
-            header.bg_color:
-              unset@: true
-
-            header.fg_color:
-              unset@: true
-
-            header.bg_color_alt:
-              unset@: true
-
-            header.fg_color_alt:
-              unset@: true
