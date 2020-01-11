@@ -1,49 +1,64 @@
 @font-face {
-    font-family: 'Roboto Regular';
-    src:	local('Roboto Regular'),
-    		url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: fallback;
-    unicode-range: U+000-5FF;
+  font-family: 'Inter Regular';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-Regular.woff2?v=3.11") format("woff2"),
+       url("../fonts/Inter/Inter-Regular.woff?v=3.11") format("woff");
+}
+@font-face {
+  font-family: 'Inter Italic';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-Italic.woff2?v=3.11") format("woff2"),
+       url("../fonts/Inter/Inter-Italic.woff?v=3.11") format("woff");
 }
 
 @font-face {
-    font-family: 'Roboto Bold';
-    src:    local('Roboto Bold'),
-            url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: fallback;
-    unicode-range: U+000-5FF;
+  font-family: 'Inter Bold';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-Bold.woff2?v=3.11") format("woff2"),
+       url("../fonts/Inter/Inter-Bold.woff?v=3.11") format("woff");
 }
 
 @font-face {
-    font-family: 'Roboto Italic';
-    src:    local('Roboto Italic'),
-            url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: fallback;
-    unicode-range: U+000-5FF;
+  font-family: 'Inter BoldItalic';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-BoldItalic.woff2?v=3.11") format("woff2"),
+       url("../fonts/Inter/Inter-BoldItalic.woff?v=3.11") format("woff");
 }
 
 @font-face {
-    font-family: 'LexendDeca Regular';
-    src:	local('LexendDeca Regular'),
-    		url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
-    unicode-range: U+000-5FF;
-
+  font-family: 'Inter ExtraBold';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-ExtraBold.woff2?v=3.11") format("woff2"),
+       url("../fonts/Inter/Inter-ExtraBold.woff?v=3.11") format("woff");
 }
+
+@font-face {
+  font-family: 'Inter Black';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-Black.woff2?v=3.11") format("woff2"),
+       url("../fonts/Inter/Inter-Black.woff?v=3.11") format("woff");
+}
+
 
 html{
-    --font-base: 'Roboto Regular', sans-serif;
-    --font-base-bold: 'Roboto Bold', sans-serif;
-    --font-base-italic: 'Roboto Italic', sans-serif;
-    --font-alt: 'LexendDeca Regular', sans-serif;
-    --font-alt-bold: 'LexendDeca Regular', sans-serif;
-    --font-alt-italic: 'LexendDeca Regular', sans-serif;
+    --font-base: 'Inter Regular', sans-serif;
+    --font-base-bold: 'Inter Bold', sans-serif;
+    --font-base-italic: 'Inter Italic', sans-serif;
+    --font-base-bolditalic: 'Inter BoldItalic', sans-serif;
+    --font-alt: 'Inter ExtraBold', sans-serif;
+    --font-alt-bold: 'Inter ExtraBold', sans-serif;
+    --font-alt-italic: 'Inter ExtraBold', sans-serif;
 }
+

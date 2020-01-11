@@ -1,6 +1,6 @@
 .header{
     position: relative;
-    font-family: var(--font-alt);
+    font-family: var(--font-base);
     height: var(--nav-height);
     color: var(--nav-fg-color);
     z-index: 5000;
