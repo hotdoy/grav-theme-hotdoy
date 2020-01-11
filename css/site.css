@@ -301,12 +301,13 @@ MODULAR
 .m-t{margin-top: var(--rhythm);}
 .m-b{margin-bottom: var(--rhythm);}
 .m-tb{margin-top: var(--rhythm);margin-bottom: var(--rhythm);}
-.m-t_2{margin-top: calc(var(--rhythm)/2)};
+
+.m-t_2{margin-top: calc(var(--rhythm) * 0.5);}
 
 .p-t{padding-top: var(--rhythm);}
+
 .p-b{padding-bottom: var(--rhythm);}
 .p-tb{padding-top: var(--rhythm);padding-bottom: var(--rhythm);}
-
 .r-default{}
 .r-header{margin-top: calc(var(--nav-height)*-1);}
 
