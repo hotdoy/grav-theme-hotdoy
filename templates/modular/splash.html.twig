@@ -1,20 +1,15 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'splash' %}
-
 {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
 {% set bg_image_landscape = bg_image_landscape|default(page.header.bg_image_landscape ? page.media[page.header.bg_image_landscape]) %}
-
 {% set bg_video = bg_video|default(page.header.bg_video ? page.media[page.header.bg_video]) %}
 {% set bg_video_landscape = bg_video_landscape|default(page.header.bg_video_landscape ? page.media[page.header.bg_video_landscape]) %}
-
 {% set bg_position = bg_position|default(page.header.bg_position ?? '50% 50%') %}
 {% set bg_fit = bg_fit|default(page.header.bg_fit ?? 'cover') %}
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
 {% set bg_loop = bg_loop|default(page.header.bg_loop) %}
-
 {% set height = height|default(page.header.height) %}
 {% set modular_style = '--splash-height:' ~ height ~ 'vh;'  %}
-
 {% set img_computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
 {% set img_computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
 {% set img_styles =  img_computed_bg_position ~ img_computed_bg_fit%}
@@ -87,7 +82,7 @@
 	{% endif %}
 
 	<div class="splash__ctn fill">
-		<div class="splash__content site" data-reveal="">{{ content|raw }}</div>
+		<div class="splash__content site">{{ content|raw }}</div>
 	</div>
 
 {% endblock %}
