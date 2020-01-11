@@ -3,7 +3,7 @@ html{
 	--width-site: 1400px;
 	--width-full: 100%;
 	--gutter: 1rem;
-	--rhythm: 8rem;
+	--rhythm: 6rem;
 	--bg-color: #fff;
 	--fg-color: #313131;
 	--bg-color-alt: #2196f3;
@@ -19,5 +19,6 @@ html{
 @media (min-width: 735px) {
 	html{
 		--nav-height: var(--rhythm);
+		--rhythm: 8rem;
 	}
 }
