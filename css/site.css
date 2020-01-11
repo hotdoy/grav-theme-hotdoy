@@ -288,6 +288,10 @@ MODULAR
 	margin-bottom: 3rem;
 }
 
+.modular__title h2{
+	margin-top: 0;
+}
+
 @media (min-width: 735px) {
 	.modular:after{
 		margin: 0 auto;
