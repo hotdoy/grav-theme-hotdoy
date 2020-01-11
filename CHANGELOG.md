@@ -1,3 +1,19 @@
+# v1.5.0
+## 11/01/2020
+
+1. [](#new)
+	* NEW FONT. Inter is now the single font used throughout the theme.
+	* Width shortcodes now support classes.
+	* TextSize shortcode to allow the use of xsmall, small, big and huge text size.
+	* Splash modular landscape and portrait media.
+2. [](#improved)
+	* Better responsive rhythm.
+	* Allow theme in map modular.
+	* Small delay added to splash media scalein animation.
+	* Admin panel colors and font made more "functional".
+3. [](#bugfix)
+	* Fixed .m-t_2 and .p-t utility class.
+
 # v1.4.24
 ## 09/01/2020
 
