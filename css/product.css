@@ -51,9 +51,8 @@ PRODUCT DETAIL
   align-self: stretch;
 }
 
-.product__title{
-  font-size: 2rem;
-  margin-bottom: 0;
+h1.product__title{
+  margin-top: 0;
 }
 
 .product__price{
@@ -88,12 +87,8 @@ PRODUCT DETAIL
 
   .product__info{
     width: 50%;
-    padding: 0 3rem 0 3rem;
-  }
-
-  .product__title{
-    font-size: 3em;
     margin-top: 0;
+    padding: 0 3rem 0 3rem;
   }
 }
 
