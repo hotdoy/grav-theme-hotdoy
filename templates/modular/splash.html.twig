@@ -2,7 +2,11 @@
 {% set modular_name = 'splash' %}
 
 {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
+{% set bg_image_landscape = bg_image_landscape|default(page.header.bg_image_landscape ? page.media[page.header.bg_image_landscape]) %}
+
 {% set bg_video = bg_video|default(page.header.bg_video ? page.media[page.header.bg_video]) %}
+{% set bg_video_landscape = bg_video_landscape|default(page.header.bg_video_landscape ? page.media[page.header.bg_video_landscape]) %}
+
 {% set bg_position = bg_position|default(page.header.bg_position ?? '50% 50%') %}
 {% set bg_fit = bg_fit|default(page.header.bg_fit ?? 'cover') %}
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
@@ -22,16 +26,64 @@
 	{% endif %}
 	
 	{% if bg_image and not bg_video %}
-	{% include '/partials/img.html.twig' with {'image': bg_image, 'class': 'splash__image', 'alt': bg_image_alt, 'style': img_styles , 'reveal': 'scalein animation-duration-5000 animation-delay-0'} %}
+
+		{% set image_class %}
+			splash__image
+			{% if bg_image_landscape %}
+			portrait
+			{% endif %}
+		{% endset %}
+
+		{% include '/partials/img.html.twig' with {
+			'image': bg_image, 
+			'class': image_class, 
+			'alt': bg_image_alt, 
+			'style': img_styles , 
+			'reveal': 'scalein animation-duration-5000 animation-delay-0'
+		} %}
+
+	{% endif %}
+
+	{% if bg_image_landscape and not bg_video or bg_video_lanscape %}
+		{% include '/partials/img.html.twig' with {
+			'image': bg_image_landscape, 
+			'class': 'splash__image landscape', 
+			'alt': bg_image_alt, 
+			'style': img_styles , 
+			'reveal': 'scalein animation-duration-5000 animation-delay-0'
+		} %}
 	{% endif %}
 
 	{% if bg_video %}
-	<video class="splash__video" data-reveal="scalein animation-duration-5000 animation-delay-0" autoplay="autoplay" muted="muted"
-	{% if bg_loop %} loop="loop" {% endif %} 
-	{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
-	style="{{ computed_style }}">
-	{% if bg_video %}<source src="{{ bg_video.url }}" type="video/mp4">{% endif %}
-	</video>
+
+		{% set video_class %}
+			splash__video
+			{% if bg_image_landscape %}
+			portrait
+			{% endif %}
+		{% endset %}
+
+		<video class="{{ video_class }}" 
+			data-reveal="scalein animation-duration-5000 animation-delay-0" 
+			autoplay="autoplay" 
+			muted="muted"
+			{% if bg_loop %} loop="loop" {% endif %} 
+			{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
+			style="{{ computed_style }}">
+			<source src="{{ bg_video.url }}" type="video/mp4">
+		</video>
+	{% endif %}
+
+	{% if bg_video_landscape %}
+		<video 
+			class="splash__video landscape" 
+			data-reveal="scalein animation-duration-5000 animation-delay-0" 
+			autoplay="autoplay" muted="muted"
+			{% if bg_loop %} loop="loop" {% endif %} 
+			{% if bg_image %}poster="{{ bg_image_landscape.url }}"{% endif %}
+			style="{{ computed_style }}">
+			<source src="{{ bg_video_landscape.url }}" type="video/mp4">
+		</video>
 	{% endif %}
 
 	<div class="splash__ctn fill">

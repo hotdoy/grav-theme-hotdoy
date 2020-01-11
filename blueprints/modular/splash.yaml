@@ -19,6 +19,17 @@ form:
                 - .gif
                 - .webp
 
+            header.bg_image_landscape:
+              type: filepicker
+              label: Backgroud Image (Landscape)
+              preview_images: true
+              accept:
+                - .jpg
+                - .png
+                - .svg
+                - .gif
+                - .webp
+
             header.bg_video:
               type: filepicker
               label: Background Video
@@ -27,10 +38,13 @@ form:
                 - .mp4
                 - .webm
 
-            header.bg_position:
-              type: text
-              label: Background Position
-              help: Use css background-position property.
+            header.bg_video_landscape:
+              type: filepicker
+              label: Background Video (Landscape)
+              preview_images: false
+              accept:
+                - .mp4
+                - .webm
 
             header.bg_fit:
               type: select
