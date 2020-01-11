@@ -2,7 +2,7 @@
 
 This theme is ever evolving. Things move around, major changes are made all the time, sometime requiring you take action. Use this as your own risk.
 
-If you use [Theme Inheritance](https://learn.getgrav.org/16/themes/customization) to extend it, you should probably overwrite or create your own template around existing ones instead of trying to hack into mines. This way I can keep updating and you can keep the feature you care about. I hope we all have fun. Good luck :)
+When extending this theme, you should use [Theme Inheritance](https://learn.getgrav.org/16/themes/customization). Create, overwrite or clone template you want to customize instead of trying to hack into mine. This way I can keep updating and you can keep the feature you care about. I hope we all have fun. Good luck :)
 
 ## What's new ?
 
