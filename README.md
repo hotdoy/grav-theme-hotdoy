@@ -10,17 +10,17 @@ Button ```btn``` and ```link``` shortcodes will now check page.media and act as 
 
 ## What's next ? 
 
-**Theme Marquee**
+**Font Size**
 
-Probably refactor the theme marquee to work like Notifications.
+font-size shortcodes are comming for ```xsmall``` ```small``` and eventually ```big``` markdowns.
+
+**Font**
+
+I am looking at **Inter** as an all around replacement. 
 
 **SEO**  
 
 I am due for a full pass. Adding Schemas and stuff.
-
-**Product**
-
-The ```add-to-cart``` fixed component is messing with my head. I'll change it for something simpler.
 
 ## Need a ✋ ?
 
@@ -36,7 +36,7 @@ Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 
 The **Hotdoy** Theme is meant to be my starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
 It is in active developpement and probably not suited for production unless you dont mind things changing all the times.
-You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly.
+You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (It will probably not).
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). It is also my live testing ground so things can get a bit weird.
 
@@ -61,9 +61,6 @@ You should now have all the theme files under
 
 # Customization 
 All customization should be done using theme inheritance https://learn.getgrav.org/16/themes/customization#theme-inheritance to allow for future updates (and there will be updates). 
-The Hotdoy theme also provides a reference to a css/custom.css file via the Asset Manager. Luckily, the Asset Manager handles this for us, and if the file is not found, the reference is not added to the HTML.
-However, if you do provide a file called custom.css in Hotdoy's css/ folder, it will get picked up and referenced. You just need to ensure that you provide CSS elements with enough specificity to override the default CSS.
-If you need any kind of customization other than that, You should use inheritance.
 
 # Shortcodes
 
@@ -91,6 +88,7 @@ Add [mi="icon-name"](https://material.io/resources/icons/) with [i]
 Use one of the 3 site witdh. [full], [site], [tight].
 
 ## Swiper
+It currently has no options but I'll eventually do another pass.
 ```
 [swiper]
 ![]()
