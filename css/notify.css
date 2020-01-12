@@ -14,15 +14,24 @@
     padding: 0.2rem 2rem;
     min-height: 4rem;
     border-radius: 8px;
-    background-color: var(--bg-color-alt);
-    color: var(--fg-color-alt);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
     box-shadow: var(--shadow-2);
     transition: all 0.5s;
     z-index: 5000;
 }
 
+div[data-notify]{
+    display: none;
+}
+
 .notify *{
     margin: 0;
+}
+
+.notify a{
+    color: inherit;
+    text-decoration: underline;
 }
 
 .notify__done{

@@ -29,3 +29,19 @@ function notify(message, bg_color, fg_color, id){
         $('body').append(notice);
     }
 }
+
+
+$( document ).ready(function() {
+    let notifications = document.querySelectorAll('[data-notify]');
+    notifications.forEach(n => {
+        let message = n.innerHTML;
+        let bgcolor = n.getAttribute('data-bgcolor');
+        let fgcolor = n.getAttribute('data-fgcolor');
+        let id = n.getAttribute('data-id');
+
+        if (!!message) {
+            notify(message,bgcolor,fgcolor, id);            
+        }
+
+    });
+});

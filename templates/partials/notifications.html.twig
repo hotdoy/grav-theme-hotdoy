@@ -2,14 +2,29 @@
 	{% for n in p.header.notifications if n.visible == true %}
 		{% set content = n.content|markdown %}
 		{% set id = n.remember ? n.id %}
+		{% set remember = n.remember %}
 		{% set bg_color = n.bg_color %}
 		{% set fg_color = n.fg_color %}
+
 		{% if n.target %}
 			{% for t in n.target if t == page.rawroute %}
-				<script>notify("{{ content }}", "{{ bg_color }}", "{{ fg_color }}", "{{ id }}");</script>
+				<div 
+				data-notify
+				data-bgcolor="{{ bg_color }}" 
+				data-fgcolor="{{ fg_color }}"
+				{% if id and remember %}data-id="{{ id }}"{% endif %}>
+				{{ content }}
+				</div>
 			{% endfor %}
+
 		{% else %}
-			<script>notify("{{ content }}", "{{ bg_color }}", "{{ fg_color }}", "{{ id }}");</script>
+			<div 
+			data-notify
+			data-bgcolor="{{ bg_color }}" 
+			data-fgcolor="{{ fg_color }}"
+			{% if id and remember %}data-id="{{ id }}"{% endif %}>
+			{{ content }}
+			</div>
 		{% endif %}
 	{% endfor %}
 {% endfor %}
