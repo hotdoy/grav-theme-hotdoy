@@ -1,3 +1,12 @@
+# v1.5.1
+## 12/01/2020
+
+1. [](#improved)
+	* Better notification init
+	* Notification can now support markdown
+2. [](#bugfix)
+	* Fix notification targeting homepage only or nested site.
+
 # v1.5.0
 ## 11/01/2020
 
