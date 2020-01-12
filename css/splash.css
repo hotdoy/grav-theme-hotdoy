@@ -37,4 +37,5 @@ html{
 .splash__content{
 	z-index: 1003;
 	text-align: center;
+	padding-top: calc(var(--rhythm) * 0.5);
 }
