@@ -5,7 +5,7 @@
 		{% set bg_color = n.bg_color %}
 		{% set fg_color = n.fg_color %}
 		{% if n.target %}
-			{% for t in n.target if t == page.route %}
+			{% for t in n.target if t == page.rawroute %}
 				<script>notify("{{ content }}", "{{ bg_color }}", "{{ fg_color }}", "{{ id }}");</script>
 			{% endfor %}
 		{% else %}
