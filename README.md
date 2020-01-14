@@ -8,25 +8,23 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 **Notifications**
 
-You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "/notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
+You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
-**Buttons**
+**Inter font**
 
-Button ```btn``` and ```link``` shortcodes will now check page.media and act as download button when similar filename is found (with proper href).
+All fonts have been replaced with Inter. Yep. That's a big one. Your inherited theme should normally overwrite font.css and preload.html.twig if you want to change it.
+
+Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big``` markdowns.
 
 ## What's next ? 
-
-**Font Size**
-
-font-size shortcodes are comming for ```xsmall``` ```small``` and eventually ```big``` markdowns.
-
-**Font**
-
-I am looking at **Inter** as an all around replacement. 
 
 **SEO**  
 
 I am due for a full pass. Adding Schemas and stuff.
+
+**Splash**
+
+The splash modular is a bit too static. I want the text to be more freely positioned.
 
 ## Need a ✋ ?
 
@@ -42,7 +40,7 @@ Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 
 The **Hotdoy** Theme is meant to be my starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
 It is in active developpement and probably not suited for production unless you dont mind things changing all the times.
-You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (It will probably not).
+You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (it will not). I'm having a hard time finding the time to update the skeleton, Sorry.
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). It is also my live testing ground so things can get a bit weird.
 
