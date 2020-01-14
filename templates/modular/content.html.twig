@@ -9,7 +9,7 @@
 {%- endif -%}
 {%- endset -%}
 
-{% set width = width|default(page.header.width ?? 'tight') %}
+{% set width = width|default(page.header.width ?? 'site') %}
 {%- set width -%}
 {%- if width == 'tight' -%}tight
 {%- elseif width == 'site' -%}site

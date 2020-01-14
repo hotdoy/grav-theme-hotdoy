@@ -21,8 +21,8 @@ form:
             header.width:
               type: toggle
               label: Width
-              highlight: tight
-              default: tight
+              highlight: site
+              default: site
               options: 
                 tight: 'Tight'
                 site: 'Site'

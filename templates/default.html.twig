@@ -2,16 +2,6 @@
 
 {% block page_content %}
 <section class="page page--default">
-
-	{# header #}
-	{% include 'modular/content.html.twig' with {
-		'content':'<h1>' ~ page.title ~ '</h1>',
-		'align': 'center',
-		'content_reveal': 'reveal transition-delay-100',
-		'modular_class': 'm-t_2'}%}
-
-	{# content #}
-	{% include 'modular/content.html.twig' with {'content_reveal': 'reveal transition-delay-150'} %}
-
+	{% include 'modular/content.html.twig' with {'content_reveal': 'reveal'} %}
 </section>
 {% endblock %}
