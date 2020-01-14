@@ -8,6 +8,26 @@ form:
         content:
           fields:
 
+            header.align_h:
+              type: toggle
+              label: Align Horizontal
+              highlight: 'center'
+              default: 'center'
+              options: 
+                left: 'Left'
+                center: 'Center'
+                right: 'Right'
+
+            header.align_v:
+              type: toggle
+              label: Align Vertical
+              highlight: 'center'
+              default: 'center'
+              options: 
+                top: 'Top'
+                center: 'Center'
+                right: 'Bottom'
+
             header.bg_image:
               type: filepicker
               label: Backgroud Image
@@ -60,16 +80,8 @@ form:
               label: Background Veil
               default: 0
 
-            header.bg_loop:
-              type: toggle
-              label: Background Video Loop 
-              highlight: 1
-              default: 1
-              options: 
-                0: 'False'
-                1: 'True'
-
             header.height:
               type: range
               label: Height
               default: 80
+              
