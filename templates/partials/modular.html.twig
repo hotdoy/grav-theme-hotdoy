@@ -1,11 +1,14 @@
 {% set modular_name = modular_name|default('') %}
 {% set modular_class = modular_class|default('') %}
+{% set modular_margin = modular_margin|default('') %}
+{% set modular_padding = modular_padding|default('') %}
 {% set modular_style = modular_style|default('') %}
 {% set modular_reveal = modular_reveal|default(0) %}
 {% set modular_display_title = modular_display_title|default(page.header.display_title) %}
 
 {%- set margin -%}
-{%- if page.header.margin == 'top' %}m-t
+{%- if modular_margin -%}{{ modular_margin }}
+{%- elseif page.header.margin == 'top' %}m-t
 {%- elseif page.header.margin == 'bottom' %}m-b
 {%- elseif page.header.margin == 'both' %}m-tb
 {%- elseif page.header.margin == 'none' %}
@@ -14,14 +17,15 @@
 {%- endset -%}
 
 {%- set padding -%}
-{%- if page.header.padding == 'top' %}p-t
+{%- if modular_padding -%}{{ modular_padding }}
+{%- elseif page.header.padding == 'top' %}p-t
 {%- elseif page.header.padding == 'bottom' %}p-b
 {%- elseif page.header.padding == 'both' %}p-tb
 {%- elseif page.header.padding == 'none' %}
 {%- endif -%}
 {%- endset -%}
 
-{% set role = role|default(page.header.role == 'header' ? 'r-header' : '') %}
+{% set role = role|default(page.header.role == 'header' ? modular_name ~ '--header' : '') %}
 
 {%- set computed_modular_class %}
 modular modular--{{ modular_name }}
