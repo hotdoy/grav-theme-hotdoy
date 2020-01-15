@@ -1,3 +1,13 @@
+# v1.5.2
+## 14/01/2020
+
+1. [](#new)
+	* default page and content modular now use "site" width.
+	* splash modular can now set content position.
+	* modular base template has 2 now variables for margin and padding.
+2. [](#improved)
+	* modular roles are now defined per module.
+
 # v1.5.1
 ## 12/01/2020
 
