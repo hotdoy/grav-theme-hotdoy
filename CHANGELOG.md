@@ -1,3 +1,15 @@
+# v1.5.3 - unreleased
+## 14/01/2020
+
+1. [](#new)
+
+2. [](#improved)
+
+2. [](#bugfix)
+	* splash content using tight width when aligned right horizontally no align properly 
+
+
+
 # v1.5.2
 ## 14/01/2020
 

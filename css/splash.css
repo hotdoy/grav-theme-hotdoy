@@ -76,7 +76,7 @@ html{
 	margin-top: -3rem;
 }
 
-/*fix content using [tight] shortcode when not centered*/
+/*reset [tight] margins */
 .splash__content .tight {
     width: 100%;
     max-width: var(--width-tight);
@@ -86,8 +86,19 @@ html{
     padding-right: 0;
 }
 
-/*fix content using [tight] shortcode when centered*/
+/*[tight] centered*/
 .splash__content-ctn--hcenter .splash__content .tight {
     margin-left: auto; 
     margin-right: auto; 
+}
+
+/*[tight] left*/
+.splash__content-ctn--hright .splash__content .tight {
+    margin-left: 0; 
+    margin-right: auto; 
+}
+/*[tight] right*/
+.splash__content-ctn--hright .splash__content .tight {
+    margin-left: auto; 
+    margin-right: 0; 
 }
