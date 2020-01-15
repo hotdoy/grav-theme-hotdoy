@@ -7,10 +7,8 @@ html{
 	min-height: var(--splash-height);
 }
 
-.splash__ctn{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.splash--header{
+	margin-top: calc(var(--nav-height)*-1);
 }
 
 .splash__image,
@@ -34,12 +32,45 @@ html{
 	z-index: 1002;
 }
 
-.splash__content{
+.splash__content-ctn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	padding-top: var(--rhythm);
+	padding-bottom: var(--rhythm);
 	z-index: 1003;
-	text-align: center;
-	margin-top: -3rem;
 }
 
-.splash--header{
-	margin-top: calc(var(--nav-height)*-1);
+.splash__content-ctn--vtop{
+	display: flex;
+	align-items: flex-start;
+}
+
+.splash__content-ctn--vcenter{
+	display: flex;
+	align-items: center;
+}
+
+.splash__content-ctn--vbottom{
+	display: flex;
+	align-items: flex-end;
+}
+
+.splash__content-ctn--hleft{
+	text-align: left;
+}
+
+.splash__content-ctn--hcenter{
+	text-align: center;
+}
+
+.splash__content-ctn--hright{
+	text-align: right;
+}
+
+.splash__content-ctn--hcenter.splash__content-ctn--vcenter{
+	margin-top: -3rem;
 }

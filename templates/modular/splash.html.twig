@@ -4,6 +4,20 @@
 {% set align_h = align_h|default(page.header.align_h ?? 'center') %}
 {% set align_v = align_v|default(page.header.align_v ?? 'center') %}
 
+{% set content_ctn_vertical_modifier %}
+	{% if align_v == 'top' %}splash__content-ctn--vtop
+	{% elseif align_v == 'center' %}splash__content-ctn--vcenter
+	{% elseif align_v == 'bottom' %}splash__content-ctn--vbottom
+	{% endif %}
+{% endset %}
+
+{% set content_ctn_horizontal_modifier %}
+	{% if align_h == 'right' %}splash__content-ctn--hright
+	{% elseif align_h == 'center' %}splash__content-ctn--hcenter
+	{% elseif align_h == 'left' %}splash__content-ctn--hleft
+	{% endif %}
+{% endset %}
+
 {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
 {% set bg_image_landscape = bg_image_landscape|default(page.header.bg_image_landscape ? page.media[page.header.bg_image_landscape]) %}
 {% set bg_video = bg_video|default(page.header.bg_video ? page.media[page.header.bg_video]) %}
@@ -84,7 +98,7 @@
 		</video>
 	{% endif %}
 
-	<div class="splash__ctn fill">
+	<div class="splash__content-ctn {{ content_ctn_vertical_modifier }} {{ content_ctn_horizontal_modifier }}">
 		<div class="splash__content site">{{ content|raw }}</div>
 	</div>
 
