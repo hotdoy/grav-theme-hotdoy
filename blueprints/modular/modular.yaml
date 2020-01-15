@@ -16,6 +16,12 @@ form:
         options:
           fields:
 
+            publishing:
+              fields:
+                
+                header.metadata:
+                  unset@: true
+
             theme:
               type: section
               title: Theme
