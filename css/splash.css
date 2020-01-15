@@ -71,6 +71,23 @@ html{
 	text-align: right;
 }
 
+/*Visual fix for text aligned in the screen center*/
 .splash__content-ctn--hcenter.splash__content-ctn--vcenter{
 	margin-top: -3rem;
+}
+
+/*fix content using [tight] shortcode when not centered*/
+.splash__content .tight {
+    width: 100%;
+    max-width: var(--width-tight);
+    margin-left: 0; 
+    margin-right: 0; 
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*fix content using [tight] shortcode when centered*/
+.splash__content-ctn--hcenter .splash__content .tight {
+    margin-left: auto; 
+    margin-right: auto; 
 }
