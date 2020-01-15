@@ -6,15 +6,18 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?
 
-**Notifications**
+**Splash**
 
-You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
+Splash modular can now control where text wil be added (vertically and horizontally).
 
 **Inter font**
 
 All fonts have been replaced with Inter. Yep. That's a big one. Your inherited theme should normally overwrite font.css and preload.html.twig if you want to change it.
-
 Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big``` markdowns.
+
+**Notifications**
+
+You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 ## What's next ? 
 
@@ -22,9 +25,9 @@ Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big```
 
 I am due for a full pass. Adding Schemas and stuff.
 
-**Splash**
+**Maps**
 
-The splash modular is a bit too static. I want the text to be more freely positioned.
+Map modular should eventually support info box and custom pins.
 
 ## Need a ✋ ?
 
