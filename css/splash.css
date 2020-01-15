@@ -39,3 +39,7 @@ html{
 	text-align: center;
 	margin-top: -3rem;
 }
+
+.splash--header{
+	margin-top: calc(var(--nav-height)*-1);
+}

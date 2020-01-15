@@ -308,8 +308,6 @@ MODULAR
 
 .p-b{padding-bottom: var(--rhythm);}
 .p-tb{padding-top: var(--rhythm);padding-bottom: var(--rhythm);}
-.r-default{}
-.r-header{margin-top: calc(var(--nav-height)*-1);}
 
 /*DEBUG*/
 /*.modular:after{
