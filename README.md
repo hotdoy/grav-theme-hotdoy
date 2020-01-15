@@ -20,14 +20,7 @@ Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big```
 You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 ## What's next ? 
-
-**SEO**  
-
-I am due for a full pass. Adding Schemas and stuff.
-
-**Maps**
-
-Map modular should eventually support info box and custom pins.
+No new modular, no new page. I'll go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff.
 
 ## Need a ✋ ?
 
