@@ -2,7 +2,7 @@
   font-family: 'Inter Regular';
   font-style:  normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
   src: url("../fonts/Inter/Inter-Regular.woff2?v=3.11") format("woff2"),
        url("../fonts/Inter/Inter-Regular.woff?v=3.11") format("woff");
 }
@@ -10,7 +10,7 @@
   font-family: 'Inter Italic';
   font-style:  italic;
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
   src: url("../fonts/Inter/Inter-Italic.woff2?v=3.11") format("woff2"),
        url("../fonts/Inter/Inter-Italic.woff?v=3.11") format("woff");
 }
@@ -19,7 +19,7 @@
   font-family: 'Inter Bold';
   font-style:  normal;
   font-weight: 700;
-  font-display: swap;
+  font-display: fallback;
   src: url("../fonts/Inter/Inter-Bold.woff2?v=3.11") format("woff2"),
        url("../fonts/Inter/Inter-Bold.woff?v=3.11") format("woff");
 }
@@ -28,7 +28,7 @@
   font-family: 'Inter BoldItalic';
   font-style:  italic;
   font-weight: 700;
-  font-display: swap;
+  font-display: fallback;
   src: url("../fonts/Inter/Inter-BoldItalic.woff2?v=3.11") format("woff2"),
        url("../fonts/Inter/Inter-BoldItalic.woff?v=3.11") format("woff");
 }
@@ -37,7 +37,7 @@
   font-family: 'Inter ExtraBold';
   font-style:  normal;
   font-weight: 800;
-  font-display: swap;
+  font-display: fallback;
   src: url("../fonts/Inter/Inter-ExtraBold.woff2?v=3.11") format("woff2"),
        url("../fonts/Inter/Inter-ExtraBold.woff?v=3.11") format("woff");
 }
@@ -46,7 +46,7 @@
   font-family: 'Inter Black';
   font-style:  normal;
   font-weight: 900;
-  font-display: swap;
+  font-display: fallback;
   src: url("../fonts/Inter/Inter-Black.woff2?v=3.11") format("woff2"),
        url("../fonts/Inter/Inter-Black.woff?v=3.11") format("woff");
 }
