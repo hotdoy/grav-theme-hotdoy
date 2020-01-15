@@ -26,7 +26,7 @@ form:
               options: 
                 top: 'Top'
                 center: 'Center'
-                right: 'Bottom'
+                bottom: 'Bottom'
 
             header.bg_image:
               type: filepicker
