@@ -4,6 +4,7 @@
 1. [](#new)
 
 2. [](#improved)
+	* removed some whitespace in markup frmo splash modifiers
 
 2. [](#bugfix)
 	* splash content using tight width when aligned right horizontally no align properly 
