@@ -232,6 +232,7 @@ MARKDOWN NOTICES
 	margin-right: auto;
 	margin-top: 2rem;
 	padding: var(--gutter) calc(var(--gutter)*2);
+	border-radius: 8px;
 }
 
 .notices p a{
