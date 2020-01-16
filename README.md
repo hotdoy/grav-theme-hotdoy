@@ -20,7 +20,9 @@ Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big```
 You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 ## What's next ? 
-No new modular, no new page. I'll go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff.
+Since I am making heavy use of shortcodes, I'll start working on some editor buttons. Similar to https://github.com/getgrav/grav-plugin-editor-buttons/blob/master/README.md
+Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff.
+
 
 ## Need a ✋ ?
 
