@@ -1,5 +1,5 @@
 html{
-    --nav-height: calc(var(--rhythm)/2);
+    --nav-height: calc(var(--rhythm) * 0.7);
 }
 
 @media (min-width: 735px) {
