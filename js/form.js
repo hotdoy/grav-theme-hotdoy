@@ -20,12 +20,12 @@
 		            	var	status = $(result).find('.form-message').attr('data-status');
 		            	$(form)[0].reset();
 		            	console.log('form submission success!');
-		            	notify(message, status);
+		            	notify(message, status, '#ffffff');
 		            	form.removeClass('submitting');
 		            },
 		            error: function() {
 		            	console.log('form submission failed!!!');
-		            	notify('Submission failed. Refresh page and retry.', '#f44336');
+		            	notify('<p>Submission failed. Refresh page and retry.<p>', '#f44336', '#ffffff');
 		            	form.removeClass('submitting');
 		            }
 		        });
