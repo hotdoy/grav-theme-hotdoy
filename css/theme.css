@@ -9,8 +9,7 @@ html{
 	--bg-color-alt: #2196f3;
 	--fg-color-alt: #fff;
     --nav-fg-color: var(--fg-color);
-    --nav-height: calc(var(--rhythm)/2);
-
+    
 	--shadow-0: 0 0 0 0 rgba(0,0,0,0);
 	--shadow-1: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
 	--shadow-2: 0 10px 28px 0 rgba(0,0,0,.2);
@@ -18,7 +17,6 @@ html{
 
 @media (min-width: 735px) {
 	html{
-		--nav-height: var(--rhythm);
 		--rhythm: 8rem;
 	}
 }
