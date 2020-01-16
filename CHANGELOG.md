@@ -1,15 +1,12 @@
-# v1.5.3 - unreleased
+# v1.5.3
 ## 14/01/2020
 
 1. [](#new)
-
+	* Can now set a custom google map icon in theme config.
 2. [](#improved)
 	* removed some whitespace in markup frmo splash modifiers
-
-2. [](#bugfix)
+3. [](#bugfix)
 	* splash content using tight width when aligned right horizontally no align properly 
-
-
 
 # v1.5.2
 ## 14/01/2020
