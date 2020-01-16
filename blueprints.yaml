@@ -126,7 +126,7 @@ form:
       label: Icon
       limit: 1
       multiple: false
-      destination: 'user/assets/hotdoy'
+      destination: 'user/assets/hotdoy/google-maps-icon'
       multiple: true
       accept:
         - image/*
