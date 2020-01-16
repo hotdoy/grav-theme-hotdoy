@@ -7,6 +7,7 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 ## What's new ?
 
 **Custom Map icon**
+
 You can now upload a custom icon (pin) to be used by the Map modular. 
 
 **Splash**
