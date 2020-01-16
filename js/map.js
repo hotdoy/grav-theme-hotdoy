@@ -7,6 +7,7 @@
 	        var zoom = parseInt($(this).data('zoom'));
 	        var	locations = JSON.parse($(this).data('locations'));
 	        var	styles = $(this).data('styles');
+	        var icon = $(this).data('icon');
  			var marker, i;
  			var bounds = new google.maps.LatLngBounds();
 	        var map = new google.maps.Map(this, {
@@ -28,6 +29,7 @@
        			marker = new google.maps.Marker({
        				title: title,
 					position: position,
+					icon: icon,
 				});
 	       		bounds.extend(position);
 				marker.setMap(map);

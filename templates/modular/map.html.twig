@@ -9,6 +9,9 @@
 {% endset %}
 
 {% block modular_content %}
+
+{% set icon = theme.google_maps_icon|first %}
+
  <div class="site">
  	{% if theme.google_maps_api_key %}
  	<div 
@@ -16,7 +19,8 @@
     class="map"
     data-reveal=""
     data-zoom="{{ zoom }}"
-    data-styles='{{ theme.snazzy_maps }}'
+    data-styles='{{ theme.google_maps_snazzy }}'
+    {% if icon %}data-icon="{{ base_url_absolute ~ '/' ~ icon.path }}"{% endif %}
     data-locations='{{ locations }}'>
     </div>
  	{% else %}

@@ -33,22 +33,14 @@ form:
               label: Backgroud Image
               preview_images: true
               accept:
-                - .jpg
-                - .png
-                - .svg
-                - .gif
-                - .webp
+                - image/*
 
             header.bg_image_landscape:
               type: filepicker
               label: Backgroud Image (Landscape)
               preview_images: true
               accept:
-                - .jpg
-                - .png
-                - .svg
-                - .gif
-                - .webp
+                - image/*
 
             header.bg_video:
               type: filepicker
@@ -56,7 +48,6 @@ form:
               preview_images: false
               accept:
                 - .mp4
-                - .webm
 
             header.bg_video_landscape:
               type: filepicker
@@ -64,7 +55,6 @@ form:
               preview_images: false
               accept:
                 - .mp4
-                - .webm
 
             header.bg_fit:
               type: select

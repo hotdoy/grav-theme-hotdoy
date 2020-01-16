@@ -116,10 +116,20 @@ form:
       type: text
       label: Google Maps API Key
 
-    snazzy_maps:
+    google_maps_snazzy:
       type: textarea
       rows: 13
       label: Snazzy Maps
+
+    google_maps_icon:
+      type: file
+      label: Icon
+      limit: 1
+      multiple: false
+      destination: 'user/assets/hotdoy'
+      multiple: true
+      accept:
+        - image/*
 
     facebook:
       type: section
