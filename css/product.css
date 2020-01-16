@@ -4,7 +4,9 @@ PRODUCT DETAIL
 ###########################################################
 */
 
-.page--product{}
+.page--product{
+  margin-top: var(--gutter);
+}
 
 .product__wrapper{
     max-width: var(--width-tight);
