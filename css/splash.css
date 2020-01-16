@@ -7,10 +7,6 @@ html{
 	min-height: var(--splash-height);
 }
 
-.splash--header{
-	margin-top: calc(var(--nav-height)*-1);
-}
-
 .splash__image,
 .splash__video{
 	position: absolute;

@@ -162,3 +162,21 @@ a.nav__link:hover {
     top: 4px;
     left: 32px;
 }
+
+
+
+
+
+/*
+###########################################################
+MODULAR ROLE
+###########################################################
+*/
+
+.hero--header{
+ margin-top: var(--gutter);
+}
+
+.splash--header{
+    margin-top: calc(var(--nav-height)*-1);
+}
