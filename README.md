@@ -6,21 +6,23 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?
 
-**Splash**
+**Custom Map icon**  
+You can now upload a custom icon (pin) to be used by the Map modular. 
 
+**Splash**  
 Splash modular can now control where text wil be added (vertically and horizontally).
 
-**Inter font**
-
+**Inter font**  
 All fonts have been replaced with Inter. Yep. That's a big one. Your inherited theme should normally overwrite font.css and preload.html.twig if you want to change it.
 Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big``` markdowns.
 
-**Notifications**
-
+**Notifications**  
 You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 ## What's next ? 
-No new modular, no new page. I'll go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff.
+Since I am making heavy use of shortcodes, I'll start working on some editor buttons. Similar to https://github.com/getgrav/grav-plugin-editor-buttons/blob/master/README.md
+Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff.
+
 
 ## Need a ✋ ?
 
