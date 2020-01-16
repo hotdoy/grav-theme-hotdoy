@@ -1,5 +1,14 @@
+# v1.5.4
+## 16/01/2020
+
+1. [](#improved)
+	* Improved extendability of nav and modular role.
+	* trying to find a middle ground for top margins of pages between style, usability and extendability.
+2. [](#bugfix)
+	* Fixed ajax-form notify fg-color
+
 # v1.5.3
-## 14/01/2020
+## 15/01/2020
 
 1. [](#new)
 	* Can now set a custom google map icon in theme config.
