@@ -1,3 +1,9 @@
+# v1.5.5
+## 16/01/2020
+
+1. [](#improved)
+	* Pass on all pages and templates that eventually must deal with being next to the site-header.
+
 # v1.5.4
 ## 16/01/2020
 
