@@ -82,7 +82,7 @@ a.nav__link:hover {
 }
 
 .mobile-nav-open{
-    transform: translateY(5px);
+    transform: translateY(3px);
 }
 
 .mobile-nav-close{
@@ -174,9 +174,9 @@ MODULAR ROLE
 */
 
 .hero--header{
- margin-top: var(--gutter);
+ margin-top: 0;
 }
 
 .splash--header{
-    margin-top: calc(var(--nav-height)*-1);
+    margin-top: calc(var(--nav-height) * -1 - 1rem);
 }

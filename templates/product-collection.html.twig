@@ -14,15 +14,13 @@ content:
 
 	{# header #}
 	{% include 'modular/content.html.twig' with {
-		'content':'<h1>' ~ page.title ~ '</h1>' ~ page.content|raw,
-		'align': 'center',
+		'content': page.content|raw,
 		'content_reveal': 'reveal transition-delay-100',
-		'modular_class': 'product-collection-header', 'width': 'tight',
-		'modular_margin': 'm-t_2'
+		'modular_margin': 'none'
 	}%}
 
 	{# Collection #}
-	<section class="site m-t" data-reveal="reveal transition-delay-150">
+	<section class="site m-t_2" data-reveal="reveal transition-delay-150">
 		<div class="product__grid" data-paginate>
 			{% for page in page.collection() %}
 				{% include 'partials/product-item.html.twig' %}
