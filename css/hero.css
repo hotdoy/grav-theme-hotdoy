@@ -19,7 +19,7 @@ html{
 	left: 0;
 	height: 100%;
 	max-width: 90%;
-	height: 100%;
+	padding: calc(var(--rhythm) * 0.5) 0;
 	object-position: center left;
 	object-fit: contain;
 	z-index: 1001;	
@@ -30,6 +30,7 @@ html{
 	right: 0;
 	height: 100%;
 	max-width: 90%;
+	padding: calc(var(--rhythm) * 0.5) 0;
 	object-position: center right;
 	object-fit: contain;
 	z-index: 1001;	
