@@ -1,4 +1,10 @@
-.modular--hero{}
+html{
+	--hero-height:0;
+}
+
+.modular--hero{
+	min-height: var(--hero-height);
+}
 
 .hero__bg-image{
 	width: 100%;
@@ -6,6 +12,27 @@
 	object-position: center;
 	object-fit: cover;
 	z-index: 1001;
+}
+
+.hero__bg-image--bleed-left{
+	position: absolute;
+	left: 0;
+	height: 100%;
+	max-width: 90%;
+	height: 100%;
+	object-position: center left;
+	object-fit: contain;
+	z-index: 1001;	
+}
+
+.hero__bg-image--bleed-right{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	max-width: 90%;
+	object-position: center right;
+	object-fit: contain;
+	z-index: 1001;	
 }
 
 .hero__veil{

@@ -1,5 +1,6 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'splash' %}
+{% set modular_style = '--splash-height:' ~ page.header.min_height ~ 'vh;'  %}
 
 {% set align_h = align_h|default(page.header.align_h ?? 'center') %}
 {% set align_v = align_v|default(page.header.align_v ?? 'center') %}
@@ -25,8 +26,6 @@
 {% set bg_position = bg_position|default(page.header.bg_position ?? '50% 50%') %}
 {% set bg_fit = bg_fit|default(page.header.bg_fit ?? 'cover') %}
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
-{% set height = height|default(page.header.height) %}
-{% set modular_style = '--splash-height:' ~ height ~ 'vh;'  %}
 {% set img_computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
 {% set img_computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
 {% set img_styles =  img_computed_bg_position ~ img_computed_bg_fit%}

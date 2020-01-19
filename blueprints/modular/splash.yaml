@@ -66,8 +66,8 @@ form:
               label: Background Veil
               default: 0
 
-            header.height:
+            header.min_height:
               type: range
-              label: Height
+              label: Minimum Height
               default: 80
               

@@ -43,8 +43,23 @@ form:
               type: filepicker
               label: Backgroud Image
               preview_images: true
-                
+
+            header.bg_mode:
+              type: select
+              label: Background mode
+              default: cover
+              options:
+                cover: Cover
+                bleed_left: Bleed Left
+                bleed_right: Bleed Right
+
             header.bg_veil:
               type: range
               label: Background Veil
               default: 0
+
+            header.min_height:
+              type: range
+              label: Minimum Height
+              default: 0
+
