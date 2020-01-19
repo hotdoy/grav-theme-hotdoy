@@ -1,6 +1,5 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'hero' %}
-{% set modular_style = '--hero-height:' ~ page.header.min_height ~ 'vh;'  %}
 
 {% set video = video|default(page.header.video ? page.media[page.header.video]) %}
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
@@ -8,7 +7,6 @@
 {% set image_alt = image_alt|default(page.header.image_alt) %}
 {% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
 {% set bg_image_alt = bg_image_alt|default(page.header.bg_image_alt) %}
-{% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
 {% set bg_mode = bg_mode|default(page.header.bg_mode) %}
 {% set reverse = reverse|default(page.header.reverse) %}
 

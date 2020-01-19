@@ -1,9 +1,5 @@
-html{
-	--hero-height:0;
-}
-
 .modular--hero{
-	min-height: var(--hero-height);
+
 }
 
 .hero__bg-image{

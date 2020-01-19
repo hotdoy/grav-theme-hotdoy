@@ -13,6 +13,13 @@ form:
               label: Image
               preview_images: true
 
+            header.video:
+              type: filepicker
+              label: Video
+              preview_images: false
+              accept:
+                - .mp4
+
             header.image_alt:
               type: text
               label: Image Alt
@@ -21,13 +28,6 @@ form:
               type: range
               label: Image Width
               default: 100
-
-            header.video:
-              type: filepicker
-              label: Video
-              preview_images: false
-              accept:
-                - .mp4
 
             header.reverse:
               type: toggle
@@ -52,14 +52,3 @@ form:
                 cover: Cover
                 bleed_left: Bleed Left
                 bleed_right: Bleed Right
-
-            header.bg_veil:
-              type: range
-              label: Background Veil
-              default: 0
-
-            header.min_height:
-              type: range
-              label: Minimum Height
-              default: 0
-
