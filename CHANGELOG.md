@@ -1,3 +1,10 @@
+# v1.5.6
+## 16/01/2020
+
+1. [](#bugfix)
+	* Fixed filepicker fields not accepting images in most blueprints.
+	* Fixed content module default alignement value.
+
 # v1.5.5
 ## 16/01/2020
 
