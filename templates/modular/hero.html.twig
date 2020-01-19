@@ -28,7 +28,7 @@
 		</div>
 	{% endif %}
 
-	<div class="hero__ctn site {% if reverse %}hero__ctn--reverse{% endif %}">
+	<div class="hero__ctn site{% if reverse %} hero__ctn--reverse{% endif %}">
 		<div class="hero__content" data-reveal>{{ content|raw }}</div>
 		<div class="hero__media" data-reveal>	
 			{% if video %}
