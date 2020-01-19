@@ -11,8 +11,8 @@ form:
             header.align:
               type: toggle
               label: Text Alignment
-              highlight: content--left
-              default: content--left
+              highlight: left
+              default: left
               options: 
                 left: 'Left'
                 center: 'Center'
