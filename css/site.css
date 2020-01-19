@@ -335,17 +335,3 @@ MODULAR
 
 .p-b{padding-bottom: var(--rhythm);}
 .p-tb{padding-top: var(--rhythm);padding-bottom: var(--rhythm);}
-
-/*DEBUG*/
-/*.modular:after{
-	content: "";
-	position: absolute;
-	max-width: calc(var(--width-site) - var(--gutter)*2);
-	margin: 0 var(--gutter);
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	border: 1px solid red;
-	z-index: 9999999;
-}*/
