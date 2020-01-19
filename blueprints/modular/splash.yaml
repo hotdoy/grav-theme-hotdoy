@@ -32,15 +32,11 @@ form:
               type: filepicker
               label: Backgroud Image
               preview_images: true
-              accept:
-                - image/*
 
             header.bg_image_landscape:
               type: filepicker
               label: Backgroud Image (Landscape)
               preview_images: true
-              accept:
-                - image/*
 
             header.bg_video:
               type: filepicker

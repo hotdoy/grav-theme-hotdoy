@@ -18,12 +18,6 @@ form:
               type: filepicker
               label: Poster
               preview_images: true
-              accept:
-                - .jpg
-                - .png
-                - .svg
-                - .gif
-                - .webp
 
             header.loop:
               type: toggle

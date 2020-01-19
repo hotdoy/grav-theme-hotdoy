@@ -36,10 +36,8 @@ form:
                 # .icon:
                 #   type: filepicker
                 #   label: Icon
-                #   folder: 'user://assets/hotdoy/google-maps-icon'
+                #   folder: 'user/assets/hotdoy/google-maps-icon'
                 #   preview_images: true
-                #   accept:
-                #     - image/*
 
             header.zoom:
               type: range

@@ -12,12 +12,6 @@ form:
               type: filepicker
               label: Image
               preview_images: true
-              accept:
-                - .jpg
-                - .png
-                - .svg
-                - .gif
-                - .webp
 
             header.image_alt:
               type: text
@@ -34,7 +28,6 @@ form:
               preview_images: false
               accept:
                 - .mp4
-                - .webm
 
             header.reverse:
               type: toggle
@@ -50,12 +43,6 @@ form:
               type: filepicker
               label: Backgroud Image
               preview_images: true
-              accept:
-                - .jpg
-                - .png
-                - .svg
-                - .gif
-                - .webp
                 
             header.bg_veil:
               type: range
