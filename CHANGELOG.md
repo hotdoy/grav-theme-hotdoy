@@ -1,18 +1,18 @@
 # v1.5.6
-## 16/01/2020
+## 16-01-2020
 
 1. [](#bugfix)
 	* Fixed filepicker fields not accepting images in most blueprints.
 	* Fixed content module default alignement value.
 
 # v1.5.5
-## 16/01/2020
+## 16-01-2020
 
 1. [](#improved)
 	* Pass on all pages and templates that eventually must deal with being next to the site-header.
 
 # v1.5.4
-## 16/01/2020
+## 16-01-2020
 
 1. [](#improved)
 	* Improved extendability of nav and modular role.
@@ -21,7 +21,7 @@
 	* Fixed ajax-form notify fg-color
 
 # v1.5.3
-## 15/01/2020
+## 15-01-2020
 
 1. [](#new)
 	* Can now set a custom google map icon in theme config.
@@ -31,7 +31,7 @@
 	* splash content using tight width when aligned right horizontally no align properly 
 
 # v1.5.2
-## 14/01/2020
+## 14-01-2020
 
 1. [](#new)
 	* default page and content modular now use "site" width.
@@ -41,7 +41,7 @@
 	* modular roles are now defined per module.
 
 # v1.5.1
-## 12/01/2020
+## 12-01-2020
 
 1. [](#improved)
 	* Better notification init
@@ -50,7 +50,7 @@
 	* Fix notification targeting homepage only or nested site.
 
 # v1.5.0
-## 11/01/2020
+## 11-01-2020
 
 1. [](#new)
 	* NEW FONT. Inter is now the single font used throughout the theme.
@@ -66,7 +66,7 @@
 	* Fixed .m-t_2 and .p-t utility class.
 
 # v1.4.24
-## 09/01/2020
+## 09-01-2020
 
 1. [](#improved)
 	* Started to add different text content (small & xsmall)
@@ -75,7 +75,7 @@
 	* Removed Rhythm concept from theme blueprint
 
 # v1.4.24
-## 08/01/2020
+## 08-01-2020
 
 1. [](#improved)
 	* All of product css is now packaged in a single file
@@ -86,14 +86,14 @@
 	* Removed "page-" from all page css files
 
 # v1.4.23
-## 07/01/2020
+## 07-01-2020
 
 1. [](#improved)
 	* Simplified product buy button.
 	* Simplified product items (cards).
 
 # v1.4.22
-## 04/01/2020
+## 04-01-2020
 
 1. [](#new)
 	* Buttons using btn and link shortcodes can detect if linking to current page media and act accordingly.
@@ -107,7 +107,7 @@
 	* Product name in addtocart bar now only appear on mobile
 
 # v1.4.21
-## 03/01/2020
+## 03-01-2020
 
 1. [](#new)
 	* Notifications (using notify.js) can now be added per page or globally with local storage support. Notify.js received a small update as well.
@@ -115,7 +115,7 @@
 	* site-nav bg color can no longer be set from theme config
 
 # v1.4.20
-## 02/01/2020
+## 02-01-2020
 
 1. [](#new)
 	* Product collections can now be paginated
@@ -131,7 +131,7 @@
 	* fix embed width in product content
 
 # v1.4.19
-## 31/12/2019
+## 31-12-2019
 
 1. [](#new)
 	* Introduction of product collection page (WIP)
@@ -144,7 +144,7 @@
 	* Fixed lists indent
 
 # v1.4.18
-## 31/12/2019
+## 31-12-2019
 
 1. [](#new)
 	* New page css file naming scheme
@@ -153,14 +153,14 @@
 	* All Swiper now use scrollbar as pagination
 
 # v1.4.17
-## 26/12/2019
+## 26-12-2019
 
 1. [](#bugfix)
 	* Fixed grid modular spacing
 	* Fixed some h tags vertical spacing
 
 # v1.4.16
-## 24/12/2019
+## 24-12-2019
 
 1. [](#new)
 	* Modular can now use their page title as display title
@@ -168,7 +168,7 @@
 	* Product and shortcode swiper responsivness
 
 # v1.4.15
-## 23/12/2019
+## 23-12-2019
 
 1. [](#improved)
 	* Updated snipcart to 3.0.5
@@ -176,7 +176,7 @@
 	* Removed some console logs in reveal.js
 	
 # v1.4.14
-## 23/12/2019
+## 23-12-2019
 
 1. [](#improved)
 	* Swiper in product and shortcode now use object fit cover.
@@ -187,13 +187,13 @@
 	* Use new async GA script 
 
 # v1.4.13
-## 21/12/2019
+## 21-12-2019
 
 1. [](#bugfix)
 	* Fixed form submission message not being visible (and made it bigger).
 
 # v1.4.12
-## 20/12/2019
+## 20-12-2019
 
 1. [](#new)
 	* Added image lazyloading for all images using the img partial.
@@ -201,7 +201,7 @@
 	* Some js files and function name have been slightly changed. I you experience problem on a up-to-date theme. Open an issue.
 
 # v1.4.11
-## 19/12/2019
+## 19-12-2019
 
 1. [](#improved)
 	* Changed delay and duration utility class names.
@@ -214,14 +214,14 @@
 	* Fixed fullscreen mode on embeded iframes (Youtube, Vimeo, etc)
 
 # v1.4.10
-## 19/12/2019
+## 19-12-2019
 
 1. [](#improved)
 	* Complete rewrite of embedShortcode.
 	* Basic Youtube iFrame API integration.
 
 # v1.4.9
-## 18/12/2019
+## 18-12-2019
 
 1. [](#new)
 	* Added simple cart product count
@@ -233,7 +233,7 @@
 	* btn-link and btn-solid shortcodes have been removed in favor of simpler btn and link.
 
 # v1.4.8
-## 14/12/2019
+## 14-12-2019
 
 1. [](#bugfix)
 	* Fixed product sticky buy button
@@ -241,7 +241,7 @@
 	* Preminilary support for Kaltura via shortcode
 
 # v1.4.7
-## 14/12/2019
+## 14-12-2019
 
 1. [](#new)
 	* Swiper as shortcode
@@ -249,7 +249,7 @@
 	* Various alignment fixed
 
 # v1.4.6
-## 13/12/2019
+## 13-12-2019
 
 1. [](#new)
 	* Added swiper image galery as product header
@@ -260,7 +260,7 @@
 	* Fixed spacing issues with theme buttons used in grid-item.
 
 # v1.4.5
-## 13/12/2019
+## 13-12-2019
 
 1. [](#improved)
 	* Video embed shortcodes now support full URLs.
@@ -268,7 +268,7 @@
 	* Fixed spacing issues with theme buttons used in grid-item.
 
 # v1.4.4
-## 12/12/2019
+## 12-12-2019
 
 1. [](#improved)
 	* Addded loading lazy attr to tracking iframe
@@ -278,7 +278,7 @@
 	* Presumed fix for site-loader placeholder width 
 
 # v1.4.3
-## 11/12/2019
+## 11-12-2019
 
 1. [](#new)
 	* site-loader show placeholder content after a short delay
@@ -286,26 +286,26 @@
 	* Fixed Google Maps init error
 
 # v1.4.2
-## 10/12/2019
+## 10-12-2019
 
 1. [](#bugfix)
 	* Fixed form submit button position.
 	
 # v1.4.1
-## 10/12/2019
+## 10-12-2019
 
 1. [](#improved)
 	* Improved form styles and submitting state
 
 # v1.4.0
-## 07/12/2019
+## 07-12-2019
 
 1. [](#new)
 	* Refactor of all modular blueprints and templates.
 	* Refactor of modular spacing rules.
 
 # v1.3.7
-## 05/12/2019
+## 05-12-2019
 
 1. [](#improved)
 	* Theme options (colors, rhythm) as been moved out of modulars and into the master module.yaml
@@ -314,7 +314,7 @@
 	* Fixed grid-item content margins irregularity
 
 # v1.3.6
-## 04/12/2019
+## 04-12-2019
 
 1. [](#improved)
 	* Minor spacing fixes
@@ -328,7 +328,7 @@
 	* Fixed notify-in animation
 
 # v1.3.5
-## 04/12/2019
+## 04-12-2019
 
 1. [](#new)
 	* Added reveal.css to allow easier reveal animation changes.
@@ -339,7 +339,7 @@
 	* removed condition preventing img default reveal animation.
 
 # v1.3.4
-## 02/12/2019
+## 02-12-2019
 
 1. [](#improved)
 	* Reveal.js no longer add style to header
@@ -352,7 +352,7 @@
 	* Removed an overflow hidden in content modular causing glitched reveal animation.
 
 # v1.3.3
-## 01/12/2019
+## 01-12-2019
 
 1. [](#new)
 	* Added debug text for modular/page requiring api keys
@@ -362,7 +362,7 @@
 	* Prevent some embeded iframes to overflow.
 
 # v1.3.2
-## 01/12/2019
+## 01-12-2019
 
 1. [](#new)
 	* Added demo content.
@@ -374,14 +374,14 @@
 	* Removed logo from email template.
 
 # v1.3.1
-## 30/11/2019
+## 30-11-2019
 
 1. [](#improved)
 	* Moved map styles to proper css file.
 	* Improved height on desktop
 
 # v1.3.0
-## 30/11/2019
+## 30-11-2019
 
 1. [](#new)
 	* Added Google Maps modular with support for snazzy directly in the theme blueprint and multiple markers
@@ -389,7 +389,7 @@
 	* Cleaned theme blueprint
 
 # v1.2.20
-## 29/11/2019
+## 29-11-2019
 
 1. [](#improved)
 	* Improved theme blueprint
@@ -399,32 +399,32 @@
 	* Fixed Snipcart
 
 # v1.2.19
-## 29/11/2019
+## 29-11-2019
 
 1. [](#bufix)
 	* fixed grid item width properties
 
 # v1.2.18
-## 28/11/2019
+## 28-11-2019
 
 1. [](#improved)
 	* Moved most grid-item modular options to parent grid modular.
 	* General maintenance.
 
 # v1.2.17
-## 28/11/2019
+## 28-11-2019
 
 1. [](#improved)
 	* Abandonning css grid in favor of flexbox for grid modular.
 
 # v1.2.16
-## 27/11/2019
+## 27-11-2019
 
 1. [](#new)
 	* Added option modular option to wrap or scroll on smaller screens.
 
 # v1.2.15
-## 27/11/2019
+## 27-11-2019
 
 1. [](#improved)
 	* BREAKING! fixed a typo in```rhythm``` everywhere. This will break a lot of things. I suggest you find and replace. Figured now was the best time to do it since still no one is using the theme.
@@ -433,7 +433,7 @@
 	* improved padding in markdown notices.
 
 # v1.2.14
-## 26/11/2019
+## 26-11-2019
 
 1. [](#improved)
 	* width-tight set to 650px
@@ -442,7 +442,7 @@
 	* Forms used in content modular width related css moved to content.css
 
 # v1.2.13
-## 26/11/2019
+## 26-11-2019
 
 1. [](#improved)
 	* Reveal animations have been moved to the content for a bunch of modular instead of the outter container.
@@ -453,25 +453,25 @@
 	* And more!
 
 # v1.2.12
-## 25/11/2019
+## 25-11-2019
 
 1. [](#improved)
 	* Content modular now support theme and width.
 
 # v1.2.11
-## 25/11/2019
+## 25-11-2019
 
 1. [](#bugfix)
 	* Fixed modular drawer icon position
 
 # v1.2.10
-## 24/11/2019
+## 24-11-2019
 
 1. [](#bugfix)
 	* Prevent tracking script and div if opted out of theme tracking
 
 # v1.2.9
-## 24/11/2019
+## 24-11-2019
 
 1. [](#new)
 	* Added tracking
@@ -479,7 +479,7 @@
 	* Removed green-hosting badge
 
 # v1.2.8
-##  23/11/2019
+##  23-11-2019
 
 1. [](#new)
 	* New screenshot
@@ -487,7 +487,7 @@
 	* Fixed padding on blockquote
 
 # v1.2.7
-##  23/11/2019
+##  23-11-2019
 
 1. [New](#new)
 	* Add noopener to external links
@@ -497,13 +497,13 @@
 	* Fixed modular having no fields in admin panel.
 
 # v1.2.6
-##  23/11/2019
+##  23-11-2019
 
 1. [](#new)
 	* Added support for markdown notices
 
 # v1.2.5
-##  23/11/2019
+##  23-11-2019
 
 1. [](#improved)
 	* Re done all buttons from scratch
@@ -520,7 +520,7 @@
 	* Drawers toggle icons are acting up.
 
 # v1.2.4
-##  21/11/2019
+##  21-11-2019
 
 1. [](#improved)
 	* Modular theme now use a new theme-modular partial making them all the same.
@@ -535,7 +535,7 @@
 	* fix svg in img partial
 
 # v1.2.3
-##  18/11/2019
+##  18-11-2019
 
 1. [](#new)
 	* Snipcart integration.
@@ -548,14 +548,14 @@
 	* Fixed blueprint content tab disapearing on some module.
 
 # v1.2.2
-##  14/11/2019
+##  14-11-2019
 
 1. [](#improved)
 	* Added equal row height option in Grid.
 	* General grid css maintenance.
 
 # v1.2.1
-##  12/11/2019
+##  12-11-2019
 
 1. [](#improved)
 	* Grid can now set border and padding of childrens.
@@ -569,7 +569,7 @@
 	* Fixed some line break comming from embed shortcodes.
 
 # v1.2.0
-##  11/11/2019
+##  11-11-2019
 
 1. [](#new)
 	* Grid Modular using css grid (game changer).
@@ -582,7 +582,7 @@
 	* Added missing <sup> style.
 
 # v1.1.7
-##  09/11/2019
+##  09-11-2019
 
 1. [](#improved)
 	* Sadly removed Ficelle cdn (Nobody can use it anyway).
@@ -591,13 +591,13 @@
 	* Stop using onanimationend in reveal.js (and never going back).
 
 # v1.1.6
-##  08/11/2019
+##  08-11-2019
 
 1. [](#bugfix)
 	* updated breakpoint shortcodes with new portrait and landscape class. Also re-added mobile and desktop classes.
 
 # v1.1.5
-##  08/11/2019
+##  08-11-2019
 
 1. [](#new)
 	* Splash can now control object-fit and object-position from admin panel.
@@ -612,7 +612,7 @@
 	* Removed slow3g animated bg on assets(img, video) breaking some animation. 
 
 # v1.1.4
-##  05/11/2019
+##  05-11-2019
 
 1. [](#new)
 	* Material Icons are now self hosted
@@ -623,7 +623,7 @@
 	* default site-loader fade-out now set to 200ms
 
 # v1.1.3
-##  05/11/2019
+##  05-11-2019
 
 1. [](#new)
 	* Added marquee
@@ -633,7 +633,7 @@
 	* Moved jquery to "before" assets group.
 
 # v1.1.2
-##  04/11/2019
+##  04-11-2019
 
 1. [](#improved)
 	* Splash animation timings
@@ -645,13 +645,13 @@
 	* Mobile nav toggle position
 
 # v1.1.1
-##  03/11/2019
+##  03-11-2019
 
 1. [](#improved)
 	* Minor style upgrades and fixes
 
 # v1.1.0
-##  03/11/2019
+##  03-11-2019
 
 1. [](#new)
 	* Form inputs now use theme colors.
@@ -666,7 +666,7 @@
 	* Header-default no longer has a breadcrumb but behaves like other modules
 
 # v1.0.0
-##  30/10/2019
+##  30-10-2019
 
 1. [](#new)
 	* Stable release!
@@ -678,7 +678,7 @@
 	* Minor changes to readme
 
 # v0.1.1
-##  29/10/2019
+##  29-10-2019
 
 1. [](#improved)
 	* Updated README
@@ -686,7 +686,7 @@
 	* Cleaned up some CSS files
 
 # v0.1.0
-##  29/10/2019
+##  29-10-2019
 
 1. [New](#new)
 	* Initial Release
