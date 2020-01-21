@@ -1,3 +1,9 @@
+# v1.5.8
+## 21-01-2020
+
+1. [](#new)
+	* Added width shortcode buttons to admin editor (tight and site).
+
 # v1.5.7
 ## 20-01-2020
 

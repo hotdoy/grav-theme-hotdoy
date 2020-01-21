@@ -1,5 +1,5 @@
 name: Hotdoy
-version: 1.5.7
+version: 1.5.8
 description: A living theme serving as functional base for projects. 
 icon: angellist
 author:
@@ -123,12 +123,8 @@ form:
     google_maps_icon:
       type: file
       label: Icon
-      limit: 1
-      multiple: false
       destination: 'user/assets/hotdoy/google-maps-icon'
       multiple: true
-      accept:
-        - image/*
 
     facebook:
       type: section
