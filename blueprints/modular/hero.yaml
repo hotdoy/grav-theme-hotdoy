@@ -19,7 +19,8 @@ form:
               preview_images: false
               accept:
                 - .mp4
-
+                - .webm
+                
             header.image_alt:
               type: text
               label: Image Alt
@@ -38,17 +39,3 @@ form:
               options: 
                 0: 'Default'
                 1: 'Reverse'
-
-            header.bg_image:
-              type: filepicker
-              label: Backgroud Image
-              preview_images: true
-
-            header.bg_mode:
-              type: select
-              label: Background mode
-              default: cover
-              options:
-                cover: Cover
-                bleed_left: Bleed Left
-                bleed_right: Bleed Right

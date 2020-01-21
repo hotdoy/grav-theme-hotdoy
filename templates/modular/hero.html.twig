@@ -5,9 +5,6 @@
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 {% set image_width = image_width|default(page.header.image_width) %}
 {% set image_alt = image_alt|default(page.header.image_alt) %}
-{% set bg_image = bg_image|default(page.header.bg_image ? page.media[page.header.bg_image]) %}
-{% set bg_image_alt = bg_image_alt|default(page.header.bg_image_alt) %}
-{% set bg_mode = bg_mode|default(page.header.bg_mode) %}
 {% set reverse = reverse|default(page.header.reverse) %}
 
 {% block modular_content %}
@@ -15,17 +12,6 @@
 	<div class="hero__veil fill" style="opacity:{{bg_veil}};"></div>
 	{% endif %}
 	
-	{% if bg_image %}
-		{% set bg_image_class %}hero__bg-image
-		{% if bg_mode == 'bleed_left' %} hero__bg-image--bleed-left
-		{% elseif bg_mode == 'bleed_right' %} hero__bg-image--bleed-right
-		{% endif %}
-		{% endset %}
-		<div class="hero__bg-image-ctn fill">
-			{% include '/partials/img.html.twig' with {'image': bg_image, 'class': bg_image_class, 'alt': bg_image_alt} %}
-		</div>
-	{% endif %}
-
 	<div class="hero__ctn site{% if reverse %} hero__ctn--reverse{% endif %}">
 		<div class="hero__content" data-reveal>{{ content|raw }}</div>
 		<div class="hero__media" data-reveal>	
