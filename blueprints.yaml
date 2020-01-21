@@ -4,7 +4,6 @@ description: A living theme serving as functional base for projects.
 icon: angellist
 author:
   name: Hotdoy
-  email: admin@hotdoy.ca
 homepage: https://github.com/hotdoy/grav-theme-hotdoy
 demo: https://hotdoy.ca
 bugs: https://github.com/hotdoy/grav-theme-hotdoy/issues
