@@ -8,37 +8,33 @@ html{
 	font-family: var(--font-base);
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.7;
 }
 
 h1{
 	font-family: var(--font-alt);
     font-size: 3rem;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    
+    line-height: 1.125;
+    margin-top: 3rem;    
 }
 
 h2{
 	font-family: var(--font-alt);
     font-size: 2rem;
     line-height: 1.2;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 h3{
     font-family: var(--font-base);
     font-size: 1.5em;
     line-height: 1.2;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 p{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 p em{

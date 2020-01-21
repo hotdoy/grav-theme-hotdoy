@@ -52,14 +52,18 @@
 	padding-right: 3rem;
 }
 
+.hero__content > *:first-child {
+	margin-top: 0;
+}
+
+.hero__content > *:last-child {
+	margin-bottom: 0;
+}
+
 .hero__ctn--reverse .hero__content {
 	padding-left: 3rem;
 	padding-right: 0;
 }
-
-
-.hero__content *:first-child {margin-top: 0;}
-.hero__content *:last-child {margin-bottom: 0;}
 
 .hero__content blockquote,
 .hero__content ul{

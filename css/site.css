@@ -253,11 +253,10 @@ MARKDOWN NOTICES
 */
 
 .notices {
-    max-width: var(--width-tight);
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 2rem;
-	padding: var(--gutter) calc(var(--gutter)*2);
+	margin-top: 1rem;
+	padding: 1rem 2rem 2rem 2rem;
 	border-radius: 8px;
 }
 
