@@ -21,7 +21,7 @@ You can now create a page using the Notifications blueprint to add global or tar
 
 ## What's next ? 
 Since I am making heavy use of shortcodes, I'll start working on some editor buttons. Similar to https://github.com/getgrav/grav-plugin-editor-buttons/blob/master/README.md
-Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff.
+Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff. Once I'm pleased with the state of existing templates, I'll probably start working on the blog templates.
 
 
 ## Need a ✋ ?
