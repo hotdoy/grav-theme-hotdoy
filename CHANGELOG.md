@@ -1,3 +1,14 @@
+# v1.5.7
+## 20-01-2020
+
+1. [](#improved)
+	* Some general improivements to typography (line-height, margins, etc)
+	* Allow for modular body_class to be used in modular
+	* Removed bg_image and related fields from hero. It was mostly making extending the modular awkward.
+2. [](#bugfix)
+	* Fixed changelog date format
+	* Removed demo content from the theme since it was unmaintained and might have caused some errors.
+
 # v1.5.6
 ## 16-01-2020
 
