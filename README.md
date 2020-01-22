@@ -6,6 +6,9 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?
 
+**Set content width using shortcodes**
+Yep. A new button has been added to the editor to add the tight and site shortcodes.
+
 **Custom Map icon**  
 You can now upload a custom icon (pin) to be used by the Map modular. 
 
@@ -20,8 +23,8 @@ Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big```
 You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 ## What's next ? 
-Since I am making heavy use of shortcodes, I'll start working on some editor buttons. Similar to https://github.com/getgrav/grav-plugin-editor-buttons/blob/master/README.md
-Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff. Once I'm pleased with the state of existing templates, I'll probably start working on the blog templates.
+Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff. Once I'm pleased with the state of existing templates, I'll probably start working on the blog ones.
+Oh yeah and the Video modular will loose it's content fields. I'm bringing this one back to basic. That means uploading a video, and playing it. 
 
 
 ## Need a ✋ ?
