@@ -334,3 +334,32 @@ MODULAR
 
 .p-b{padding-bottom: var(--rhythm);}
 .p-tb{padding-top: var(--rhythm);padding-bottom: var(--rhythm);}
+
+
+
+
+
+/*
+###########################################################
+EMBED
+###########################################################
+*/
+
+.embed .youtube,
+.embed .vimeo{
+	position: relative;
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%;
+	margin-top: 1rem;
+}
+
+.embed .youtube iframe
+.embed .vimeo iframe{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+}
