@@ -43,7 +43,14 @@ html{
 .splash__content-ctn--vtop{
 	display: flex;
 	align-items: flex-start;
+	padding-top: var(--nav-height);
 }
+
+/*synx h1 margins with default page template h1*/
+.splash__content-ctn--vtop h1{
+	margin-top: var(--gutter);
+}
+
 
 .splash__content-ctn--vcenter{
 	display: flex;
