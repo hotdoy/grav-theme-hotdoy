@@ -1,5 +1,6 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'content' %}
+{% set content = content|default(page.content) %}
 	
 {% set align = align|default(page.header.align ?? 'left') %}
 {%- set align -%}
