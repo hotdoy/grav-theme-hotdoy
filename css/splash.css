@@ -46,9 +46,10 @@ html{
 	padding-top: var(--nav-height);
 }
 
-/*synx h1 margins with default page template h1*/
+/*sync h1 margins with default page template h1*/
 .splash__content-ctn--vtop h1{
 	margin-top: var(--gutter);
+	margin-bottom: 3rem;
 }
 
 
