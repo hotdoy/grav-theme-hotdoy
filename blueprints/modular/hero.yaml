@@ -32,10 +32,10 @@ form:
 
             header.reverse:
               type: toggle
-              label: Reverse
+              label: Reversed
               help: Default will position the image on the right side of the module.
               highlight: 0
               default: 0
               options: 
-                0: 'Default'
-                1: 'Reverse'
+                0: 'False'
+                1: 'True'
