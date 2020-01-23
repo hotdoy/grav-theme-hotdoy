@@ -124,7 +124,7 @@ form:
       type: file
       label: Icon
       destination: 'user/assets/hotdoy/google-maps-icon'
-      multiple: true
+      multiple: false
 
     facebook:
       type: section

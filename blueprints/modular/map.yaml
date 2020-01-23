@@ -33,6 +33,10 @@ form:
                   type: text
                   label: Longitude
 
+                .url:
+                  type: text
+                  label: URL
+
                 # .icon:
                 #   type: filepicker
                 #   label: Icon

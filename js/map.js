@@ -5,14 +5,13 @@
 	   	var $el = $('.map');
 	    $el.each(function (index) {
 	        var zoom = parseInt($(this).data('zoom'));
-	        var	locations = JSON.parse($(this).data('locations'));
+	        var	markers = JSON.parse($(this).data('markers'));
 	        var	styles = $(this).data('styles');
-	        var icon = $(this).data('icon');
  			var marker, i;
  			var bounds = new google.maps.LatLngBounds();
 	        var map = new google.maps.Map(this, {
 				zoom: zoom,
-				center: new google.maps.LatLng(locations[0][1], locations[0][2]),
+				center: new google.maps.LatLng(markers[0][1], markers[0][2]),
 				styles: styles || undefined,
 				zoomControl: true,
 				panControl: true,
@@ -23,18 +22,25 @@
 				draggable: true,
 	        });
 
-	        for (i = 0; i < locations.length; i++) { 
-	        	var title = locations[i][0];
-	        	var position = new google.maps.LatLng(locations[i][1], locations[i][2])
+	        for (i = 0; i < markers.length; i++) { 
+	        	var title = markers[i][0];
+	        	var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+	        	var url = markers[i][3];
+	        	var icon = markers[i][4];
        			marker = new google.maps.Marker({
        				title: title,
 					position: position,
 					icon: icon,
+					url: url,
+				});
+				google.maps.event.addListener(marker, 'click', function() {
+					window.open(this.url, '_blank')
+    				
 				});
 	       		bounds.extend(position);
 				marker.setMap(map);
 	        }
-	        if (locations.length > 1) {
+	        if (markers.length > 1) {
 	        	map.fitBounds(bounds);
 	        }
 	    });

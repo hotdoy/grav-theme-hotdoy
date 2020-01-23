@@ -2,13 +2,17 @@
 {% set modular_name = 'map' %}
 
 {% set zoom = zoom|default(page.header.zoom) %}
-{% set locations %}
-[{% for marker in page.header.markers %}
-["{{ marker.title }}", "{{ marker.lat }}", "{{ marker.lng }}"]{% if not loop.last %},{% endif %}
-{% endfor %}]
-{% endset %}
+{% set default_icon = theme.google_maps_icon|first %}
+{% set default_icon_path = base_url_absolute ~ '/' ~ default_icon.path %}
 
-{% set icon = theme.google_maps_icon|first %}
+{% set markers %}
+	[{% for marker in page.header.markers %}
+		{% set custom_icon = marker.icon ? theme.google_maps_icon[marker.icon] %}
+		{% set custom_icon_path = base_url_absolute ~ '/' ~ custom_icon.path %}
+		{% set icon = custom_icon ? custom_icon_path : default_icon_path %}
+		["{{ marker.title }}", "{{ marker.lat }}", "{{ marker.lng }}","{{ marker.url }}", "{{ icon }}"]{% if not loop.last %},{% endif %}
+	{% endfor %}]
+{% endset %}
 
 {% block modular_content %}
  <div class="site">
@@ -19,8 +23,7 @@
     data-reveal=""
     data-zoom="{{ zoom }}"
     data-styles='{{ theme.google_maps_snazzy }}'
-    {% if icon %}data-icon="{{ base_url_absolute ~ '/' ~ icon.path }}"{% endif %}
-    data-locations='{{ locations }}'>
+    data-markers='{{ markers }}'>
     </div>
  	{% else %}
  	<div class="notices red dev">
