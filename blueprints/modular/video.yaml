@@ -8,6 +8,9 @@ form:
         content:
           fields:
 
+            content:
+              unset@: true
+
             header.video:
               type: filepicker
               label: Video
@@ -27,17 +30,3 @@ form:
               options: 
                 0: 'False'
                 1: 'True'
-
-            text:
-              type: section
-              title: Content
-
-            header.align_h:
-              type: toggle
-              label: Horizontal Alignment
-              highlight: video__content--h-align-center
-              default: video__content--h-align-center
-              options: 
-                video__content--h-align-left: 'Left'
-                video__content--h-align-center: 'Center'
-                video__content--h-align-right: 'Right'
