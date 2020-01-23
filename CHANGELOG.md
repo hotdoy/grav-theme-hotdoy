@@ -1,3 +1,13 @@
+# v1.5.9
+## 22-01-2020
+
+1. [](#improved)
+	* Synced h1 position between default page and splash modular when aligned vtop.
+	* Removed Display Title option from modular.
+	* Default nav has it's own heigth instead of rellying on rhythm.
+	* Trying the addition of theme version number on theme analytics.
+	* Unscopped some embed (youtube and vimeo) from content.css (now in site.css).
+
 # v1.5.8
 ## 21-01-2020
 
