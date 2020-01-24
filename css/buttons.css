@@ -45,6 +45,10 @@ br + .btn{
 	display: flex;
 }
 
+.btn .material-icons{
+	line-height: 1.2;
+}
+
 .btn.btn--link .material-icons {
 	padding-left: 5px;
 	transition: all 0.2s;
