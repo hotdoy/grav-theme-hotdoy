@@ -1,3 +1,15 @@
+# v1.5.10
+## 22-01-2020
+
+1. [](#new)
+	* Each marker in Map modular can now set it's own icon.
+	* Brand new link.js with theme config for prerender, preconnect, dns-prefetch. 
+2. [](#improved)
+	* Removed option for content over video modular.
+	* trying a new nommenclature for theme analytics.
+3. [](#bugfix)
+	* Fixed drawer modular h tag since you can no longer set a title.
+
 # v1.5.9
 ## 22-01-2020
 
