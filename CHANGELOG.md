@@ -10,6 +10,7 @@
 2. [](#bugfix)
 	* Removed bugged out and unused modular_reveal.
 	* Fixed buttons material icons line-height.
+	* Fixed transition being set to "all" on default reveal transition.
 
 # v1.5.10
 ## 24-01-2020
