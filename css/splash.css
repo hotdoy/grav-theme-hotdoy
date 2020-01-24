@@ -48,7 +48,7 @@ html{
 
 /*sync h1 margins with default page template h1*/
 .splash__content-ctn--vtop h1{
-	margin-top: var(--gutter);
+	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
 
