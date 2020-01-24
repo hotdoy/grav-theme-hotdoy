@@ -1,5 +1,18 @@
+# v1.5.11
+## 24-01-2020
+
+1. [](#improved)
+	* Added default reveal to video modular
+	* Shrunk h2 on mobile
+	* Changes default highlight to a nice blue.
+	* Better h1 margins
+	* Use a select field for link rel selection in theme config admin panel
+2. [](#bugfix)
+	* Removed bugged out and unused modular_reveal.
+	* Fixed buttons material icons line-height.
+
 # v1.5.10
-## 22-01-2020
+## 24-01-2020
 
 1. [](#new)
 	* Each marker in Map modular can now set it's own icon.
