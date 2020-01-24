@@ -20,7 +20,7 @@ h1{
 
 h2{
 	font-family: var(--font-alt);
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin-top: 3rem;
 }
@@ -71,6 +71,9 @@ ul{
 @media (min-width: 735px) {
     h1{
         font-size: 4em;
+    }
+    h2{
+        font-size: 2em;
     }
 
     blockquote{
