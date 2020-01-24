@@ -177,12 +177,12 @@ form:
       title: Browser Behaviour
 
     links:
-      type: toggle
-      label: Link rel
-      highlight: 0
+      type: select
+      label: Link rel (experimental)
       default: 0
+      help: Adds a link rel tag in the head of the document for all links starting with "/" (presumed same site links).
       options: 
-        0: 'False'
+        0: 'Disabled'
         prerender: 'prerender'
         preconnect: 'preconnect'
         dns-prefetch: 'dns-prefetch'
