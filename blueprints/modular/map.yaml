@@ -11,9 +11,6 @@ form:
             content:
               unset@: true
 
-            header.media_order:
-              unset@: true 
-
             header.markers:
               name: markers
               type: list
@@ -37,11 +34,10 @@ form:
                   type: text
                   label: URL
 
-                # .icon:
-                #   type: filepicker
-                #   label: Icon
-                #   folder: 'user/assets/hotdoy/google-maps-icon'
-                #   preview_images: true
+                .icon:
+                  type: filepicker
+                  label: Icon
+                  preview_images: true
 
             header.zoom:
               type: range
