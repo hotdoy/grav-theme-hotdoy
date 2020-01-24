@@ -171,3 +171,18 @@ form:
       options: 
         0: 'False'
         1: 'True'
+
+    browser:
+      type: section
+      title: Browser Behaviour
+
+    links:
+      type: toggle
+      label: Link rel
+      highlight: 0
+      default: 0
+      options: 
+        0: 'False'
+        prerender: 'prerender'
+        preconnect: 'preconnect'
+        dns-prefetch: 'dns-prefetch'
