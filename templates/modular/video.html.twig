@@ -5,11 +5,11 @@
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 {% set loop = loop|default(page.header.loop) %}
 {% set align_h = align_h|default(page.header.align_h) %}
-{% set reveal_video = reveal_video|default('reveal transition-delay-100 transition-duration-500') %}
 
 {% block modular_content %}
 	<div class="video__ctn site">
-		<video class="video__video" autoplay="autoplay" muted="muted" data-reveal="{{ reveal_video }}"
+		<video class="video__video" autoplay="autoplay" muted="muted"
+		data-reveal
 		{% if loop %}loop="loop"{% endif %} 
 		{% if image %}poster="{{ image.url }}"{% endif %}>
 		{% if video %}<source src="{{ video.url }}" type="video/mp4">{% endif %}
