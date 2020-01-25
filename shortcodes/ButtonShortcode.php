@@ -7,23 +7,28 @@ class ButtonShortcode extends Shortcode
     public function init()
     {
         $this->shortcode->getHandlers()->add('btn', function(ShortcodeInterface $sc) {
+            $mi = $sc->getParameter('mi');
+            $i = $sc->getParameter('i');
+            $icon = $mi ? $mi : $i;
             $output = $this->twig->processTemplate('partials/buttonsc.html.twig', [
                 'page' => $this->grav['page'],
                 'label' => $sc->getContent(),
                 'href' => $sc->getParameter('href'),
-                'icon' => $sc->getParameter('i'),
+                'icon' => $icon,
                 'class' => 'btn--solid'
             ]);
             return $output;
         });
 
         $this->shortcode->getHandlers()->add('link', function(ShortcodeInterface $sc) {
+            $mi = $sc->getParameter('mi');
             $i = $sc->getParameter('i');
+            $icon = $mi ? $mi : $i;
                 $output = $this->twig->processTemplate('partials/buttonsc.html.twig', [
                 'page' => $this->grav['page'],
                 'label' => $sc->getContent(),
                 'href' => $sc->getParameter('href'),
-                'icon' => $i ? $i : 'arrow_forward',
+                'icon' => $icon ? $icon : 'arrow_forward',
                 'class' => 'btn--link'
             ]);
             return $output;
