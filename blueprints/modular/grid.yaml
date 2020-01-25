@@ -56,6 +56,15 @@ form:
                 grid__item--v-align-center: 'Center'
                 grid__item--v-align-end: 'Bottom'
 
+            header.padded_items:
+              type: toggle
+              label: Padded Items
+              highlight: true
+              default: true
+              options: 
+                true: 'Yes'
+                false: 'No'
+
         options:
           fields:
 
