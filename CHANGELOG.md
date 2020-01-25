@@ -1,3 +1,15 @@
+# v1.5.12
+## 25-01-2020
+
+1. [](#new)
+	* Grid Modular can now control whether or not items are padded.
+2. [](#improved)
+	* Bumped Snipcart to 3.0.6.
+	* Product Collection blueprint now set collection by default and can be modified in normal mode.
+	* Buttons shortcodes now use the "mi" attribute to set material-icons instead of "i" making it the same as other material icons shortcodes.
+	* Kept legacy support for "i" attribute in button shortcodes.
+	* Moved notify.js to "after" js group.
+
 # v1.5.11
 ## 24-01-2020
 
