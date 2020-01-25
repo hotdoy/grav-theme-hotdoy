@@ -14,3 +14,40 @@ form:
                 markdown: true
                 content: "Virtual collection would let you create collections without having to duplicate content. If you want to sponsor this feature, [Open an issue on Github](https://github.com/hotdoy/grav-theme-hotdoy/issues/new)."
 
+        options:
+          fields:
+
+            collection_title:
+              type: section
+              title: Collection
+
+            header.content.items:
+              type: text
+              label: PLUGIN_ADMIN.ITEMS
+              default: '@self.children'
+              size: medium
+
+            header.content.order.by:
+              type: text
+              label: PLUGIN_ADMIN.ORDER_BY
+              default: 'folder'
+              size: small
+
+            header.content.order.dir:
+              type: text
+              label: PLUGIN_ADMIN.ORDER
+              help: '"desc" or "asc" are valid values'
+              default: 'asc'
+              size: small
+
+            header.content.pagination:
+              type: text
+              label: Pagination
+              default: 'true'
+              size: small
+
+            header.content.limit:
+              type: text
+              label: Limit
+              default: '12'
+              size: small
