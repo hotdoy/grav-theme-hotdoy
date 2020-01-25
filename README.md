@@ -6,14 +6,15 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?
 
+**Grid**
+Grid Items can now be padded or not. Controlled from the Grid Modular.
+This one is on my list. I'm refactoring the class system so expect it to break in the near future.
+
 **Set content width using shortcodes**
 Yep. A new button has been added to the editor to add the tight and site shortcodes.
 
 **Custom Map icon**  
 You can now upload a custom icon (pin) to be used by the Map modular. 
-
-**Splash**  
-Splash modular can now control where text wil be added (vertically and horizontally).
 
 **Inter font**  
 All fonts have been replaced with Inter. Yep. That's a big one. Your inherited theme should normally overwrite font.css and preload.html.twig if you want to change it.
@@ -23,8 +24,7 @@ Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big```
 You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 ## What's next ? 
-Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting stuff. Once I'm pleased with the state of existing templates, I'll probably start working on the blog ones.
-Oh yeah and the Video modular will loose it's content fields. I'm bringing this one back to basic. That means uploading a video, and playing it. 
+Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting. Once I'm pleased with the state of existing templates, I'll probably start working on blog. The Grid and Grid items are a mess, classes a setted in the blueprint making the whole thing really fragile so I'll start refactoring.
 
 
 ## Need a ✋ ?
@@ -41,7 +41,7 @@ Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 
 The **Hotdoy** Theme is meant to be my starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
 It is in active developpement and probably not suited for production unless you dont mind things changing all the times.
-You can use this theme by simply downloading it but I recommend using the [skeleton](https://github.com/hotdoy/grav-skeleton-hotdoy) instead. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (it will not). I'm having a hard time finding the time to update the skeleton, Sorry.
+You can use this theme by simply downloading it. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (it will not). I'm having a hard time finding the time to update the skeleton so I'm thinking about abandonning it and just focus on documentaing.
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). It is also my live testing ground so things can get a bit weird.
 
@@ -54,7 +54,7 @@ The simplest way to install this theme is via the [Grav Package Manager (GPM)](h
 
     bin/gpm install hotdoy
 
-This will install the Quark theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/hotdoy`.
+This will install the Hotdoy theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/hotdoy`.
 
 ## Manual Installation
 
@@ -67,30 +67,50 @@ You should now have all the theme files under
 # Customization 
 All customization should be done using theme inheritance https://learn.getgrav.org/16/themes/customization#theme-inheritance to allow for future updates (and there will be updates). 
 
+# Modular
+
+* Content
+* Hero
+* Splash
+* Video
+* Grid
+* Grid-Item
+* Drawers
+* Map
+
 # Shortcodes
 
 ## Breakpoint
-show content on specific breakpoint.
-[portrait], [mobile] or [landscape], [desktop].
+```
+[portrait][/portrait] [landscape][/landscape]
+```
+Show content on specific device width
 
 ## Button
-Add buttons with out without material icons. 
+Add buttons with material icons support. 
 ```
-[btn href="https://google.com"], [link href="mypage" i="done"].
+[btn href="https://google.com"], [link href="/mypage" mi="done"]
 ```
-You currently have to use absolute url to page media but I am working on something way more solid. (should be in the next release)
 
 ## Embed
-Add [youtube="url"] and [vimeo="url"] by URL.
+```
+[youtube="url"] [vimeo="url"]
+```
 
 ## Note
-Use [note] to add unrendered content.
+```[note][/note]```
+Add unrendere content.
 
 ## Material Icons
-Add [mi="icon-name"](https://material.io/resources/icons/) with [i]
+```
+[mi="icon-name"]
+```
+A complete list of icon codes can be found [here](https://material.io/resources/icons/)
 
 ## Width
-Use one of the 3 site witdh. [full], [site], [tight].
+```
+[site][/site] [tight][/tight]
+```
 
 ## Swiper
 It currently has no options but I'll eventually do another pass.
