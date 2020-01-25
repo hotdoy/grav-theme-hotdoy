@@ -22,10 +22,12 @@
 	margin-bottom: 5rem;
 }
 
+.grid--padded .grid__item{
+	padding: 2rem;	
+}
 
 .grid__item{
 	position: relative;
-	padding: 2rem;
 	background-color: var(--bg-color);
 	color: var(--fg-color);
 	width: var(--item-width-portrait);

@@ -19,6 +19,7 @@ grid
 {%- if item_align_h %} {{ item_align_h }}{% endif %}
 {%- if item_align_v %} {{ item_align_v }}{% endif %}
 {%- if portrait_grid %} grid--portrait-grid{% endif %}
+{%- if page.header.padded_items %} grid--padded{% endif %}
 {% endset %}
 
 {% block modular_content %}
