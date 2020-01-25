@@ -1,5 +1,5 @@
 {% do assets.addJs('jquery', 101) %}
-{% do assets.addJs('theme://js/notify.js') %}
+{% do assets.addJs('theme://js/notify.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/site-header.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/reveal.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/links.js', { group:'after'}) %}
@@ -14,7 +14,7 @@
 {% do assets.addJs('theme://js/youtube.js', { group:'after' }) %}
 
 {% if theme.snipcart_api_key %}
-	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.5/default/snipcart.js', { group:'after' }) %}
+	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.6/default/snipcart.js', { group:'after' }) %}
 {% endif %}
 
 {% if theme.google_maps_api_key %}
