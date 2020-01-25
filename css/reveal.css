@@ -1,5 +1,4 @@
 .unrevealed {
-	transition: all;
 	opacity:0;
 	transform: translateY(75px);
 }
