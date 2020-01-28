@@ -24,7 +24,8 @@ Also, new font-size shortcodes are in for ```xsmall``` ```small``` and ```big```
 You can now create a page using the Notifications blueprint to add global or targeted notifications. Slug MUST be "notifications". (Make sure you set ```routable``` and ```visible``` to ```False``` in the Advanced tab).
 
 ## What's next ? 
-Go trough the existing stuff, fix bugs, add features here and there and MAYBE start documenting. Once I'm pleased with the state of existing templates, I'll probably start working on blog. The Grid and Grid items are a mess, classes a setted in the blueprint making the whole thing really fragile so I'll start refactoring.
+* Articles and related templates are coming (blog)! 
+* Grids are a mess si I'' go back to them.
 
 
 ## Need a ✋ ?
