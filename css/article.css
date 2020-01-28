@@ -1,0 +1,20 @@
+.page--article-collection{}
+
+.article-collection__title{
+	margin: 3rem auto;
+	padding: 0 var(--gutter, 1rem);
+	max-width: var(--width-tight, 635px);
+	text-align: center;
+}
+
+.article-collection__intro{
+	margin: 3rem auto;
+	padding: 0 var(--gutter, 1rem);
+	max-width: var(--width-tight, 635px);
+}
+
+.article-collection__list{}
+
+.article-card{}
+
+.article-card__link{}

@@ -1,0 +1,45 @@
+title: article-collection
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+
+        options:
+          fields:
+
+            collection_title:
+              type: section
+              title: Collection
+
+            header.content.items:
+              type: text
+              label: PLUGIN_ADMIN.ITEMS
+              default: '@self.children'
+              size: medium
+
+            header.content.order.by:
+              type: text
+              label: PLUGIN_ADMIN.ORDER_BY
+              default: 'date'
+              size: small
+
+            header.content.order.dir:
+              type: text
+              label: PLUGIN_ADMIN.ORDER
+              help: '"desc" or "asc" are valid values'
+              default: 'desc'
+              size: small
+
+            header.content.pagination:
+              type: text
+              label: Pagination
+              default: 'true'
+              size: small
+
+            header.content.limit:
+              type: text
+              label: Limit
+              default: '12'
+              size: small
