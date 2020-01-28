@@ -140,10 +140,13 @@ PRODUCT ITEM (CARD)
   margin-left: var(--gutter);
   width: calc(50% - var(--gutter));
   overflow: hidden;
-  color: var(--fg-color);
   transition: all 0.2s;
   border-bottom: 1px solid #ececec;
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product-item__link{
+  color: var(--fg-color);
 }
 
 .product-item__image{
