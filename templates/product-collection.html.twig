@@ -3,17 +3,16 @@
 <main class="page page--product-collection">
 
 	{# header #}
-	{% include 'modular/content.html.twig' with {
-		'content': page.content|raw,
-		'content_reveal': 'reveal transition-delay-100',
-		'modular_margin': 'none'
-	}%}
+	<h1 class="product-collection__title" data-reveal>{{ page.title }}</h1>
 
-	{# Collection #}
+	{# description #}
+	<div class="product-collection__intro" data-reveal>{{ page.content|raw }}</div>
+
+	{# collection #}
 	<section class="site m-t_2" data-reveal="reveal transition-delay-150">
-		<div class="product__grid" data-paginate>
+		<div class="product-collection__grid" data-paginate>
 			{% for page in page.collection() %}
-				{% include 'partials/product-item.html.twig' %}
+				{% include 'partials/product-card.html.twig' %}
 			{% endfor %}
 			{% include 'partials/pagination.html.twig' %}
 		</div>
