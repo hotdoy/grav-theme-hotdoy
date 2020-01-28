@@ -1,3 +1,9 @@
+/*
+###########################################################
+COLLECTION
+###########################################################
+*/
+
 .page--article-collection{}
 
 .article-collection__title{
@@ -15,6 +21,46 @@
 
 .article-collection__list{}
 
+
+/*
+###########################################################
+CARD
+###########################################################
+*/
+
 .article-card{}
 
 .article-card__link{}
+
+/*
+###########################################################
+ARTICLE
+###########################################################
+*/
+
+.page--article{}
+
+.article__title{
+	margin: 3rem auto;
+	padding: 0 var(--gutter, 1rem);
+	max-width: var(--width-tight, 635px);
+	text-align: center;
+}
+
+.article__content{
+	margin: 3rem auto;
+	padding: 0 var(--gutter, 1rem);
+	max-width: var(--width-tight, 635px);
+}
+
+.article__img{
+	max-width: var(--site, 1400px);
+	margin: 0 auto;
+}
+
+@media (min-width: 735px){
+	.article__img{
+		padding-left: var(--gutter);
+		padding-right: var(--gutter);
+	}
+}

@@ -1,0 +1,19 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+<main class="page page--article">
+
+	{# title #}
+	<h1 class="article__title">{{ page.title }}</h1>
+
+	{# image #}
+	{% if page.media|first %}
+	<div class="article__img">
+		{% include '/partials/img.html.twig' with {'image': page.media|first} %}
+	</div> 
+	{% endif %}
+
+	{# content #}
+	<div class="article__content">{{ page.content|raw }}</div>
+
+</main>
+{% endblock %}

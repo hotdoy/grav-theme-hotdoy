@@ -209,6 +209,14 @@ MISC ELEMENTS
 */
 
 hr{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: transparent;
+    border-top: 1px solid var(--fg-color);
+    opacity: 0.2;
+}
+
+.modular hr{
 	margin-top: var(--rhythm);
 	margin-bottom: var(--rhythm);
 	border: transparent;

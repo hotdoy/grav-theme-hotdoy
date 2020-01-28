@@ -12,7 +12,7 @@
 	<section class="site m-t" data-reveal>
 		<div class="article-collection__list" data-paginate>
 			{% for page in page.collection() %}
-				{# {% include 'partials/article-card.html.twig' %} #}
+				{% include 'partials/article-card.html.twig' %}
 			{% endfor %}
 			{% include 'partials/pagination.html.twig' %}
 		</div>
