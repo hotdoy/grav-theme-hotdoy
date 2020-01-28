@@ -7,13 +7,16 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 ## What's new ?
 
 **Grid**
+
 Grid Items can now be padded or not. Controlled from the Grid Modular.
 This one is on my list. I'm refactoring the class system so expect it to break in the near future.
 
 **Set content width using shortcodes**  
+
 A new button has been added to the editor to add the tight and site shortcodes.
 
 **Custom Map icon**  
+
 You can now upload a custom icon (pin) to be used by the Map modular. 
 
 ## What's next ? 
