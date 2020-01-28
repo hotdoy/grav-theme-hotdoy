@@ -1,3 +1,9 @@
+# v1.5.13
+## 27-01-2020
+
+1. [](#improved)
+	* "page_content" twig block renammed to "content" for better plugin compatibility.
+
 # v1.5.12
 ## 25-01-2020
 
