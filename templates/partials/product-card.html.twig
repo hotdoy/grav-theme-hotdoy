@@ -1,0 +1,13 @@
+<article class="product-card">
+	<a class="product-card__link" href="{{ page.url }}">
+		<div class="product-card__image">
+			<div class="fill">
+				{% include 'partials/img.html.twig' with {'image': page.media.images|first} %}
+			</div>
+		</div>
+		<div class="product-card__info small">
+			<div class="product-card__title">{{ page.title }}</div>
+			<div class="product-card__price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</div>
+		</div>
+	</a>
+</article>
