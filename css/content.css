@@ -2,14 +2,6 @@
 	max-width: 100vw;
 }
 
-.content__ctn > *:first-child {
-	margin-top: 0;
-}
-
-.content__ctn > *:last-child {
-	margin-bottom: 0;
-}
-
 .modular--content twitter-widget{
 	margin-left: auto !important;
 	margin-right: auto !important;
