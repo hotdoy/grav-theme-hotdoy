@@ -1,8 +1,8 @@
 {% extends 'partials/base.html.twig' %}
 {% block content %}
-<section class="page page--modular">
+<main class="page page--modular">
 	{% for module in page.collection() %}
 	{{ module.content }}
 	{% endfor %}
-</section>
+</main>
 {% endblock %}
