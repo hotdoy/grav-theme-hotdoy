@@ -7,6 +7,9 @@ form:
       fields:
         content:
           fields:
+            header.subtitle:
+              type: text
+              label: Subtitle
             header.image:
               type: filepicker
               label: Image
