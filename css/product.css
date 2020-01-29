@@ -130,14 +130,6 @@ PRODUCT COLLECTION (GRID)
   margin: calc(-1 * var(--gutter)) 0 0 calc(-1 * var(--gutter));
 }
 
-.page--product-collection .pagination__loader{
-  width: 100%;
-    margin: 2rem;
-    display: flex;
-    color: lightgrey;
-    justify-content: center;
-}
-
 
 
 

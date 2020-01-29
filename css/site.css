@@ -15,6 +15,7 @@ body {
 	min-height: 100vh;
 	color: var(--fg-color);
 	background-color: var(--bg-color);
+	overflow-y: scroll;
 }
 
 ::selection {
@@ -241,6 +242,16 @@ code{
 	z-index: 9000;
 	position: absolute;
 }
+
+.pagination__loader{
+  	width: 100%;
+    margin: 2rem;
+    display: flex;
+    color: lightgrey;
+    justify-content: center;
+}
+
+
 
 
 
