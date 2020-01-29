@@ -7,14 +7,31 @@
 {% set image_alt = image_alt|default(page.header.image_alt) %}
 {% set image_caption = image_caption|default(page.header.image_caption) %}
 {% set content = content|default(page.content|raw) %}
-<main class="page page--article">
+<main class="page page--article" data-reveal>
 
 	{# header #}
 	<div class="article__header">
+
+		{# category #}
+		<div class="article__category xsmall">
+			{% for category in page.taxonomy.category %}
+			<span class="article__tag article__tag--{{ category|lower }}">{{ category }} {% if not loop.last %}</span>{% endif %}
+			{% endfor %}
+		</div>
+
 		{# title #}
 		<h1 class="article__title">{{ title }}</h1>
+
 		{# date #}
-		<div class="article__date">{{ datetime.format(date) }}</div>
+		<div class="article__date xsmall">{{ datetime.format(date) }}</div>
+
+		{# author #}
+		<div class="article__author xsmall">
+			{% for author in page.taxonomy.author %}
+			{{ author }} {% if not loop.last %}, {% endif %}
+			{% endfor %}
+		</div>
+
 	</div>
 
 	{# image #}
@@ -22,7 +39,7 @@
 	<div class="article__img">
 		{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt } %}
 		{% if image_caption %}
-		<div class="article__img-caption">{{ image_caption }}</div>
+		<div class="article__img-caption xsmall">{{ image_caption }}</div>
 		{% endif %}
 	</div> 
 	{% endif %}
