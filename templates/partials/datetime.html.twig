@@ -1,0 +1,20 @@
+{% macro format(date, format) %}
+	{% set lg = grav.language.getActive %}
+
+	{% if format == 'short' %}
+	{{ date|date('Y-m-d') }}
+
+	{% elseif format == 'long' and lg == 'en' %}
+	{{ date|date('F dS Y') }}
+
+	{% elseif format == 'long' and lg == 'fr' %}
+	{{ date|date('d') }} {{ 'GRAV.MONTHS_OF_THE_YEAR'|ta(post.date|date('n') - 1) }} {{ date|date('Y') }}
+
+	{% else %}
+	{{ date|date('Y-m-d') }}
+
+	{% endif %}
+{% endmacro %}
+
+
+
