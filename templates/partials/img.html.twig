@@ -16,7 +16,9 @@
 	{% if use_lazyload %}data-src="{{ src }}"{% else %}src="{{ src }}"{% endif %}
 	{% if loading %}loading="{{ loading }}"{% endif %}
 	{% if class or lazyload %}class="{% if use_lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
-	{% if style %}style="{{ style }}"{% endif %}>
+	{% if style %}style="{{ style }}"{% endif %}
+	{% if alt %}alt="{{ alt }}"{% endif %}>
+
 {% else %}
 	{% set src_ph = image.cropResize(16, 0).url %}
 	{% set src_375 = image.cropResize(375, 0).url %}
@@ -34,7 +36,9 @@
 	{% if loading %}loading="{{ loading }}"{% endif %}
 	{% if class or use_lazyload %}class="{% if use_lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
 	{% if reveal %}data-reveal="{{ reveal }}"{% endif %}
-	{% if style %}style="{{ style }}"{% endif %}>
+	{% if style %}style="{{ style }}"{% endif %}
+	{% if alt %}alt="{{ alt }}"{% endif %}>
+
 {% endif %}
 
 
