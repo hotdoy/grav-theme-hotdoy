@@ -1,2 +1,20 @@
 title: article
 '@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            header.image:
+              type: filepicker
+              label: Image
+              preview_images: true
+            header.image_alt:
+              type: text
+              label: Image Alt
+            header.image_caption:
+              type: text
+              label: Image Caption
+
