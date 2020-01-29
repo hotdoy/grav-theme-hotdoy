@@ -12,19 +12,9 @@ BODY
 
 body {
 	position: relative;
-	overflow: hidden;
 	min-height: 100vh;
 	color: var(--fg-color);
 	background-color: var(--bg-color);
-}
-body.loaded{
-	overflow-y: scroll;
-}
-
-@media (min-width: 735px) {
-	body{
-		overflow-y: scroll;
-	}
 }
 
 ::selection {

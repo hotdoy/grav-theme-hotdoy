@@ -4,7 +4,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 9000;
+	z-index: 4999;
 	background-color: var(--bg-color);
 	display: flex;
 	align-items: center;
