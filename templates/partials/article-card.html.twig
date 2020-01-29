@@ -1,5 +1,40 @@
+{% import 'partials/datetime.html.twig' as datetime %}
+{% set title = title|default(page.title) %}
+{% set subtitle = subtitle|default(page.header.subtitle) %}
+{% set date = date|default(page.header.date) %}
+{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
+{% set image_alt = image_alt|default(page.header.image_alt) %}
+{% set image_caption = image_caption|default(page.header.image_caption) %}
+{% set content = content|default(page.content|raw) %}
+{% set author = author|default(page.taxonomy.author) %}
+
 <article class="article-card">
 	<a class="article-card__link" href="{{ page.url }}">
-		{{ page.title }}
+		
+		<div class="article-card__info-ctn">
+
+			{# title #}
+			<h2 class="article-card__title">{{ title }}</h2>
+
+			{# subtitle #}
+			<p class="article-card__subtitle xsmall">{{ subtitle }}</p>
+
+			{# metas #}
+			<div class="article-card__metas xsmall">
+				<span class="article-card__date">{{ datetime.format(date) }}</span> ― 
+				{% for author in page.taxonomy.author %}
+				<span class="article-card__author">{{ author }} {% if not loop.last %}, {% endif %}</span>
+				{% endfor %}
+			</div>
+
+		</div>
+
+		{# image #}
+		<div class="article-card__img-ctn">
+			<div class="fill">
+				{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'class': 'article-card__img'} %}
+			</div>
+		</div>
+
 	</a>
 </article>

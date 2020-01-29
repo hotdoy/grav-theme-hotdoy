@@ -15,7 +15,7 @@
 		{# category #}
 		<div class="article__category xsmall">
 			{% for category in page.taxonomy.category %}
-			<span class="article__tag article__tag--{{ category|lower }}">{{ category }} {% if not loop.last %}</span>{% endif %}
+			<span class="tag tag--{{ category|lower }}">{{ category }} {% if not loop.last %}</span>{% endif %}
 			{% endfor %}
 		</div>
 
