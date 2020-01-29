@@ -1,3 +1,18 @@
+# v1.5.14
+## 29-01-2020
+
+1. [](#new)
+	* Article template with collection.
+	* More structure product collection header using page title.
+2. [](#improved)
+	* removed initial 200ms delay on reveal.
+	* replaced formatdate with datetime macro.
+	* Moved back site-loader below site-header.
+	* Removed the rule for removing margins on top and bottom child element in content modular (that's a experience, might come back).
+	* Unscoped pagination loader css.
+3. [](#bugfix)
+	* img partial now use proper alt
+
 # v1.5.13
 ## 27-01-2020
 
