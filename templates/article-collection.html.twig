@@ -9,7 +9,7 @@
 	<div class="article-collection__intro" data-reveal>{{ page.content|raw }}</div>
 
 	{# collection #}
-	<section class="tight m-t" data-reveal>
+	<section class="article-collection__list-ctn m-t_2" data-reveal="reveal transition-delay-100">
 		<div class="article-collection__list" data-paginate>
 			{% for page in page.collection() %}
 				{% include 'partials/article-card.html.twig' %}
