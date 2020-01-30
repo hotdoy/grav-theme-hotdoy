@@ -1,3 +1,14 @@
+# v1.5.15
+## 29-01-2020
+
+1. [](#new)
+	* Article image can now be set to tight or site from admin.
+2. [](#improved)
+	* Site-loader transition set to 0.1s instead of 0.2s.
+	* Article classes name.
+3. [](#bugfix)
+	* Fixed output of empty authors, image and other missing conditinals in articles. 
+
 # v1.5.14
 ## 29-01-2020
 

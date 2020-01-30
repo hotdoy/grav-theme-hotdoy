@@ -3,49 +3,49 @@
 {% block content %}
 {% set title = title|default(page.title) %}
 {% set date = date|default(page.header.date) %}
+{% set authors = authors|default(page.taxonomy.author) %}
 {% set image = image|default(page.header.image ? page.media[page.header.image]) %}
 {% set image_alt = image_alt|default(page.header.image_alt) %}
 {% set image_caption = image_caption|default(page.header.image_caption) %}
+{% set image_width = image_width|default(page.header.image_width) %}
 {% set content = content|default(page.content|raw) %}
 <main class="page page--article" data-reveal>
 
 	{# header #}
-	<div class="article__header">
-
-		{# category #}
-		{# <div class="article__category xsmall">
-			{% for category in page.taxonomy.category %}
-			<span class="tag tag--{{ category|lower }}">{{ category }} {% if not loop.last %}</span>{% endif %}
-			{% endfor %}
-		</div> #}
-
+	<div class="article__header m-t">
 		{# title #}
 		<h1 class="article__title">{{ title }}</h1>
-
 		{# date #}
 		<div class="article__date xsmall">{{ datetime.format(date) }}</div>
-
 		{# author #}
+		{% if authors %}
 		<div class="article__author xsmall">
-			{% for author in page.taxonomy.author %}
-			{{ author }} {% if not loop.last %}, {% endif %}
-			{% endfor %}
+		{% for author in page.taxonomy.author %}
+		{{ author }} {% if not loop.last %}, {% endif %}
+		{% endfor %}
 		</div>
-
+		{% endif %}
 	</div>
 
-	{# image #}
+	{# media #}
 	{% if image %}
-	<div class="article__img">
-		{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt } %}
+	{% set image_width -%}
+	{% if image_width == 'site' %}article__media-ctn--site
+	{% else %}article__media-ctn--tight
+	{%- endif %}
+	{%- endset %}
+	<div class="article__media-ctn {{ image_width }}">
+		{# image #}
+		{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'class': 'article__img' } %}
+		{# caption #}
 		{% if image_caption %}
-		<div class="article__img-caption xsmall">{{ image_caption }}</div>
-		{% endif %}
-	</div> 
+		<div class="article__media-caption xsmall">{{ image_caption }}</div>
+		{% endif %} 
+	</div>
 	{% endif %}
 
 	{# content #}
-	<div class="article__content">{{ content }}</div>
-
+	<div class="article__content tight">{{ content }}</div>
+	
 </main>
 {% endblock %}

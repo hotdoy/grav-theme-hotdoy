@@ -39,7 +39,7 @@
 }
 
 body.loaded #site-loader{
-	transition: all 0.2s; 
+	transition: all 0.1s; 
 	opacity: 0;
 	visibility: hidden;
 }

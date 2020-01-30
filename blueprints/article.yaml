@@ -20,4 +20,12 @@ form:
             header.image_caption:
               type: text
               label: Image Caption
+            header.image_width:
+              type: toggle
+              label: Image Width
+              highlight: tight
+              default: tight
+              options: 
+                tight: 'Tight'
+                site: 'Site'
 
