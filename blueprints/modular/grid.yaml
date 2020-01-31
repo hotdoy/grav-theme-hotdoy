@@ -11,15 +11,18 @@ form:
             content:
               unset@: true
 
-            # header.items:
-            #   name: Items
-            #   type: list
-            #   style: vertical
-            #   label: Items
-            #   fields:
-            #     .content:
-            #       type: editor
-            #       label: Content
+            header.items:
+              name: Items
+              type: list
+              style: vertical
+              label: Items
+              fields:
+                .page:
+                  type: pages
+                  label: Page
+                  multiple: false
+                  show_all: false
+                  show_modular: false
               
             header.item_width_portrait:
               type: toggle
