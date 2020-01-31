@@ -10,8 +10,16 @@ form:
 
             content:
               unset@: true
-            header.media_order:
-              unset@: true
+
+            # header.items:
+            #   name: Items
+            #   type: list
+            #   style: vertical
+            #   label: Items
+            #   fields:
+            #     .content:
+            #       type: editor
+            #       label: Content
               
             header.item_width_portrait:
               type: toggle
@@ -55,15 +63,6 @@ form:
                 grid__item--v-align-start: 'Top'
                 grid__item--v-align-center: 'Center'
                 grid__item--v-align-end: 'Bottom'
-
-            header.padded_items:
-              type: toggle
-              label: Padded Items
-              highlight: true
-              default: true
-              options: 
-                true: 'Yes'
-                false: 'No'
 
         options:
           fields:
