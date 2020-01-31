@@ -1,4 +1,12 @@
 # v1.5.15
+## 30-01-2020
+
+1. [](#improved)
+	* Some minor standardization between product and article headers.
+	* The end of the short lived grid padded items.
+	* Added a small reveal animation to splash content.
+
+# v1.5.15
 ## 29-01-2020
 
 1. [](#new)
