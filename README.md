@@ -6,22 +6,13 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?
 
-**Grid**
+**Articles!**
 
-Grid Items can now be padded or not. Controlled from the Grid Modular.
-This one is on my list. I'm refactoring the class system so expect it to break in the near future.
-
-**Set content width using shortcodes**  
-
-A new button has been added to the editor to add the tight and site shortcodes.
-
-**Custom Map icon**  
-
-You can now upload a custom icon (pin) to be used by the Map modular. 
+I just released some blog centric templates. You can now use Article and Article-collection with support for author taxonomy (You have to add it to your grav config). Categories are not in yet but I'll get to them eventually.
 
 ## What's next ? 
-* Articles and related templates are coming (blog)! 
-* Grids are a mess si I'' go back to them.
+I have some big destructive plans for the grid modular and related grid-item. 
+With the latest templates (product, article) I'm starting to get around a way to let users link to existing pages while creating grid items... anyway, It's still unclear but you'll see. (I'll probably destroy a shitton of grid by doing this but hey! It's fun!!!).
 
 ## Need a ✋ ?
 
@@ -69,8 +60,7 @@ All customization should be done using theme inheritance https://learn.getgrav.o
 * Hero
 * Splash
 * Video
-* Grid
-* Grid-Item
+* Grid / Grid-Item
 * Drawers
 * Map
 
