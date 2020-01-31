@@ -25,9 +25,17 @@ grid
 {% block modular_content %}
 	<div class="site">
 		<div class="{{ grid_classes }}" style="{{ grid_styles }}">
+
+			{% for item in page.header.items %}
+			<div class="grid-item" data-reveal="" style="{{ modular_styles }}">
+				<div class="grid-item__content">{{ item.content|markdown }}</div>
+			</div>
+			{% endfor %}
+
 			{% for page in page.collection() %}
 				{{ page.content }}
 			{% endfor %}
+			
 		</div>
 	</div>
 {% endblock %}
