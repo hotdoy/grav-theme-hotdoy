@@ -20,10 +20,10 @@
 	{% if alt %}alt="{{ alt }}"{% endif %}>
 
 {% else %}
-	{% set src_ph = image.cropResize(16, 0).url %}
-	{% set src_375 = image.cropResize(375, 0).url %}
-	{% set src_1368 = image.cropResize(1368, 0).url %}
-	{% set src_1920 = image.cropResize(1920, 0).url %}
+	{% set src_ph = image.cropResize(16, 16).url %}
+	{% set src_375 = image.cropResize(375, 375).url %}
+	{% set src_1368 = image.cropResize(1368, 1368).url %}
+	{% set src_1920 = image.cropResize(1920, 1920).url %}
 	<img 
 	{% if use_lazyload %}
 	{% if use_placeholder %}src="{{ src_ph }}"{% endif %}
@@ -38,8 +38,4 @@
 	{% if reveal %}data-reveal="{{ reveal }}"{% endif %}
 	{% if style %}style="{{ style }}"{% endif %}
 	{% if alt %}alt="{{ alt }}"{% endif %}>
-
 {% endif %}
-
-
-
