@@ -1,3 +1,4 @@
+{% import 'partials/navigation.html.twig' as nav %}
 <header class="header">
     <div class="header__wrapper site">
 
@@ -7,7 +8,7 @@
 
         {# nav desktop #}
         <nav class="header__nav landscape">
-    		{% include '/partials/navigation.html.twig' %}
+            {{ nav.main(pages, theme) }}
         </nav>
 
         {# nav mobile #}
@@ -18,7 +19,7 @@
             <div class="mobile-nav-close">
                 <span class="material-icons">close</span>
             </div>
-    		{% include '/partials/navigation.html.twig' %}
+            {{ nav.main(pages, theme) }}
         </nav>
 
     </div>
