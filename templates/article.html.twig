@@ -9,10 +9,10 @@
 {% set image_caption = image_caption|default(page.header.image_caption) %}
 {% set image_width = image_width|default(page.header.image_width) %}
 {% set content = content|default(page.content|raw) %}
-<main class="page page--article" data-reveal>
+<main class="page page--article">
 
 	{# header #}
-	<div class="article__header m-t">
+	<div class="article__header m-t" data-reveal>
 		{# title #}
 		<h1 class="article__title">{{ title }}</h1>
 		{# date #}
