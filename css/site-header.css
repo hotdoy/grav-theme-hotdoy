@@ -57,6 +57,10 @@ a.nav__link:hover {
     transform: translateY(-2px);
 }
 
+a.nav__link:active {
+    transform: translateY(0px);
+}
+
 .landscape .nav__link.selected:before{
     content: " ";
     height: 1px;
