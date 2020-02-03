@@ -141,7 +141,7 @@ COLLECTION
   flex-wrap: wrap;
   position: relative;
   margin-top: calc(-1 * var(--gutter));
-  margin-bottom: calc(-1 * var(--gutter));
+  margin-left: calc(-1 * var(--gutter));
 }
 
 
