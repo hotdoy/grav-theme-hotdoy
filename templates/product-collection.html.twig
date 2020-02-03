@@ -2,14 +2,16 @@
 {% block content %}
 <main class="page page--product-collection">
 
-	{# header #}
+	{# title #}
 	<h1 class="product-collection__title" data-reveal>{{ page.title }}</h1>
 
-	{# description #}
+	{# intro #}
+	{% if page.content %}
 	<div class="product-collection__intro" data-reveal>{{ page.content|raw }}</div>
+	{% endif %}
 
 	{# collection #}
-	<section class="product-collection__list-ctn m-t_2" data-reveal="reveal transition-delay-100">
+	<section class="product-collection__grid-ctn m-t_2" data-reveal="reveal transition-delay-100">
 		<div class="product-collection__grid" data-paginate>
 			{% for page in page.collection() %}
 				{% include 'partials/product-card.html.twig' %}
