@@ -1,4 +1,17 @@
-# v1.5.15
+# v1.5.17
+## 03-02-2020
+
+1. [](#improved)
+	* Added missing active styles on nav link
+	* Added missing reveal animation on articles
+	* Navigation is now a macro.
+	* Fixed some comments and class names.
+2. [](bugfix)
+	* Fixed splash modular video playback conditions when landscape image exist.
+	* Fixed img template placeholder ratio.
+
+
+# v1.5.16
 ## 30-01-2020
 
 1. [](#improved)
