@@ -35,9 +35,8 @@
 	{% if bg_veil %}
 	<div class="splash__veil" style="opacity:{{bg_veil}};"></div>
 	{% endif %}
-	
-	{% if bg_image and not bg_video %}
 
+	{% if bg_image and not bg_video %}
 		{% set image_class %}
 			splash__image
 			{% if bg_image_landscape %}
@@ -52,7 +51,6 @@
 			'style': img_styles , 
 			'reveal': 'scalein animation-duration-5000 animation-delay-300'
 		} %}
-
 	{% endif %}
 
 	{% if bg_image_landscape and not bg_video or bg_video_lanscape %}
@@ -66,35 +64,34 @@
 	{% endif %}
 
 	{% if bg_video %}
+	{% set video_class %}
+		splash__video
+		{% if bg_image_landscape or bg_video_landscape %}
+		portrait
+		{% endif %}
+	{% endset %}
 
-		{% set video_class %}
-			splash__video
-			{% if bg_image_landscape %}
-			portrait
-			{% endif %}
-		{% endset %}
-
-		<video class="{{ video_class }}" 
-			data-reveal="scalein animation-duration-5000 animation-delay-0" 
-			autoplay="autoplay" 
-			muted="muted"
-			loop="loop"
-			{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
-			style="{{ computed_style }}">
-			<source src="{{ bg_video.url }}" type="video/mp4">
-		</video>
+	<video class="{{ video_class }}" 
+		data-reveal="scalein animation-duration-5000 animation-delay-0" 
+		autoplay="autoplay" 
+		muted="muted"
+		loop="loop"
+		{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
+		style="{{ computed_style }}">
+		<source src="{{ bg_video.url }}" type="video/mp4">
+	</video>
 	{% endif %}
 
 	{% if bg_video_landscape %}
-		<video 
-			class="splash__video landscape" 
-			data-reveal="scalein animation-duration-5000 animation-delay-0" 
-			autoplay="autoplay" muted="muted"
-			loop="loop"
-			{% if bg_image %}poster="{{ bg_image_landscape.url }}"{% endif %}
-			style="{{ computed_style }}">
-			<source src="{{ bg_video_landscape.url }}" type="video/mp4">
-		</video>
+	<video 
+		class="splash__video landscape" 
+		data-reveal="scalein animation-duration-5000 animation-delay-0" 
+		autoplay="autoplay" muted="muted"
+		loop="loop"
+		{% if bg_image_landscape %}poster="{{ bg_image_landscape.url }}"{% endif %}
+		style="{{ computed_style }}">
+		<source src="{{ bg_video_landscape.url }}" type="video/mp4">
+	</video>
 	{% endif %}
 
 	<div class="splash__content-ctn {{ content_ctn_vertical_modifier }} {{ content_ctn_horizontal_modifier }}" data-reveal>
