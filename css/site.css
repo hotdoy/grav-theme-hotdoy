@@ -160,14 +160,6 @@ UTILS
   display: none;
 }
 
-.inline{
-	display: inline-block;
-}
-
-.block{
-	display: block;
-}
-
 .fill{
 	position: absolute;
 	top: 0;
