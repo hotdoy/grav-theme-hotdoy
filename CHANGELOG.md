@@ -1,3 +1,12 @@
+# v1.5.18
+## 03-02-2020
+
+1. [](#improved)
+	* nav__link class renammed to nav-link.
+	* Removed .block and .inline utility class.
+2. [](bugfix)
+	* Fixed product collection left gutter.
+
 # v1.5.17
 ## 03-02-2020
 
