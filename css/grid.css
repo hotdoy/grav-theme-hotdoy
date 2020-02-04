@@ -8,7 +8,7 @@
 }
 
 .grid--portrait-grid{
-	margin-left: -2rem;
+	margin-left: -1rem;
 }
 
 @media (min-width: 735px) {
@@ -31,7 +31,7 @@
 }
 .grid--portrait-grid .grid-item{
 	margin-left: 1rem;
-	width: calc(var(--item-width-portrait) - 2rem);
+	width: calc(var(--item-width-portrait) - 1rem);
 }
 
 @media (min-width: 735px) {
