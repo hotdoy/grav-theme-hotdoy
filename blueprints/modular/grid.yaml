@@ -50,22 +50,22 @@ form:
             header.item_align_h:
               type: toggle
               label: Horizontal Alignment
-              highlight: 'grid__item__content--h-align-center'
-              default: 'grid__item__content--h-align-center'
+              highlight: 'grid-item__content--h-align-center'
+              default: 'grid-item__content--h-align-center'
               options: 
-                grid__item__content--h-align-left: 'Left'
-                grid__item__content--h-align-center: 'Center'
-                grid__item__content--h-align-right: 'Right'
+                grid-item__content--h-align-left: 'Left'
+                grid-item__content--h-align-center: 'Center'
+                grid-item__content--h-align-right: 'Right'
 
             header.item_align_v:
               type: toggle
               label: Vertical Alignment
-              highlight: 'grid__item--v-align-center'
-              default: 'grid__item--v-align-center'
+              highlight: 'grid-item--v-align-center'
+              default: 'grid-item--v-align-center'
               options: 
-                grid__item--v-align-start: 'Top'
-                grid__item--v-align-center: 'Center'
-                grid__item--v-align-end: 'Bottom'
+                grid-item--v-align-start: 'Top'
+                grid-item--v-align-center: 'Center'
+                grid-item--v-align-end: 'Bottom'
 
         options:
           fields:
