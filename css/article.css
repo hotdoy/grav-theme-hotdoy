@@ -102,7 +102,7 @@ COLLECTION
   text-align: center;
 }
 
-.article-collection__list-ctn{
+.article-collection__grid-ctn{
   padding-left: var(--gutter);
   padding-right: var(--gutter);
   margin-left: auto;
