@@ -1,3 +1,16 @@
+# v1.5.19
+## 04-02-2020
+
+1. [](#improved)
+	* Grid-item now uses small text.
+	* Standardized grid class name between article and product collections.
+	* Grid default vertical align set to top.
+	* Removed border color from article cards since not compatible with theme colors.
+	* Added micro transition on article card when :active.
+2. [](bugfix)
+	* Fixed grid item margins in portrait.
+	* Fixed grid modular class names from blueprint.
+
 # v1.5.18
 ## 03-02-2020
 
