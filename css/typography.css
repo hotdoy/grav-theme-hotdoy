@@ -17,6 +17,11 @@ h1{
     line-height: 1.125;
     margin-top: 3rem;    
 }
+@media (min-width: 735px) {
+    h1{
+        font-size: 4rem;
+    }   
+}
 
 h2{
 	font-family: var(--font-alt);
@@ -24,10 +29,15 @@ h2{
     line-height: 1.2;
     margin-top: 3rem;
 }
+@media (min-width: 735px) {
+    h2{
+        font-size: 2rem;
+    }   
+}
 
 h3{
     font-family: var(--font-base);
-    font-size: 1.5em;
+    font-size: 1.2rem;
     line-height: 1.2;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -49,6 +59,12 @@ blockquote{
 	margin-bottom: 2rem;
 }
 
+@media (min-width: 735px) {
+    blockquote{
+        font-size: 2.5rem;
+    } 
+}
+
 blockquote em{
 	font-family: var(--font-alt-italic);
 }
@@ -68,19 +84,6 @@ ul{
     margin-left: 1.2rem;
 }
 
-@media (min-width: 735px) {
-    h1{
-        font-size: 4em;
-    }
-    h2{
-        font-size: 2em;
-    }
-
-    blockquote{
-        font-size: 2.5rem;
-    }
-}
-
 
 
 
@@ -91,7 +94,7 @@ SMALL
 ###########################################################
 */
 
-html .small{
+.small{
     font-size: 14px;
 }
 
@@ -103,6 +106,10 @@ html .small{
     margin-top: 1.5rem;
 }
 
+.small h1{font-size: 3em;}
+.small h2{font-size: 1.5em;}
+.small h3{font-size: 1.2em;}
+
 
 
 
@@ -113,7 +120,7 @@ XSMALL
 ###########################################################
 */
 
-html .xsmall{
+.xsmall{
     font-size: 12px;
 }
 
@@ -125,6 +132,10 @@ html .xsmall{
     margin-top: 1rem;
 }
 
+.xsmall h1{font-size: 3em;}
+.xsmall h2{font-size: 1.5em;}
+.xsmall h3{font-size: 1.2em;}
+
 
 
 
@@ -135,7 +146,7 @@ BIG
 ###########################################################
 */
 
-html .big{
+.big{
     font-size: 24px;
 }
 
@@ -147,7 +158,9 @@ html .big{
     margin-top: 2rem;
 }
 
-
+.big h1{font-size: 3em;}
+.big h2{font-size: 1.5em;}
+.big h3{font-size: 1.2em;}
 
 
 
@@ -169,3 +182,7 @@ html .huge{
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
+.huge h1{font-size: 3em;}
+.huge h2{font-size: 1.5em;}
+.huge h3{font-size: 1.2em;}
