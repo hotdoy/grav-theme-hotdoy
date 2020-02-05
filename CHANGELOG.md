@@ -1,3 +1,12 @@
+# v1.5.20
+## 04-02-2020
+
+1. [](#improved)
+	* Reworked grid-item classes and logic for future expansion. (You might have to re-save your grid module).
+	* Article cards now look more on par with product card.
+2. [](bugfix)
+	* small, xsmall, big and huge font utility class now properly works.
+
 # v1.5.19
 ## 04-02-2020
 
