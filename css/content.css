@@ -80,6 +80,9 @@
 	text-align: right;
 }
 
+.content__ctn *:first-child {margin-top: 0;}
+.content__ctn *:last-child {margin-bottom: 0;}
+
 /*Kaltura video*/
 .kWidgetIframeContainer{margin: 2rem auto;}
 
