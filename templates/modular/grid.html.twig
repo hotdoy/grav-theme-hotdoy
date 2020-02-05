@@ -7,7 +7,20 @@
 {% set portrait_grid =  item_width_portrait != '100%' %}
 
 {% set item_align_h = item_align_h|default(page.header.item_align_h) %}
+{% set computed_item_align_h %}
+	{%- if item_align_h == 'left' %}grid-item--h-align-left
+	{%- elseif item_align_h == 'right' %}grid-item--h-align-right
+	{%- else %}grid-item--h-align-center
+	{%- endif %}
+{% endset %}
+
 {% set item_align_v = item_align_v|default(page.header.item_align_v) %}
+{% set computed_item_align_v %}
+	{%- if item_align_v == 'bottom' %}grid-item--v-align-end
+	{%- elseif item_align_v == 'center' %}grid-item--v-align-center
+	{%- else %}grid-item--v-align-start
+	{%- endif %}
+{% endset %}
 
 {% set grid_styles %}
 {% if item_width_landscape %}--item-width-landscape:{{ item_width_landscape }};{% endif %}
@@ -15,25 +28,22 @@
 {% endset %}
 
 {% set grid_classes %}
-grid
-{%- if item_align_h %} {{ item_align_h }}{% endif %}
-{%- if item_align_v %} {{ item_align_v }}{% endif %}
+grid {{ computed_item_align_v }} {{ computed_item_align_h }}
 {%- if portrait_grid %} grid--portrait-grid{% endif %}
-{%- if page.header.padded_items %} grid--padded{% endif %}
 {% endset %}
 
 {% block modular_content %}
 	<div class="site">
 		<div class="{{ grid_classes }}" style="{{ grid_styles }}">
 
-			{% for item in page.header.items %}
+{# 			{% for item in page.header.items %}
 			<div class="grid-item" data-reveal="" style="{{ modular_styles }}">
 				<div class="grid-item__content">{{ item.content|markdown }}</div>
 			</div>
-			{% endfor %}
+			{% endfor %} #}
 
-			{% for page in page.collection() %}
-				{{ page.content }}
+			{% for p in page.collection() %}
+				{{ p.content }}
 			{% endfor %}
 			
 		</div>
