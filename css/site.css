@@ -218,12 +218,13 @@ img.lazyloading{
 }
 
 code{
-	display: inline;
-	background-color: #f7f7f7;
-	color: var(--fg-color);
-	border-radius: 4px;
-	padding: 2px 5px;
-	font-family: Courier New, Courier, monospace; 
+    display: inline-block;
+    background-color: #f6f9fc;
+    border: 1px solid #e6edf5;
+    color: var(--fg-color);
+    border-radius: 4px;
+    padding: 0 4px;
+    font-family: Courier New, Courier, monospace;
 }
 
 #tracking{
@@ -346,18 +347,19 @@ EMBED
 ###########################################################
 */
 
-.embed .youtube,
-.embed .vimeo{
+.embed.youtube,
+.embed.vimeo{
 	position: relative;
 	padding-bottom: 56.25%; 
 	height: 0; 
 	overflow: hidden; 
 	max-width: 100%;
+	width: 100%;
 	margin-top: 1rem;
 }
 
-.embed .youtube iframe
-.embed .vimeo iframe{
+.embed.youtube iframe,
+.embed.vimeo iframe{
 	position: absolute; 
 	top: 0; 
 	left: 0; 
