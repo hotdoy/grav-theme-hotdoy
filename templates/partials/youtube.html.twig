@@ -1,4 +1,4 @@
 {% set video_id = video_id|default('') %}
-<div class="embed youtube">
+<div class="embed youtube" data-reveal>
 	<div class="youtube-player" id="youtube-{{ random() }}" data-videoid="{{ video_id }}"></div>
 </div>
