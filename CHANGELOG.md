@@ -1,3 +1,14 @@
+# v1.5.21
+## 05-02-2020
+
+1. [](#improved)
+	* Improved hr margins so it match with h2.
+	* Added reveal to embeded video.
+	* Spiced up code tags.
+2. [](bugfix)
+	* Fixed embed video css scope
+
+
 # v1.5.20
 ## 04-02-2020
 
