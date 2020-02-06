@@ -63,13 +63,6 @@
 	overflow: hidden;
 }
 
-.modular--content pre code{
-	max-width: var(--width-tight);
-	margin: 2rem auto;
-    display: block;
-    overflow-x: auto;
-}
-
 .content--left{
 	text-align: left;
 }
