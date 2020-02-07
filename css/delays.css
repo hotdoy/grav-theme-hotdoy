@@ -1,19 +1,20 @@
-/*##################################################*/
-/*DEPRECATED - USED PROPERTY PREFIXED CLASS INSTEAD*/
-.delay-0{animation-delay: 0s;}
-.delay-100{animation-delay: 0.1s;}
-.delay-150{animation-delay: 0.15s;}
-.delay-200{animation-delay: 0.2s;}
-.delay-250{animation-delay: 0.25s;}
-.delay-300{animation-delay: 0.3s;}
-.delay-350{animation-delay: 0.35s;}
-.delay-400{animation-delay: 0.4s;}
-.delay-450{animation-delay: 0.45s;}
-.delay-500{animation-delay: 0.5s;}
-.delay-1000{animation-delay: 1s;}
-.delay-1500{animation-delay: 1.5s;}
-.delay-2000{animation-delay: 2s;}
-/*##################################################*/
+.delay-0{animation-delay: 0s;transition-delay: 0s;}
+.delay-100{animation-delay: 0.10s;transition-delay: 0.1s;}
+.delay-150{animation-delay: 0.15s;transition-delay: 0.15s;}
+.delay-200{animation-delay: 0.20s; transition-delay: 0.20s;}
+.delay-250{animation-delay: 0.25s; transition-delay: 0.25s;}
+.delay-300{animation-delay: 0.30s; transition-delay: 0.30s;}
+.delay-350{animation-delay: 0.35s; transition-delay: 0.35s;}
+.delay-400{animation-delay: 0.40s; transition-delay: 0.40s;}
+.delay-450{animation-delay: 0.45s; transition-delay: 0.45s;}
+.delay-500{animation-delay: 0.50s; transition-delay: 0.50s;}
+.delay-1000{animation-delay: 1s; transition-delay: 1s;}
+.delay-1500{animation-delay: 1.5s; transition-delay: 1.5s;}
+.delay-2000{animation-delay: 2s; transition-delay: 2s;}
+.delay-2500{animation-delay: 2.5s; transition-delay: 2.5s;}
+.delay-3000{animation-delay: 3s; transition-delay: 3s;}
+.delay-4000{animation-delay: 4s; transition-delay: 4s;}
+.delay-5000{animation-delay: 5s; transition-delay: 5s;}
 
 .animation-delay-0{animation-delay: 0s;}
 .animation-delay-100{animation-delay: 0.1s;}
@@ -32,6 +33,7 @@
 .animation-delay-3000{animation-delay: 3s;}
 .animation-delay-4000{animation-delay: 4s;}
 .animation-delay-5000{animation-delay: 5s;}
+.animation-delay-10000{animation-delay: 10s;}
 
 .transition-delay-0{transition-delay: 0s;}
 .transition-delay-100{transition-delay: 0.1s;}
@@ -50,3 +52,4 @@
 .transition-delay-3000{transition-delay: 3s;}
 .transition-delay-4000{transition-delay: 4s;}
 .transition-delay-5000{transition-delay: 5s;}
+.transition-delay-10000{transition-delay: 10s;}
