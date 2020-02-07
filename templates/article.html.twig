@@ -34,7 +34,7 @@
 	{% else %}article__media-ctn--tight
 	{%- endif %}
 	{%- endset %}
-	<div class="article__media-ctn {{ image_width }}">
+	<div class="article__media-ctn {{ image_width }}" data-reveal="reveal transition-delay-100">
 		{# image #}
 		{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'class': 'article__img' } %}
 		{# caption #}
