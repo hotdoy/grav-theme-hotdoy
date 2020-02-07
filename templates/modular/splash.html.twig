@@ -28,6 +28,7 @@
 {% set bg_veil = bg_veil|default(page.header.bg_veil / 100) %}
 {% set img_computed_bg_position = 'object-position:' ~ bg_position ~ ';' %}
 {% set img_computed_bg_fit = 'object-fit:' ~ bg_fit ~ ';' %}
+{% set reveal_content = reveal_content|default(page.header.reveal_content ?? true) %}
 {% set img_styles =  img_computed_bg_position ~ img_computed_bg_fit%}
 
 {% block modular_content %}
@@ -72,7 +73,7 @@
 	{% endset %}
 
 	<video class="{{ video_class }}" 
-		data-reveal="scalein animation-duration-5000 animation-delay-0" 
+		data-reveal="scalein animation-duration-5000 animation-delay-300" 
 		autoplay="autoplay" 
 		muted="muted"
 		loop="loop"
@@ -85,7 +86,7 @@
 	{% if bg_video_landscape %}
 	<video 
 		class="splash__video landscape" 
-		data-reveal="scalein animation-duration-5000 animation-delay-0" 
+		data-reveal="scalein animation-duration-5000 animation-delay-300" 
 		autoplay="autoplay" muted="muted"
 		loop="loop"
 		{% if bg_image_landscape %}poster="{{ bg_image_landscape.url }}"{% endif %}
@@ -94,7 +95,7 @@
 	</video>
 	{% endif %}
 
-	<div class="splash__content-ctn {{ content_ctn_vertical_modifier }} {{ content_ctn_horizontal_modifier }}" data-reveal>
+	<div class="splash__content-ctn {{ content_ctn_vertical_modifier }} {{ content_ctn_horizontal_modifier }}" {% if reveal_content %}data-reveal{% endif %}>
 		<div class="splash__content site">{{ content|raw }}</div>
 	</div>
 
