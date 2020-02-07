@@ -70,4 +70,13 @@ form:
               type: range
               label: Minimum Height
               default: 80
+
+            header.reveal_content:
+              type: toggle
+              label: Reveal Content
+              highlight: '1'
+              default: '1'
+              options: 
+                1: 'Yes'
+                0: 'No'
               
