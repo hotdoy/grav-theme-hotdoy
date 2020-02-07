@@ -37,5 +37,6 @@ form:
               highlight: 0
               default: 0
               options: 
-                0: 'False'
-                1: 'True'
+                1: 'Yes'
+                0: 'No'
+               

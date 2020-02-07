@@ -43,16 +43,16 @@ form:
                 .visible:
                   type: toggle
                   label: Visible
-                  highlight: true
-                  default: true
+                  highlight: 1
+                  default: 1
                   options: 
-                    true: 'True'
-                    false: 'False'
+                    1: 'Yes'
+                    0: 'No'
                 .remember:
                   type: toggle
                   label: Remember
-                  highlight: true
-                  default: true
+                  highlight: 1
+                  default: 1
                   options: 
-                    true: 'True'
-                    false: 'False'
+                    1: 'Yes'
+                    0: 'No'

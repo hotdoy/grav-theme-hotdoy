@@ -28,5 +28,5 @@ form:
               highlight: 1
               default: 1
               options: 
-                0: 'False'
-                1: 'True'
+                1: 'Yes'
+                0: 'No'

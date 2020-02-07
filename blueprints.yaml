@@ -95,9 +95,9 @@ form:
       highlight: 1
       default: 1
       options: 
-        0: 'False'
-        1: 'True'
-
+        1: 'Yes'
+        0: 'No'
+        
     google_maps:
       type: section
       title: Google Maps
@@ -150,18 +150,18 @@ form:
       label: Lazyload Images
       highlight: 1
       default: 1
-      options: 
-        0: 'False'
-        1: 'True'
-
+      options:
+        1: 'Yes'
+        0: 'No'
+        
     placeholder:
       type: toggle
       label: Use Low Resolution Placeholder While Lazyloading
       highlight: 1
       default: 1
       options: 
-        0: 'False'
-        1: 'True'
+        1: 'Yes'
+        0: 'No'
 
     browser:
       type: section
@@ -171,7 +171,7 @@ form:
       type: select
       label: Link rel (experimental)
       default: 0
-      help: Adds a link rel tag in the head of the document for all links starting with "/" (presumed same site links).
+      help: Adds link rel tag in the head of the document for all links starting with "/" (presumed same site links) and lest the browser heuristically execute the selected command.
       options: 
         0: 'disabled'
         prerender: 'prerender'
