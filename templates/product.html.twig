@@ -19,7 +19,7 @@
 			</div>
 		</div>
 
-		<div class="product__info small">
+		<div class="product__info small" data-reveal="reveal transition-delay-100">
 			<h1 class="product__title">{{ page.title }}</h1>
 			<div class="product__price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</div>
 			<div class="product__add btn btn--solid">
@@ -34,7 +34,7 @@
 					<span class="material-icons cart-icon">shopping_cart</span>
 				</a>
 			</div>
-			<div class="product__content modular--content">{{ page.content|raw }}</div>
+			<div class="product__content modular--content" data-reveal="reveal transition-delay-150">{{ page.content|raw }}</div>
 		</div>
 	</div>
 
