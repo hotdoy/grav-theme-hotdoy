@@ -1,3 +1,11 @@
+# v1.6.1
+## 07-02-2020
+
+1. [](#new)
+	* Disabling content reveal removes the site loader.
+2. [](#improved)
+	* Added content reveal on article body
+
 # v1.6.0
 ## 07-02-2020
 
