@@ -1,3 +1,19 @@
+# v1.6.0
+## 07-02-2020
+
+1. [](#new)
+	* Reveal shortcode.
+	* Opt-in reveal animations from theme config.
+	* Super slow durations and delays.
+	* Delay and duration shorthands. 
+	* Splash can now disable it's own content reeval (this might become a global modular thing).
+	* Fadein reveal.
+2. [](#improved)
+	* Matched article reveal with other pages
+	* All True/False toggles in blueprints ave been replaced with Yes/No so it looks more "Grav".
+3. [](bugfix)
+	* Fixed Notifications blueprint YAML lint.
+
 # v1.5.21
 ## 05-02-2020
 
