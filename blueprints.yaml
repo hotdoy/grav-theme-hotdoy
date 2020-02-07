@@ -47,6 +47,16 @@ form:
       label: Nav Foreground Color
       default: '#313131'
 
+    reveal_content:
+      type: toggle
+      label: Reveal Content
+      help: Reveal content as you scroll.
+      highlight: 1
+      default: 1
+      options: 
+        1: 'Yes'
+        0: 'No'
+
     organization:
       type: section
       title: Organization
@@ -69,25 +79,6 @@ form:
     org_email:
       type: text
       label: Email
-
-    marquee:
-      type: section
-      title: Marquee 
-
-    marquee_content:
-      type: text
-      help: Add a small banner on top of the site-header
-      label: Marquee Content
-
-    marquee_bg:
-      type: colorpicker
-      label: Marquee Background Color
-      default: '#000000'
-
-    marquee_fg:
-      type: colorpicker
-      label: Marquee Foreground color
-      default: '#ffffff'
 
     analytics:
       type: section

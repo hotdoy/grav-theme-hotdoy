@@ -1,7 +1,7 @@
 {% do assets.addJs('jquery', 101) %}
 {% do assets.addJs('theme://js/notify.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/site-header.js', { group:'after' }) %}
-{% do assets.addJs('theme://js/reveal.js', { group:'after' }) %}
+{% if theme.reveal_content %}{% do assets.addJs('theme://js/reveal.js', { group:'after' }) %}{% endif %}
 {% do assets.addJs('theme://js/links.js', { group:'after'}) %}
 {% do assets.addJs('theme://js/form.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/video.js', { group:'after' }) %}
