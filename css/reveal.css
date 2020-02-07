@@ -6,6 +6,17 @@
 .reveal {
 	transition: opacity, transform;
 	opacity: 1;
-	transition-duration: 0.5s;
+	transition-duration: 1s;
 	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.fadein {
+	animation-name: fadein;
+	animation-duration: 0.5s;
+	transform: translateY(0);
+}
+
+@keyframes fadein {
+	from {opacity: 0; transform: translateY(0);}
+	to {opacity: 1;}
 }
