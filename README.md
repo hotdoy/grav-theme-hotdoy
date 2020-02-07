@@ -6,13 +6,11 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?
 
-**Articles!**
-
-I just released some blog centric templates. You can now use Article and Article-collection with support for author taxonomy (You have to add it to your grav config). Categories are not in yet but I'll get to them eventually.
+v1.6.0 includes a more open approach to reveal animations with opt-ins, ways to disable them, and even add them to specific contents via shortcodes. I also finally reworked the Grid modular making it ready to be expanded upon (sorry if I broke things).
 
 ## What's next ? 
-I have some big destructive plans for the grid modular and related grid-item. 
-With the latest templates (product, article) I'm starting to get around a way to let users link to existing pages while creating grid items... anyway, It's still unclear but you'll see. (I'll probably destroy a shitton of grid by doing this but hey! It's fun!!!).
+
+With the latest templates (product, article) I'm starting to get around a way to let users link to existing pages while creating grid items.
 
 ## Need a ✋ ?
 
