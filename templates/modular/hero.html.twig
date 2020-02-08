@@ -6,6 +6,7 @@
 {% set image_width = image_width|default(page.header.image_width) %}
 {% set image_alt = image_alt|default(page.header.image_alt) %}
 {% set reverse = reverse|default(page.header.reverse) %}
+{% set limit_reveal = limit_reveal|default(page.header.limit_reveal) %}
 
 {% block modular_content %}
 	{% if bg_veil %}
@@ -13,7 +14,7 @@
 	{% endif %}
 	
 	<div class="hero__ctn site{% if reverse %} hero__ctn--reverse{% endif %}">
-		<div class="hero__content" data-reveal>{{ content|raw }}</div>
+		<div class="hero__content" {% if not limit_reveal %}data-reveal{% endif %}>{{ content|raw }}</div>
 		<div class="hero__media" data-reveal>	
 			{% if video %}
 			<video autoplay="autoplay" muted="muted" loop="loop" {% if image %}poster="{{ image.url }}"{% endif %}>

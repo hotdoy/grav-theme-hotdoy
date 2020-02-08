@@ -18,8 +18,8 @@
 {%- endif -%}
 {%- endset -%}
 
-{% set content_reveal = content_reveal|default('') %}
+{% set limit_reveal = limit_reveal|default(page.header.limit_reveal) %}
 
 {% block modular_content %}
-	<div class="content__ctn {{ width }} {{ align }}" data-reveal="{{ content_reveal }}">{{ content }}</div>
+	<div class="content__ctn {{ width }} {{ align }}" {% if not limit_reveal %}data-reveal{% endif %}>{{ content }}</div>
 {% endblock %}

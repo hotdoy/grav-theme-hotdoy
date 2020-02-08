@@ -1,6 +1,5 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'map' %}
-
 {% set zoom = zoom|default(page.header.zoom) %}
 {% set default_icon = theme.google_maps_icon|first %}
 {% set default_icon_path = base_url_absolute ~ '/' ~ default_icon.path %}
@@ -26,7 +25,7 @@
  	<div 
     id="map-{{ random() }}" 
     class="map"
-    data-reveal=""
+    data-reveal
     data-zoom="{{ zoom }}"
     data-styles='{{ theme.google_maps_snazzy }}'
     data-markers='{{ markers }}'>
