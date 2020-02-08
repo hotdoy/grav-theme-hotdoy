@@ -1,3 +1,12 @@
+# v1.6.3
+## 08-02-2020
+
+1. [](#improved)
+	* Limit reveal per modular.
+	* Made all buttons and links transitions snappier.
+	* Mobile nav as a slightly more interesting deployment.
+	* Made Mobile nav links way bigger. 
+
 # v1.6.2
 ## 08-02-2020
 
