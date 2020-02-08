@@ -1,3 +1,12 @@
+# v1.6.2
+## 08-02-2020
+
+1. [](#improved)
+	* Improved swipersc (swiper from shortcode) and product gallery overall behavior.
+	* Use bold for h3
+	* Prevent svg from lazy loading in img partial.
+	* Reveal duration set to 0.5s.
+
 # v1.6.1
 ## 07-02-2020
 
