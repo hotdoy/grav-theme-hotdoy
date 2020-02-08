@@ -36,7 +36,7 @@ h2{
 }
 
 h3{
-    font-family: var(--font-base);
+    font-family: var(--font-base-bold);
     font-size: 1.2rem;
     line-height: 1.2;
     margin-top: 2rem;
