@@ -6,9 +6,11 @@
 		el.each(function(){
 			var id = $(this).attr('id');
 		    var swiper = new Swiper('#'+id, {
-		    	scrollbar: {
-		    		el: '.swiper-scrollbar',
-		    		draggable: true,
+		    	autoHeight: true,
+		    	spaceBetween: 16,
+		    	pagination: {
+		    		el: '.swiper-pagination',
+		    		clickable: true,
 				},
 	    	});
 		})
