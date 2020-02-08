@@ -1,4 +1,6 @@
+{% do assets.addCss('theme://css/article.css') %}
 {% import 'partials/datetime.html.twig' as datetime %}
+
 {% extends 'partials/base.html.twig' %}
 {% block content %}
 {% set title = title|default(page.title) %}

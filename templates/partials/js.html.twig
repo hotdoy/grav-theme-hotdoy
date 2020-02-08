@@ -6,19 +6,14 @@
 {% do assets.addJs('theme://js/video.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/lazysize.js', { group:'after' }) %}
 {% do assets.addJs('theme://js/swiper.js', { group:'after' }) %}
-{% do assets.addJs('theme://js/swipersc.js', { group:'after' }) %}
-{% do assets.addJs('theme://js/pagination.js', { group:'after' }) %}
-{% do assets.addJs('theme://js/product.js', { group:'after' }) %}
 {% do assets.addJs('https://youtube.com/iframe_api', { group:'after' }) %}
 {% do assets.addJs('theme://js/youtube.js', { group:'after' }) %}
+{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key, { group:'after' }) %}
+{% do assets.addJs('theme://js/map.js', { group:'after'}) %}
+{% do assets.addJs('theme://js/swipersc.js', { group:'after' }) %}
 
 {% if theme.snipcart_api_key %}
 	{% do assets.addJs('https://cdn.snipcart.com/themes/v3.0.6/default/snipcart.js', { group:'after' }) %}
-{% endif %}
-
-{% if theme.google_maps_api_key %}
-	{% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme.google_maps_api_key, { group:'after' }) %}
-	{% do assets.addJs('theme://js/map.js', { group:'after'}) %}
 {% endif %}
 
 {% if theme.tracking %}
