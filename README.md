@@ -53,6 +53,15 @@ You should now have all the theme files under
 # Customization 
 All customization should be done using theme inheritance https://learn.getgrav.org/16/themes/customization#theme-inheritance to allow for future updates (and there will be updates). 
 
+# Page Templates
+
+* Default
+* Modular
+* Product
+* Product Collection
+* Article
+* Article Collection
+
 # Modular
 
 * Content
@@ -66,10 +75,10 @@ All customization should be done using theme inheritance https://learn.getgrav.o
 # Shortcodes
 
 ## Breakpoint
+Show content on specific device width only.
 ```
 [portrait][/portrait] [landscape][/landscape]
 ```
-Show content on specific device width
 
 ## Button
 Add buttons with material icons support. 
@@ -77,7 +86,7 @@ Add buttons with material icons support.
 [btn href="https://google.com"], [link href="/mypage" mi="done"]
 ```
 
-## Embed
+## Embeding videos
 ```
 [youtube="url"] [vimeo="url"]
 ```
@@ -98,16 +107,14 @@ A complete list of icon codes can be found [here](https://material.io/resources/
 ```
 
 ## Swiper
-It currently has no options but I'll eventually do another pass.
 ```
 [swiper]
-![]()
-![]()
-![]()
+![](image.jpg)
+![](image.jpg)
+![](image.jpg)
 ...
 [/swiper]
 ```
 
 # Attributions and sponsors
 * Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the addition of [Swiper.js](https://swiperjs.com/) Shortcode.
-* Thank you to [Gemma Chua-Tran](https://unsplash.com/@gemmachuatran) for the amazing photos used in the Skeleton and demo content.
