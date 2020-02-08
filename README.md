@@ -6,11 +6,12 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?
 
-v1.6.0 includes a more open approach to reveal animations with opt-ins, ways to disable them, and even add them to specific contents via shortcodes. I also finally reworked the Grid modular making it ready to be expanded upon (sorry if I broke things).
+v1.6.0 includes a more open approach to reveal animations with opt-ins, ways to lessen their impact and add them to specific contents via shortcodes. I also finally reworked the Grid modular making it ready to be expanded upon (sorry if I broke things, it's for the best).
 
 ## What's next ? 
-
-With the latest templates (product, article) I'm starting to get around a way to let users link to existing pages while creating grid items.
+The header class names sucks so I'll fix that.  
+External libraries (Maps, iFrame API) are on the heavy side. I'll probably do something about that.
+I can already feel CSS bundle becoming a bit too large for my taste. I should be able to optimize that with relatively minimum effors using the new Grav 1.6 deferred assets approach.
 
 ## Need a ✋ ?
 
