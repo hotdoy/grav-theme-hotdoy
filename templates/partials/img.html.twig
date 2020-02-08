@@ -11,11 +11,11 @@
 {# {% set use_absolute_url = absolute_url|default(true) %} #}
 
 
-{% if filetype == 'svg' or filetype == 'gif' %}
+{% if filetype == 'svg' %}
 	<img 
-	{% if use_lazyload %}data-src="{{ src }}"{% else %}src="{{ src }}"{% endif %}
+	src="{{ src }}"
 	{% if loading %}loading="{{ loading }}"{% endif %}
-	{% if class or lazyload %}class="{% if use_lazyload %}lazyload{% endif %} {{ class }}"{% endif %}
+	{% if class %}class="{{ class }}"{% endif %}
 	{% if style %}style="{{ style }}"{% endif %}
 	{% if alt %}alt="{{ alt }}"{% endif %}>
 
