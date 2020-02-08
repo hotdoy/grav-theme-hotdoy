@@ -6,10 +6,8 @@ a {
 
 .btn {
 	display: inline-block;
-	/*margin-right: 0.7rem;*/
-	/*margin-bottom: 1rem;*/
 	cursor: pointer;
-	transition: all 0.2s;
+	transition: all 0.1s;
 }
 
 .btn + .btn{

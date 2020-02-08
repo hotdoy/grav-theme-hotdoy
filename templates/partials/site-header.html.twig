@@ -6,16 +6,16 @@
         <a class="header__logo landscape" href="{{ base_url == '' ? '/' : base_url }}">{{ site.title }}</a>
         <a class="header__logo portrait" href="{{ base_url == '' ? '/' : base_url }}">{{ site.title }}</a>
 
-        {# nav desktop #}
+        {# landscape #}
         <nav class="header__nav landscape">
             {{ nav.main(pages, theme) }}
         </nav>
 
-        {# nav mobile #}
+        {# portrait #}
         <div class="mobile-nav-open portrait">
             <span class="material-icons">menu</span>
         </div>
-       	<nav class="mobile-nav-panel portrait">
+        <nav class="mobile-nav-panel portrait">
             <div class="mobile-nav-close">
                 <span class="material-icons">close</span>
             </div>

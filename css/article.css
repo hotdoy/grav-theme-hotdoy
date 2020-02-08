@@ -124,7 +124,7 @@ CARD
 
 .article-card{
 	border-bottom: 1px solid #ececec;
- 	transition: all 0.2s;
+ 	transition: all 0.1s;
  	padding-bottom: 1rem;
  	padding-top: 1rem;
  } 

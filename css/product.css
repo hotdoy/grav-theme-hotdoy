@@ -60,7 +60,7 @@ PRODUCT
 .product__gallery .swiper-pagination-bullet{
     width: 50px;
     height: 3px;
-    background-color: black;
+    background-color: lightgrey;
     border-radius: 0;
     opacity: 0.3;
 }
@@ -163,7 +163,7 @@ CARD
   margin-left: var(--gutter);
   width: calc(50% - var(--gutter));
   overflow: hidden;
-  transition: all 0.2s;
+  transition: all 0.1s;
   border-bottom: 1px solid #ececec;
   padding-bottom: 1rem;
 }
