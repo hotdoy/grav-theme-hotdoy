@@ -3,9 +3,10 @@
 
 	var productGallery = function(){
 	    var galleryTop = new Swiper('.page--product .product__gallery', {
-	    	scrollbar: {
-	    		el: '.swiper-scrollbar',
-	    		draggable: true,
+		    spaceBetween: 16,
+		    pagination: {
+		    	el: '.swiper-pagination',
+		    	clickable: true,
 			},
     	});
 	}

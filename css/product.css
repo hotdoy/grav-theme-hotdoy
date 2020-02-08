@@ -57,11 +57,16 @@ PRODUCT
   height: 100%;
 }
 
-.product__gallery .swiper-scrollbar {
-  left: 20px;
-  bottom: 20px;
-  width: auto;
-  right: 20px;
+.product__gallery .swiper-pagination-bullet{
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    border-radius: 0;
+    opacity: 0.3;
+}
+
+.product__gallery .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    opacity: 1;
 }
 
 .product__image{
