@@ -6,7 +6,7 @@
 .reveal {
 	transition: opacity, transform;
 	opacity: 1;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
