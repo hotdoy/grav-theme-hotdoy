@@ -1,4 +1,3 @@
-{% do assets.addCss('theme://css/article.css') %}
 {% import 'partials/datetime.html.twig' as datetime %}
 
 {% extends 'partials/base.html.twig' %}
@@ -14,7 +13,7 @@
 <main class="page page--article">
 
 	{# header #}
-	<div class="article__header m-t" data-reveal>
+	<div class="article__header" data-reveal>
 		{# title #}
 		<h1 class="article__title">{{ title }}</h1>
 		{# date #}
