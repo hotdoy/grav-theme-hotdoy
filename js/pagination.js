@@ -1,12 +1,3 @@
-// example collection config in page md file with pagination:
-// content:
-//     items: '@self.children'
-//     order:
-//         by: folder
-//         dir: asc
-//     pagination: true
-//     limit: 12
-
 (function ($) {
 	'use strict';
 
