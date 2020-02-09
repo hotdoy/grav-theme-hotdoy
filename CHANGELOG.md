@@ -1,3 +1,11 @@
+# v1.6.4
+## 09-02-2020
+
+1. [](#improved)
+	* Map modular assets are loaded only if you set an api key in theme config.
+2. [](#bug)
+	* Fix margin top on article title.
+
 # v1.6.3
 ## 08-02-2020
 
