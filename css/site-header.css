@@ -58,7 +58,7 @@ a.nav-link:active {
     content: " ";
     height: 1px;
     width: 100%;
-    background-color: var(--color-hl-inverted);
+    background-color: var(--color-hl);
     position: absolute;
     bottom: 0;
     left: 0px;
