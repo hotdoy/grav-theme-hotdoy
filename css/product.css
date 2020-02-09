@@ -174,7 +174,7 @@ CARD
 }
 
 .product-card__link{
-  color: var(--fg-color);
+  color: var(--color-fg);
 }
 
 .product-card__image{

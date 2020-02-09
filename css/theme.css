@@ -4,15 +4,13 @@ html{
 	--width-full: 100%;
 	--gutter: 1rem;
 	--rhythm: 6rem;
-	--bg-color: #fff;
-	--fg-color: #313131;
-	--bg-color-alt: #0077ff;
-	--fg-color-alt: #fff;
-    --nav-fg-color: var(--fg-color);
-    
-	--shadow-0: 0 0 0 0 rgba(0,0,0,0);
-	--shadow-1: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
-	--shadow-2: 0 10px 28px 0 rgba(0,0,0,.2);
+
+    --color-bg: #FFF;
+	--color-fg: #313131;
+	--color-hl: blue;
+	--color-hl-inverted: #FFF;
+	--color-nav-fg: #313131;
+	--color-nav-bg: transparent;
 }
 
 @media (min-width: 735px) {

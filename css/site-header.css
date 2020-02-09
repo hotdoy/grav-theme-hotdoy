@@ -12,7 +12,7 @@ html{
     position: relative;
     font-family: var(--font-base);
     height: var(--nav-height);
-    color: var(--nav-fg-color);
+    color: var(--color-nav-fg);
     z-index: 5000;
 }
 
@@ -28,7 +28,7 @@ html{
 }
 
 .header__logo{
-    color: var(--nav-fg-color);
+    color: var(--color-nav-fg);
     text-decoration: none;
 }
 
@@ -46,13 +46,6 @@ html{
     padding-bottom: 5px;
 }
 
-.nav-link.highlight{
-    background-color: var(--bg-color-alt);
-    padding: 10px 20px;
-    border-radius: 3px;
-    color: var(--fg-color-alt);
-}
-
 a.nav-link:hover {
     transform: translateY(-2px);
 }
@@ -65,7 +58,7 @@ a.nav-link:active {
     content: " ";
     height: 1px;
     width: 100%;
-    background-color: var(--bg-color-alt);
+    background-color: var(--color-hl-inverted);
     position: absolute;
     bottom: 0;
     left: 0px;
@@ -93,7 +86,7 @@ a.nav-link:active {
     position: absolute;
     top: 22px;
     right: var(--gutter);
-    color: var(--fg-color);
+    color: var(--color-fg);
     cursor: pointer;
 }
 
@@ -106,7 +99,7 @@ a.nav-link:active {
     left: 0;
     bottom: 0;
     box-shadow: 0 7px 50px 5px rgba(0, 0, 0, 0.2);
-    background-color: var(--bg-color);
+    background-color: var(--color-bg);
 }
 
 @media (min-width: 735px) {
@@ -139,7 +132,7 @@ a.nav-link:active {
     font-family: var(--font-alt-bold);
     font-size: 2rem;
     border-bottom: none;
-    color: var(--fg-color);
+    color: var(--color-fg);
 }
 
 .site-header .cart .cart-icon{

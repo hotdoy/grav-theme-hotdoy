@@ -13,13 +13,13 @@ BODY
 body {
 	position: relative;
 	min-height: 100vh;
-	color: var(--fg-color);
-	background-color: var(--bg-color);
+	color: var(--color-fg);
+	background-color: var(--color-bg);
 	overflow-y: scroll;
 }
 
 ::selection {
-	background: var(--bg-color-alt);
+	background: var(--color-hl);
 	color: white;
 }
 
@@ -109,7 +109,6 @@ PAGE
 */
 
 .page{
-	margin-top: 1rem;
 	margin-top: var(--gutter);
 }
 
@@ -195,7 +194,7 @@ hr{
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	border: transparent;
-    border-top: 1px solid var(--fg-color);
+    border-top: 1px solid var(--color-fg);
     opacity: 0.2;
 }
 
@@ -203,7 +202,7 @@ hr{
 	margin-top: var(--rhythm);
 	margin-bottom: var(--rhythm);
 	border: transparent;
-    border-top: 1px solid var(--fg-color);
+    border-top: 1px solid var(--color-fg);
     opacity: 0.2;
 }
 
@@ -221,7 +220,7 @@ code{
     display: inline-block;
     background-color: #f6f9fc;
     border: 1px solid #e6edf5;
-    color: var(--fg-color);
+    color: var(--color-fg);
     border-radius: 4px;
     padding: 0 4px;
     font-family: Courier New, Courier, monospace;
@@ -258,7 +257,8 @@ MARKDOWN NOTICES
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 1rem;
-	padding: 1rem 2rem 2rem 2rem;
+	padding: 1rem;
+	text-align: center;
 	border-radius: 8px;
 }
 
@@ -291,6 +291,8 @@ MARKDOWN NOTICES
 	font-family: courier;
 	text-align: center;
 	font-weight: bold;
+	background: #f443360d;
+    color: #F44336;
 }
 
 
@@ -306,18 +308,9 @@ MODULAR
 .modular{
 	position: relative;
 	margin: 0;
-	background-color: var(--bg-color);
-	color: var(--fg-color);
+	background-color: var(--color-bg);
+	color: var(--color-fg);
 	z-index: 1000;
-}
-
-.modular__title{
-	text-align: center;
-	margin-bottom: 3rem;
-}
-
-.modular__title h2{
-	margin-top: 0;
 }
 
 @media (min-width: 735px) {
@@ -329,11 +322,8 @@ MODULAR
 .m-t{margin-top: var(--rhythm);}
 .m-b{margin-bottom: var(--rhythm);}
 .m-tb{margin-top: var(--rhythm);margin-bottom: var(--rhythm);}
-
 .m-t_2{margin-top: calc(var(--rhythm) * 0.5);}
-
 .p-t{padding-top: var(--rhythm);}
-
 .p-b{padding-bottom: var(--rhythm);}
 .p-tb{padding-top: var(--rhythm);padding-bottom: var(--rhythm);}
 

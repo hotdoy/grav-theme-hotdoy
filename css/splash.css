@@ -34,7 +34,6 @@ html{
 	left: 0;
 	bottom: 0;
 	right: 0;
-
 	padding-top: var(--rhythm);
 	padding-bottom: var(--rhythm);
 	z-index: 1003;

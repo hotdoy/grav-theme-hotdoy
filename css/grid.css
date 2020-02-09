@@ -24,8 +24,8 @@
 
 .grid-item{
 	position: relative;
-	background-color: var(--bg-color);
-	color: var(--fg-color);
+	background-color: var(--color-bg);
+	color: var(--color-fg);
 	width: var(--item-width-portrait);
 	margin-top: 1rem;
 }

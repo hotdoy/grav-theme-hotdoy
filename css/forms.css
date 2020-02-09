@@ -10,9 +10,7 @@ form .required{
 	color: #F44336;
 }
 
-form .form-label{
-
-}
+/*form .form-label{}*/
 
 
 
@@ -23,6 +21,7 @@ form .form-label{
 INPUTS & TEXTAREA
 ###########################################################
 */
+
 form input,
 form select,
 form textarea,
@@ -89,8 +88,8 @@ form button{
 	width: 100%;
 	padding: 10px 35px;
 	height: 3rem;
-	background-color: var(--bg-color-alt);
-	color: var(--fg-color-alt);
+	background-color: var(--color-hl);
+	color: var(--color-hl-inverted);
 	font-size: 16px;
 	margin-top: 1rem !important;
 	border-radius: 4px;
@@ -103,7 +102,7 @@ form button:hover,
 form button:focus {
 	outline: none;
 	transform: translateY(-2px);
-	box-shadow: var(--shadow-1);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
 }
 
 form button:active {
@@ -177,7 +176,7 @@ CHECKBOXES & RADIO
     transform: rotate(-45deg) translate(3px, 3px);
     left: 3px;
     top: 6px;
-    color: var(--fg-color-alt);
+    color: var(--color-hl-inverted);
 }
 
 .form-field [data-grav-field="checkbox"] label::after {
@@ -187,7 +186,7 @@ CHECKBOXES & RADIO
 .form-field [data-grav-field="radio"] label::after {
     height: 6px;
     width: 6px;
-    background-color: var(--fg-color-alt);
+    background-color: var(--color-hl-inverted);
     left: 9px;
     top: 9px;
     border-radius: 50%;
@@ -210,7 +209,7 @@ CHECKBOXES & RADIO
 .form-field [data-grav-field="checkbox"] input[type="checkbox"]:checked + label::before,
 .form-field [data-grav-field="radio"] input[type="radio"]:checked + label::before
  {
-    background-color: var(--bg-color-alt);
+    background-color: var(--color-hl);
 }
 
 

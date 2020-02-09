@@ -140,7 +140,7 @@ CARD
  .article-card__link{
  	display: flex;
  	justify-content: space-between;  
- 	color: var(--fg-color);
+ 	color: var(--color-fg);
  } 
 
  .article-card__info-ctn{

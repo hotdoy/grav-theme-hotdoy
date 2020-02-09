@@ -1,5 +1,5 @@
 a {
-	color: var(--bg-color-alt);
+	color: var(--color-hl);
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -20,8 +20,8 @@ br + .btn{
 
 .btn.btn--solid>a {
 	display: flex;
-    background: var(--bg-color-alt);
-    color: var(--fg-color-alt);
+    background: var(--color-hl);
+    color: var(--color-hl-inverted);
     border-radius: 4px;
     padding: 7px 20px;
 }
@@ -32,7 +32,7 @@ br + .btn{
 
 .btn.btn--solid:hover{
 	transform: translateY(-2px);
-	box-shadow: var(--shadow-1);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
 }
 
 .btn.btn--solid:active{
@@ -55,5 +55,3 @@ br + .btn{
 .btn.btn--link:hover .material-icons {
 	transform: translateX(5px);
 }
-
-

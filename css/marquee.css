@@ -1,7 +1,7 @@
 .marquee{
 	/*display: none;*/
-	color: var(--fg-color);
-	background-color: var(--bg-color);
+	color: var(--color-fg);
+	background-color: var(--color-bg);
 	position: relative;
 	width: 100%;
 	text-align:center;
