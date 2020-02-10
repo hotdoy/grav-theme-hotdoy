@@ -9,6 +9,7 @@ class Hotdoy extends Theme
     {
         if ($this->isAdmin()) {
             $this->grav['assets']->add('theme://js/admin-editor-width.js');
+            $this->grav['assets']->add('theme://js/admin-editor-breakpoint.js');
         }
     }
 }
