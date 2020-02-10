@@ -42,7 +42,17 @@ html{
     display: inline-block;
 }
 
-.mobile-nav-panel .nav-link{
+
+
+
+
+/*
+###########################################################
+LANDSCAPE
+###########################################################
+*/
+
+.header__panel .nav-link{
     padding-bottom: 5px;
 }
 
@@ -74,15 +84,22 @@ a.nav-link:active {
     to {opacity: 0.7; transform: translateY(0px);}
 }
 
-.mobile-nav-open{
-    cursor: pointer;
-}
 
-.mobile-nav-open{
+
+
+
+/*
+###########################################################
+PORTRAIT
+###########################################################
+*/
+
+.header__toggle-on{
+    cursor: pointer;
     transform: translateY(3px);
 }
 
-.mobile-nav-close{
+.header__toggle-off{
     position: absolute;
     top: 22px;
     right: var(--gutter);
@@ -90,10 +107,13 @@ a.nav-link:active {
     cursor: pointer;
 }
 
-.mobile-nav-panel{
+.header__panel{
     display: none;
     flex-direction: column;
     position: fixed;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
     top: 0;
     right: 0;
     left: 0;
@@ -102,31 +122,20 @@ a.nav-link:active {
     background-color: var(--color-bg);
 }
 
-@media (min-width: 735px) {
-    .site-nav-panel{
-        right: var(--gutter);
-        left: var(--gutter);
-    }
-}
-
-.mobile-nav-panel.deployed{
+.header__panel.header__panel--on{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    animation-name: navpanelin;
+    animation-name: header__panel--on;
     animation-delay: 0;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-@keyframes navpanelin {
+@keyframes header__panel--on {
     from {opacity: 0;transform: translateY(75px)}
     to {opacity: 1;transform: translateY(0)}
 }
 
-.mobile-nav-panel .nav-link{
+.header__panel .nav-link{
     display: block;
     margin-left: 0;
     font-family: var(--font-alt-bold);
@@ -134,6 +143,16 @@ a.nav-link:active {
     border-bottom: none;
     color: var(--color-fg);
 }
+
+
+
+
+
+/*
+###########################################################
+CART
+###########################################################
+*/
 
 .site-header .cart .cart-icon{
     transform: translateY(6px);

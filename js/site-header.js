@@ -3,17 +3,17 @@
 
 	var toggleNav = function(){
 
-		$('.mobile-nav-open').on('click touch', function () {
-			if ($('.mobile-nav-panel').hasClass('deployed')) {
-				$('.mobile-nav-panel').removeClass('deployed');
+		$('.header__toggle-on').on('click touch', function () {
+			if ($('.header__panel').hasClass('header__panel--on')) {
+				$('.header__panel').removeClass('header__panel--on');
 			} else {
-				$('.mobile-nav-panel').addClass('deployed');
+				$('.header__panel').addClass('header__panel--on');
 			}
 		});
 
-		$('.mobile-nav-close').on('click touch', function () {
-			if ($('.mobile-nav-panel').hasClass('deployed')) {
-				$('.mobile-nav-panel').removeClass('deployed');
+		$('.header__toggle-off').on('click touch', function () {
+			if ($('.header__panel').hasClass('header__panel--on')) {
+				$('.header__panel').removeClass('header__panel--on');
 			}
 		});
 	}
