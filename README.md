@@ -118,6 +118,3 @@ A complete list of icon codes can be found [here](https://material.io/resources/
 ![](image.jpg)
 [/swiper]
 ```
-
-# Attributions and sponsors
-* Thanks to [msi-deepin.com](https://msi-deepin.com) for sponsoring the addition of [Swiper.js](https://swiperjs.com/) Shortcode.
