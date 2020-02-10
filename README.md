@@ -19,7 +19,7 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## Need a ✋ ?
 
-If you need help with theme customization using theme inheritance (the only good way to do it), or if you want to sponsor a feature, PM me and we'll see what can be done! :D
+If you need help with theme customization, setting up theme inheritance (the only good way to do it) or if you want to sponsor a feature, PM me and we'll see what can be done! :D
 
 ## Can I help?
 
@@ -31,14 +31,14 @@ Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 
 The **Hotdoy** Theme is meant to be my starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
 It is in active developpement and probably not suited for production unless you dont mind things changing all the times.
-You can use this theme by simply downloading it. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (it will not). I'm having a hard time finding the time to update the skeleton so I'm thinking about abandonning it and just focus on documentaing.
+You can use this theme by simply downloading it. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (it will not). I'm having a hard time finding the time to update the skeleton so I'm thinking about abandonning it.
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). It is also my live testing ground so things can get a bit weird.
 
 # Installation
 Installing the Hotdoy theme can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
 
-## GPM Installation (Preferred)
+## GPM Installation
 
 The simplest way to install this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
 
@@ -116,7 +116,6 @@ A complete list of icon codes can be found [here](https://material.io/resources/
 ![](image.jpg)
 ![](image.jpg)
 ![](image.jpg)
-...
 [/swiper]
 ```
 
