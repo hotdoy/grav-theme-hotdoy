@@ -1,3 +1,13 @@
+# v1.6.5
+## 10-02-2020
+
+1. [](#new)
+	* Markdown editor Breakpoint buttons.
+	* Use BEM for site-header CSS (all class names have been changed).
+2. [](#improved)
+	* reveal check initial delay using double bang instead of != null.
+	* Started overdue color variables refactor. (I did not change the frontmatter for now. I'll probably bump to 1.7 when i do it.)
+
 # v1.6.4
 ## 09-02-2020
 
