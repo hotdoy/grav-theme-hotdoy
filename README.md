@@ -5,13 +5,17 @@ This theme is ever evolving. Things move around, major changes are made all the 
 When extending this theme, you should use [Theme Inheritance](https://learn.getgrav.org/16/themes/customization). Create, overwrite or clone template you want to customize instead of trying to hack into mine. This way I can keep updating and you can keep the feature you care about. I hope we all have fun. Good luck :)
 
 ## What's new ?
-
-v1.6.0 includes a more open approach to reveal animations with opt-ins, ways to lessen their impact and add them to specific contents via shortcodes. I also finally reworked the Grid modular making it ready to be expanded upon (sorry if I broke things, it's for the best).
+* Site header classes have been brought to BEM standards.
+* A "breakpoint" button has been added to the markdown editor.
+* Started the big color variable refactor. It does not affect the frontmatter for now so your content should be alright but 1.7 will probably break stuff.
+* v1.6.0 includes a more open approach to reveal animations with opt-ins, ways to lessen their impact and add them to specific contents via shortcodes. 
+* I finally reworked the Grid modular making it ready to be expanded upon (sorry if I broke things, it's for the best).
 
 ## What's next ? 
-The header class names sucks so I'll fix that.  
-External libraries (Maps, iFrame API) are on the heavy side. I'll probably do something about that.
-I can already feel CSS bundle becoming a bit too large for my taste. I should be able to optimize that with relatively minimum effors using the new Grav 1.6 deferred assets approach.
+* In the middle of refactoring color variables, expect 1.7 to break things.
+* Articles might get more taxonomy support.
+* Some sort of edit button on the frontend. Probably inspired by https://github.com/getgrav/grav-plugin-editor-buttons/.
+
 
 ## Need a ✋ ?
 
