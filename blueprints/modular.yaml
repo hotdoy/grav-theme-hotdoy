@@ -25,20 +25,20 @@ form:
            
             header.bg_color:
               type: colorpicker
-              label: Background Color
+              label: Color BG
 
             header.fg_color:
               type: colorpicker
-              label: Foreground Color
+              label: Color FG
 
             header.bg_color_alt:
               type: colorpicker
-              label: Alternate Background Color
+              label: Color HL
 
             header.fg_color_alt:
               type: colorpicker
-              label: Alternate Foreground Color
+              label: Color HL Inverted
 
             header.nav_fg_color:
               type: colorpicker
-              label: Nav Foreground Color
+              label: Color Nav FG

@@ -24,27 +24,27 @@ form:
    
     bg_color:
       type: colorpicker
-      label: Background Color
+      label: Color BG
       default: '#ffffff'
 
     fg_color:
       type: colorpicker
-      label: Foreground Color
+      label: Color FG
       default: '#313131'
 
     bg_color_alt:
       type: colorpicker
-      label: Alternate Background Color
+      label: Color HL
       default: '#009688'
 
     fg_color_alt:
       type: colorpicker
-      label: Alternate Foreground Color
+      label: Color HL Inverted
       default: '#ffffff'
 
     nav_fg_color:
       type: colorpicker
-      label: Nav Foreground Color
+      label: Color Nav FG
       default: '#313131'
 
     reveal_content:

@@ -28,23 +28,19 @@ form:
 
             header.bg_color:
               type: colorpicker
-              label: Background Color
-              help: Overwrite current or add a background color
+              label: Color BG
 
             header.fg_color:
               type: colorpicker
-              label: Foreground Color
-              help: Overwrite current or add a foreground color used mostly for readable elements (text).
+              label: Color FG
 
             header.bg_color_alt:
               type: colorpicker
-              label: Highlight Color
-              help: Overwrite current or add a highlight color used on interactive elements.
+              label: Color HL
 
             header.fg_color_alt:
               type: colorpicker
-              label: Reversed Highlight Color
-              help: Overwrite current or add a color to readable element having highlighted background.
+              label: Color HL Inverted
 
             header.margin:
               type: toggle
