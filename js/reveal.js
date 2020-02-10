@@ -6,7 +6,7 @@
 		let initialDelay = document.querySelector('[data-reveal-initialdelay]');
 		let observer = new IntersectionObserver(onIntersection, observerConfig);
 				
-		if (initialDelay != null) {
+		if (!!initialDelay) {
 			initialDelay = initialDelay.getAttribute('data-reveal-initialdelay');
 			elements.forEach(el => {
 				el.classList.add('unrevealed');
