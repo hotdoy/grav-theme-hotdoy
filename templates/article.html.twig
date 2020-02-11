@@ -1,6 +1,12 @@
-{% import 'partials/datetime.html.twig' as datetime %}
+{% import '/partials/datetime.html.twig' as datetime %}
 
-{% extends 'partials/base.html.twig' %}
+{% extends '/partials/base.html.twig' %}
+
+{% block metadata %}
+	{{ parent() }}
+	{% include '/partials/schema-newsarticle.html.twig' %}
+{% endblock %}
+
 {% block content %}
 {% set title = title|default(page.title) %}
 {% set date = date|default(page.header.date) %}

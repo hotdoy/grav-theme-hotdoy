@@ -1,0 +1,39 @@
+{% set title = page.title %}
+{% set id = page.url(true) %}
+{% set image = page.header.image ? uri.base() ~ page.media[page.header.image].url %}
+{% set datePublished = page.header.date|split(' ')[1] %}
+{% set dateModified = page.header.date|split(' ')[1] %}
+{% set author = page.taxonomy.author|first %}
+{% set publisher_name = theme.org_name %}
+{% set publisher_logo =  base_url_absolute ~ '/' ~ theme.org_logo|first.path  %}
+{% set description =  content|striptags|replace({'"':''}) %}
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "NewsArticle",
+	"mainEntityOfPage": {
+	"@type": "WebPage",
+	"@id": "{{ id }}"
+	},
+	"headline": "{{ title }}",
+	"image": [
+		"{{ image  }}"
+	],
+  	"datePublished": "{{ datePublished}}",
+  	"dateModified": "{{ dateModified }}",
+  	"author": {
+		"@type": "Person",
+		"name": "{{ author }}"
+  	},
+   	"publisher": {
+		"@type": "Organization",
+		"name": "{{ publisher_name }}",
+		"logo": {
+	  		"@type": "ImageObject",
+	  		"url": "{{ publisher_logo }}"
+		}
+  	},
+  	"description": "{{ description }}"
+}
+</script>

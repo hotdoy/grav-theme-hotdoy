@@ -70,6 +70,12 @@ form:
       type: text
       label: Logo URL
       help: The absolute path to the organization logo.
+
+    org_logo:
+      type: file
+      label: Logo
+      destination: 'user/assets/hotdoy/organization'
+      multiple: false
       
     org_phone_formatted:
       type: text
