@@ -1,3 +1,11 @@
+# v1.6.6
+## 10-02-2020
+
+1. [](#new)
+	* Pages using Article template now generate newsArticle schema if possible.
+2. [](#bugfix)
+	* Only generate Organization schema if page is home page.
+
 # v1.6.5
 ## 10-02-2020
 
