@@ -1,3 +1,10 @@
+# v1.6.7
+## 10-02-2020
+
+1. [](#new)
+	* Better image handling for NewsArticle schema.
+	* Modular role var in modular partial renammed to modular_role
+
 # v1.6.6
 ## 10-02-2020
 
