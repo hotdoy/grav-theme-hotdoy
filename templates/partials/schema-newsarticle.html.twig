@@ -1,6 +1,5 @@
 {% set headline = page.title %}
 {% set id = page.url(true) %}
-{% set image = page.header.image ? uri.base() ~ page.media[page.header.image].url %}
 {% set datePublished = page.header.date|split(' ')[1] %}
 {% set dateModified = page.header.date|split(' ')[1] %}
 {% set author = page.taxonomy.author|first %}
@@ -8,34 +7,38 @@
 {% set publisher_logo =  base_url_absolute ~ '/' ~ theme.org_logo|first.path  %}
 {% set description =  content|striptags|replace({'"':''}) %}
 
-{% if author and headline and author and datePublished and page.header.image and publisher_name %}
-<script type="application/ld+json">
-{
-	"@context": "https://schema.org",
-	"@type": "NewsArticle",
-	"mainEntityOfPage": {
-	"@type": "WebPage",
-	"@id": "{{ id }}"
-	},
-	"headline": "{{ headline }}",
-	"image": [
-		"{{ image  }}"
-	],
-  	"datePublished": "{{ datePublished}}",
-  	"dateModified": "{{ dateModified }}",
-  	"author": {
-		"@type": "Person",
-		"name": "{{ author }}"
-  	},
-   	"publisher": {
-		"@type": "Organization",
-		"name": "{{ publisher_name }}",
-		"logo": {
-	  		"@type": "ImageObject",
-	  		"url": "{{ publisher_logo }}"
-		}
-  	},
-  	"description": "{{ description }}"
-}
-</script>
+{% if headline and author and datePublished and publisher_name %}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "NewsArticle",
+		"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "{{ id }}"
+		},
+		"headline": "{{ headline }}",
+		{% if page.media.images %}
+		"image": [
+			{% for image in page.media.images %}
+			"{{ uri.base() ~ image.url}}"{% if not loop.last %},{% endif %}
+			{% endfor %}
+		],
+		{% endif %}
+	  	"datePublished": "{{ datePublished}}",
+	  	"dateModified": "{{ dateModified }}",
+	  	"author": {
+			"@type": "Person",
+			"name": "{{ author }}"
+	  	},
+	   	"publisher": {
+			"@type": "Organization",
+			"name": "{{ publisher_name }}",
+			"logo": {
+		  		"@type": "ImageObject",
+		  		"url": "{{ publisher_logo }}"
+			}
+	  	},
+	  	"description": "{{ description }}"
+	}
+	</script>
 {% endif %}
