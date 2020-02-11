@@ -57,12 +57,14 @@
 {% endif %}
 
 {# Organization #}
+{% if page.url == home_url %}
 <script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "Organization",
-	  "name": "{{ theme.org_name }}",
-	  "url": "{{ base_url_absolute }}",
-	  "logo": "{{ theme.org_logo_url }}"
-	}
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ theme.org_name }}",
+      "url": "{{ base_url_absolute }}",
+      "logo": "{{ theme.org_logo_url }}"
+    }
 </script>
+{% endif %}
