@@ -1,4 +1,4 @@
-{% set title = page.title %}
+{% set headline = page.title %}
 {% set id = page.url(true) %}
 {% set image = page.header.image ? uri.base() ~ page.media[page.header.image].url %}
 {% set datePublished = page.header.date|split(' ')[1] %}
@@ -8,6 +8,7 @@
 {% set publisher_logo =  base_url_absolute ~ '/' ~ theme.org_logo|first.path  %}
 {% set description =  content|striptags|replace({'"':''}) %}
 
+{% if author and headline and author and datePublished and page.header.image and publisher_name %}
 <script type="application/ld+json">
 {
 	"@context": "https://schema.org",
@@ -16,7 +17,7 @@
 	"@type": "WebPage",
 	"@id": "{{ id }}"
 	},
-	"headline": "{{ title }}",
+	"headline": "{{ headline }}",
 	"image": [
 		"{{ image  }}"
 	],
@@ -37,3 +38,4 @@
   	"description": "{{ description }}"
 }
 </script>
+{% endif %}
