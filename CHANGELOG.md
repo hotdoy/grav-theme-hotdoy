@@ -4,6 +4,8 @@
 1. [](#new)
 	* Better image handling for NewsArticle schema.
 	* Modular role var in modular partial renammed to modular_role
+2. [](#bugfix)
+	* Temporary fix for code tag overflowing.
 
 # v1.6.6
 ## 10-02-2020
