@@ -14,7 +14,7 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 ## What's next ? 
 * In the middle of refactoring color variables, expect 1.7 to break things.
 * Articles might get more taxonomy support.
-* Some sort of edit button on the frontend. Probably inspired by https://github.com/getgrav/grav-plugin-editor-buttons/.
+* Some sort of edit button on the frontend.
 
 
 ## Need a ✋ ?
