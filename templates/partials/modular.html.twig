@@ -3,6 +3,7 @@
 {% set modular_margin = modular_margin|default('') %}
 {% set modular_padding = modular_padding|default('') %}
 {% set modular_style = modular_style|default('') %}
+{% set modular_role = role|default(page.header.role == 'header' ? modular_name ~ '--header' : '') %}
 
 {%- set margin -%}
 {%- if modular_margin -%}{{ modular_margin }}
@@ -22,13 +23,11 @@
 {%- endif -%}
 {%- endset -%}
 
-{% set role = role|default(page.header.role == 'header' ? modular_name ~ '--header' : '') %}
-
 {%- set computed_modular_class %}
 modular modular--{{ modular_name }}
 {%- if margin %} {{ margin }}{% endif -%} 
 {%- if padding %} {{ padding }}{% endif -%} 
-{%- if role %} {{ role }}{% endif -%} 
+{%- if modular_role %} {{ modular_role }}{% endif -%} 
 {%- if modular_class %} {{ modular_class }}{% endif -%}
 {% endset -%}
 
