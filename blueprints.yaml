@@ -1,5 +1,5 @@
 name: Hotdoy
-version: 1.6.7
+version: 1.7.0
 description: A living theme serving as functional base for projects. 
 icon: angellist
 author:
@@ -35,7 +35,7 @@ form:
     color_hl:
       type: colorpicker
       label: Color HL
-      default: '#009688'
+      default: '#0059ff'
 
     color_hl_inverted:
       type: colorpicker
