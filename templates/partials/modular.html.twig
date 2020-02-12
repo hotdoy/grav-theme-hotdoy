@@ -50,7 +50,7 @@ modular modular--{{ modular_name }}
 {%- if modular_class %} {{ modular_class }}{% endif -%}
 {% endset -%}
 
-{% set theme %}
+{% set modular_theme %}
 {% set color_fg = color_fg|default(page.header.color_fg) %}
 {% set color_bg = color_bg|default(page.header.color_bg) %}
 {% set color_hl = color_hl|default(page.header.color_hl) %}
@@ -62,7 +62,7 @@ modular modular--{{ modular_name }}
 {% endset %}
 
 {%- set computed_style %}
-	{{- theme }}{% if modular_style %} {{ modular_style }}{% endif %}
+	{{- modular_theme }}{% if modular_style %} {{ modular_style }}{% endif %}
 {% endset -%}
 
 <section class="{{ computed_modular_class }}" {% if computed_style %}{% endif %}style="{{ computed_style }}">
