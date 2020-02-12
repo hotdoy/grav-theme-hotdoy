@@ -13,6 +13,7 @@ html{
     font-family: var(--font-base);
     height: var(--nav-height);
     color: var(--color-nav-fg);
+    background-color: var(--color-nav-bg);
     z-index: 5000;
 }
 
@@ -68,7 +69,7 @@ a.nav-link:active {
     content: " ";
     height: 1px;
     width: 100%;
-    background-color: var(--color-hl);
+    background-color: var(--color-fg);
     position: absolute;
     bottom: 0;
     left: 0px;
