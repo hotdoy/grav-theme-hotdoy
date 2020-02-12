@@ -41,7 +41,7 @@
 	{% else %}article__media-ctn--tight
 	{%- endif %}
 	{%- endset %}
-	<div class="article__media-ctn {{ image_width }}">
+	<div class="article__media-ctn {{ image_width }} mt_2">
 		{# image #}
 		{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'class': 'article__img' } %}
 		{# caption #}
@@ -52,7 +52,7 @@
 	{% endif %}
 
 	{# content #}
-	<div class="article__content tight">{{ content }}</div>
+	<div class="article__content tight mt_2">{{ content }}</div>
 	
 </main>
 {% endblock %}
