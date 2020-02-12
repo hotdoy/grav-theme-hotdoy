@@ -1,5 +1,3 @@
-{% set modular_styles %}{% include '/partials/modular-theme.html.twig' %}{% endset %}
-
-<div class="grid-item" data-reveal style="{{ modular_styles }}">
+<div class="grid-item" {% if not page.header.limit_reveal %} data-reveal{% endif %}>
 	<div class="grid-item__content small">{{ page.content|markdown }}</div>
 </div>

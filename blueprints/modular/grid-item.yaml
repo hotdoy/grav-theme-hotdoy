@@ -9,5 +9,21 @@ form:
         options:
           fields:
 
-            header.rhythm:
+            header.color_bg:
+              unset@: true
+            header.color_fg:
+              unset@: true
+            header.color_hl:
+              unset@: true
+            header.color_hl_inverted:
+              unset@: true
+            header.margin_top:
+              unset@: true
+            header.padding_top:
+              unset@: true
+            header.padding_bottom:
+              unset@: true
+            header.margin_bottom:
+              unset@: true
+            header.role:
               unset@: true
