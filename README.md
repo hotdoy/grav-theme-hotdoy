@@ -12,9 +12,8 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 * I finally reworked the Grid modular making it ready to be expanded upon (sorry if I broke things, it's for the best).
 
 ## What's next ? 
-* In the middle of refactoring color variables, expect 1.7 to break things.
+* In the middle of refactoring modular, site, nav color system and modular spacing rules and options. Expect 1.7 to break things (I can confirm it does and it's probably going to release this week).
 * Articles might get more taxonomy support.
-* Some sort of edit button on the frontend.
 
 
 ## Need a ✋ ?
