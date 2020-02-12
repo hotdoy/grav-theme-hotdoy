@@ -320,13 +320,14 @@ MODULAR
 	}
 }
 
-.m-t{margin-top: var(--rhythm);}
-.m-b{margin-bottom: var(--rhythm);}
-.m-tb{margin-top: var(--rhythm);margin-bottom: var(--rhythm);}
-.m-t_2{margin-top: calc(var(--rhythm) * 0.5);}
-.p-t{padding-top: var(--rhythm);}
-.p-b{padding-bottom: var(--rhythm);}
-.p-tb{padding-top: var(--rhythm);padding-bottom: var(--rhythm);}
+.mt{margin-top: var(--rhythm);}
+.mt_2{margin-top: calc(var(--rhythm) * 0.5);}
+.pt{padding-top: var(--rhythm);}
+.pt_2{padding-top: calc(var(--rhythm) * 0.5);}
+.pb{padding-bottom: var(--rhythm);}
+.pb_2{padding-bottom: calc(var(--rhythm) * 0.5);}
+.mb{margin-bottom: var(--rhythm);}
+.mb_2{margin-bottom: calc(var(--rhythm) * 0.5);}
 
 
 

@@ -1,14 +1,12 @@
-{% set nav_bg_color = nav_bg_color|default(page.header.nav_bg_color ?? theme.nav_bg_color) %}
-{% set nav_fg_color = nav_fg_color|default(page.header.nav_fg_color ?? theme.nav_fg_color) %}
-{% set fg_color = fg_color|default(page.header.fg_color ?? theme.fg_color) %}
-{% set bg_color = bg_color|default(page.header.bg_color ?? theme.bg_color) %}
-{% set fg_color_alt = fg_color_alt|default(page.header.fg_color_alt ?? theme.fg_color_alt) %}
-{% set bg_color_alt = bg_color_alt|default(page.header.bg_color_alt ?? theme.bg_color_alt) %}
-
-{% if nav_bg_color %}--color-nav-bg:{{ nav_bg_color }};{% endif %}
-{% if nav_fg_color %}--color-nav-fg:{{ nav_fg_color }};{% endif %}
-{% if bg_color %}--color-bg:{{ bg_color }};{% endif %}
-{% if fg_color %}--color-fg:{{ fg_color }};{% endif %}
-{% if bg_color_alt %}--color-hl:{{ bg_color_alt }};{% endif %}
-{% if fg_color_alt %}--color-hl-inverted:{{ fg_color_alt }};{% endif %}
-
+{% set color_nav_bg = color_nav_bg|default(page.header.color_nav_bg ?? theme.color_nav_bg) %}
+{% set color_nav_fg = color_nav_fg|default(page.header.color_nav_fg ?? theme.color_nav_fg) %}
+{% set color_bg = color_bg|default(page.header.color_bg ?? theme.color_bg) %}
+{% set color_fg = color_fg|default(page.header.color_fg ?? theme.color_fg) %}
+{% set color_hl = color_hl|default(page.header.color_hl ?? theme.color_hl) %}
+{% set color_hl_inverted = color_hl_inverted|default(page.header.color_hl_inverted ?? theme.color_hl_inverted) %}
+{% if color_nav_bg %}--color-nav-bg:{{ color_nav_bg }};{% endif %}
+{% if color_nav_fg %}--color-nav-fg:{{ color_nav_fg }};{% endif %}
+{% if color_bg %}--color-bg:{{ color_bg }};{% endif %}
+{% if color_fg %}--color-fg:{{ color_fg }};{% endif %}
+{% if color_hl %}--color-hl:{{ color_hl }};{% endif %}
+{% if color_hl_inverted %}--color-hl-inverted:{{ color_hl_inverted }};{% endif %}

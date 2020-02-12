@@ -23,22 +23,26 @@ form:
               type: colorpicker
               label: Meta Theme
            
-            header.bg_color:
+            header.color_bg:
               type: colorpicker
               label: Color BG
 
-            header.fg_color:
+            header.color_fg:
               type: colorpicker
               label: Color FG
 
-            header.bg_color_alt:
+            header.color_hl:
               type: colorpicker
               label: Color HL
 
-            header.fg_color_alt:
+            header.color_hl_inverted:
               type: colorpicker
               label: Color HL Inverted
 
-            header.nav_fg_color:
+            header.color_nav_bg:
+              type: colorpicker
+              label: Color Nav BG
+
+            header.color_nav_fg:
               type: colorpicker
               label: Color Nav FG

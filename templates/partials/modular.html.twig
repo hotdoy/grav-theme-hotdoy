@@ -1,41 +1,70 @@
 {% set modular_name = modular_name|default('') %}
 {% set modular_class = modular_class|default(page.header.body_classes) %}
-{% set modular_margin = modular_margin|default('') %}
-{% set modular_padding = modular_padding|default('') %}
+{% set modular_margin_top = modular_margin_top|default('') %}
+{% set modular_margin_bottom = modular_margin_bottom|default('') %}
+{% set modular_padding_top = modular_padding_top|default('') %}
+{% set modular_padding_bottom = modular_padding_bottom|default('') %}
 {% set modular_style = modular_style|default('') %}
 {% set modular_role = role|default(page.header.role == 'header' ? modular_name ~ '--header' : '') %}
 
-{%- set margin -%}
-{%- if modular_margin -%}{{ modular_margin }}
-{%- elseif page.header.margin == 'top' %}m-t
-{%- elseif page.header.margin == 'bottom' %}m-b
-{%- elseif page.header.margin == 'both' %}m-tb
-{%- elseif page.header.margin == 'none' %}
+{%- set margin_top -%}
+{%- if modular_margin_top -%}{{ modular_margin_top }}
+{%- elseif page.header.margin_top == 'full' %}mt
+{%- elseif page.header.margin_top == 'half' %}mt_2
+{%- elseif page.header.margin_top == 'none' %}
+{%- else %}mt
 {%- endif -%}
 {%- endset -%}
 
-{%- set padding -%}
-{%- if modular_padding -%}{{ modular_padding }}
-{%- elseif page.header.padding == 'top' %}p-t
-{%- elseif page.header.padding == 'bottom' %}p-b
-{%- elseif page.header.padding == 'both' %}p-tb
-{%- elseif page.header.padding == 'none' %}
+{%- set padding_top -%}
+{%- if modular_padding_top -%}{{ modular_padding_top }}
+{%- elseif page.header.padding_top == 'full' %}pt
+{%- elseif page.header.padding_top == 'half' %}pt_2
+{%- elseif page.header.padding_top == 'none' %}
+{%- endif -%}
+{%- endset -%}
+
+{%- set padding_bottom -%}
+{%- if modular_padding_bottom -%}{{ modular_padding_bottom }}
+{%- elseif page.header.padding_bottom == 'full' %}pb
+{%- elseif page.header.padding_bottom == 'half' %}pb_2
+{%- elseif page.header.padding_bottom == 'none' %}
+{%- endif -%}
+{%- endset -%}
+
+{%- set margin_bottom -%}
+{%- if modular_margin_bottom -%}{{ modular_margin_bottom }}
+{%- elseif page.header.margin_bottom == 'full' %}mb
+{%- elseif page.header.margin_bottom == 'half' %}mb_2
+{%- elseif page.header.margin_bottom == 'none' %}
 {%- endif -%}
 {%- endset -%}
 
 {%- set computed_modular_class %}
 modular modular--{{ modular_name }}
-{%- if margin %} {{ margin }}{% endif -%} 
-{%- if padding %} {{ padding }}{% endif -%} 
+{%- if margin_top %} {{ margin_top }}{% endif -%} 
+{%- if padding_top %} {{ padding_top }}{% endif -%} 
+{%- if margin_bottom %} {{ margin_bottom }}{% endif -%} 
+{%- if padding_bottom %} {{ padding_bottom }}{% endif -%} 
 {%- if modular_role %} {{ modular_role }}{% endif -%} 
 {%- if modular_class %} {{ modular_class }}{% endif -%}
 {% endset -%}
 
+{% set theme %}
+{% set color_fg = color_fg|default(page.header.color_fg) %}
+{% set color_bg = color_bg|default(page.header.color_bg) %}
+{% set color_hl = color_hl|default(page.header.color_hl) %}
+{% set color_hl_inverted = color_hl_inverted|default(page.header.color_hl_inverted) %}
+{% if color_bg %}--color-bg:{{ color_bg }};{% endif %}
+{% if color_fg %}--color-fg:{{ color_fg }};{% endif %}
+{% if color_hl %}--color-hl:{{ color_hl }};{% endif %}
+{% if color_hl_inverted %}--color-hl-inverted:{{ color_hl_inverted }};{% endif %}
+{% endset %}
+
 {%- set computed_style %}
-{%- include '/partials/modular-theme.html.twig' %}
-{%- if modular_style %} {{ modular_style }}{% endif -%}
+	{{- theme }}{% if modular_style %} {{ modular_style }}{% endif %}
 {% endset -%}
 
-<section class="{{ computed_modular_class }}" style="{{ computed_style }}">
+<section class="{{ computed_modular_class }}" {% if computed_style %}{% endif %}style="{{ computed_style }}">
 {% block modular_content %}{% endblock %}
 </section>

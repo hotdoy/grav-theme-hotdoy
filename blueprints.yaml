@@ -22,30 +22,37 @@ form:
       type: colorpicker
       label: Meta Theme
    
-    bg_color:
+    color_bg:
       type: colorpicker
       label: Color BG
       default: '#ffffff'
 
-    fg_color:
+    color_fg:
       type: colorpicker
       label: Color FG
       default: '#313131'
 
-    bg_color_alt:
+    color_hl:
       type: colorpicker
       label: Color HL
       default: '#009688'
 
-    fg_color_alt:
+    color_hl_inverted:
       type: colorpicker
       label: Color HL Inverted
       default: '#ffffff'
 
-    nav_fg_color:
+    color_nav_bg:
+      type: colorpicker
+      label: Color Nav BG
+      default: '#fff'
+      
+    color_nav_fg:
       type: colorpicker
       label: Color Nav FG
       default: '#313131'
+
+
 
     reveal_content:
       type: toggle

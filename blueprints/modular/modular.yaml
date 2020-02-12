@@ -26,44 +26,62 @@ form:
               type: section
               title: Theme
 
-            header.bg_color:
+            header.color_bg:
               type: colorpicker
               label: Color BG
 
-            header.fg_color:
+            header.color_fg:
               type: colorpicker
               label: Color FG
 
-            header.bg_color_alt:
+            header.color_hl:
               type: colorpicker
               label: Color HL
 
-            header.fg_color_alt:
+            header.color_hl_inverted:
               type: colorpicker
               label: Color HL Inverted
 
-            header.margin:
+            header.margin_top:
               type: toggle
-              label: Margin
-              highlight: top
-              default: top
+              label: Margin Top
+              highlight: full
+              default: full
               options: 
-                top: 'Top'
-                bottom: 'Bottom'
-                both: 'Both'
-                none: 'none'
+                full: 'Full'
+                half: 'Half'
+                none: 'None'
 
-            header.padding:
+            header.padding_top:
               type: toggle
-              label: Padding
+              label: Padding Top
               highlight: none
               default: none
               options: 
-                top: 'Top'
-                bottom: 'Bottom'
-                both: 'Both'
+                full: 'Full'
+                half: 'Half'
                 none: 'None'
-                
+
+            header.padding_bottom:
+              type: toggle
+              label: Padding Bottom
+              highlight: none
+              default: none
+              options: 
+                full: 'Full'
+                half: 'Half'
+                none: 'None'
+
+            header.margin_bottom:
+              type: toggle
+              label: Margin Bottom
+              highlight: none
+              default: none
+              options: 
+                full: 'Full'
+                half: 'Half'
+                none: 'None'
+
             header.role:
               type: toggle
               label: Role
