@@ -22,6 +22,7 @@
 		<div class="product__info small" data-reveal="reveal transition-delay-100">
 			<h1 class="product__title">{{ page.title }}</h1>
 			<div class="product__price">{{ theme.price_prefix }} {{ page.header.price }} {{ theme.price_suffix }}</div>
+			{% if theme.snipcart_api_key %}
 			<div class="product__add btn btn--solid">
 				<a class="snipcart-add-item"
 				data-item-id="{{ page.header.id }}"
@@ -30,10 +31,11 @@
 				data-item-description="{{ page.header.description }}"
 				data-item-image="{{ page.media.images|first.url }}"
 				data-item-name="{{ page.title }}">
-				Add to cart
-					<span class="material-icons cart-icon">shopping_cart</span>
+				Add to cart<span class="material-icons cart-icon">shopping_cart</span>
 				</a>
 			</div>
+			{% else %}<div class="notices red dev">snipcart_api_key not found!<br>Check theme configuration.</div>
+			{% endif %}	
 			<div class="product__content modular--content" data-reveal="reveal transition-delay-150">{{ page.content|raw }}</div>
 		</div>
 	</div>
