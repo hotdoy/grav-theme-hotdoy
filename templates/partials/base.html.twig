@@ -5,24 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="{{ base_url_absolute }}/favicon.png" />
-        {% block metadata %}{% include 'partials/metadata.html.twig' %}{% endblock %}
-        {% block canonical %}{% include 'partials/canonical.html.twig' %}{% endblock %}
-        {% block analytics %}{% include 'partials/analytics.html.twig' %}{% endblock %}
-        {% block preload %}{% include 'partials/preload.html.twig' %}{% endblock %}
-        {% block css %}{% include 'partials/css.html.twig' %}{% endblock %}
-        {% block js %}{% include 'partials/js.html.twig' %}{% endblock %}
-        {% block assets deferred %}
-            {{ assets.css()|raw }}
-            {{ assets.js()|raw }}
+        {%- block metadata %}{% include 'partials/metadata.html.twig' %}{% endblock %}
+        {%- block canonical %}<link rel="canonical" href="{{ page.header.routes.canonical ? page.header.routes.canonical : page.url(true, true) }}" />{% endblock %}
+        {%- block analytics %}{% include 'partials/analytics.html.twig' %}{% endblock %}
+        {%- block preload %}{% include 'partials/preload.html.twig' %}{% endblock %}
+        {%- block css %}{% include 'partials/css.html.twig' %}{% endblock %}
+        {%- block js %}{% include 'partials/js.html.twig' %}{% endblock %}
+        {%- block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
         {% endblock %}
     </head>
 
     <body class="body__{{ page.template }}" style="{% include 'partials/theme-site.html.twig' %}" {% if theme.links %}data-links="{{ theme.links }}"{% endif %}>
-        {% block site_loader %}{% include 'partials/site-loader.html.twig' %}{% endblock %}
-        {% block site_marquee %}{% include 'partials/marquee.html.twig' %}{% endblock %} 
-        {% block site_header %}{% include 'partials/site-header.html.twig' %}{% endblock %} 
-        {% block content %}{% endblock %}
-        {% block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
+        {%- block site_loader %}{% include 'partials/site-loader.html.twig' %}{% endblock %}
+        {%- block site_marquee %}{% include 'partials/marquee.html.twig' %}{% endblock %} 
+        {%- block site_header %}{% include 'partials/site-header.html.twig' %}{% endblock %} 
+        {%- block content %}{% endblock %}
+        {%- block site_footer %}{% include 'partials/site-footer.html.twig' %}{% endblock %}
         {{ assets.js('after')|raw }}
         {% if theme.snipcart_api_key %}
         <div hidden id="snipcart" data-api-key="{{ theme.snipcart_api_key }}"></div>
