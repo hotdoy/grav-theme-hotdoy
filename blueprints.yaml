@@ -52,8 +52,6 @@ form:
       label: Color Nav FG
       default: '#313131'
 
-
-
     reveal_content:
       type: toggle
       label: Reveal Content
