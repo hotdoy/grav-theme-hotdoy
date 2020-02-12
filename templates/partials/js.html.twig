@@ -28,3 +28,7 @@
 	{% do assets.addJs('theme://js/reveal.js', { group:'after' }) %}
 	{% do assets.addJs('theme://js/site-loader.js', { group:'after', priority: 0 }) %}
 {% endif %}
+
+{% if theme.google_tracking_id %}
+	{% do assets.addJs('https://www.google-analytics.com/analytics.js', { group:'after' }) %}
+{% endif %}
