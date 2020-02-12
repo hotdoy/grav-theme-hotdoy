@@ -6,22 +6,19 @@
 
 {% set markers %}
 	[{% for marker in page.header.markers %}
-
-        {% set icon %}
-            {%- if marker.icon -%}
-                {{- page.media[marker.icon].url -}}
-            {%- elseif theme.google_maps_icon|first -%}
-                {{- base_url_absolute ~ '/' ~ theme.google_maps_icon|first.path -}}
-            {%- endif -%}
-        {% endset %}
-
-		["{{ marker.title }}", "{{ marker.lat }}", "{{ marker.lng }}","{{ marker.url }}", "{{ icon }}"]{% if not loop.last %},{% endif %}
+    {% set icon %}
+        {%- if marker.icon -%}
+        {{- page.media[marker.icon].url -}}
+        {%- elseif theme.google_maps_icon|first -%}
+        {{- base_url_absolute ~ '/' ~ theme.google_maps_icon|first.path -}}
+        {%- endif -%}
+    {% endset %}
+	["{{ marker.title }}", "{{ marker.lat }}", "{{ marker.lng }}","{{ marker.url }}", "{{ icon }}"]{% if not loop.last %},{% endif %}
 	{% endfor %}]
 {% endset %}
 
 {% block modular_content %}
  <div class="site">
- 	{% if theme.google_maps_api_key %}
  	<div 
     id="map-{{ random() }}" 
     class="map"
@@ -30,11 +27,5 @@
     data-styles='{{ theme.google_maps_snazzy }}'
     data-markers='{{ markers }}'>
     </div>
- 	{% else %}
- 	<div class="notices red dev">
- 		<p>Google Maps API Key not found.<br>
- 		Check theme configuration.</p>
- 	</div>
- 	{% endif %}
  </div>
 {% endblock %}
