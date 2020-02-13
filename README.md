@@ -8,11 +8,12 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 * **1.7 A LOT OF BREAKING CHANGES! Open an issue if you need help after the update. Most problems can be fixed by saving your pages. You will probably have to re-save colors, and modular margins/paddings.** 
 
 ## What's next ?  
-* With the release of 1.7, I'm going back to finish the text context (xsmall, small, big, huge) wich are currently not really responsive.
+* With the release of 1.7, I'm going back text context (xsmall, small, big, huge). Make them better and more usefull overall.
 * Articles might get more taxonomy support.
-* Adding more content and finally update the skeleton.
+* Adding more content and update the skeleton.
 * Adding more support for shortcodes included with the ShortCode Core Plugin.
 * Adding documentation on Modular and extending the theme (like changing the fonts and stuff like that).
+* Some kind of nav behavior selection probably directly from the admin panel.
 
 ## Need a ✋ ?
 
