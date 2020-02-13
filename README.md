@@ -12,6 +12,7 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 * Articles might get more taxonomy support.
 * Adding more content and finally update the skeleton.
 * Adding more support for shortcodes included with the ShortCode Core Plugin.
+* Adding documentation on Modular and extending the theme (like changing the fonts and stuff like that).
 
 ## Need a ✋ ?
 
