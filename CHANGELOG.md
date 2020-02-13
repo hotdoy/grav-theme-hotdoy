@@ -1,3 +1,19 @@
+# v1.7.0
+## 12-02-2020
+
+1. [](#new)
+	* Complete color system revamp. (breaking changes)
+	* Complete margin and padding for modular and utility class revamp. (breaking changes)
+	* Nav color can now be added trough theme config and modular page blueprints.
+	* Organization logo (for schema.org) can now be uploaded from theme config.
+2. [](#improved)
+	* Article reveal.
+	* GA script tag moved to 'after' js group.
+	* Canonical is now set in base and no longer use an include.
+	* Whitespace and line break management in multiple template.
+	* Debug messages for snipcart and google maps.
+	* Removed organization email and phone from theme config (not used anywhere).
+
 # v1.6.7
 ## 10-02-2020
 

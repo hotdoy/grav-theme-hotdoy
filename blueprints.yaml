@@ -45,7 +45,7 @@ form:
     color_nav_bg:
       type: colorpicker
       label: Color Nav BG
-      default: '#fff'
+      default: '#ffffff'
       
     color_nav_fg:
       type: colorpicker
@@ -71,25 +71,11 @@ form:
       label: Name
       help: The name by which the organization should be recognized.
 
-    org_logo_url:
-      type: text
-      label: Logo URL
-      help: The absolute path to the organization logo.
-
     org_logo:
       type: file
       label: Logo
       destination: 'user/assets/hotdoy/organization'
       multiple: false
-      
-    org_phone_formatted:
-      type: text
-      label: Phone Formatted
-      help: Phone number formatted as an international number.
-
-    org_email:
-      type: text
-      label: Email
 
     analytics:
       type: section
