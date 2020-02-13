@@ -1,5 +1,14 @@
 .modular--map{}
 
+.map__ctn{
+	width: 100%;
+    max-width: var(--width-site);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: var(--gutter);
+    padding-left: var(--gutter);
+}
+
 .map{
 	height: 400px;
 }

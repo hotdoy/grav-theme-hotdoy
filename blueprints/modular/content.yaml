@@ -8,21 +8,12 @@ form:
         content:
           fields:
 
-            header.align:
+            header.content_position:
               type: toggle
-              label: Text Alignment
-              highlight: left
-              default: left
+              label: Content Position
+              highlight: center
+              default: center
               options: 
                 left: 'Left'
                 center: 'Center'
                 right: 'Right'
-
-            header.width:
-              type: toggle
-              label: Width
-              highlight: site
-              default: site
-              options: 
-                tight: 'Tight'
-                site: 'Site'

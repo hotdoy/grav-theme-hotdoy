@@ -45,7 +45,7 @@ form:
     color_nav_bg:
       type: colorpicker
       label: Color Nav BG
-      default: '#ffffff'
+      default: 'rgba(255, 255, 255, 0.00)'
       
     color_nav_fg:
       type: colorpicker

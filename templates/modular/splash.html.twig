@@ -96,7 +96,7 @@
 	{% endif %}
 
 	<div class="splash__content-ctn {{ content_ctn_vertical_modifier }} {{ content_ctn_horizontal_modifier }}">
-		<div class="splash__content site"{% if not limit_reveal %} data-reveal{% endif %}>{{ content|raw }}</div>
+		<div class="splash__content"{% if not limit_reveal %} data-reveal{% endif %}>{{ content|raw }}</div>
 	</div>
 
 {% endblock %}

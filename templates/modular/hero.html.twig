@@ -13,7 +13,7 @@
 	<div class="hero__veil fill" style="opacity:{{bg_veil}};"></div>
 	{% endif %}
 	
-	<div class="hero__ctn site{% if reverse %} hero__ctn--reverse{% endif %}">
+	<div class="hero__ctn{% if reverse %} hero__ctn--reverse{% endif %}">
 		<div class="hero__content" {% if not limit_reveal %}data-reveal{% endif %}>{{ content|raw }}</div>
 		<div class="hero__media" data-reveal>	
 			{% if video %}

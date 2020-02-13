@@ -33,19 +33,11 @@ grid {{ computed_item_align_v }} {{ computed_item_align_h }}
 {% endset %}
 
 {% block modular_content %}
-	<div class="site">
+	<div class="grid__ctn">
 		<div class="{{ grid_classes }}" style="{{ grid_styles }}">
-
-{# 			{% for item in page.header.items %}
-			<div class="grid-item" data-reveal="" style="{{ modular_styles }}">
-				<div class="grid-item__content">{{ item.content|markdown }}</div>
-			</div>
-			{% endfor %} #}
-
 			{% for p in page.collection() %}
 				{{ p.content }}
 			{% endfor %}
-			
 		</div>
 	</div>
 {% endblock %}

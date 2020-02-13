@@ -1,25 +1,17 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'content' %}
-{% set content = content|default(page.content) %}
-	
-{% set align = align|default(page.header.align ?? 'left') %}
-{%- set align -%}
-{%- if align == 'left' -%}content--left
-{%- elseif align == 'center' -%}content--center
-{%- else -%}{{- align -}}
-{%- endif -%}
-{%- endset -%}
+{% set content_position = content_position|default(page.header.content_position) %}
+{% set position = position|default(page.header.position ?? 'center') %}
 
-{% set width = width|default(page.header.width ?? 'site') %}
-{%- set width -%}
-{%- if width == 'tight' -%}tight
-{%- elseif width == 'site' -%}site
-{%- else -%}{{- width -}}
+{%- set computed_position -%}
+{%- if content_position == 'left' -%}content--left
+{%- elseif content_position == 'right' -%}content--right
+{%- else -%}content--center
 {%- endif -%}
 {%- endset -%}
 
 {% set limit_reveal = limit_reveal|default(page.header.limit_reveal) %}
 
 {% block modular_content %}
-	<div class="content__ctn {{ width }} {{ align }}" {% if not limit_reveal %}data-reveal{% endif %}>{{ content }}</div>
+	<div class="content__ctn {{ computed_position }}" {% if not limit_reveal %}data-reveal{% endif %}>{{ content }}</div>
 {% endblock %}

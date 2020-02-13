@@ -37,6 +37,14 @@ html{
 	padding-top: var(--rhythm);
 	padding-bottom: var(--rhythm);
 	z-index: 1003;
+
+	margin-right: auto;
+	margin-left: auto;
+	max-width: var(--width-site);
+	width: 100%;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+
 }
 
 .splash__content-ctn--vtop{
@@ -62,16 +70,26 @@ html{
 	align-items: flex-end;
 }
 
-.splash__content-ctn--hleft{
+.splash__content-ctn--hleft>*,
+.splash__content-ctn--hleft>*>*,
+.splash__content-ctn--hleft>*>*>*{
 	text-align: left;
+	margin-right: auto;
 }
 
-.splash__content-ctn--hcenter{
+.splash__content-ctn--hcenter>*,
+.splash__content-ctn--hcenter>*>*,
+.splash__content-ctn--hcenter>*>*>*{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
-.splash__content-ctn--hright{
-	text-align: right;
+.splash__content-ctn--hright>*,
+.splash__content-ctn--hright>*>*,
+.splash__content-ctn--hright>*>*>*{
+	text-align: left;
+	margin-left: auto;
 }
 
 /*Visual fix for text aligned in the screen center*/
@@ -104,4 +122,8 @@ html{
 .splash__content-ctn--hright .splash__content .tight {
     margin-left: auto; 
     margin-right: 0; 
+}
+
+.modular--splash h3{
+	margin-top: 0;
 }

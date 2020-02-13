@@ -150,17 +150,10 @@ BIG
     font-size: 24px;
 }
 
-.big h1,
-.big h2,
-.big h3,
-.big p{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
 .big h1{font-size: 3em;}
-.big h2{font-size: 1.5em;}
-.big h3{font-size: 1.2em;}
+.big h2{font-size: 2em;}
+.big h3{font-size: 1.5em;}
+
 
 
 
@@ -175,14 +168,12 @@ html .huge{
     font-size: 48px;
 }
 
-.huge h1,
-.huge h2,
-.huge h3,
-.huge p{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
 .huge h1{font-size: 3em;}
-.huge h2{font-size: 1.5em;}
-.huge h3{font-size: 1.2em;}
+.huge h2{font-size: 2em;}
+.huge h3{font-size: 1.5em;}
+
+/*@media (min-width: 735px) {
+    .huge h1{font-size: 3em;}
+    .huge h2{font-size: 2em;}
+    .huge h3{font-size: 1em;} 
+}*/

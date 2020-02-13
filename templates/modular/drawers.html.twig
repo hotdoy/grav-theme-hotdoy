@@ -3,7 +3,7 @@
 {% set limit_reveal = limit_reveal|default(page.header.limit_reveal) %}
 
 {% block modular_content %}
-	<div class="site">
+	<div class="drawers__ctn">
 	{% for drawer in page.header.drawers %}
 		<details class="drawer__detail" {% if not limit_reveal %}data-reveal=""{% endif %}>
 			<summary class="noselect drawer__summary">

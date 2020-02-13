@@ -2,6 +2,10 @@
 	width: 100%;
 	margin-bottom: 2rem;
     margin-top: 2rem;
+    width: 100%;
+    max-width: var(--width-site);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .swipersc .swiper-pagination-bullet{

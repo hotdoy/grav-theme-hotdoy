@@ -13,6 +13,12 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+    width: 100%;
+    max-width: var(--width-site);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: var(--gutter);
+    padding-left: var(--gutter);
 	z-index: 1003;
 }
 

@@ -63,24 +63,29 @@
 	overflow: hidden;
 }
 
-.content--left{
-	text-align: left;
-}
-.content--center{
-	text-align: center;
-}
-.content--right{
-	text-align: right;
+.content__ctn{
+	width: 100%;
+	max-width: var(--width-site);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
 }
 
-.content__ctn *:first-child {margin-top: 0;}
-.content__ctn *:last-child {margin-bottom: 0;}
+.content__ctn>* :first-child {margin-top: 0;}
+.content__ctn>* :last-child {margin-bottom: 0;}
+
+.content--left>*{
+	margin-right: auto;
+}
+.content--center>*{
+	margin-left: auto;
+	margin-right: auto;
+}
+.content--right>*{
+	margin-left: auto;
+}
+
 
 /*Kaltura video*/
 .kWidgetIframeContainer{margin: 2rem auto;}
-
-.modular--content .content__ctn > .tight,
-.modular--content .content__ctn > .site{
-	padding-left: 0;
-	padding-right: 0;
-}
