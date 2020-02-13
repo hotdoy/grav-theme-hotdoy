@@ -4,17 +4,15 @@ This theme is ever evolving. Things move around, major changes are made all the 
 
 When extending this theme, you should use [Theme Inheritance](https://learn.getgrav.org/16/themes/customization). Create, overwrite or clone template you want to customize instead of trying to hack into mine. This way I can keep updating and you can keep the feature you care about. I hope we all have fun. Good luck :)
 
-## What's new ?
-* Site header classes have been brought to BEM standards.
-* A "breakpoint" button has been added to the markdown editor.
-* Started the big color variable refactor. It does not affect the frontmatter for now so your content should be alright but 1.7 will probably break stuff.
-* v1.6.0 includes a more open approach to reveal animations with opt-ins, ways to lessen their impact and add them to specific contents via shortcodes. 
-* I finally reworked the Grid modular making it ready to be expanded upon (sorry if I broke things, it's for the best).
+## What's new ?  
+* **1.7 A LOT OF BREAKING CHANGES! Open an issue if you need help after the update. Most problems can be fixed by saving your pages. You will probably have to re-save colors, and modular margins/paddings.** 
 
-## What's next ? 
-* In the middle of refactoring modular, site, nav color system and modular spacing rules and options. Expect 1.7 to break things (I can confirm it does and it's probably going to release this week).
+## What's next ?  
+* With the release of 1.7, I'm going back to finish the text context (xsmall, small, big, huge) wich are currently not really responsive.
 * Articles might get more taxonomy support.
-
+* Adding more content and finally update the skeleton.
+* Adding more support for shortcodes included with the ShortCode Core Plugin.
+* Adding documentation on Modular and extending the theme (like changing the fonts and stuff like that).
 
 ## Need a ✋ ?
 
