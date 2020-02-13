@@ -1,3 +1,14 @@
+
+# v1.7.1
+## 13-02-2020
+
+1. [](#new)
+	* The width utility classes (full, site, tight) no longer define content position (was margin h auto).
+	* Changed all modular to define their own width.
+	* Content modular now only define the content position (left, center, right). While the width must be defined using the width shortcodes.
+2. [](#bugfix)
+	* Fixed color nav bg default value (was white, made it transparent).
+
 # v1.7.0
 ## 12-02-2020
 
