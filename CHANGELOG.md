@@ -1,4 +1,18 @@
 
+# v1.7.2
+## 18-02-2020
+
+1. [](#new)
+	* Text size editor buttons (small, small, big, huge)
+
+2. [](#improved)
+	* Text Sizes (big, huge) only affect landscape (desktop) to prevent content duplication.
+	* Reduced hover effect (trslate Y) on site header links and article cards.
+	* Removed big bottom margin on h1.
+
+3. [](#bugfix)
+	* Fix hero modular first and last child margins when using nested shortcodes.
+
 # v1.7.1
 ## 13-02-2020
 
