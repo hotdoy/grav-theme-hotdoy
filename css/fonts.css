@@ -1,3 +1,9 @@
+/*
+###########################################################
+FONT-FACE DECLARATIONS
+###########################################################
+*/
+
 @font-face {
   font-family: 'Inter Regular';
   font-style:  normal;
@@ -51,6 +57,15 @@
        url("../fonts/Inter/Inter-Black.woff?v=3.11") format("woff");
 }
 
+
+
+
+
+/*
+###########################################################
+MINIMUM FONT PROPERTIES
+###########################################################
+*/
 
 html{
     --font-base: 'Inter Regular', sans-serif;
