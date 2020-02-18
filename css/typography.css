@@ -146,13 +146,12 @@ BIG
 ###########################################################
 */
 
-.big{
-    font-size: 24px;
+@media (min-width: 735px) {
+    .big{font-size: 24px;}
+    .big h1{font-size: 3em;}
+    .big h2{font-size: 2em;}
+    .big h3{font-size: 1.5em;}
 }
-
-.big h1{font-size: 3em;}
-.big h2{font-size: 2em;}
-.big h3{font-size: 1.5em;}
 
 
 
@@ -164,16 +163,9 @@ HUGE
 ###########################################################
 */
 
-html .huge{
-    font-size: 48px;
-}
-
-.huge h1{font-size: 3em;}
-.huge h2{font-size: 2em;}
-.huge h3{font-size: 1.5em;}
-
-/*@media (min-width: 735px) {
+@media (min-width: 735px) {
+    .huge{font-size: 48px;}
     .huge h1{font-size: 3em;}
     .huge h2{font-size: 2em;}
-    .huge h3{font-size: 1em;} 
-}*/
+    .huge h3{font-size: 1.5em;}
+}
