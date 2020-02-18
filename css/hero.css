@@ -28,11 +28,15 @@
 	padding-right: 3rem;
 }
 
-.hero__content > *:first-child {
+.hero__content > *:first-child,
+.hero__content > * > *:first-child,
+.hero__content > * > * > *:first-child {
 	margin-top: 0;
 }
 
-.hero__content > *:last-child {
+.hero__content > *:last-child,
+.hero__content > * > *:last-child,
+.hero__content > * > * > *:last-child {
 	margin-bottom: 0;
 }
 
