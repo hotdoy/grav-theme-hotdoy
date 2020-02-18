@@ -127,6 +127,7 @@ CARD
 */
 
 .article-card{
+	position: relative;
 	border-bottom: 1px solid #ececec;
  	transition: all 0.1s;
  	padding-bottom: 1rem;
@@ -134,7 +135,7 @@ CARD
  } 
 
  .article-card:hover{
-  	transform: translateY(-2px);
+  	transform: translateY(-1px);
  }
 
  .article-card:active{
@@ -164,6 +165,7 @@ CARD
  }
 
  .article-card__metas{
+ 	color: var(--color-hl);
  	margin-top: 0.5rem;
  }
 
