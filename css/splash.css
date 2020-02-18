@@ -34,17 +34,15 @@ html{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	padding-top: var(--rhythm);
-	padding-bottom: var(--rhythm);
-	z-index: 1003;
-
 	margin-right: auto;
 	margin-left: auto;
 	max-width: var(--width-site);
 	width: 100%;
+	padding-top: var(--rhythm);
+	padding-bottom: var(--rhythm);
 	padding-left: var(--gutter);
 	padding-right: var(--gutter);
-
+	z-index: 1003;
 }
 
 .splash__content-ctn--vtop{
@@ -58,7 +56,6 @@ html{
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
-
 
 .splash__content-ctn--vcenter{
 	display: flex;
@@ -124,6 +121,8 @@ html{
     margin-right: 0; 
 }
 
+.modular--splash h1,
+.modular--splash h2,
 .modular--splash h3{
 	margin-top: 0;
 }
