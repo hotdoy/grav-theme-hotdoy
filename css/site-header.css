@@ -30,8 +30,8 @@ html{
     max-width: var(--width-site);
     margin-left: auto;
     margin-right: auto;
-    padding-right: var(--gutter);
-    padding-left: var(--gutter);
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .header__logo{
@@ -40,7 +40,7 @@ html{
 }
 
 .nav-link{
-    margin-left: var(--gutter);
+    margin-left: 1rem;
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -64,7 +64,7 @@ LANDSCAPE
 }
 
 a.nav-link:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 a.nav-link:active {
@@ -202,5 +202,9 @@ MODULAR ROLE
 }
 
 .splash--header{
-    margin-top: calc(var(--nav-height) * -1 - 1rem);
+    margin-top: calc(var(--nav-height) * -1 - var(--gutter));
 }
+
+/*.splash--header .splash__content-ctn{
+    padding-top: var(--rhythm);
+}*/
