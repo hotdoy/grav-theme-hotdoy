@@ -1,14 +1,22 @@
 {% macro main(pages, theme) %}
-	{% for p in pages.children.visible %}
-	    {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
-	    <a class="nav-link {{ current_page }}" href="{{ p.url }}">{{ p.menu }}</a>
+
+{# 	{% if theme.use_custom_navigation %}
+	{% for p in pages.children if p.template == 'navigation' %}
+
 	{% endfor %}
-	 {% if theme.snipcart_api_key %}
-	    <a class="snipcart-checkout nav-link">
-	        <div class="cart">
-	            <span class="material-icons cart-icon">shopping_cart</span>
-	            <span class="snipcart-items-count"></span>
-	        </div>
-	    </a>
-	{% endif %}
+	
+	{% else %} #}
+		{% for p in pages.children.visible %}
+		    {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
+		    <a class="nav-link {{ current_page }}" href="{{ p.url }}">{{ p.menu }}</a>
+		{% endfor %}
+		{% if theme.snipcart_api_key %}
+		    <a class="snipcart-checkout nav-link">
+		        <div class="cart">
+		            <span class="material-icons cart-icon">shopping_cart</span>
+		            <span class="snipcart-items-count"></span>
+		        </div>
+		    </a>
+		{% endif %}
+	{# {% endif %} #}
 {% endmacro %}
