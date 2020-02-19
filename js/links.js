@@ -13,11 +13,13 @@
 				a.setAttribute('rel', 'noopener');
 			}
 
-			if (!!href && !!strategy && href.match('^/')) {
-				var preLoadLink = document.createElement("link");
-				preLoadLink.rel = strategy;
-    			preLoadLink.href = href;
-				document.head.appendChild(preLoadLink);
+			else if (!!href && href.match('^/')) {
+				if (!!strategy) {
+					var preLoadLink = document.createElement("link");
+					preLoadLink.rel = strategy;
+	    			preLoadLink.href = href;
+					document.head.appendChild(preLoadLink);
+				}
 			}	
 		})
 	}
