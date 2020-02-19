@@ -1,14 +1,26 @@
+# v1.7.3
+## 19-02-2020
+
+1. [](#new)
+	* Added support for cvategory taxonomy on articles.
+	* Blockquotes now react to text context (big, huge).
+	* Brand new way to manage article header image and thumbnail.
+	* Article header image caption now supports markdown.
+2. [](#improved)
+	* Modular default role shown first.
+	* Added some modular header role classes, mainly to show how to do it.
+3. [](#bugfix)
+	* Replace broken loader image with a temporary spinner.
+
 # v1.7.2
 ## 18-02-2020
 
 1. [](#new)
 	* Text size editor buttons (small, small, big, huge)
-
 2. [](#improved)
 	* Text Sizes (big, huge) only affect landscape (desktop) to prevent content duplication.
 	* Reduced hover effect (trslate Y) on site header links and article cards.
 	* Removed big bottom margin on h1.
-
 3. [](#bugfix)
 	* Fix hero modular first and last child margins when using nested shortcodes.
 
