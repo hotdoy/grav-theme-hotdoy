@@ -16,7 +16,7 @@
 	position: relative;
 	opacity: 0;
 	animation-name: site-loader-spinner;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
@@ -31,7 +31,7 @@
 }
 
 body.loaded #site-loader{
-	transition: all 0.1s; 
+	transition: all 0.2s; 
 	opacity: 0;
 	visibility: hidden;
 }

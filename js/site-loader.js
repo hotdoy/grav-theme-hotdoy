@@ -4,7 +4,9 @@
 	var siteLoader = function(){
 		var loader = $('#site-loader');
 		if (loader.length) {
-			$('body').addClass('loaded');
+			setTimeout(function(){ 
+				$('body').addClass('loaded');
+			}, 50);
 		}
 	}
 
