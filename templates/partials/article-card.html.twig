@@ -2,11 +2,11 @@
 {% set title = title|default(page.title) %}
 {% set subtitle = subtitle|default(page.header.subtitle) %}
 {% set date = date|default(page.header.date) %}
-{% set image = image|default(page.header.image ? page.media[page.header.image]) %}
-{% set image_alt = image_alt|default(page.header.image_alt) %}
-{% set image_caption = image_caption|default(page.header.image_caption) %}
+{% set image = image|default(page.header.media_thumb ? page.media.images|first()) %}
+{% set image_alt = media_alt|default(page.header.media_alt) %}
 {% set content = content|default(page.content|raw) %}
 {% set authors = author|default(page.taxonomy.author) %}
+{% set categories = categories|default(page.taxonomy.category) %}
 
 <article class="article-card">
 	<a class="article-card__link" href="{{ page.url }}">
@@ -23,23 +23,39 @@
 
 			{# metas #}
 			<div class="article-card__metas xsmall">
+				
+				{# date #}
 				<span class="article-card__date">{{ datetime.format(date) }} </span> 				
+				
+				{# authors #}
 				{% if authors %} ― 
-				{% for author in authors %}
-				<span class="article-card__author">{{ author }} {% if not loop.last %}, {% endif %}</span>
-				{% endfor %}
+				<span class="article-card__authors">
+					{% for author in authors %}
+					{{ author }} {% if not loop.last %}, {% endif %}
+					{% endfor %}
+				</span>
 				{% endif %}
+
+				{# categories #}
+				{% if categories %}
+				<div class="article-card__categories">
+					{% for category in categories %}
+					<span>{{ category }}</span> {% if not loop.last %}, {% endif %}
+					{% endfor %}
+				</div>
+				{% endif %}
+
 			</div>
 		</div>
 
-		{# image #}
-		<div class="article-card__img-ctn">
+		{# media #}
+		{% if image %}
+		<div class="article-card__media-ctn">
 			<div class="fill">
-				{% if image %}
-				{% include '/partials/img.html.twig' with {'image': image, 'alt': image_alt, 'class': 'article-card__img'} %}
-				{% endif %}
+				{% include '/partials/img.html.twig' with {'image': image, 'alt': media_alt, 'class': 'article-card__media'} %}
 			</div>
 		</div>
+		{% endif %}
 
 	</a>
 </article>

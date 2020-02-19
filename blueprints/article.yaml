@@ -7,25 +7,35 @@ form:
       fields:
         content:
           fields:
-            header.subtitle:
-              type: text
-              label: Subtitle
-            header.image:
-              type: filepicker
-              label: Image
-              preview_images: true
-            header.image_alt:
-              type: text
-              label: Image Alt
-            header.image_caption:
-              type: text
-              label: Image Caption
-            header.image_width:
-              type: toggle
-              label: Image Width
-              highlight: tight
-              default: tight
-              options: 
-                tight: 'Tight'
-                site: 'Site'
 
+            header.subtitle:
+              ordering@: header.title
+              type: text
+              style: vertical
+              label: Subtitle
+
+            header.media_header:
+              type: toggle
+              label: Use First Media as Header
+              highlight: 1
+              default: 1
+              options: 
+                1: 'Yes'
+                0: 'No'
+
+            header.media_thumb:
+              type: toggle
+              label: Use First Media as Thumbnail
+              highlight: 1
+              default: 1
+              options: 
+                1: 'Yes'
+                0: 'No'
+
+            header.media_alt:
+              type: text
+              label: First Media Alt
+
+            header.media_caption:
+              type: text
+              label: First Media Caption
