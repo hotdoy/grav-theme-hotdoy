@@ -6,7 +6,7 @@
 		if (loader.length) {
 			setTimeout(function(){ 
 				$('body').addClass('loaded');
-			}, 50);
+			}, 20);
 		}
 	}
 
