@@ -88,8 +88,8 @@ form:
               highlight: default
               default: default
               options: 
-                header: 'Header'
                 default: 'Default'
+                header: 'Header'
 
             header.limit_reveal:
               type: toggle
