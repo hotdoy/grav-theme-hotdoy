@@ -197,14 +197,13 @@ MODULAR ROLE
 ###########################################################
 */
 
-.hero--header{
+.hero--header,
+.content--header,
+.video--header,
+.map--header{
  margin-top: 0;
 }
 
 .splash--header{
     margin-top: calc(var(--nav-height) * -1 - var(--gutter));
 }
-
-/*.splash--header .splash__content-ctn{
-    padding-top: var(--rhythm);
-}*/
