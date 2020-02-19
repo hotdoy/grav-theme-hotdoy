@@ -151,6 +151,7 @@ BIG
     .big h1{font-size: 3em;}
     .big h2{font-size: 2em;}
     .big h3{font-size: 1.5em;}
+    .big blockquote{font-size: 2em;}
 }
 
 
@@ -168,4 +169,5 @@ HUGE
     .huge h1{font-size: 3em;}
     .huge h2{font-size: 2em;}
     .huge h3{font-size: 1.5em;}
+    .huge blockquote{font-size: 2em;}
 }
