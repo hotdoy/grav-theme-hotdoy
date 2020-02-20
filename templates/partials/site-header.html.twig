@@ -2,9 +2,10 @@
 <header class="header">
     <div class="header__wrapper">
 
+        {% set site_logo = theme.site_logo ? theme.site_logo : site.title %}
+
     	{# Logo #}
-        <a class="header__logo landscape" href="{{ base_url == '' ? '/' : base_url }}">{{ site.title }}</a>
-        <a class="header__logo portrait" href="{{ base_url == '' ? '/' : base_url }}">{{ site.title }}</a>
+        <a class="header__logo" href="{{ base_url == '' ? '/' : base_url }}">{{ site_logo }}</a>
 
         {# landscape #}
         <nav class="header__nav landscape">
@@ -16,6 +17,7 @@
             <span class="material-icons">menu</span>
         </div>
         <nav class="header__panel portrait">
+            <a class="header__panel-logo" href="{{ base_url == '' ? '/' : base_url }}">{{ site_logo }}</a>
             <div class="header__toggle-off">
                 <span class="material-icons">close</span>
             </div>

@@ -42,6 +42,16 @@ form:
       label: Color HL Inverted
       default: '#ffffff'
 
+    navigation:
+      type: section
+      title: Navigation
+
+    site_logo:
+      type: textarea
+      rows: 13
+      label: Site Logo
+      help: 'Inline SVG code.'
+
     color_nav_bg:
       type: colorpicker
       label: Color Nav BG
@@ -51,16 +61,6 @@ form:
       type: colorpicker
       label: Color Nav FG
       default: '#313131'
-
-    reveal_content:
-      type: toggle
-      label: Reveal Content
-      help: Reveal content as you scroll.
-      highlight: 1
-      default: 1
-      options: 
-        1: 'Yes'
-        0: 'No'
 
     organization:
       type: section
@@ -76,6 +76,7 @@ form:
       label: Logo
       destination: 'user/assets/hotdoy/organization'
       multiple: false
+      help: 'Used in schema.org implmentation to represent your organization. Will not appear on the front-end.'
 
     analytics:
       type: section
@@ -174,3 +175,17 @@ form:
         prerender: 'prerender'
         preconnect: 'preconnect'
         dns-prefetch: 'dns-prefetch'
+
+    misc:
+      type: section
+      title: Misc
+
+    reveal_content:
+      type: toggle
+      label: Reveal Content
+      help: Reveal content as you scroll.
+      highlight: 1
+      default: 1
+      options: 
+        1: 'Yes'
+        0: 'No'

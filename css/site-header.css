@@ -1,5 +1,5 @@
 html{
-    --nav-height: 4.2rem;
+    --nav-height: 4rem;
 }
 
 @media (min-width: 735px) {
@@ -35,8 +35,14 @@ html{
 }
 
 .header__logo{
+    display: flex;
     color: var(--color-nav-fg);
     text-decoration: none;
+}
+
+.header__logo svg{
+    height: 2rem;
+    width: auto;
 }
 
 .nav-link{
@@ -108,7 +114,7 @@ PORTRAIT
 
 .header__toggle-off{
     position: absolute;
-    top: 22px;
+    top: 16px;
     right: var(--gutter);
     color: var(--color-fg);
     cursor: pointer;
@@ -125,6 +131,8 @@ PORTRAIT
     right: 0;
     left: 0;
     bottom: 0;
+    padding: 1rem;
+    padding: var(--gutter);
     box-shadow: 0 7px 50px 5px rgba(0, 0, 0, 0.2);
     background-color: var(--color-bg);
 }
@@ -140,6 +148,18 @@ PORTRAIT
 @keyframes header__panel--on {
     from {opacity: 0;transform: translateY(75px)}
     to {opacity: 1;transform: translateY(0)}
+}
+
+.header__panel-logo{
+    position: absolute;
+    top: 16px;
+    left: var(--gutter);
+    color: var(--color-fg);
+}
+
+.header__panel-logo svg{
+    height: 2rem;
+    width: auto;
 }
 
 .header__panel .nav-link{
