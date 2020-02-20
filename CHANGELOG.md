@@ -1,8 +1,9 @@
 # v1.7.4
-## 19-02-2020
+## 20-02-2020
 
 1. [](#new)
 	* Extended color theme to default blueprint (default, product, article, etc).
+	* Added SVG site logo from theme config. This is the first step in a serie of additions leading to a fully customizable navigation (1.8).
 2. [](#improved)
 	* Improved default template top margin
 	* Some changes on site loader timing (little bit slower).
