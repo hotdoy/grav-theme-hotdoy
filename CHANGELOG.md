@@ -1,3 +1,13 @@
+# v1.7.4
+## 19-02-2020
+
+1. [](#new)
+	* Extended color theme to default blueprint (default, product, article, etc).
+2. [](#improved)
+	* Improved default template top margin
+	* Some changes on site loader timing (little bit slower).
+	* Removed unuset asset from preload block.
+
 # v1.7.3
 ## 19-02-2020
 
