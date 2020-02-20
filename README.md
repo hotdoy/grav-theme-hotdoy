@@ -6,14 +6,16 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?  
 * **1.7 A LOT OF BREAKING CHANGES! Open an issue if you need help after the update. Most problems can be fixed by saving your pages. You will probably have to re-save colors, and modular margins/paddings.** 
+* You can now add a logo to your site using inline SVG code (and use currentColor if you need to).
+* Articles can now display categories.
+* text context (big, huge) only affect desktop.
+* The skeleton is usable again. (was bumped to 1.7)
+
 
 ## What's next ?  
-* With the release of 1.7, I'm going back text context (xsmall, small, big, huge). Make them better and more usefull overall.
-* Articles might get more taxonomy support.
-* Adding more content and update the skeleton.
 * Adding more support for shortcodes included with the ShortCode Core Plugin.
 * Adding documentation on Modular and extending the theme (like changing the fonts and stuff like that).
-* Some kind of nav behavior selection probably directly from the admin panel.
+* A bunch of incremental changes to the current nav leading to a fully customizable navigation for 1.8.
 
 ## Need a ✋ ?
 
@@ -28,8 +30,9 @@ Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 ![Theme screenshot](https://raw.githubusercontent.com/hotdoy/grav-theme-hotdoy/master/screenshot.jpg)
 
 The **Hotdoy** Theme is meant to be my starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
-It is in active developpement and probably not suited for production unless you dont mind things changing all the times.
-You can use this theme by simply downloading it. If you use the skeleton, make sure to upgrade the theme and check if the demo content still display properly (it will not). I'm having a hard time finding the time to update the skeleton so I'm thinking about abandonning it.
+It is in active developpement and probably not suited for production unless you dont mind things changing all the times. 
+You could also change the theme name in the blueprint.yaml file to stop receiving updates and doing them locally (probably safer).
+If you use the skeleton, make sure to update the theme and check if the demo content still display properly.
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). It is also my live testing ground so things can get a bit weird.
 
@@ -115,4 +118,12 @@ A complete list of icon codes can be found [here](https://material.io/resources/
 ![](image.jpg)
 ![](image.jpg)
 [/swiper]
+```
+
+## Text size
+```
+[xsmall][/xsmall]
+[small][/small]
+[big][/big]
+[huge][/huge]
 ```
