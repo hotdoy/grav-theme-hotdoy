@@ -26,6 +26,9 @@ form:
               type: section
               title: Theme
 
+            header.meta_theme:
+              unset@: true
+
             header.color_bg:
               type: colorpicker
               label: Color BG
