@@ -119,6 +119,11 @@
 	padding: 0 0;
 }
 
+.grid-item h2,
+.grid-item h3{
+	margin-top: 2rem;
+}
+
 .grid-item .btn{
 	margin-top: 1rem;
 	margin-bottom: 0;
