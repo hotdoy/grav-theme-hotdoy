@@ -1,3 +1,14 @@
+# v1.7.5
+## 21-02-2020
+
+1. [](#new)
+	* Nav Panel theme is now separated from page bg and fg colors and is set in the config.
+2. [](#improved)
+	* Minor stylistic fixes.
+3. [](#bugfix)
+	* Hide meta-theme from modular.
+
+
 # v1.7.4
 ## 20-02-2020
 
