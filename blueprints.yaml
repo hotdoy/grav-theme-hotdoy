@@ -62,6 +62,16 @@ form:
       label: Color Nav FG
       default: '#313131'
 
+    color_nav_panel_bg:
+      type: colorpicker
+      label: Color Nav Panel FG
+      default: '#ffffff'
+
+    color_nav_panel_fg:
+      type: colorpicker
+      label: Color Nav Panel FG
+      default: '#313131'
+
     organization:
       type: section
       title: Organization

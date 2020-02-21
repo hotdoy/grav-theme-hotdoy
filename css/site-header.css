@@ -12,8 +12,10 @@ html{
     position: relative;
     font-family: var(--font-base);
     height: var(--nav-height);
-    color: var(--color-nav-fg);
-    background-color: var(--color-nav-bg);
+    color: #313131;
+    color: var(--color-nav-fg, #313131);
+    background-color: #ffffff;
+    background-color: var(--color-nav-bg, #ffffff);
     z-index: 5000;
 }
 
@@ -116,7 +118,8 @@ PORTRAIT
     position: absolute;
     top: 16px;
     right: var(--gutter);
-    color: var(--color-fg);
+    color: #313131;
+    color: var(--color-nav-panel-fg, #313131);
     cursor: pointer;
 }
 
@@ -134,7 +137,8 @@ PORTRAIT
     padding: 1rem;
     padding: var(--gutter);
     box-shadow: 0 7px 50px 5px rgba(0, 0, 0, 0.2);
-    background-color: var(--color-bg);
+    background-color: #ffffff;
+    background-color: var(--color-nav-panel-bg, #ffffff);
 }
 
 .header__panel.header__panel--on{
@@ -154,7 +158,7 @@ PORTRAIT
     position: absolute;
     top: 16px;
     left: var(--gutter);
-    color: var(--color-fg);
+    color: var(--color-nav-panel-fg, #313131);
 }
 
 .header__panel-logo svg{
@@ -168,7 +172,8 @@ PORTRAIT
     font-family: var(--font-alt-bold);
     font-size: 2rem;
     border-bottom: none;
-    color: var(--color-fg);
+    color: #313131;
+    color: var(--color-nav-panel-fg, #313131);
 }
 
 

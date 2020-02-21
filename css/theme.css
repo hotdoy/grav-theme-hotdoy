@@ -9,8 +9,11 @@ html{
 	--color-fg: #313131;
 	--color-hl: blue;
 	--color-hl-inverted: #FFF;
+
+	--color-nav-bg: transparent;	
 	--color-nav-fg: #313131;
-	--color-nav-bg: transparent;
+	--color-nav-panel-bg: transparent;
+	--color-nav-panel-fg: #313131;
 }
 
 @media (min-width: 735px) {

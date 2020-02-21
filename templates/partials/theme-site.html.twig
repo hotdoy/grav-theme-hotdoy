@@ -1,11 +1,15 @@
 {% set color_nav_bg = color_nav_bg|default(page.header.color_nav_bg ?? theme.color_nav_bg) %}
 {% set color_nav_fg = color_nav_fg|default(page.header.color_nav_fg ?? theme.color_nav_fg) %}
+{% set color_nav_panel_bg = color_nav_panel_bg|default(page.header.color_nav_panel_bg ?? theme.color_nav_panel_bg) %}
+{% set color_nav_panel_fg = color_nav_panel_fg|default(page.header.color_nav_panel_fg ?? theme.color_nav_panel_fg) %}
 {% set color_bg = color_bg|default(page.header.color_bg ?? theme.color_bg) %}
 {% set color_fg = color_fg|default(page.header.color_fg ?? theme.color_fg) %}
 {% set color_hl = color_hl|default(page.header.color_hl ?? theme.color_hl) %}
 {% set color_hl_inverted = color_hl_inverted|default(page.header.color_hl_inverted ?? theme.color_hl_inverted) %}
 {% if color_nav_bg %}--color-nav-bg:{{ color_nav_bg }};{% endif %}
 {% if color_nav_fg %}--color-nav-fg:{{ color_nav_fg }};{% endif %}
+{% if color_nav_panel_bg %}--color-nav-panel-bg:{{ color_nav_panel_bg }};{% endif %}
+{% if color_nav_panel_fg %}--color-nav-panel-fg:{{ color_nav_panel_fg }};{% endif %}
 {% if color_bg %}--color-bg:{{ color_bg }};{% endif %}
 {% if color_fg %}--color-fg:{{ color_fg }};{% endif %}
 {% if color_hl %}--color-hl:{{ color_hl }};{% endif %}
