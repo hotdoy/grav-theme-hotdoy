@@ -1,8 +1,12 @@
 # v1.7.6
 ## 23-02-2020
 
-1. [](#bugfix)
+1. [](#improved)
+	* Live testing BIG and HUGE font-size for portrait mode.
+	* Allow for font size other than small in grid-item.
+2. [](#bugfix)
 	* Fix video modular horizontal padding in portrait.
+	* Process shortcodes and markdown in grid items.
 
 # v1.7.5
 ## 21-02-2020
