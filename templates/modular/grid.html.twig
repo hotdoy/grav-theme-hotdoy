@@ -37,7 +37,7 @@ grid {{ computed_item_align_v }} {{ computed_item_align_h }}
 		<div class="{{ grid_classes }}" style="{{ grid_styles }}">
 			{% for i in page.header.grid_items %}
 				<div class="grid-item" {% if not page.header.limit_reveal %} data-reveal{% endif %}>
-					<div class="grid-item__content small">{{ i.content|markdown }}</div>
+					<div class="grid-item__content">{{ i.content|markdown|shortcodes }}</div>
 				</div>
 			{% endfor %}
 			{% for p in page.collection() %}
