@@ -1,3 +1,9 @@
+# v1.7.6
+## 23-02-2020
+
+1. [](#bugfix)
+	* Fix video modular horizontal padding in portrait.
+
 # v1.7.5
 ## 21-02-2020
 
