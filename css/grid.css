@@ -128,3 +128,14 @@
 	margin-top: 1rem;
 	margin-bottom: 0;
 }
+
+
+.grid--p1 .grid-item{
+	padding: 0 1rem;
+}
+.grid--p2 .grid-item{
+	padding: 0 2rem;
+}
+.grid--p3 .grid-item{
+	padding: 0 3rem ;
+}
