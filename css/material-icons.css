@@ -32,13 +32,13 @@
   font-feature-settings: 'liga';
 }
 
-p>.material-icons,
-h1>.material-icons,
-h2>.material-icons,
-h3>.material-icons,
-h4>.material-icons,
-h5>.material-icons,
-h6>.material-icons{
+p .material-icons,
+h1 .material-icons,
+h2 .material-icons,
+h3 .material-icons,
+h4 .material-icons,
+h5 .material-icons,
+h6 .material-icons{
   font-size: inherit;
   line-height: inherit;
 }
