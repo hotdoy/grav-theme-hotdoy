@@ -24,7 +24,7 @@ class ButtonShortcode extends Shortcode
             $mi = $sc->getParameter('mi');
             $i = $sc->getParameter('i');
             $icon = $mi ? $mi : $i;
-                $output = $this->twig->processTemplate('partials/buttonsc.html.twig', [
+            $output = $this->twig->processTemplate('partials/buttonsc.html.twig', [
                 'page' => $this->grav['page'],
                 'label' => $sc->getContent(),
                 'href' => $sc->getParameter('href'),
