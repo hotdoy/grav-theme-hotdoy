@@ -17,7 +17,7 @@
         {% endblock %}
     </head>
 
-    <body class="body__{{ page.template }}" style="{% include 'partials/theme-site.html.twig' %}" {% if theme.links %}data-links="{{ theme.links }}"{% endif %}>
+    <body class="body__{{ page.template }} {{page.slug}}" style="{% include 'partials/theme-site.html.twig' %}" {% if theme.links %}data-links="{{ theme.links }}"{% endif %}>
         {%- block site_loader %}{% include 'partials/site-loader.html.twig' %}{% endblock %}
         {%- block site_marquee %}{% include 'partials/marquee.html.twig' %}{% endblock %} 
         {%- block site_header %}{% include 'partials/site-header.html.twig' %}{% endblock %} 
