@@ -1,3 +1,19 @@
+# v1.7.8
+## 25-02-2020
+
+1. [](#new)
+	* Added body modifier class based on page template and slug.
+	* Added custom loader color in theme and pages.
+2. [](#improved)
+	* Removed jquery in a bunch of script.
+	* Removed Kaltura video support.
+	* Removed Marquee script.
+	* Removed nav gb color option.
+	* Removed broken loader spinner.
+	* Removed duplicate yaml in modular page blueprint.
+3. [](#bugfix)
+	* Fixed janky custom reveal using fadein in firefox.
+
 # v1.7.7
 ## 24-02-2020
 
