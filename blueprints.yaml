@@ -42,6 +42,11 @@ form:
       label: Color HL Inverted
       default: '#ffffff'
 
+    color_loader:
+      type: colorpicker
+      label: Color Loader
+      help: Will use the color-bg of current page if not set. You can also overwrite this value per page.
+
     navigation:
       type: section
       title: Navigation
@@ -51,12 +56,7 @@ form:
       rows: 13
       label: Site Logo
       help: 'Inline SVG code.'
-
-    color_nav_bg:
-      type: colorpicker
-      label: Color Nav BG
-      default: 'rgba(255, 255, 255, 0.00)'
-      
+     
     color_nav_fg:
       type: colorpicker
       label: Color Nav FG

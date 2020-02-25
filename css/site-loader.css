@@ -5,24 +5,10 @@
 	bottom: 0;
 	left: 0;
 	z-index: 4999;
-	background-color: var(--color-bg);
+	background-color: var(--color-loader, --color-bg);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-#site-loader .site-loader__spinner{
-	color: var(--color-fg);
-	position: relative;
-	opacity: 0;
-	animation-name: site-loader-spinner;
-	animation-duration: 0.5s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
-}
-
-#site-loader .site-loader__spinner svg{
-	color: inherit;
 }
 
 @keyframes site-loader-spinner{
@@ -30,7 +16,7 @@
 	100% {opacity: 1;}
 }
 
-body.loaded #site-loader{
+#site-loader.loaded{
 	transition: all 0.2s; 
 	opacity: 0;
 	visibility: hidden;
