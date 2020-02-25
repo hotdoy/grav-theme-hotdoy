@@ -45,6 +45,12 @@ form:
               type: colorpicker
               label: Color HL Inverted
 
+            header.color_nav_bg:
+              unset@: true
+
+            header.color_nav_fg:
+              unset@: true
+
             header.margin_top:
               type: toggle
               label: Margin Top
