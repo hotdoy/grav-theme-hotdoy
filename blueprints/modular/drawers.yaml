@@ -11,6 +11,10 @@ form:
             content:
                 unset@: true
 
+            header.deprecated:
+              type: display
+              content: '<div style="color:red;font-size:2rem;">THIS MODULE IS DEPRECATED</div><div>Use the content modular with the new [drawer] <a href="https://hotdoy.ca/learn/shortcodes/">shortcode</a> instead.</div>'
+
             header.drawers:
               name: drawers
               type: list
