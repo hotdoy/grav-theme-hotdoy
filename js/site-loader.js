@@ -1,19 +1,12 @@
-(function ($) {
+(function () {
 	'use strict';
-
 	var siteLoader = function(){
-		var loader = $('#site-loader');
-		if (loader.length) {
+		let loader = document.querySelector('#site-loader');
+		if (!!loader) {
 			setTimeout(function(){ 
-				$('body').addClass('loaded');
+				loader.classList.add('loaded');
 			}, 20);
 		}
 	}
-
-	var init = function () {
-		siteLoader();
-	};
-
-	$(init);
-	
-})(jQuery);
+	siteLoader();
+})();
