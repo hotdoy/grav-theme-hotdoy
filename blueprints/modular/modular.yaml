@@ -45,7 +45,7 @@ form:
               type: colorpicker
               label: Color HL Inverted
 
-            header.color_nav_bg:
+            header.color_loader:
               unset@: true
 
             header.color_nav_fg:
