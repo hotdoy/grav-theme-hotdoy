@@ -8,10 +8,13 @@ class DrawerShortcode extends Shortcode
     public function init()
     {
         $this->shortcode->getHandlers()->add('drawer', function(ShortcodeInterface $sc) {
+
+
+
             $output = $this->twig->processTemplate('partials/drawer.html.twig', [
-                'page' => $this->grav['page'],
                 'title' => $sc->getParameter('drawer', $this->getBbCode($sc)),
-                'content' => $sc->getContent()
+                'content' => $sc->getContent(),
+                'level' => $sc->getParameter('level') ?? '2'
             ]);
             return $output;
         });
