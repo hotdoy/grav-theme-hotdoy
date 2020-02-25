@@ -9,8 +9,7 @@ class SwiperShortcode extends Shortcode
         $this->shortcode->getHandlers()->add('swiper', function(ShortcodeInterface $sc) {
         	$width = $sc->getParameter('width', $this->getBbCode($sc));
             $output = $this->twig->processTemplate('partials/swipersc.html.twig', [
-            	'swiper_slides' => $sc->getContent(),
-            	'swiper_width' => $width
+            	'swiper_slides' => $sc->getContent()
             ]);
             return $output;
         });
