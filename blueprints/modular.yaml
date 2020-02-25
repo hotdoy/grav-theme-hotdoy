@@ -10,39 +10,3 @@ form:
 
             content:
               unset@: true
-
-        options:
-          fields:
-
-            theme:
-              type: section
-              title: Theme
-              underline: true
-
-            header.meta_theme:
-              type: colorpicker
-              label: Meta Theme
-           
-            header.color_bg:
-              type: colorpicker
-              label: Color BG
-
-            header.color_fg:
-              type: colorpicker
-              label: Color FG
-
-            header.color_hl:
-              type: colorpicker
-              label: Color HL
-
-            header.color_hl_inverted:
-              type: colorpicker
-              label: Color HL Inverted
-
-            header.color_nav_bg:
-              type: colorpicker
-              label: Color Nav BG
-
-            header.color_nav_fg:
-              type: colorpicker
-              label: Color Nav FG
