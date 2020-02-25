@@ -1,4 +1,4 @@
-(function ($) {
+(function () {
 	'use strict';
 
 	var links = function(){
@@ -24,9 +24,6 @@
 		})
 	}
 
-	var init = function () {
-		links();
-	};
-
-	$(init);
-})(jQuery);
+	links();
+	
+})();

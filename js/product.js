@@ -1,4 +1,4 @@
-(function ($) {
+(function () {
 	'use strict';
 
 	var productGallery = function(){
@@ -11,9 +11,6 @@
     	});
 	}
 
-	var init = function () {
-		productGallery();
-	};
+	productGallery();
 
-	$(init);
-})(jQuery);
+})();

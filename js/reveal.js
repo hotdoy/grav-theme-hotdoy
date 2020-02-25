@@ -1,4 +1,4 @@
-(function ($) {
+(function () {
 	'use strict';
 	var reveal = function(){
 		const elements = document.querySelectorAll('[data-reveal]');
@@ -55,9 +55,5 @@
 		}
 	}
 
-	var init = function () {
-		reveal();
-	};
-
-	$(init);
-})(jQuery);
+	reveal();
+})();

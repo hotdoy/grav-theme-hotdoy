@@ -1,4 +1,4 @@
-(function ($) {
+(function () {
 	'use strict';
 
 	var tracking = function(){
@@ -13,9 +13,6 @@
 		}
 	}
 
-	var init = function () {
-		tracking();
-	};
-
-	$(init);
-})(jQuery);
+	tracking();
+	
+})();

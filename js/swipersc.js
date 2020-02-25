@@ -1,7 +1,7 @@
-(function ($) {
+(function () {
 	'use strict';
 
-	var initSwiper = function(){
+	var swiperSc = function(){
 		let el = $('.swipersc');
 		el.each(function(){
 			var id = $(this).attr('id');
@@ -16,9 +16,6 @@
 		})
 	}
 
-	var init = function () {
-		initSwiper();
-	};
+	swiperSc();
 
-	$(init);
-})(jQuery);
+})();
