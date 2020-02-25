@@ -1,3 +1,14 @@
+# v1.7.7
+## 24-02-2020
+
+1. [](#new)
+	* Added new drawer shortcode.
+	* Deprecated old modular drawer. (set for deletion).
+2. [](#improved)
+	* Unscopped material-design icons when used in text elements. (should fix inherited text-size).
+3. [](#bugfix)
+	* Fixed product page js not being loaded (fix product gallery).
+
 # v1.7.6
 ## 23-02-2020
 

@@ -13,7 +13,7 @@ form:
 
             header.deprecated:
               type: display
-              content: '<div style="color:red;font-size:2rem;">THIS MODULE IS DEPRECATED</div><div>Use the content modular with the new [drawer] <a href="https://hotdoy.ca/learn/shortcodes/">shortcode</a> instead.</div>'
+              content: '<div style="color:red;font-size:2rem;">THIS MODULE IS DEPRECATED</div><div>Use the content modular with the new [drawer] <a href="https://hotdoy.ca/learn/shortcodes/">shortcode</a> instead.</div><div>THIS MODULAR WILL BE DELETED IN A FUTURE UPDATE.</div>'
 
             header.drawers:
               name: drawers
