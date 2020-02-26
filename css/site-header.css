@@ -71,12 +71,8 @@ LANDSCAPE
     padding-bottom: 5px;
 }
 
-a.nav-link:hover {
-    transform: translateY(-1px);
-}
-
 a.nav-link:active {
-    transform: translateY(0px);
+    transform: translateY(2px);
 }
 
 .landscape .nav-link.selected:before{
