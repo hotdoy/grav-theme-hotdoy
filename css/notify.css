@@ -18,7 +18,7 @@
     color: var(--color-fg);
     box-shadow: 0 10px 28px 0 rgba(0,0,0,.2);
     transition: all 0.5s;
-    z-index: 5000;
+    z-index: 4999;
 }
 
 div[data-notify]{
