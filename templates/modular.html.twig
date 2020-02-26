@@ -1,5 +1,9 @@
 {% extends 'partials/base.html.twig' %}
 
+{% if page.header.css %}
+{% do assets.addInlineCss(page.header.css) %}
+{% endif %}
+
 {% block content %}
 <main class="page page--modular">
 	{% for module in page.collection() %}

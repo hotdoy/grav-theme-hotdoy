@@ -10,3 +10,19 @@ form:
 
             content:
               unset@: true
+              
+        options:
+          fields:
+
+            header.css:
+              type: editor
+              label: CSS
+              codemirror:
+                mode: 'css'
+                indentUnit: 4
+                autofocus: true
+                indentWithTabs: true
+                lineNumbers: true
+                styleActiveLine: true
+                gutters: ['CodeMirror-lint-markers']
+                lint: true
