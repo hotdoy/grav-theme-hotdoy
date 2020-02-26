@@ -6,16 +6,18 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?  
 * **1.7 A LOT OF BREAKING CHANGES! Open an issue if you need help after the update. Most problems can be fixed by saving your pages. You will probably have to re-save colors, and modular margins/paddings.** 
+* I deprecated the Drawers modular in favor of a simple [shortcode](https://hotdoy.ca/learn/shortcodes). 
 * You can now add a logo to your site using inline SVG code (and use currentColor if you need to).
 * Articles can now display categories.
-* text context (big, huge) only affect desktop.
+* text context (big, huge) are now usable on mobile.
 * The skeleton is usable again. (was bumped to 1.7)
 
 
 ## What's next ?  
-* Adding more support for shortcodes included with the ShortCode Core Plugin.
+* Adding more support for shortcodes included with the ShortCode Core Plugin (gotta check on columns).
 * Adding documentation on Modular and extending the theme (like changing the fonts and stuff like that).
-* A bunch of incremental changes to the current nav leading to a fully customizable navigation for 1.8.
+* Removing more and more JQuery.
+* Having a quick and easy way to change the font would be great.
 
 ## Need a ✋ ?
 
