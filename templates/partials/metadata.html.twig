@@ -64,7 +64,7 @@
       "@type": "Organization",
       "name": "{{ theme.org_name }}",
       "url": "{{ base_url_absolute }}",
-      "logo": "{{ theme.org_logo_url }}"
+      "logo": "{{ base_url_absolute ~ '/' ~ theme.org_logo|first.path }}"
     }
 </script>
 {% endif %}
