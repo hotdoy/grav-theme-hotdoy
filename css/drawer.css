@@ -1,10 +1,10 @@
 .drawers__title{
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .drawer__detail{
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 	border-bottom: solid 1px;
 	box-sizing: content-box;
 }
