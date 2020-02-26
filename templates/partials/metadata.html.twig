@@ -18,14 +18,12 @@
 {% endfor %}
 
 {# Page Metadata #}
-{% for key, value in page.header.metadata %}
-<meta 
-{%- if key == 'http_equiv' %} http-equiv="{{ value }}"
-{%- elseif key == 'charset' %} charset="{{ value }}"
-{%- elseif key == 'property' %} property="{{ value }}"
-{%- else %} name="{{ key }}" content="{{ value }}" 
+{% for key, value in page.header.metadata %} 
+{%- if key == 'http_equiv' %}<meta http-equiv="{{ value }}"/>
+{%- elseif key == 'charset' %}<meta charset="{{ value }}"/>
+{%- elseif key == 'property' %}<meta property="{{ value }}"/>
+{%- elseif key != 'description' %}<meta name="{{ key }}" content="{{ value }}"/> 
 {%- endif %}
-/>
 {% endfor %}
 
 {# Android Meta Theme Color #}
