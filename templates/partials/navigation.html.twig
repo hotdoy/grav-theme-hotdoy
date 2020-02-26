@@ -7,7 +7,7 @@
 	
 	{% else %} #}
 		{% for p in pages.children.visible %}
-		    {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
+		    {% set current_page = (p.active or p.activeChild) ? 'nav-link--selected' : '' %}
 		    <a class="nav-link {{ current_page }}" href="{{ p.url }}">{{ p.menu }}</a>
 		{% endfor %}
 		{% if theme.snipcart_api_key %}

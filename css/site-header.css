@@ -75,11 +75,11 @@ a.nav-link:active {
     transform: translateY(2px);
 }
 
-.landscape .nav-link.selected:before{
+.nav-link.nav-link--selected:before{
     content: " ";
     height: 1px;
     width: 100%;
-    background-color: var(--color-fg);
+    background-color: var(--color-nav-fg);
     position: absolute;
     bottom: 0;
     left: 0px;
@@ -167,7 +167,6 @@ PORTRAIT
     margin-left: 0;
     font-family: var(--font-alt-bold);
     font-size: 2rem;
-    border-bottom: none;
     color: #313131;
     color: var(--color-nav-panel-fg, #313131);
 }
