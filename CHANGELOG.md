@@ -1,3 +1,18 @@
+# v1.7.9
+## 26-02-2020
+
+1. [](#new)
+	* Added custom css field under Options tab for Modular pages (the pages, not the modules).
+2. [](#improved)
+	* Moved Notify z-index just under the nav so it's hidden by the menu on mobile.
+	* Nav-link no longer translate up on hover. Translate further down on active.
+	* Drawer added with new shortcode has more padding.
+	* .nav-link.selected class in now .nav-link.nav-link--selected.
+3. [](#bugfix)
+	* Fixed org_logo path.
+	* Fixed btn-solid shadow corner when rounded.
+	* Fixed meta description duplication.
+
 # v1.7.8
 ## 25-02-2020
 
