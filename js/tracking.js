@@ -1,9 +1,9 @@
 (function () {
 	'use strict';
-
 	var tracking = function(){
-		let e = document.querySelector('#tracking');
+		let e = document.getElementById('tracking');
 		if (!!e) {
+			console.log(e);
 			let src = e.getAttribute('data-ref');
 			let iframe = document.createElement('iframe');
 			iframe.setAttribute('loading', 'lazy');
@@ -12,7 +12,5 @@
 			e.appendChild(iframe);
 		}
 	}
-
 	tracking();
-	
 })();
