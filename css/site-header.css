@@ -81,7 +81,7 @@ a.nav-link:active {
     width: 100%;
     background-color: var(--color-nav-panel-fg);
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0px;
     opacity: 0;
     animation-name: nav-link-selected;
@@ -89,6 +89,11 @@ a.nav-link:active {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@media (min-width: 735px){
+    .nav-link.nav-link--selected:before{
+        bottom: 0;
+    }
 }
 @keyframes nav-link-selected {
     from {opacity: 0; transform: translateY(5px);}
