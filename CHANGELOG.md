@@ -1,3 +1,10 @@
+# v1.7.10
+## 01-03-2020
+
+1. [](#bugfix)
+	* Fixed tracking
+	* Fixed nav panel selected link underline color and spacing. 
+
 # v1.7.9
 ## 26-02-2020
 
