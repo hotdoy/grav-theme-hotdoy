@@ -1,12 +1,12 @@
 .unrevealed {
 	opacity:0;
-	transform: translateY(75px);
+	transform: translateY(20px);
 }
 
 .reveal {
 	transition: opacity, transform;
 	opacity: 1;
-	transition-duration: 0.5s;
+	transition-duration: 1s;
 	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -15,7 +15,6 @@
 	animation-duration: 0.5s;
 	transform: none;
 }
-
 @keyframes fadein {
 	from {opacity: 0; }
 	to {opacity: 1; }
