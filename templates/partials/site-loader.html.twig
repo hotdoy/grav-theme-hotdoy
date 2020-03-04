@@ -1,4 +1,11 @@
 {% if theme.reveal_content %}
-<div id="site-loader" data-reveal-initialdelay="50"></div>
+	{# {% if page.url == home_url %} #}
+		{# <div id="loader" class="loader--intro" data-reveal-initialdelay="3150" data-duration="3000"> #}
+			{# <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"> #}
+				{# <rect width="100" height="100" fill="white"/> #}
+			{# </svg> #}
+		{# </div> #}
+	{# {% else %} #}
+		<div id="loader" class="loader--transition" data-reveal-initialdelay="50"></div>
+	{# {% endif %} #}
 {% endif %}
-

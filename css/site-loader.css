@@ -1,24 +1,52 @@
-#site-loader{
+#loader{
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 4999;
-	background-color: white;
-	background-color: var(--color-loader, var(--color-bg));
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-@keyframes site-loader-spinner{
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+.loader--transition{
+	background-color: white;
+	background-color: var(--color-loader, var(--color-bg));
+	z-index: 4999;	
 }
 
-#site-loader.loaded{
+#loader.loader--transition.loaded{
 	transition: all 0.2s; 
 	opacity: 0;
 	visibility: hidden;
 }
+
+/*.loader--intro{
+	background-color: rgba(222, 0, 0, 1.00);
+	z-index: 9999;
+}
+
+.loader--intro svg{
+	animation-name: intro;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes intro {
+	0% {opacity: 0;}
+	20% {opacity: 0; transform: translateY(-70px) rotate(-90deg);}
+	40% {opacity: 1; transform: translateY(10px) rotate(10deg);}
+	70% {opacity: 1; transform: translateY(0) rotate(0);}
+	100%{}
+}
+
+#loader.loader--intro.loaded{
+	animation-name: introout;
+	animation-duration: 0.2s;
+}
+
+@keyframes introout {
+	from {opacity: 1; transform: translateY(0px);}
+	to {opacity: 0.5; transform: translateY(-100%);}
+}*/
