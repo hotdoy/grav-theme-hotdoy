@@ -3,7 +3,6 @@
 	var tracking = function(){
 		let e = document.getElementById('tracking');
 		if (!!e) {
-			console.log(e);
 			let src = e.getAttribute('data-ref');
 			let iframe = document.createElement('iframe');
 			iframe.setAttribute('loading', 'lazy');
