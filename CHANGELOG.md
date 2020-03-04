@@ -1,3 +1,12 @@
+# v1.7.11
+## 04-03-2020
+
+1. [](#new)
+	* Added demo conditional site-loader (commented in code).
+	* Added data-duration attribute to control loader removal from template. 
+2. [](#improved)
+	* Refined default reveal a bit. (less movement, more time).
+
 # v1.7.10
 ## 01-03-2020
 
