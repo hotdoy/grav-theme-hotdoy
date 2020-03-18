@@ -68,8 +68,13 @@ form:
 
             header.min_height:
               type: range
-              label: Minimum Height
-              default: 80
+              label: Height
+              default: 100
+
+            header.min_height_landscape:
+              type: range
+              label: Height Landscape
+              default: 100
 
             header.reveal_content:
               type: toggle

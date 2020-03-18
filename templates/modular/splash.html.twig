@@ -1,6 +1,6 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'splash' %}
-{% set modular_style = '--splash-height:' ~ page.header.min_height ~ 'vh;'  %}
+{% set modular_style = '--splash-height:' ~ page.header.min_height ~ 'vh; --splash-height-landscape:' ~ page.header.min_height_landscape ~ 'vh;'  %}
 
 {% set align_h = align_h|default(page.header.align_h ?? 'center') %}
 {% set align_v = align_v|default(page.header.align_v ?? 'center') %}

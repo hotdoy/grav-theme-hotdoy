@@ -4,7 +4,15 @@ html{
 
 .modular--splash{
 	overflow: hidden;
+	min-height: 100vh;
 	min-height: var(--splash-height);
+}
+
+@media (min-width: 735px) {
+	.modular--splash{
+		min-height: 100vh;
+		min-height: var(--splash-height-landscape, var(--splash-height););
+	}
 }
 
 .splash__image,
