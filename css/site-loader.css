@@ -28,7 +28,7 @@
 
 .loader--intro svg{
 	animation-name: intro;
-	animation-duration: 1.5s;
+	animation-duration: 1s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
