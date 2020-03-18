@@ -64,7 +64,7 @@ form:
 
     color_nav_panel_bg:
       type: colorpicker
-      label: Color Nav Panel FG
+      label: Color Nav Panel BG
       default: '#ffffff'
 
     color_nav_panel_fg:
