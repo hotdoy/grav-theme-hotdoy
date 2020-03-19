@@ -1,3 +1,14 @@
+# v1.7.12
+## 19-03-2020
+
+1. [](#new)
+	* Favicon must now be added from the theme blueprint.
+2. [](#improved)
+	* Mobile nav panel now deploy from the top instead of bottom.
+	* Splash height can now be set for independently for portrait and landscape.
+3. [](#bugfix)
+	* Fixed a typo in theme blueprint making nav panel color confusing.
+
 # v1.7.11
 ## 04-03-2020
 
