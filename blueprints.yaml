@@ -18,6 +18,12 @@ form:
       type: section
       title: Theme
 
+    favicon:
+      type: file
+      label: Favicon
+      destination: 'user/assets/hotdoy/favicon'
+      multiple: false
+
     meta_theme:
       type: colorpicker
       label: Meta Theme

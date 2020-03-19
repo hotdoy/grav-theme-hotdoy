@@ -1,0 +1,5 @@
+{% set favicon = theme.favicon|first %}
+{% set favicon_path = favicon ? base_url_absolute ~ '/' ~ favicon.path : '' %}
+{% if favicon %}
+<link rel="icon" type="image/png" href="{{ favicon_path }}" />
+{% endif %}
