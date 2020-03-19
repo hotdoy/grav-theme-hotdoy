@@ -151,7 +151,7 @@ PORTRAIT
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 @keyframes header__panel--on {
-    from {opacity: 0;transform: translateY(75px)}
+    from {opacity: 0;transform: translateY(-75px)}
     to {opacity: 1;transform: translateY(0)}
 }
 
