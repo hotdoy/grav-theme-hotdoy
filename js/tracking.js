@@ -1,6 +1,6 @@
 (function () {
 	'use strict';
-	var tracking = function(){
+	let tracking = function(){
 		let e = document.getElementById('tracking');
 		if (!!e) {
 			let src = e.getAttribute('data-ref');

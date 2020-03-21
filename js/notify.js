@@ -1,12 +1,11 @@
 function notify(message, bg_color, fg_color, id){
     let s = id ? localStorage.getItem(id) : null;     
     if (s == null || Date.now() - s > 86400000) {
-        var done = document.createElement('div');
+        let done = document.createElement('div');
         done.setAttribute('class', 'notify__done material-icons');
         done.innerHTML = 'done';
         done.addEventListener("click", function () {
             $(this).parent().addClass('notify--destroy');
-
             if (!!id) {
                localStorage.setItem(id, Date.now()); 
             }
@@ -14,8 +13,7 @@ function notify(message, bg_color, fg_color, id){
                 done.parentNode.remove();
             }, 1000);
         });
-
-        var notice = document.createElement('div');
+        let notice = document.createElement('div');
         notice.setAttribute('class', 'notify xsmall');
         if (!!bg_color) {
             notice.style.backgroundColor = bg_color;
@@ -25,11 +23,9 @@ function notify(message, bg_color, fg_color, id){
         }
         notice.innerHTML = message;
         notice.appendChild(done);
-
         $('body').append(notice);
     }
 }
-
 
 $( document ).ready(function() {
     let notifications = document.querySelectorAll('[data-notify]');
@@ -38,10 +34,8 @@ $( document ).ready(function() {
         let bgcolor = n.getAttribute('data-bgcolor');
         let fgcolor = n.getAttribute('data-fgcolor');
         let id = n.getAttribute('data-id');
-
         if (!!message) {
             notify(message,bgcolor,fgcolor, id);            
         }
-
     });
 });

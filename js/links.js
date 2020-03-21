@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	var links = function(){
+	let links = function(){
 		let links = document.querySelectorAll('a');
 		let strategy = document.body.getAttribute('data-links');
 
@@ -15,7 +15,7 @@
 
 			else if (!!href && href.match('^/')) {
 				if (!!strategy) {
-					var preLoadLink = document.createElement("link");
+					let preLoadLink = document.createElement("link");
 					preLoadLink.rel = strategy;
 	    			preLoadLink.href = href;
 					document.head.appendChild(preLoadLink);

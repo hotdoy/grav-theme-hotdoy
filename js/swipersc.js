@@ -1,11 +1,11 @@
 (function () {
 	'use strict';
 
-	var swiperSc = function(){
+	let swiperSc = function(){
 		let el = $('.swipersc');
 		el.each(function(){
-			var id = $(this).attr('id');
-		    var swiper = new Swiper('#'+id, {
+			let id = $(this).attr('id');
+		    let swiper = new Swiper('#'+id, {
 		    	autoHeight: true,
 		    	spaceBetween: 16,
 		    	pagination: {
@@ -15,7 +15,5 @@
 	    	});
 		})
 	}
-
 	swiperSc();
-
 })();

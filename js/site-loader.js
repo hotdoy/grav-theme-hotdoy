@@ -1,15 +1,14 @@
 (function () {
 	'use strict';
 	var siteLoader = function(){
-		let loader = document.getElementById('loader');
-		let duration = loader.dataset.duration ?? '20';
-		console.log(duration);
-		if (!!loader) {
+		let e = document.getElementById('loader');
+		let dur = e.dataset.duration ? e.dataset.duration : '90';
+		if (!!e) {
 			setTimeout(function(){ 
-				loader.classList.add('loaded');
-			}, duration);
-			loader.addEventListener('animationend', () =>{
-				loader.parentNode.removeChild(loader);
+				e.classList.add('loaded');
+			}, dur);
+			e.addEventListener('animationend', () =>{
+				e.parentNode.removeChild(e);
 			})
 		}
 	}
