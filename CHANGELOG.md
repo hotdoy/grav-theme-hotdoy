@@ -3,6 +3,7 @@
 
 1. [](#new)
 	* Site intro on home page using site_logo and slected loader color.
+	* Start using 'loading', 'loaded', 'exiting' body class for loading and eventually other things.
 2. [](#improved)
 	* Fonts now use SWAP instead of FALLBACK
 	* Generally cleaning js.
