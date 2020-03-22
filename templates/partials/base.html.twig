@@ -19,7 +19,7 @@
     </head>
 
     <body 
-    class="body--{{ page.template }} body--{{page.slug}}" 
+    class="body--{{ page.template }} body--{{page.slug}} loading" 
     style="{% include 'partials/theme-site.html.twig' %}" 
     {% if theme.links %}data-links="{{ theme.links }}"{% endif %}>
         {%- block site_loader %}{% include 'partials/site-loader.html.twig' %}{% endblock %}
