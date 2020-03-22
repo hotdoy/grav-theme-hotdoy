@@ -1,3 +1,15 @@
+# v1.7.13
+## 22-03-2020
+
+1. [](#new)
+	* Site intro on home page using site_logo and slected loader color.
+2. [](#improved)
+	* Fonts now use SWAP instead of FALLBACK
+	* Generally cleaning js.
+	* bumped default reveal delay from 20 to 90
+3. [](#bugfix)
+	* Fixed ternary operator in site-loader crashing on some browsers.
+
 # v1.7.12
 ## 19-03-2020
 
