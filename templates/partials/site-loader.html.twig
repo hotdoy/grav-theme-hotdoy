@@ -1,8 +1,9 @@
 {% if theme.reveal_content %}
 	{% if page.url == home_url %}
-		<div id="loader" class="loader--intro" data-reveal-initialdelay="2150" data-duration="2000">
-			{% set site_logo = theme.site_logo ? theme.site_logo : site.title %}
-			{{ site_logo }}
+		<div id="loader" class="loader--intro" data-reveal-initialdelay="2090" data-duration="2000">
+			<div>
+			{{ theme.site_logo ? theme.site_logo : site.title }}
+			</div>
 		</div>
 	{% else %}
 		<div id="loader" class="loader--transition" data-reveal-initialdelay="90"></div>

@@ -28,8 +28,8 @@
 	z-index: 9999;
 }
 
-.loader--intro svg{
-	color: var(--color-nav-fg, #313131);
+.loader--intro > div{
+	color: var(--color-nav-fg);
 	animation-name: intro;
 	animation-duration: 1s;
 	animation-direction: alternate;
@@ -38,7 +38,7 @@
 
 @keyframes intro {
 	0% {opacity: 0;}
-	20% {opacity: 0; transform: translateY(-70px);}
+	20% {opacity: 0; transform: translateY(-50px);}
 	40% {opacity: 1; transform: translateY(10px);}
 	70% {opacity: 1; transform: translateY(0);}
 	100%{}
