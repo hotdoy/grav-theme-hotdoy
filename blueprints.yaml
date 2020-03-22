@@ -181,17 +181,6 @@ form:
       type: section
       title: Browser Behaviour
 
-    links:
-      type: select
-      label: Link rel (experimental)
-      default: 0
-      help: Adds link rel tag in the head of the document for all links starting with "/" (presumed same site links) and lest the browser heuristically execute the selected command.
-      options: 
-        0: 'disabled'
-        prerender: 'prerender'
-        preconnect: 'preconnect'
-        dns-prefetch: 'dns-prefetch'
-
     misc:
       type: section
       title: Misc
