@@ -1,3 +1,5 @@
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/hotdoy)
+
 ## A FAIR WARNING:
 
 This theme is ever evolving. Things move around, major changes are made all the time, sometime requiring you take action. Use this as your own risk.
