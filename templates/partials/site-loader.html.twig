@@ -1,11 +1,10 @@
 {% if theme.reveal_content %}
-	{# {% if page.url == '/' %} #}
-		{# <div id="loader" class="loader--intro" data-reveal-initialdelay="2150" data-duration="2000"> #}
-			{# <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"> #}
-				{# <rect width="100" height="100" fill="white"/> #}
-			{# </svg> #}
-		{# </div> #}
-	{# {% else %} #}
+	{% if page.url == home_url %}
+		<div id="loader" class="loader--intro" data-reveal-initialdelay="2150" data-duration="2000">
+			{% set site_logo = theme.site_logo ? theme.site_logo : site.title %}
+			{{ site_logo }}
+		</div>
+	{% else %}
 		<div id="loader" class="loader--transition" data-reveal-initialdelay="90"></div>
-	{# {% endif %} #}
+	{% endif %}
 {% endif %}
