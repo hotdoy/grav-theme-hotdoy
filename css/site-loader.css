@@ -46,6 +46,7 @@
 .loaded #loader.loader--intro{
 	animation-name: introOut;
 	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes introOut {
