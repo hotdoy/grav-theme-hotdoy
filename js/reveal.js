@@ -3,11 +3,11 @@
 	var reveal = function(){
 		const elements = document.querySelectorAll('[data-reveal]');
 		const observerConfig = {rootMargin: '-30px', threshold: 0.1};
-		let initialDelay = document.querySelector('[data-reveal-initialdelay]');
+		let start = document.querySelector('[data-reveal-start]');
 		let observer = new IntersectionObserver(onIntersection, observerConfig);
 				
-		if (!!initialDelay) {
-			initialDelay = initialDelay.getAttribute('data-reveal-initialdelay');
+		if (!!start) {
+			start = start.getAttribute('data-reveal-start');
 			elements.forEach(el => {
 				el.classList.add('unrevealed');
 			});
@@ -15,7 +15,7 @@
 				elements.forEach(el => {
 					observer.observe(el);
 				});
-			}, initialDelay);
+			}, start);
 		} else{
 			elements.forEach(el => {
 				observer.observe(el);
@@ -47,7 +47,7 @@
 			   		}
 				}
 				else{
-					if (initialDelay == null) {
+					if (!start) {
 						target.classList.add('unrevealed');
 					}
 				}

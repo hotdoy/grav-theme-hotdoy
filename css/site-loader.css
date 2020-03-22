@@ -12,7 +12,7 @@
 	z-index: 4999;	
 }
 
-#loader.loader--transition.loaded{
+.loaded #loader.loader--transition{
 	-webkit-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s; 
@@ -21,6 +21,7 @@
 }
 
 .loader--intro{
+	background-color: white;
 	background-color: var(--color-loader, var(--color-bg));
 	display: flex;
 	justify-content: center;
@@ -30,13 +31,11 @@
 
 .loader--intro > div{
 	color: var(--color-nav-fg);
-	animation-name: intro;
-	animation-duration: 1s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
+	animation-name: introIn;
+	animation-duration: 0.5s;
 }
 
-@keyframes intro {
+@keyframes introIn {
 	0% {opacity: 0;}
 	20% {opacity: 0; transform: translateY(-50px);}
 	40% {opacity: 1; transform: translateY(10px);}
@@ -44,12 +43,12 @@
 	100%{}
 }
 
-#loader.loader--intro.loaded{
-	animation-name: introout;
-	animation-duration: 0.2s;
+.loaded #loader.loader--intro{
+	animation-name: introOut;
+	animation-duration: 0.5s;
 }
 
-@keyframes introout {
+@keyframes introOut {
 	from {opacity: 1; transform: translateY(0px);}
 	to {opacity: 0.5; transform: translateY(-100%);}
 }
