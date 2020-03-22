@@ -1,13 +1,13 @@
 (function ($) {
 	'use strict';
 
-	var ctnSel = '[data-paginate]';
-	var sentinelSel = '[data-pagination]';
-	var	loaderSel = '.pagination__loader';
-	var config = {rootMargin: '0px', threshold: 0};
+	let ctnSel = '[data-paginate]';
+	let sentinelSel = '[data-pagination]';
+	let	loaderSel = '.pagination__loader';
+	let config = {rootMargin: '0px', threshold: 0};
 
-	var paginationObserver = function(){
-		var sentinel = document.querySelectorAll(sentinelSel);
+	let paginationObserver = function(){
+		let sentinel = document.querySelectorAll(sentinelSel);
 		let observer = new IntersectionObserver(onIntersection, config);
 
 		sentinel.forEach(s => {
@@ -24,12 +24,12 @@
 		}
 	}
 
-	var paginate = function(){
-		var ctn = $(ctnSel);
-		var	sentinel = $(sentinelSel);
-		var infinite = sentinel.data('pagination') == 'infinite';
-		var loadMore = sentinel.data('pagination') == 'loadMore';
-		var	url = $(sentinel).find('a').attr('href');
+	let paginate = function(){
+		let ctn = $(ctnSel);
+		let	sentinel = $(sentinelSel);
+		let infinite = sentinel.data('pagination') == 'infinite';
+		let loadMore = sentinel.data('pagination') == 'loadMore';
+		let	url = $(sentinel).find('a').attr('href');
 
 		if (url && infinite) {
 			sentinel.remove();
@@ -45,14 +45,14 @@
 		}
 	}
 
-	var ajaxLoad = function(url, ctn, sentinel){
-		var	loader = $(loaderSel);
+	let ajaxLoad = function(url, ctn, sentinel){
+		let	loader = $(loaderSel);
 		$.ajax({
 			url: url,
 			dataType: 'html',
 			success: function(data) {
 				sentinel.remove();
-				var items = $(data).find(ctnSel).html();
+				let items = $(data).find(ctnSel).html();
 				loader.remove();
 				$(ctn).append(items);
 				$(data).remove();
@@ -61,7 +61,7 @@
 		});
 	}
 
-	var init = function () {
+	let init = function () {
 		paginationObserver();
 	};
 
