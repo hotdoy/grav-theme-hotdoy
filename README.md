@@ -8,18 +8,18 @@ When extending this theme, you should use [Theme Inheritance](https://learn.getg
 
 ## What's new ?  
 * **1.7 A LOT OF BREAKING CHANGES! Open an issue if you need help after the update. Most problems can be fixed by saving your pages. You will probably have to re-save colors, and modular margins/paddings.** 
+* Favicon from theme config.
+* Site logo from theme config.
 * I deprecated the Drawers modular in favor of a simple [shortcode](https://hotdoy.ca/learn/shortcodes). 
 * You can now add a logo to your site using inline SVG code (and use currentColor if you need to).
 * Articles can now display categories.
 * text context (big, huge) are now usable on mobile.
 * The skeleton is usable again. (was bumped to 1.7)
 
-
 ## What's next ?  
-* Adding more support for shortcodes included with the ShortCode Core Plugin (gotta check on columns).
-* Adding documentation on Modular and extending the theme (like changing the fonts and stuff like that).
-* Removing more and more JQuery.
-* Having a quick and easy way to change the font would be great.
+I now just realize that the real strenght of this theme lies in the utilities I have created.
+reveal, links, notify and loading are now my main focus. I will probably completelly stop adding any kind of content modular of pages since those are better when created for specific projects. As of now, I am shifting my focus on those utilities and reconsidering a lot of concepts. This will probably end up in me creating a new theme eventually but for now, this one will still be my main sansdbox.
+to be continued...
 
 ## Need a ✋ ?
 
