@@ -1,16 +1,16 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-<main class="page page--article-collection">
+<main class="page page--article-collection" data-reveal>
 
 	{# header #}
-	<h1 class="article-collection__title" data-reveal>{{ page.title }}</h1>
+	<h1 class="article-collection__title">{{ page.title }}</h1>
 
 	{# description #}
-	<div class="article-collection__intro" data-reveal>{{ page.content|raw }}</div>
+	<div class="article-collection__intro">{{ page.content|raw }}</div>
 
 	{# collection #}
-	<section class="article-collection__grid-ctn mt" data-reveal="reveal transition-delay-100">
+	<section class="article-collection__grid-ctn mt">
 		<div class="article-collection__grid" data-paginate>
 			{% for page in page.collection() %}
 				{% include 'partials/article-card.html.twig' %}

@@ -13,5 +13,5 @@
 {% set limit_reveal = limit_reveal|default(page.header.limit_reveal) %}
 
 {% block modular_content %}
-	<div class="content__ctn {{ computed_position }}" {% if not limit_reveal %}data-reveal{% endif %}>{{ content }}</div>
+	<div class="content__ctn {{ computed_position }}" data-reveal>{{ content }}</div>
 {% endblock %}

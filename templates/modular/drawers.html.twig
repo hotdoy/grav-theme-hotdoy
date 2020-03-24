@@ -1,11 +1,10 @@
 {% extends '/partials/modular.html.twig' %}
 {% set modular_name = 'drawers' %}
-{% set limit_reveal = limit_reveal|default(page.header.limit_reveal) %}
 
 {% block modular_content %}
 	<div class="drawers__ctn">
 	{% for drawer in page.header.drawers %}
-		<details class="drawer__detail" {% if not limit_reveal %}data-reveal=""{% endif %}>
+		<details class="drawer__detail" data-reveal>
 			<summary class="noselect drawer__summary">
 				<h2 class="drawer__summary__title">{{ drawer.summary }}</h2>
 				<div class="material-icons drawer__summary__icon">keyboard_arrow_down</div>

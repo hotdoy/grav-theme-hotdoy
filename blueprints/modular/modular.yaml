@@ -100,15 +100,6 @@ form:
                 default: 'Default'
                 header: 'Header'
 
-            header.limit_reveal:
-              type: toggle
-              label: Limit Content Reveal
-              highlight: 0
-              default: 0
-              options: 
-                0: 'No'
-                1: 'Yes'
-
             taxonomies:
               unset@: true
               fields:
