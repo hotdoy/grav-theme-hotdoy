@@ -51,5 +51,17 @@
 
 @keyframes introOut {
 	from {opacity: 1; transform: translateY(0px);}
-	to {opacity: 0.5; transform: translateY(-100%);}
+	to {opacity: 0; transform: translateY(-100%);}
+}
+
+.loaded #loader.loader--intro > div{
+	transition: opacity;
+	transition-duration: 0.2s; 
+	opacity: 0;
+}
+
+.exiting main{
+	transition-duration: 0.15s;
+	transform: translateY(20px);
+	opacity: 0;
 }
