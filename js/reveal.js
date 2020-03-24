@@ -1,8 +1,8 @@
 (function () {
 	'use strict';
-	var reveal = function(){
-		const elements = document.querySelectorAll('[data-reveal]');
-		const observerConfig = {rootMargin: '-30px', threshold: 0.1};
+	let reveal = function(){
+		let elements = document.querySelectorAll('[data-reveal]');
+		let observerConfig = {rootMargin: '-30px', threshold: 0.1};
 		let start = document.querySelector('[data-reveal-start]');
 		let observer = new IntersectionObserver(onIntersection, observerConfig);
 				
