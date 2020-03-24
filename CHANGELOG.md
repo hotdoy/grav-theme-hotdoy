@@ -1,3 +1,10 @@
+# v1.7.14
+## 23-03-2020
+
+1. [](#improved)
+	* Generally improved and added features to the new loading, loaded and exiting states.
+	* Links.js can now manage links anytime and in specified scope instead of body onload.
+
 # v1.7.13
 ## 22-03-2020
 
