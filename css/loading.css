@@ -61,7 +61,8 @@
 }
 
 .exiting main{
-	transition-duration: 0.15s;
+	transition-delay: 0.1s;
+	transition-duration: 0.2s;
 	transform: translateY(20px);
 	opacity: 0;
 }

@@ -1,0 +1,22 @@
+.module{
+	position: relative;
+	margin: 0;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+	z-index: 1000;
+}
+
+@media (min-width: 735px) {
+	.module:after{
+		margin: 0 auto;
+	}
+}
+
+.mt{margin-top: var(--rhythm);}
+.mt_2{margin-top: calc(var(--rhythm) * 0.5);}
+.pt{padding-top: var(--rhythm);}
+.pt_2{padding-top: calc(var(--rhythm) * 0.5);}
+.pb{padding-bottom: var(--rhythm);}
+.pb_2{padding-bottom: calc(var(--rhythm) * 0.5);}
+.mb{margin-bottom: var(--rhythm);}
+.mb_2{margin-bottom: calc(var(--rhythm) * 0.5);}

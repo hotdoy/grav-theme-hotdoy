@@ -131,7 +131,6 @@ UTILS
 	left: 0;
 }
 
-/*fix for empty p shortcodes tends to leave behind*/
 p:empty{
 	display: none;
 }
@@ -258,69 +257,4 @@ MARKDOWN NOTICES
 	font-weight: bold;
 	background: #f443360d;
     color: #F44336;
-}
-
-
-
-
-
-/*
-###########################################################
-MODULAR
-###########################################################
-*/
-
-
-
-.modular{
-	position: relative;
-	margin: 0;
-	background-color: var(--color-bg);
-	color: var(--color-fg);
-	z-index: 1000;
-}
-
-@media (min-width: 735px) {
-	.modular:after{
-		margin: 0 auto;
-	}
-}
-
-.mt{margin-top: var(--rhythm);}
-.mt_2{margin-top: calc(var(--rhythm) * 0.5);}
-.pt{padding-top: var(--rhythm);}
-.pt_2{padding-top: calc(var(--rhythm) * 0.5);}
-.pb{padding-bottom: var(--rhythm);}
-.pb_2{padding-bottom: calc(var(--rhythm) * 0.5);}
-.mb{margin-bottom: var(--rhythm);}
-.mb_2{margin-bottom: calc(var(--rhythm) * 0.5);}
-
-
-
-
-
-/*
-###########################################################
-EMBED
-###########################################################
-*/
-
-.embed.youtube,
-.embed.vimeo{
-	position: relative;
-	padding-bottom: 56.25%; 
-	height: 0; 
-	overflow: hidden; 
-	max-width: 100%;
-	width: 100%;
-	margin-top: 1rem;
-}
-
-.embed.youtube iframe,
-.embed.vimeo iframe{
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%;
 }

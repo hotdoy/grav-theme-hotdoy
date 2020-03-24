@@ -49,3 +49,15 @@
 .drawer__content *{
 	max-width: 90%;
 }
+
+.fadeinfromtop {
+	opacity: 0;
+	animation-name: fadeinfromtop;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes fadeinfromtop {
+	from {opacity: 0; transform: translateY(-30px);}
+	to {opacity: 1;}
+}

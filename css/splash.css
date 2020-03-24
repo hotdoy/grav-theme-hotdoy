@@ -2,14 +2,14 @@ html{
 	--splash-height:100vh;
 }
 
-.modular--splash{
+.module--splash{
 	overflow: hidden;
 	min-height: 100vh;
 	min-height: var(--splash-height);
 }
 
 @media (min-width: 735px) {
-	.modular--splash{
+	.module--splash{
 		min-height: 100vh;
 		min-height: var(--splash-height-landscape, var(--splash-height););
 	}
@@ -129,8 +129,8 @@ html{
     margin-right: 0; 
 }
 
-.modular--splash h1,
-.modular--splash h2,
-.modular--splash h3{
+.module--splash h1,
+.module--splash h2,
+.module--splash h3{
 	margin-top: 0;
 }
