@@ -28,7 +28,7 @@
 
 {% if theme.reveal_content %}
 	{% do assets.addJs('theme://js/reveal.js', { group:'after' }) %}
-	{% do assets.addJs('theme://js/site-loader.js', { group:'after', priority: 0 }) %}
+	{% do assets.addJs('theme://js/loading.js', { group:'after', priority: 0 }) %}
 {% endif %}
 
 {% if theme.google_tracking_id %}
