@@ -18,6 +18,9 @@
 	-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	     -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	-webkit-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
 }
 
 
