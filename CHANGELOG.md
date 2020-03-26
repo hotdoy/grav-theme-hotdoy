@@ -1,3 +1,14 @@
+# v1.7.15
+## 26-03-2020
+
+1. [](#new)
+	* Renamming pass.
+	* All swiper are now initialized by the same script.
+2. [](#improved)
+	* Rewrote reveal.js from scratch.
+	* Drawer are now h3 by default.
+	* Splash module reveal moved to a wrapper instead of each asset.
+
 # v1.7.14
 ## 23-03-2020
 
