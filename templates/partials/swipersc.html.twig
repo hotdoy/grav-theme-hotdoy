@@ -1,4 +1,4 @@
-<div class="swiper-container swipersc" id="swiper-{{ random() }}" data-reveal="">
+<div class="init-swiper swipersc swiper-container" id="swiper-{{ random() }}" data-reveal="">
 	<div class="swiper-wrapper">
 		{% set slides = swiper_slides|regex_replace('(^\n?<p>|<\/p>$)','') %}
    		{% for slide in slides|split('>') %}

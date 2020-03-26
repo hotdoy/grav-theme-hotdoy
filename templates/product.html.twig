@@ -5,7 +5,7 @@
 	<div class="product__wrapper">
 		<div class="product__gallery-ctn">
 			{# Swiper #}
-			<div class="product__gallery swiper-container">
+			<div class="product__gallery init-swiper swiper-container" id="swiper-{{ random() }}">
 				<div class="swiper-wrapper">
 				{% for image in page.media.images %}
 					<div class="swiper-slide">
