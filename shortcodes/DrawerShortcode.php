@@ -14,7 +14,7 @@ class DrawerShortcode extends Shortcode
             $output = $this->twig->processTemplate('partials/drawer.html.twig', [
                 'title' => $sc->getParameter('drawer', $this->getBbCode($sc)),
                 'content' => $sc->getContent(),
-                'level' => $sc->getParameter('level') ?? '2'
+                'level' => $sc->getParameter('level') ?? '3'
             ]);
             return $output;
         });
