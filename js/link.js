@@ -1,4 +1,4 @@
-function links(sel){
+function link(sel){
 	let body = document.body;
 	let links = document.querySelectorAll(sel);
 	links.forEach(link => {
@@ -19,4 +19,4 @@ function links(sel){
 		}
 	})
 }
-links('a');
+link('a');

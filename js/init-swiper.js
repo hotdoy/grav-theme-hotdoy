@@ -1,8 +1,8 @@
 (function () {
 	'use strict';
 
-	let swiperSc = function(){
-		let el = $('.swipersc');
+	let initSwiper = function(){
+		let el = $('.init-swiper');
 		el.each(function(){
 			let id = $(this).attr('id');
 		    let swiper = new Swiper('#'+id, {
@@ -15,5 +15,5 @@
 	    	});
 		})
 	}
-	swiperSc();
+	initSwiper();
 })();
