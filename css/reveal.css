@@ -5,7 +5,7 @@
 	        transform: translate3d(0, 20px, 0);
 }
 
-.reveal {
+.revealed {
 	-webkit-transition: opacity, -webkit-transform;
 	transition: opacity, -webkit-transform;
 	-o-transition: opacity, transform;

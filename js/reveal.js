@@ -1,14 +1,22 @@
 function reveal(e){
 	if (e.classList.contains('unrevealed')) {
-		let revealClass = e.getAttribute('data-reveal') ? e.getAttribute('data-reveal') : 'reveal';
+		let revealClass = e.getAttribute('data-reveal').length ? e.getAttribute('data-reveal') : 'revealed';
 		if (!!revealClass) {
 			let revealClassArray = revealClass.split(" ");
 			e.classList.add(...revealClassArray);
-		    e.addEventListener('animationend', () =>{
-		    	e.classList.remove('unrevealed');
-		    })
+			
+	        let style = getComputedStyle(e);
+	        let animationDuration = parseFloat(style.animationDuration.slice(0,-1));
+	        let transitionDuration = parseFloat(style.transitionDuration.slice(0,-1));
+	        let animationDelay = parseFloat(style.animationDelay.slice(0,-1));
+	        let transitionDelay = parseFloat(style.transitionDelay.slice(0,-1));
+	        let totalDelay = (animationDuration + animationDelay + transitionDelay + transitionDuration) * 1000;
+	        setTimeout(function(){ 
+	        	e.classList.remove('unrevealed');
+	        }, totalDelay);
+
 		    e.addEventListener('transitionend', () =>{
-		    	e.classList.remove('unrevealed');
+		    	e.classList.remove('unrevealed');	
 		    })
 		}
 	}
