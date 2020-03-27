@@ -39,8 +39,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
-	margin-bottom: 3rem;
-	margin-top: 3rem;
+	margin-bottom: 1rem;
 	overflow: hidden;
 }
 
@@ -58,7 +57,6 @@
 	max-width: var(--width-site);
 	width: 100%;
 	margin-bottom: 2rem;
-	margin-top: 2rem;
 	overflow: hidden;
 }
 
@@ -70,9 +68,6 @@
 	padding-left: var(--gutter);
 	padding-right: var(--gutter);
 }
-
-.content__ctn>* :first-child {margin-top: 0;}
-.content__ctn>* :last-child {margin-bottom: 0;}
 
 .content--left>*,
 .content--left>*>*,
