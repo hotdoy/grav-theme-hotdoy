@@ -7,6 +7,9 @@ function reveal(e){
 		    e.addEventListener('animationend', () =>{
 		    	e.classList.remove('unrevealed');
 		    })
+		    e.addEventListener('transitionend', () =>{
+		    	e.classList.remove('unrevealed');
+		    })
 		}
 	}
 }
