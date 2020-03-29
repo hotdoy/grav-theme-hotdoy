@@ -23,11 +23,7 @@ form:
       label: Favicon
       destination: 'user/assets/hotdoy/favicon'
       multiple: false
-
-    meta_theme:
-      type: colorpicker
-      label: Meta Theme
-   
+ 
     color_bg:
       type: colorpicker
       label: Color BG
@@ -176,10 +172,6 @@ form:
       options: 
         1: 'Yes'
         0: 'No'
-
-    browser:
-      type: section
-      title: Browser Behaviour
 
     misc:
       type: section
