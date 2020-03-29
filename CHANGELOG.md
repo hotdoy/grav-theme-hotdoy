@@ -1,3 +1,9 @@
+# v1.7.16
+## 29-03-2020
+
+1. [](#bugfix)
+	* Revealed elements properly remove the unrevealed class.
+
 # v1.7.15
 ## 26-03-2020
 
