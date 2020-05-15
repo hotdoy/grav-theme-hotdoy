@@ -1,30 +1,21 @@
-(function ($) {
-	'use strict';
-
-	var links = function(){
-		let links = document.querySelectorAll('a');
-		let strategy = document.body.getAttribute('data-links');
-
-		links.forEach(a => {
-			let href = a.getAttribute('href');
-
-			if (!!href && href.match('^http')) {
-				a.setAttribute('target', '_blank');
-				a.setAttribute('rel', 'noopener');
-			}
-
-			if (!!href && !!strategy && href.match('^/')) {
-				var preLoadLink = document.createElement("link");
-				preLoadLink.rel = strategy;
-    			preLoadLink.href = href;
-				document.head.appendChild(preLoadLink);
-			}	
-		})
-	}
-
-	var init = function () {
-		links();
-	};
-
-	$(init);
-})(jQuery);
+function link(sel){
+	let body = document.body;
+	let links = document.querySelectorAll(sel);
+	links.forEach(link => {
+		let href = link.getAttribute('href');
+		if (!!href && href.match('^http')) {
+			link.setAttribute('target', '_blank');
+			link.setAttribute('rel', 'noopener');
+		}
+		else if (!!href && href.match('^/')) {
+			link.addEventListener('click', function(event){
+				body.classList.add('exiting');
+			}, false);
+			let preLoadLink = document.createElement("link");
+			preLoadLink.rel = 'prerender';
+			preLoadLink.href = href;
+			document.head.appendChild(preLoadLink);				
+		}
+	})
+}
+link('a');
