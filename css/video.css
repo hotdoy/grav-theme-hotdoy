@@ -1,0 +1,15 @@
+.module--video{}
+
+.video__ctn{
+	margin-right: auto;
+	margin-left: auto;
+	max-width: var(--width-site);
+	width: 100%;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	overflow: hidden;
+}
+
+.video__video{
+	width: 100%;
+}

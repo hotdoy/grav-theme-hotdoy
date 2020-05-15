@@ -1,0 +1,18 @@
+footer{
+	/*border-top: solid 1px grey;*/
+	position: relative;
+	margin-top: var(--rhythm);
+}
+
+footer .copyright{
+	font-size: x-small;
+	text-align: center;
+	opacity: 0.5;
+
+}
+
+footer .green-hosting-badge{
+	width: 100px;
+    display: block;
+    margin: 0 auto;    
+}

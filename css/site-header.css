@@ -1,0 +1,206 @@
+html{
+    --nav-height: 4.2rem;
+}
+
+@media (min-width: 735px) {
+    html{
+        --nav-height: 6rem;
+    }
+}
+
+.header{
+    position: relative;
+    font-family: var(--font-base);
+    height: var(--nav-height);
+    color: var(--color-nav-fg);
+    background-color: var(--color-nav-bg);
+    z-index: 5000;
+}
+
+.header__wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--width-site);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: var(--gutter);
+    padding-left: var(--gutter);
+}
+
+.header__logo{
+    color: var(--color-nav-fg);
+    text-decoration: none;
+}
+
+.nav-link{
+    margin-left: var(--gutter);
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: transform 0.1s;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
+/*
+###########################################################
+LANDSCAPE
+###########################################################
+*/
+
+.header__panel .nav-link{
+    padding-bottom: 5px;
+}
+
+a.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+a.nav-link:active {
+    transform: translateY(0px);
+}
+
+.landscape .nav-link.selected:before{
+    content: " ";
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-fg);
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    opacity: 0;
+    animation-name: nav-link-selected;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes nav-link-selected {
+    from {opacity: 0; transform: translateY(5px);}
+    to {opacity: 0.7; transform: translateY(0px);}
+}
+
+
+
+
+
+/*
+###########################################################
+PORTRAIT
+###########################################################
+*/
+
+.header__toggle-on{
+    cursor: pointer;
+    transform: translateY(3px);
+}
+
+.header__toggle-off{
+    position: absolute;
+    top: 22px;
+    right: var(--gutter);
+    color: var(--color-fg);
+    cursor: pointer;
+}
+
+.header__panel{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 7px 50px 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-bg);
+}
+
+.header__panel.header__panel--on{
+    display: flex;
+    animation-name: header__panel--on;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes header__panel--on {
+    from {opacity: 0;transform: translateY(75px)}
+    to {opacity: 1;transform: translateY(0)}
+}
+
+.header__panel .nav-link{
+    display: block;
+    margin-left: 0;
+    font-family: var(--font-alt-bold);
+    font-size: 2rem;
+    border-bottom: none;
+    color: var(--color-fg);
+}
+
+
+
+
+
+/*
+###########################################################
+CART
+###########################################################
+*/
+
+.site-header .cart .cart-icon{
+    transform: translateY(6px);
+}
+
+.snipcart-items-count{
+    position: absolute;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #b1b1b1;
+}
+.landscape .snipcart-items-count{
+    top: -4px;
+    left: 13px;
+}
+.portrait .snipcart-items-count{
+    top: 8px;
+    left: 13px;
+}
+
+
+
+
+
+/*
+###########################################################
+MODULAR ROLE
+###########################################################
+*/
+
+.hero--header{
+ margin-top: 0;
+}
+
+.splash--header{
+    margin-top: calc(var(--nav-height) * -1 - 1rem);
+}

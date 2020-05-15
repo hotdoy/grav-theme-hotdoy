@@ -6,15 +6,13 @@ function loading(){
 		if (!!b.classList.contains('loading')) {
 			b.classList.add('loaded');
 			b.classList.remove('loading');
-			debug('loaded');
 		}
 	}, out);
 	if (!!e) {
-	    e.addEventListener('animationend', () =>{
-	    	if (this === e.target) {
-	    		e.parentNode.removeChild(e);
-	    	}
+	    e.addEventListener('transitionend', () =>{
+	    	e.remove();
 	    })
 	}
 }
 loading();
+

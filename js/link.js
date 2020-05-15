@@ -10,7 +10,6 @@ function link(sel){
 		else if (!!href && href.match('^/')) {
 			link.addEventListener('click', function(){
 				body.classList.add('exiting');
-				debug('exiting');
 			});
 			let preLoadLink = document.createElement("link");
 			preLoadLink.rel = 'preconnect';
