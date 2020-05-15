@@ -1,3 +1,12 @@
+# v1.7.17
+## 15-05-2020
+
+1. [](#bugfix)
+	* Fixed some styles for drawers
+
+2. [](#improved)
+	* Updated reveal and loading to latest.
+
 # v1.7.16
 ## 29-03-2020
 
