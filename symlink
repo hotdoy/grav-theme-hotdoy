@@ -1,0 +1,8 @@
+webroot to repo
+mklink /D D:\Dev\xampp\htdocs\hotdoy D:\Dev\_repositories\hotdoy\grav
+
+grav to user
+mklink /D D:\Dev\_repositories\hotdoy\grav\user D:\Dev\_repositories\hotdoy\user
+
+themes to theme
+mklink /D D:\Dev\_repositories\hotdoy\user\themes\hotdoy D:\Dev\_repositories\hotdoy\grav-theme-hotdoy
