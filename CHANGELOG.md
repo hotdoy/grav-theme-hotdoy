@@ -3,7 +3,7 @@
 
 1. [](#bugfix)
 	* Fixed some styles for drawers
-
+	* Updated link manager with vanilla js one.
 2. [](#improved)
 	* Updated reveal and loading to latest.
 
