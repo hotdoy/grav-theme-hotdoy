@@ -1,25 +1,13 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/hotdoy)
 
-## A FAIR WARNING:
+MAKE SURE TO UPDATE EVERYTHING IF YUO INSTALLED THE THEME TROUGH THE SKELETON!  
 
-This theme is ever evolving. Things move around, major changes are made all the time, sometime requiring you take action. Use this as your own risk.
+When extending this theme, you should use [Theme Inheritance](https://learn.getgrav.org/16/themes/customization). Create, overwrite or clone template you want to customize.
 
-When extending this theme, you should use [Theme Inheritance](https://learn.getgrav.org/16/themes/customization). Create, overwrite or clone template you want to customize instead of trying to hack into mine. This way I can keep updating and you can keep the feature you care about. I hope we all have fun. Good luck :)
-
-## What's new ?  
-* **1.7 A LOT OF BREAKING CHANGES! Open an issue if you need help after the update. Most problems can be fixed by saving your pages. You will probably have to re-save colors, and modular margins/paddings.** 
-* Favicon from theme config.
-* Site logo from theme config.
-* I deprecated the Drawers modular in favor of a simple [shortcode](https://hotdoy.ca/learn/shortcodes). 
-* You can now add a logo to your site using inline SVG code (and use currentColor if you need to).
-* Articles can now display categories.
-* text context (big, huge) are now usable on mobile.
-* The skeleton is usable again. (was bumped to 1.7)
-
-## What's next ?  
-I now just realize that the real strenght of this theme lies in the utilities I have created.
-reveal, links, notify and loading are now my main focus. I will probably completelly stop adding any kind of content modular of pages since those are better when created for specific projects. As of now, I am shifting my focus on those utilities and reconsidering a lot of concepts. This will probably end up in me creating a new theme eventually but for now, this one will still be my main sansdbox.
-to be continued...
+## What's next?
+Not much for hotdoy. I will keep it in working order and respond to issues.
+With COVID-19 and everything around it, I am still working with Grav but on more personal projects.
+That's pretty much it for the theme. I'll eventually release another theme to the GPM but I have to get my life in working order first. I have been on the Canadian Goverment help program for the last 2 month and I'm not convinced my previous employer will ever call me back.
 
 ## Need a ✋ ?
 
@@ -32,11 +20,6 @@ Yes, by [sending me 💰](https://www.paypal.me/hotdoy).
 # Hotdoy Theme
 
 ![Theme screenshot](https://raw.githubusercontent.com/hotdoy/grav-theme-hotdoy/master/screenshot.jpg)
-
-The **Hotdoy** Theme is meant to be my starting point for projects using [Grav CMS](http://github.com/getgrav/grav).
-It is in active developpement and probably not suited for production unless you dont mind things changing all the times. 
-You could also change the theme name in the blueprint.yaml file to stop receiving updates and doing them locally (probably safer).
-If you use the skeleton, make sure to update the theme and check if the demo content still display properly.
 
 A live demo is available at [hotdoy.ca](https://hotdoy.ca). It is also my live testing ground so things can get a bit weird.
 
@@ -86,7 +69,8 @@ All customization should be done using theme inheritance https://learn.getgrav.o
 ## Breakpoint
 Show content on specific device width only.
 ```
-[portrait][/portrait] [landscape][/landscape]
+[portrait][/portrait] 
+[landscape][/landscape]
 ```
 
 ## Button
