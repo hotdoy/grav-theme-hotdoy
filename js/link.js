@@ -8,13 +8,13 @@ function link(sel){
 			link.setAttribute('rel', 'noopener');
 		}
 		else if (!!href && href.match('^/')) {
-			link.addEventListener('click', function(){
-				body.classList.add('exiting');
-			});
+			// link.addEventListener('click', function(){
+			// 	body.classList.add('exiting');
+			// });
 			let preLoadLink = document.createElement("link");
 			preLoadLink.rel = 'preconnect';
 			preLoadLink.href = href;
-			document.head.appendChild(preLoadLink);				
+			document.head.appendChild(preLoadLink);		
 		}
 	})
 }
