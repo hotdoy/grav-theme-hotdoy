@@ -1,3 +1,10 @@
+# v1.7.18
+## 20-05-2020
+
+1. [](#bugfix)
+	* Fixed drawer content opacity when opening multiple times in Firefox
+	* Removed EXITING class when leaving a page, breaking Firefox Back button.
+
 # v1.7.17
 ## 15-05-2020
 
