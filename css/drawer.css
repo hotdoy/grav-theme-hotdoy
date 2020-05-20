@@ -1,3 +1,12 @@
+.drawers__ctn{
+	width: 100%;
+    max-width: var(--width-site);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: var(--gutter);
+    padding-left: var(--gutter);
+}
+
 .drawers__title{
 	margin-bottom: 1.5rem;
 }
@@ -44,19 +53,16 @@
 .drawer__content{
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	animation-name: fadeinfromtop;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .drawer__content *{
 	max-width: 90%;
 }
 
-.fadeinfromtop {
-	opacity: 0;
-	animation-name: fadeinfromtop;
-	animation-duration: 0.2s;
-	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
 @keyframes fadeinfromtop {
 	from {opacity: 0; transform: translateY(-30px);}
 	to {opacity: 1;}
