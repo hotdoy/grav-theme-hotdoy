@@ -74,6 +74,7 @@
 			autoplay="autoplay" 
 			muted="muted"
 			loop="loop"
+			playsinline="1"
 			{% if bg_image %}poster="{{ bg_image.url }}"{% endif %}
 			style="{{ computed_style }}">
 			<source src="{{ bg_video.url }}" type="video/mp4">
