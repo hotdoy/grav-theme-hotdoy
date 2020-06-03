@@ -9,7 +9,7 @@ Not much for hotdoy. I will keep it in working order and respond to issues.
 With COVID-19 and everything around it, I am still working with Grav but on more personal projects.
 That's pretty much it for the theme. I'll eventually release another theme to the GPM but I have to get my life in working order first. I have been on the Canadian Goverment help program for the last 2 month and I'm not convinced my previous employer will ever call me back.
 
-Anyways... I took the best of Hotdoy and created [https://github.com/hotdoy/grav-theme-calottecore](Calotte CORE). It's a theme built purely for inheritance, But I guess it could be used straight out of the box.
+Anyways... I took the best of Hotdoy and created [Calotte CORE](https://github.com/hotdoy/grav-theme-calottecore). It's a theme built purely for inheritance, But I guess it could be used straight out of the box.
 
 ## Need a ✋ ?
 
