@@ -5,11 +5,12 @@ MAKE SURE TO UPDATE EVERYTHING IF YOU INSTALLED THE THEME TROUGH THE SKELETON!
 When extending this theme, you should use [Theme Inheritance](https://learn.getgrav.org/16/themes/customization). Create, overwrite or clone template you want to customize.
 
 ## What's next?
-Not much for hotdoy. I will keep it in working order and respond to issues.
+Not much. I will keep it in working order and respond to issues.
 With COVID-19 and everything around it, I am still working with Grav but on more personal projects.
-That's pretty much it for the theme. I'll eventually release another theme to the GPM but I have to get my life in working order first. I have been on the Canadian Goverment help program for the last 2 month and I'm not convinced my previous employer will ever call me back.
+That's pretty much it for the theme.
 
-Anyways... I took the best of Hotdoy and created [Calotte CORE](https://github.com/hotdoy/grav-theme-calottecore). It's a theme built purely for inheritance, But I guess it could be used straight out of the box.
+Anyways... I took the best of Hotdoy and other experiments with Grav and created [Wheat!](https://github.com/hotdoy/grav-theme-wheat).
+Built to be my starter kit++ and presented as a popup shop for small businesses or individuals wanting to quickly setup a super fast eCom site.
 
 ## Need a ✋ ?
 
